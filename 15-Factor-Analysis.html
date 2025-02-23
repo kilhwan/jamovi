@@ -190,7 +190,8 @@ window.Quarto = {
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">JAMOVI로 배우는 통계학</a> 
-        <div class="sidebar-tools-main">
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/kilhwan/jamovi/" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
   <div class="quarto-reader-toggle-btn">
@@ -426,7 +427,7 @@ window.Quarto = {
   </ul></li>
   <li><a href="#요약" id="toc-요약" class="nav-link" data-scroll-target="#요약"><span class="header-section-number">15.6</span> 요약</a></li>
   </ul>
-</nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/kilhwan/jamovi/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -445,7 +446,7 @@ window.Quarto = {
 <p><a href="#fig-fig15-1" class="quarto-xref">Figure&nbsp;<span>15.1</span></a> 에서 관찰된 변수 <span class="math inline">\(V\)</span>들은 기저의 잠재요인(<span class="math inline">\(F\)</span>)에 의해 어느 정도 ’유발’되며, 이는 계수 <span class="math inline">\(b_1\)</span>에서 <span class="math inline">\(b_5\)</span>(요인 적재량(부하량)이라고도 함)으로 나타납니다. 관찰된 변수에는 또한 <span class="math inline">\(e_1\)</span>에서 <span class="math inline">\(e_5\)</span>까지의 오차 항이 있습니다. 각 오차 항은 관찰된 변수 <span class="math inline">\(V_i\)</span>에서 기저의 잠재 요인으로 설명되지 않는 분산을 나타냅니다.</p>
 <div class="cell" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig15-1" class="quarto-float quarto-figure quarto-figure-left anchored" alt="다섯 개의 관찰된 변수 (V1에서 V5)가 각각 오차 항 (e1에서 e5)의 영향을 받고 있으며, 가중치 (b1에서 b5)가 부여된 경로를 통해 단일 잠재요인(F)으로 연결된 다이어그램. 변수들은 수직으로 정렬되어 있으며, 잠재요인&quot;F&quot;와 연결되어 있음." data-fig-align="left">
+<div id="fig-fig15-1" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="다섯 개의 관찰된 변수 (V1에서 V5)가 각각 오차 항 (e1에서 e5)의 영향을 받고 있으며, 가중치 (b1에서 b5)가 부여된 경로를 통해 단일 잠재요인(F)으로 연결된 다이어그램. 변수들은 수직으로 정렬되어 있으며, 잠재요인&quot;F&quot;와 연결되어 있음.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig15-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/fig15-1.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:85.0%" alt="다섯 개의 관찰된 변수 (V1에서 V5)가 각각 오차 항 (e1에서 e5)의 영향을 받고 있으며, 가중치 (b1에서 b5)가 부여된 경로를 통해 단일 잠재요인(F)으로 연결된 다이어그램. 변수들은 수직으로 정렬되어 있으며, 잠재요인&quot;F&quot;와 연결되어 있음.">
@@ -497,7 +498,7 @@ Figure&nbsp;15.1. 여러 관찰된 변수 간의 관계를 설명하는 기저�
 </ol>
 <p><span class="math inline">\(N=250\)</span>명의 응답을 포함하는 샘플 데이터가 <em>bfi_sample.csv</em>에 있습니다. 연구자로서 우리는 이 데이터를 탐색하여 25개의 관찰된 변수가 어떠한 잠재 요인을 적절하게 측정하고 있는지를 확인하는 데 관심이 있습니다. 데이터를 열어 25개 변수가 연속형 변수로 코딩되어 있는지 확인하십시오(기술적으로는 서열 변수이지만, jamovi에서 EFA를 수행하는 경우 가중치가 적용된 요인 점수를 계산하지 않는 한 크게 문제가 되지 않습니다).</p>
 <div class="cell" data-layout-align="left" data-tbl-pos="ht!">
-<div id="tbl-tab15-1" class="cell quarto-float quarto-figure quarto-figure-left anchored" data-tbl-pos="ht!" data-layout-align="left">
+<div id="tbl-tab15-1" class="cell quarto-float quarto-figure quarto-figure-left anchored" data-layout-align="left" data-tbl-pos="ht!">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tab15-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;15.1. 데이터 세트 <em>bfi_sample.csv</em>에서 다섯 가지 잠정적 성격 요인으로 구성된 25개 관찰 변수 항목
@@ -573,7 +574,7 @@ Table&nbsp;15.1. 데이터 세트 <em>bfi_sample.csv</em>에서 다섯 가지 �
 <p>먼저, 가정을 확인합니다(<a href="#fig-fig15-3" class="quarto-xref">Figure&nbsp;<span>15.3</span></a> 참조). (1) Bartlett의 구형성 검정이 유의미하므로 이 가정이 충족되었으며, (2) KMO 표본 적절성 측도(MSA)가 전체적으로 <span class="math inline">\(0.81\)</span>로 나타나 표본 적절성이 우수함을 시사합니다. 따라서 문제없이 진행할 수 있습니다!</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig15-2" class="quarto-float quarto-figure quarto-figure-left anchored" alt="탐색적 요인분석(EFA)에 대한 jamovi의 스크린샷. 인터페이스에는 분석을 위한 옵션과 변수, 요인 추출 및 회전 방법, 가정 검토, 요인 적재량, 요인 요약 및 스크리 플롯과 같은 추가 출력 설정이 표시됨." data-fig-align="left">
+<div id="fig-fig15-2" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="탐색적 요인분석(EFA)에 대한 jamovi의 스크린샷. 인터페이스에는 분석을 위한 옵션과 변수, 요인 추출 및 회전 방법, 가정 검토, 요인 적재량, 요인 요약 및 스크리 플롯과 같은 추가 출력 설정이 표시됨.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig15-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig15-2.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:90.0%" alt="탐색적 요인분석(EFA)에 대한 jamovi의 스크린샷. 인터페이스에는 분석을 위한 옵션과 변수, 요인 추출 및 회전 방법, 가정 검토, 요인 적재량, 요인 요약 및 스크리 플롯과 같은 추가 출력 설정이 표시됨.">
@@ -587,7 +588,7 @@ Figure&nbsp;15.2. jamovi의 탐색적 요인분석(EFA) 분석 창
 </div>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig15-3" class="quarto-float quarto-figure quarto-figure-left anchored" alt="가정 검토 결과를 보여주는 jamovi의 표. &quot;Bartlett의 구형성 검정&quot;에서 값이 χ² = 2204.28, df = 300, p < .00001로 나타남. 아래에는 &quot;KMO 표본 적합도 측정값&quot;이 있으며, 개별 항목의 MSA 값은 0.59에서 0.85 사이로 분포함." data-fig-align="left" data-fig-pos="H">
+<div id="fig-fig15-3" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-pos="H" data-fig-align="left" alt="가정 검토 결과를 보여주는 jamovi의 표. &quot;Bartlett의 구형성 검정&quot;에서 값이 χ² = 2204.28, df = 300, p < .00001로 나타남. 아래에는 &quot;KMO 표본 적합도 측정값&quot;이 있으며, 개별 항목의 MSA 값은 0.59에서 0.85 사이로 분포함.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig15-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig15-3.png" class="quarto-figure quarto-figure-left figure-img" style="width:80.0%;height:93.0%" data-fig-pos="H" alt="가정 검토 결과를 보여주는 jamovi의 표. &quot;Bartlett의 구형성 검정&quot;에서 값이 χ² = 2204.28, df = 300, p < .00001로 나타남. 아래에는 &quot;KMO 표본 적합도 측정값&quot;이 있으며, 개별 항목의 MSA 값은 0.59에서 0.85 사이로 분포함.">
@@ -609,7 +610,7 @@ Figure&nbsp;15.3. 성격 설문지 데이터에 대한 jamovi의 EFA 가정 검�
 </ul>
 <div class="cell" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig15-4" class="quarto-float quarto-figure quarto-figure-left anchored" alt="요인 1부터 25까지의 고유값을 나타내는 스크리 플롯. 파란색 점은 실제 데이터, 주황색 점은 시뮬레이션을 나타냄. 고유값이 요인 1에서 5까지 급격히 감소한 후, 요인 6부터 완만해지는 경향을 보임." data-fig-align="left" data-fig-pos="H">
+<div id="fig-fig15-4" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-pos="H" data-fig-align="left" alt="요인 1부터 25까지의 고유값을 나타내는 스크리 플롯. 파란색 점은 실제 데이터, 주황색 점은 시뮬레이션을 나타냄. 고유값이 요인 1에서 5까지 급격히 감소한 후, 요인 6부터 완만해지는 경향을 보임.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig15-4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig15-4.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:90.0%" data-fig-pos="H" alt="요인 1부터 25까지의 고유값을 나타내는 스크리 플롯. 파란색 점은 실제 데이터, 주황색 점은 시뮬레이션을 나타냄. 고유값이 요인 1에서 5까지 급격히 감소한 후, 요인 6부터 완만해지는 경향을 보임.">
@@ -633,7 +634,7 @@ Figure&nbsp;15.4. jamovi EFA에서 성격 데이터의 스크리 플롯. 변곡�
 <p>추출된 요인 사이의 상관을 확인한 결과, 최소한 하나의 상관계수가 0.3 이상이었으며(<a href="#fig-fig15-5" class="quarto-xref">Figure&nbsp;<span>15.5</span></a>), 따라서 다섯 개의 요인에 대해 사각 회전(“oblimin”)을 수행하는 것이 더 적절합니다. 또한 <a href="#fig-fig15-5" class="quarto-xref">Figure&nbsp;<span>15.5</span></a> 에서 확인할 수 있듯이, 다섯 개의 요인이 설명하는 전체 데이터 분산의 비율은 46%입니다. 요인 1은 약 10%의 분산을 설명하며, 요인 2~4는 각각 약 9%, 요인 5는 약 7%를 설명합니다. 이 결과는 다소 부족합니다. 전체 해가 데이터 분산의 더 많은 부분을 설명할 수 있었다면 더 좋았을 것입니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig15-5" class="quarto-float quarto-figure quarto-figure-left anchored" alt="요인 통계라는 제목의 이미지로, 두 개의 표가 포함됨. &quot;요약&quot; 표에는 다섯 개의 요인에 대한 SS 적재량, 분산 비율(%), 누적 비율(%)이 나열됨. &quot;요인 간 상관관계&quot; 표에는 다섯 개 요인 간의 상관계수 값이 표시됨." data-fig-align="left">
+<div id="fig-fig15-5" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="요인 통계라는 제목의 이미지로, 두 개의 표가 포함됨. &quot;요약&quot; 표에는 다섯 개의 요인에 대한 SS 적재량, 분산 비율(%), 누적 비율(%)이 나열됨. &quot;요인 간 상관관계&quot; 표에는 다섯 개 요인 간의 상관계수 값이 표시됨.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig15-5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig15-5.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:70.0%" alt="요인 통계라는 제목의 이미지로, 두 개의 표가 포함됨. &quot;요약&quot; 표에는 다섯 개의 요인에 대한 SS 적재량, 분산 비율(%), 누적 비율(%)이 나열됨. &quot;요인 간 상관관계&quot; 표에는 다섯 개 요인 간의 상관계수 값이 표시됨.">
@@ -647,7 +648,7 @@ Figure&nbsp;15.5. jamovi EFA에서 다섯 개 요인 해의 요약 통계 및 �
 </div>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig15-6" class="quarto-float quarto-figure quarto-figure-left anchored" alt="탐색적 요인분석 결과를 보여주는 jamovi의 표. 표에는 A1~A6, C1~C6, E1~E5, N1~N6, O1~O5 항목이 다섯 개 요인과 함께 나열되어 있으며, 각각의 적재량과 고유성 값이 표시됨. 하단 주석에는 &quot;최소 잔차&quot; 추출 방법과 &quot;oblimin&quot; 회전을 사용했음이 기재됨." data-fig-align="left" data-fig-pos="H">
+<div id="fig-fig15-6" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-pos="H" data-fig-align="left" alt="탐색적 요인분석 결과를 보여주는 jamovi의 표. 표에는 A1~A6, C1~C6, E1~E5, N1~N6, O1~O5 항목이 다섯 개 요인과 함께 나열되어 있으며, 각각의 적재량과 고유성 값이 표시됨. 하단 주석에는 &quot;최소 잔차&quot; 추출 방법과 &quot;oblimin&quot; 회전을 사용했음이 기재됨.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig15-6-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig15-6.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:90.0%" data-fig-pos="H" alt="탐색적 요인분석 결과를 보여주는 jamovi의 표. 표에는 A1~A6, C1~C6, E1~E5, N1~N6, O1~O5 항목이 다섯 개 요인과 함께 나열되어 있으며, 각각의 적재량과 고유성 값이 표시됨. 하단 주석에는 &quot;최소 잔차&quot; 추출 방법과 &quot;oblimin&quot; 회전을 사용했음이 기재됨.">
@@ -672,7 +673,7 @@ Figure&nbsp;15.6. jamovi EFA에서 다섯 개 요인 해의 요인 적재량
 </ul>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig15-7" class="quarto-float quarto-figure quarto-figure-left anchored" alt="jamovi의 스크린샷으로, 도구 모음 옵션, 변수 재코딩을 위한 변환 설정, A1R, A1, A2, A3, A4 등의 열이 포함된 데이터 표가 표시됨." data-fig-align="left">
+<div id="fig-fig15-7" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="jamovi의 스크린샷으로, 도구 모음 옵션, 변수 재코딩을 위한 변환 설정, A1R, A1, A2, A3, A4 등의 열이 포함된 데이터 표가 표시됨.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig15-7-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig15-7.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:95.0%" alt="jamovi의 스크린샷으로, 도구 모음 옵션, 변수 재코딩을 위한 변환 설정, A1R, A1, A2, A3, A4 등의 열이 포함된 데이터 표가 표시됨.">
@@ -686,7 +687,7 @@ Figure&nbsp;15.7. jamovi 변환 명령을 사용하여 변수 재코딩
 </div>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig15-8" class="quarto-float quarto-figure quarto-figure-left anchored" alt="jamovi의 스크린샷으로 'Data' 탭이 열려 있으며, 참가자 ID, 응답 데이터 및 계산된 변수 '친화성'이 포함된 여러 열이 표시됨. 변수 및 데이터 추가, 삭제, 변환 옵션이 있음." data-fig-align="left">
+<div id="fig-fig15-8" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="jamovi의 스크린샷으로 'Data' 탭이 열려 있으며, 참가자 ID, 응답 데이터 및 계산된 변수 '친화성'이 포함된 여러 열이 표시됨. 변수 및 데이터 추가, 삭제, 변환 옵션이 있음.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig15-8-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig15-8.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:95.0%" alt="jamovi의 스크린샷으로 'Data' 탭이 열려 있으며, 참가자 ID, 응답 데이터 및 계산된 변수 '친화성'이 포함된 여러 열이 표시됨. 변수 및 데이터 추가, 삭제, 변환 옵션이 있음.">
@@ -701,7 +702,7 @@ Figure&nbsp;15.8. jamovi 계산된 변수 명령을 사용하여 새로운 척�
 <p>또 다른 방법은 <strong>최적 가중치</strong>를 적용한 요인 점수를 생성하는 것입니다. 이를 수행하려면 ‘저장’ 옵션에서 ’요인 점수’를 체크하여 요인 점수를 데이터 세트에 저장하면 됩니다. 이렇게 하면 추출된 각 요인에 해당하는 다섯 개의 새로운 변수가(열이) 데이터에 추가됩니다(<a href="#fig-fig15-9" class="quarto-xref">Figure&nbsp;<span>15.9</span></a> 및 <a href="#fig-fig15-10" class="quarto-xref">Figure&nbsp;<span>15.10</span></a> 참조).</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig15-9" class="quarto-float quarto-figure quarto-figure-left anchored" alt="탐색적 요인분석을 수행하는 jamovi 인터페이스의 스크린샷. 왼쪽 패널에는 요인 추출, 회전, 가정 검토 옵션이 있으며, 오른쪽 패널에는 요인 적재량 및 고유성 값이 표시됨." data-fig-align="left">
+<div id="fig-fig15-9" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="탐색적 요인분석을 수행하는 jamovi 인터페이스의 스크린샷. 왼쪽 패널에는 요인 추출, 회전, 가정 검토 옵션이 있으며, 오른쪽 패널에는 요인 적재량 및 고유성 값이 표시됨.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig15-9-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig15-9.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:95.0%" alt="탐색적 요인분석을 수행하는 jamovi 인터페이스의 스크린샷. 왼쪽 패널에는 요인 추출, 회전, 가정 검토 옵션이 있으며, 오른쪽 패널에는 요인 적재량 및 고유성 값이 표시됨.">
@@ -715,7 +716,7 @@ Figure&nbsp;15.9. 다섯 개 요인 해에 대해 ‘Bartlett’ 최적 가중 �
 </div>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig15-10" class="quarto-float quarto-figure quarto-figure-left anchored" alt="jamovi의 스크린샷으로, 성격 설문 분석이 포함된 표가 왼쪽에 있으며, 탐색적 요인분석 결과가 오른쪽에 표시됨. 분석에는 다양한 데이터 포인트 및 요인 적재량이 포함됨. 인터페이스에는 변수, 데이터, 분석, 편집 탭이 있음." data-fig-align="left">
+<div id="fig-fig15-10" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="jamovi의 스크린샷으로, 성격 설문 분석이 포함된 표가 왼쪽에 있으며, 탐색적 요인분석 결과가 오른쪽에 표시됨. 분석에는 다양한 데이터 포인트 및 요인 적재량이 포함됨. 인터페이스에는 변수, 데이터, 분석, 편집 탭이 있음.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig15-10-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig15-10.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:95.0%" alt="jamovi의 스크린샷으로, 성격 설문 분석이 포함된 표가 왼쪽에 있으며, 탐색적 요인분석 결과가 오른쪽에 표시됨. 분석에는 다양한 데이터 포인트 및 요인 적재량이 포함됨. 인터페이스에는 변수, 데이터, 분석, 편집 탭이 있음.">
@@ -730,7 +731,7 @@ Figure&nbsp;15.10. 새롭게 생성된 다섯 개 요인 점수 변수를 보여
 <p>이제 평균 점수를 기반으로 한 요인 척도(<a href="#fig-fig15-8" class="quarto-xref">Figure&nbsp;<span>15.8</span></a>) 또는 jamovi가 계산한 최적 가중 요인 점수를 사용하여 추가 분석을 수행할 수 있습니다. 선택은 여러분의 몫입니다! 예를 들어, 각 성격 척도에서 성별 차이가 있는지 확인해 볼 수도 있습니다. 우리는 평균 점수 접근법을 사용하여 친화성 점수에 대해 이 분석을 수행했으며, <span class="math inline">\(t\)</span>-검정 플롯(<a href="#fig-fig15-11" class="quarto-xref">Figure&nbsp;<span>15.11</span></a>)에 따르면 남성이 여성보다 덜 친화적인 경향을 보였으나, 이 차이는 통계적으로 유의하지 않았습니다(Mann-Whitney <span class="math inline">\(U = 5768\)</span>, <span class="math inline">\(p = .075\)</span>).</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig15-11" class="quarto-float quarto-figure quarto-figure-left anchored" alt="성별에 따른 친화성 점수를 보여주는 점 그래프. 여성의 평균 점수는 4.3 이상이며, 신뢰구간(CI)은 약 4.2에서 4.4까지 확장됨. 남성의 평균 점수는 약 4.1이며, CI는 약 4.0에서 4.3까지 범위를 가짐. 중앙값도 표시됨." data-fig-align="left">
+<div id="fig-fig15-11" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="성별에 따른 친화성 점수를 보여주는 점 그래프. 여성의 평균 점수는 4.3 이상이며, 신뢰구간(CI)은 약 4.2에서 4.4까지 확장됨. 남성의 평균 점수는 약 4.1이며, CI는 약 4.0에서 4.3까지 범위를 가짐. 중앙값도 표시됨.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig15-11-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig15-11.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" alt="성별에 따른 친화성 점수를 보여주는 점 그래프. 여성의 평균 점수는 4.3 이상이며, 신뢰구간(CI)은 약 4.2에서 4.4까지 확장됨. 남성의 평균 점수는 약 4.1이며, CI는 약 4.0에서 4.3까지 범위를 가짐. 중앙값도 표시됨.">
@@ -865,7 +866,7 @@ Figure&nbsp;15.11. 친화성 요인 기반 점수에서 남성과 여성 간 차
 <p>성격 문항에 대한 기본적인 확인적 요인분석(CFA)은 <a href="#fig-fig15-12" class="quarto-xref">Figure&nbsp;<span>15.12</span></a> 에 나타난 것처럼 다섯 개의 잠재 요인을 설정하고, 각각을 다섯 개의 관찰된 변수로 측정하는 방식으로 이루어집니다. 각 변수는 특정한 잠재 요인을 측정하는 도구입니다. 예를 들어, A1은 잠재 요인인 친화성(Agreeableness)에 의해 예측됩니다. 그러나 A1이 친화성을 완벽하게 측정하는 것은 아니므로, 이에 대한 오차 항 <span class="math inline">\(e\)</span>가 존재합니다. 다시 말해, <span class="math inline">\(e\)</span>는 A1의 분산 중 친화성 요인으로 설명되지 않는 부분을 나타내며, 이를 <strong>측정 오차(measurement error)</strong>라고 합니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig15-12" class="quarto-float quarto-figure quarto-figure-left anchored" alt="성격과 관련된 특성을 보여주는 다이어그램. 친화성(Agreeableness), 성실성(Conscientiousness), 외향성(Extraversion), 신경증(Neuroticism), 개방성(Openness)이라는 다섯 개의 원과, A1~A5, C1~C5, E1~E5, N1~N5, O1~O5라는 다양한 타원형 레이블이 연결되어 있음. 화살표는 이들 간의 관계를 나타냄." data-fig-align="left" data-fig-pos="h!">
+<div id="fig-fig15-12" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-pos="h!" data-fig-align="left" alt="성격과 관련된 특성을 보여주는 다이어그램. 친화성(Agreeableness), 성실성(Conscientiousness), 외향성(Extraversion), 신경증(Neuroticism), 개방성(Openness)이라는 다섯 개의 원과, A1~A5, C1~C5, E1~E5, N1~N5, O1~O5라는 다양한 타원형 레이블이 연결되어 있음. 화살표는 이들 간의 관계를 나타냄.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig15-12-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/fig15-12.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:85.0%" data-fig-pos="h!" alt="성격과 관련된 특성을 보여주는 다이어그램. 친화성(Agreeableness), 성실성(Conscientiousness), 외향성(Extraversion), 신경증(Neuroticism), 개방성(Openness)이라는 다섯 개의 원과, A1~A5, C1~C5, E1~E5, N1~N5, O1~O5라는 다양한 타원형 레이블이 연결되어 있음. 화살표는 이들 간의 관계를 나타냄.">
@@ -898,7 +899,7 @@ Figure&nbsp;15.12. 확인적 요인분석을 위한 성격 척도의 초기 잠�
 <p>따라서, 다른 방식으로도 모형 적합도를 평가해야 합니다. jamovi에서는 기본적으로 여러 지표를 제공합니다. 대표적인 지표는 비교 적합 지수(Comparative Fit Index, CFI), 터커 루이스 지수(Tucker Lewis Index, TLI), 근사 오차 제곱 평균(Root Mean Square Error of Approximation, RMSEA) 및 RMSEA의 90% 신뢰 구간입니다. 일반적인 기준은 CFI &gt; 0.9, TLI &gt; 0.9, RMSEA가 약 0.05~0.08이면 만족스러운 적합도를 나타냅니다. 좋은 적합도는 CFI &gt; 0.95, TLI &gt; 0.95, RMSEA 및 RMSEA 상한 신뢰구간이 0.05 미만인 경우입니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig15-13" class="quarto-float quarto-figure quarto-figure-left anchored" alt="확인적 요인분석을 위한 jamovi 인터페이스의 스크린샷. 요인 공분산, 잔차 공분산, 수정 지수를 포함한 다양한 옵션과 통계가 표시됨. 오른쪽 창에는 요인 및 항목 목록이 나열됨. 경로 다이어그램 옵션이 사용 가능함." data-fig-align="left">
+<div id="fig-fig15-13" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="확인적 요인분석을 위한 jamovi 인터페이스의 스크린샷. 요인 공분산, 잔차 공분산, 수정 지수를 포함한 다양한 옵션과 통계가 표시됨. 오른쪽 창에는 요인 및 항목 목록이 나열됨. 경로 다이어그램 옵션이 사용 가능함.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig15-13-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig15-13.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:90.0%" alt="확인적 요인분석을 위한 jamovi 인터페이스의 스크린샷. 요인 공분산, 잔차 공분산, 수정 지수를 포함한 다양한 옵션과 통계가 표시됨. 오른쪽 창에는 요인 및 항목 목록이 나열됨. 경로 다이어그램 옵션이 사용 가능함.">
@@ -912,7 +913,7 @@ Figure&nbsp;15.13. jamovi의 CFA 분석 창
 </div>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig15-14" class="quarto-float quarto-figure quarto-figure-left anchored" alt="모형 적합도 및 Test for Exact Fit이라는 제목을 가진 통계 테이블이 표시됨. 카이제곱 값 739.73, 자유도(df) 265, $p$-값 0.00001 미만이 나와 있음. 적합도 지표로는 CFI=0.76, TLI=0.73, RMSEA=0.08, RMSEA 90% 신뢰 구간:- 하한=0.08, 상한=0.09이 포함됨." data-fig-align="left" data-fig-pos="H">
+<div id="fig-fig15-14" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-pos="H" data-fig-align="left" alt="모형 적합도 및 Test for Exact Fit이라는 제목을 가진 통계 테이블이 표시됨. 카이제곱 값 739.73, 자유도(df) 265, $p$-값 0.00001 미만이 나와 있음. 적합도 지표로는 CFI=0.76, TLI=0.73, RMSEA=0.08, RMSEA 90% 신뢰 구간:- 하한=0.08, 상한=0.09이 포함됨.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig15-14-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig15-14.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" data-fig-pos="H" alt="모형 적합도 및 Test for Exact Fit이라는 제목을 가진 통계 테이블이 표시됨. 카이제곱 값 739.73, 자유도(df) 265, $p$-값 0.00001 미만이 나와 있음. 적합도 지표로는 CFI=0.76, TLI=0.73, RMSEA=0.08, RMSEA 90% 신뢰 구간:- 하한=0.08, 상한=0.09이 포함됨.">
@@ -929,7 +930,7 @@ Figure&nbsp;15.14. 우리의 CFA 모형에 대한 jamovi CFA 모형 적합도 �
 <p>요인 적재량과 요인 공분산 추정치를 살펴보겠습니다 (<a href="#fig-fig15-15" class="quarto-xref">Figure&nbsp;<span>15.15</span></a> 및 <a href="#fig-fig15-16" class="quarto-xref">Figure&nbsp;<span>15.16</span></a>). 각 모수에 대한 <span class="math inline">\(Z\)</span>-통계량과 <span class="math inline">\(p\)</span>-값은 해당 모수가 모형에 상당한 기여를 한다는 것을 나타냅니다(즉, 0이 아닙니다). 따라서 지정된 변수-요인 경로나 요인-요인 상관관계를 제거할 이유는 없어 보입니다. 종종 표준화된 추정치가 해석하기 더 쉬우며, 이는 ‘추정값’ 옵션에서 지정할 수 있습니다. 이러한 표들은 보고서나 과학 논문에 유용하게 포함될 수 있습니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig15-15" class="quarto-float quarto-figure quarto-figure-left anchored" alt="jamovi 표에 다섯 가지 성격 특성(우호성, 성실성, 외향성, 신경증, 개방성)에 대한 확인적 요인분석 결과가 표시됨. 열에는 요인, 지표, 추정치, 표준 오차, $Z$, $p$, 표준화 추정치가 포함됨. 지표는 A1에서 O5까지 레이블이 지정됨." data-fig-align="left">
+<div id="fig-fig15-15" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="jamovi 표에 다섯 가지 성격 특성(우호성, 성실성, 외향성, 신경증, 개방성)에 대한 확인적 요인분석 결과가 표시됨. 열에는 요인, 지표, 추정치, 표준 오차, $Z$, $p$, 표준화 추정치가 포함됨. 지표는 A1에서 O5까지 레이블이 지정됨.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig15-15-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig15-15.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:95.0%" alt="jamovi 표에 다섯 가지 성격 특성(우호성, 성실성, 외향성, 신경증, 개방성)에 대한 확인적 요인분석 결과가 표시됨. 열에는 요인, 지표, 추정치, 표준 오차, $Z$, $p$, 표준화 추정치가 포함됨. 지표는 A1에서 O5까지 레이블이 지정됨.">
@@ -947,7 +948,7 @@ Figure&nbsp;15.15. jamovi의 CFA 요인 적재량 표
 <p>만약 MI 값을 사용하여 모형에 새로운 매개변수를 추가하는 경우, 각 추가 후 MI 표를 다시 확인해야 합니다. MI 값은 매번 새롭게 갱신되기 때문입니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig15-16" class="quarto-float quarto-figure quarto-figure-left anchored" alt="요인 추정치라는 제목의 jamovi 표로, 다섯 가지 성격 특성(우호성, 성실성, 외향성, 신경증, 개방성) 간 요인 공분산을 표시함. 열에는 추정치, 표준 오차, Z, p, 표준화 추정치가 포함됨. 일부 추정치는 고정되어 있으며, 위첨자 'a'로 표시됨." data-fig-align="left" data-fig-pos="H">
+<div id="fig-fig15-16" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-pos="H" data-fig-align="left" alt="요인 추정치라는 제목의 jamovi 표로, 다섯 가지 성격 특성(우호성, 성실성, 외향성, 신경증, 개방성) 간 요인 공분산을 표시함. 열에는 추정치, 표준 오차, Z, p, 표준화 추정치가 포함됨. 일부 추정치는 고정되어 있으며, 위첨자 'a'로 표시됨.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig15-16-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig15-16.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:90.0%" data-fig-pos="H" alt="요인 추정치라는 제목의 jamovi 표로, 다섯 가지 성격 특성(우호성, 성실성, 외향성, 신경증, 개방성) 간 요인 공분산을 표시함. 열에는 추정치, 표준 오차, Z, p, 표준화 추정치가 포함됨. 일부 추정치는 고정되어 있으며, 위첨자 'a'로 표시됨.">
@@ -961,7 +962,7 @@ Figure&nbsp;15.16. jamovi의 CFA 요인 공분산 표
 </div>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig15-17" class="quarto-float quarto-figure quarto-figure-left anchored" alt="요인 적재량 - 수정 지수라는 제목의 jamovi 결과 표로, 행에는 A1에서 O5까지의 지표가, 열에는 우호성, 성실성, 외향성, 신경증, 개방성이 포함됨. 일부 수치는 빨간색으로 강조 표시됨." data-fig-align="left">
+<div id="fig-fig15-17" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="요인 적재량 - 수정 지수라는 제목의 jamovi 결과 표로, 행에는 A1에서 O5까지의 지표가, 열에는 우호성, 성실성, 외향성, 신경증, 개방성이 포함됨. 일부 수치는 빨간색으로 강조 표시됨.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig15-17-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig15-17.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" alt="요인 적재량 - 수정 지수라는 제목의 jamovi 결과 표로, 행에는 A1에서 O5까지의 지표가, 열에는 우호성, 성실성, 외향성, 신경증, 개방성이 포함됨. 일부 수치는 빨간색으로 강조 표시됨.">
@@ -976,7 +977,7 @@ Figure&nbsp;15.17. jamovi의 CFA 요인 적재량 수정 지수
 <p>jamovi에서는 또한 잔차 공분산 수정 지수 표를 생성합니다 (<a href="#fig-fig15-18" class="quarto-xref">Figure&nbsp;<span>15.18</span></a>). 즉, 모형 적합도를 가장 많이 향상시킬 수 있는 상관된 오류를 보여주는 표입니다. 두 개의 MI 표를 동시에 살펴보는 것이 좋으며, 가장 큰 MI를 찾아보고 해당 매개변수를 추가하는 것이 합리적인지 생각해 본 후, 가능하면 모형에 추가하세요. 그런 다음 다시 가장 큰 MI를 찾아 재계산된 결과를 확인하면 됩니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig15-18" class="quarto-float quarto-figure quarto-figure-left anchored" alt="jamovi 결과 표로, 다수의 숫자가 여러 열과 행으로 배열되어 있음. 대부분 검은색 숫자로 표시되며, 몇몇 값은 빨간색으로 강조됨. 왼쪽에는 &quot;잔차 공분산 - 수정 지수&quot;라는 텍스트가 세로로 표시됨." data-fig-align="left">
+<div id="fig-fig15-18" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="jamovi 결과 표로, 다수의 숫자가 여러 열과 행으로 배열되어 있음. 대부분 검은색 숫자로 표시되며, 몇몇 값은 빨간색으로 강조됨. 왼쪽에는 &quot;잔차 공분산 - 수정 지수&quot;라는 텍스트가 세로로 표시됨.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig15-18-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/fig15-18.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:100.0%" alt="jamovi 결과 표로, 다수의 숫자가 여러 열과 행으로 배열되어 있음. 대부분 검은색 숫자로 표시되며, 몇몇 값은 빨간색으로 강조됨. 왼쪽에는 &quot;잔차 공분산 - 수정 지수&quot;라는 텍스트가 세로로 표시됨.">
@@ -1084,7 +1085,7 @@ Figure&nbsp;15.18. jamovi에서 생성된 잔차 공분산 수정 지수
 <p>이 설문지는 여섯 가지 가상의 시나리오를 포함하며, 각 시나리오에 대해 응답자는 (a) 내재성, (b) 지속성, (c) 전반성을 평가하는 질문에 답하게 됩니다. 따라서 총 문항 수는 <span class="math inline">\(6 \times 3 = 18\)</span>개입니다. 자세한 내용은 <a href="#fig-fig15-19" class="quarto-xref">Figure&nbsp;<span>15.19</span></a> 를 참고하십시오.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig15-19" class="quarto-float quarto-figure quarto-figure-left anchored" alt="7점 척도로 응답하는 세 개의 섹션(a, b, c)으로 구성된 설문지의 스크린샷. 섹션 아래에는 응답자가 고려해야 할 여섯 가지 가상의 시나리오가 나열되어 있음." data-fig-align="left" data-fig-pos="H">
+<div id="fig-fig15-19" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-pos="H" data-fig-align="left" alt="7점 척도로 응답하는 세 개의 섹션(a, b, c)으로 구성된 설문지의 스크린샷. 섹션 아래에는 응답자가 고려해야 할 여섯 가지 가상의 시나리오가 나열되어 있음.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig15-19-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/fig15-19.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:90.0%" data-fig-pos="H" alt="7점 척도로 응답하는 세 개의 섹션(a, b, c)으로 구성된 설문지의 스크린샷. 섹션 아래에는 응답자가 고려해야 할 여섯 가지 가상의 시나리오가 나열되어 있음.">
@@ -1141,7 +1142,7 @@ Table&nbsp;15.2. 내재성, 지속성, 전반성 차원별 ASQ 문항 6개
 <p>다음 단계는 우리 모형에서 잠재 요인들이 서로 상관을 가질 수 있도록 허용해야 하는지를 고려하는 것입니다. 앞서 언급했듯이, 심리학 및 행동과학에서는 구성개념들이 서로 연관되는 경우가 많으며, 내재성, 지속성, 전반성 또한 서로 상관되어 있을 수 있습니다. 따라서 모형에서 이러한 잠재 요인들이 공분산을 가질 수 있도록 설정해야 합니다. 이는 <a href="#fig-fig15-21" class="quarto-xref">Figure&nbsp;<span>15.21</span></a> 에 나타나 있습니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig15-20" class="quarto-float quarto-figure quarto-figure-left anchored" alt="세 가지 범주(내재성, 안정성, 전반성)를 나타내는 다이어그램. 각 범주에는 해당 요인으로 향하는 화살표가 있는 여러 요소가 포함됨. 내재성은 INT1~INT6, 안정성은 STAB1~STAB6, 전반성은 GLOB1~GLOB6으로 구성됨." data-fig-align="left" data-fig-pos="H">
+<div id="fig-fig15-20" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-pos="H" data-fig-align="left" alt="세 가지 범주(내재성, 안정성, 전반성)를 나타내는 다이어그램. 각 범주에는 해당 요인으로 향하는 화살표가 있는 여러 요소가 포함됨. 내재성은 INT1~INT6, 안정성은 STAB1~STAB6, 전반성은 GLOB1~GLOB6으로 구성됨.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig15-20-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/fig15-20.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" data-fig-pos="H" alt="세 가지 범주(내재성, 안정성, 전반성)를 나타내는 다이어그램. 각 범주에는 해당 요인으로 향하는 화살표가 있는 여러 요소가 포함됨. 내재성은 INT1~INT6, 안정성은 STAB1~STAB6, 전반성은 GLOB1~GLOB6으로 구성됨.">
@@ -1155,7 +1156,7 @@ Figure&nbsp;15.20. ASQ에 대한 초기 잠재 요인 구조 사전 지정
 </div>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig15-21" class="quarto-float quarto-figure quarto-figure-left anchored" alt="세 개의 잠재 변수를 포함하는 구조 방정식 모형 다이어그램:- 내재성, 안정성, 전반성. 각 잠재 변수는 이에 해당하는 관찰 변수를 가짐. 내재성은 INT1~INT6, 안정성은 STAB1~STAB6, 전반성은 GLOB1~GLOB6으로 구성됨. 화살표는 변수 간 관계를 나타냄. 여러 오류 항 상관이 곡선 화살표로 표시됨." data-fig-align="left" data-fig-pos="H">
+<div id="fig-fig15-21" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-pos="H" data-fig-align="left" alt="세 개의 잠재 변수를 포함하는 구조 방정식 모형 다이어그램:- 내재성, 안정성, 전반성. 각 잠재 변수는 이에 해당하는 관찰 변수를 가짐. 내재성은 INT1~INT6, 안정성은 STAB1~STAB6, 전반성은 GLOB1~GLOB6으로 구성됨. 화살표는 변수 간 관계를 나타냄. 여러 오류 항 상관이 곡선 화살표로 표시됨.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig15-21-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/fig15-21.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" data-fig-pos="H" alt="세 개의 잠재 변수를 포함하는 구조 방정식 모형 다이어그램:- 내재성, 안정성, 전반성. 각 잠재 변수는 이에 해당하는 관찰 변수를 가짐. 내재성은 INT1~INT6, 안정성은 STAB1~STAB6, 전반성은 GLOB1~GLOB6으로 구성됨. 화살표는 변수 간 관계를 나타냄. 여러 오류 항 상관이 곡선 화살표로 표시됨.">
@@ -1184,7 +1185,7 @@ Figure&nbsp;15.21. ASQ에 대한 최종 잠재 요인 구조 사전 지정, 잠�
 </ul>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig15-22" class="quarto-float quarto-figure quarto-figure-left anchored" alt="확인적 요인분석(Confirmatory Factor Analysis) 설정을 보여주는 jamovi의 스크린샷. 변수 선택, 요인 추가, 잔차 공분산 설정 등의 옵션이 포함되어 있음." data-fig-align="left">
+<div id="fig-fig15-22" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="확인적 요인분석(Confirmatory Factor Analysis) 설정을 보여주는 jamovi의 스크린샷. 변수 선택, 요인 추가, 잔차 공분산 설정 등의 옵션이 포함되어 있음.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig15-22-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig15-22.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:78.0%" alt="확인적 요인분석(Confirmatory Factor Analysis) 설정을 보여주는 jamovi의 스크린샷. 변수 선택, 요인 추가, 잔차 공분산 설정 등의 옵션이 포함되어 있음.">
@@ -1198,7 +1199,7 @@ Figure&nbsp;15.22. jamovi의 CFA 분석 창
 </div>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig15-23" class="quarto-float quarto-figure quarto-figure-left anchored" alt="jamovi에서 확인적 요인분석의 &quot;Model Fit&quot; 테이블을 보여주는 스크린샷. &quot;Test for Exact Fit&quot; 섹션에는 χ² = 243.97, df = 114, p < .00001이 표시됨. &quot;Fit Measures&quot; 섹션에는 CFI = 0.98, TLI = 0.98, RMSEA = 0.02, RMSEA 90% CI (하한 = 0.02, 상한 = 0.02)가 포함됨." data-fig-align="left">
+<div id="fig-fig15-23" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="jamovi에서 확인적 요인분석의 &quot;Model Fit&quot; 테이블을 보여주는 스크린샷. &quot;Test for Exact Fit&quot; 섹션에는 χ² = 243.97, df = 114, p < .00001이 표시됨. &quot;Fit Measures&quot; 섹션에는 CFI = 0.98, TLI = 0.98, RMSEA = 0.02, RMSEA 90% CI (하한 = 0.02, 상한 = 0.02)가 포함됨.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig15-23-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig15-23.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:70.0%" alt="jamovi에서 확인적 요인분석의 &quot;Model Fit&quot; 테이블을 보여주는 스크린샷. &quot;Test for Exact Fit&quot; 섹션에는 χ² = 243.97, df = 114, p < .00001이 표시됨. &quot;Fit Measures&quot; 섹션에는 CFI = 0.98, TLI = 0.98, RMSEA = 0.02, RMSEA 90% CI (하한 = 0.02, 상한 = 0.02)가 포함됨.">
@@ -1216,7 +1217,7 @@ Figure&nbsp;15.23. jamovi에서 수행한 CFA MTMM 모형의 적합도(Model Fit
 <p>이제 <a href="#fig-fig15-24" class="quarto-xref">Figure&nbsp;<span>15.24</span></a> 와 같이 요인 적재량과 요인 공분산 추정치를 살펴볼 수 있습니다. 일반적으로 표준화된 추정값이 해석하기 쉬우므로, ‘추정값’ 옵션에서 이를 선택하면 보다 직관적인 결과를 얻을 수 있습니다. 이러한 표는 연구 논문이나 보고서에 유용하게 포함될 수 있습니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig15-24" class="quarto-float quarto-figure quarto-figure-left anchored" alt="확인적 요인분석 결과에서 요인 적재량과 추정치를 보여주는 jamovi 테이블. 요인, 지표, 추정치, 표준 오차(SE), z-값, p-값, 표준화된 추정치 등의 열이 포함됨. 요인으로는 INTERNALITY, STABILITY, GLOBALITY가 표시됨." data-fig-align="left">
+<div id="fig-fig15-24" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="확인적 요인분석 결과에서 요인 적재량과 추정치를 보여주는 jamovi 테이블. 요인, 지표, 추정치, 표준 오차(SE), z-값, p-값, 표준화된 추정치 등의 열이 포함됨. 요인으로는 INTERNALITY, STABILITY, GLOBALITY가 표시됨.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig15-24-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig15-24.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:85.0%" alt="확인적 요인분석 결과에서 요인 적재량과 추정치를 보여주는 jamovi 테이블. 요인, 지표, 추정치, 표준 오차(SE), z-값, p-값, 표준화된 추정치 등의 열이 포함됨. 요인으로는 INTERNALITY, STABILITY, GLOBALITY가 표시됨.">
@@ -1314,7 +1315,7 @@ MTMM CFA
 </ul>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig15-25" class="quarto-float quarto-figure quarto-figure-left anchored" alt="신뢰도 분석을 위한 jamovi 인터페이스의 스크린샷이 표시됩니다. 이 인터페이스는 항목 선택 및 분석을 위한 옵션을 보여주며, Cronbach의 $\alpha$, McDonald's $\omega$, 평균 및 표준 편차 등의 다양한 통계를 포함합니다. 일반 및 역코딩된 항목을 설정하는 옵션도 제공됩니다." data-fig-align="left">
+<div id="fig-fig15-25" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="신뢰도 분석을 위한 jamovi 인터페이스의 스크린샷이 표시됩니다. 이 인터페이스는 항목 선택 및 분석을 위한 옵션을 보여주며, Cronbach의 $\alpha$, McDonald's $\omega$, 평균 및 표준 편차 등의 다양한 통계를 포함합니다. 일반 및 역코딩된 항목을 설정하는 옵션도 제공됩니다.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig15-25-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig15-25.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" alt="신뢰도 분석을 위한 jamovi 인터페이스의 스크린샷이 표시됩니다. 이 인터페이스는 항목 선택 및 분석을 위한 옵션을 보여주며, Cronbach의 $\alpha$, McDonald's $\omega$, 평균 및 표준 편차 등의 다양한 통계를 포함합니다. 일반 및 역코딩된 항목을 설정하는 옵션도 제공됩니다.">
@@ -1329,7 +1330,7 @@ Figure&nbsp;15.25. jamovi의 ‘Reliability Analysis’ 창
 <p>설정을 완료한 후, jamovi 결과 창을 확인하십시오. <a href="#fig-fig15-26" class="quarto-xref">Figure&nbsp;<span>15.26</span></a> 같은 결과가 표시될 것입니다. 여기에서 친화성(Agreeableness) 척도의 Cronbach의 <span class="math inline">\(\alpha\)</span> 계수가 0.70임을 알 수 있습니다. 이는 친화성 척도 점수의 약 30%가 오류 분산임을 의미합니다. 또한 McDonald’s <span class="math inline">\(\omega\)</span> 값도 제공되며, 이는 0.72로 <span class="math inline">\(\alpha\)</span> 값과 큰 차이가 없습니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig15-26" class="quarto-float quarto-figure quarto-figure-left anchored" alt="신뢰도 분석 결과를 보여주는 jamovi 표입니다. 첫 번째 섹션은 평균, 표준 편차, Cronbach의 $\alpha$, McDonald's $\omega$ 값을 포함한 전체 척도 신뢰도 통계를 제공합니다. 두 번째 섹션은 다섯 개 항목 각각의 신뢰도를 제시하며, 특정 항목이 제외될 경우의 신뢰도 변화를 보여줍니다." data-fig-align="left">
+<div id="fig-fig15-26" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="신뢰도 분석 결과를 보여주는 jamovi 표입니다. 첫 번째 섹션은 평균, 표준 편차, Cronbach의 $\alpha$, McDonald's $\omega$ 값을 포함한 전체 척도 신뢰도 통계를 제공합니다. 두 번째 섹션은 다섯 개 항목 각각의 신뢰도를 제시하며, 특정 항목이 제외될 경우의 신뢰도 변화를 보여줍니다.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig15-26-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig15-26.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" alt="신뢰도 분석 결과를 보여주는 jamovi 표입니다. 첫 번째 섹션은 평균, 표준 편차, Cronbach의 $\alpha$, McDonald's $\omega$ 값을 포함한 전체 척도 신뢰도 통계를 제공합니다. 두 번째 섹션은 다섯 개 항목 각각의 신뢰도를 제시하며, 특정 항목이 제외될 경우의 신뢰도 변화를 보여줍니다.">
@@ -1682,7 +1683,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/kilhwan\.github\.io\/jamovi\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -2035,7 +2036,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    </div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/kilhwan/jamovi/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a></p>
 </div>

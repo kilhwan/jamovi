@@ -170,7 +170,8 @@ window.Quarto = {
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">JAMOVI로 배우는 통계학</a> 
-        <div class="sidebar-tools-main">
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/kilhwan/jamovi/" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
   <div class="quarto-reader-toggle-btn">
@@ -410,7 +411,7 @@ window.Quarto = {
   <li><a href="#jamovi-종료하기" id="toc-jamovi-종료하기" class="nav-link" data-scroll-target="#jamovi-종료하기"><span class="header-section-number">3.8</span> jamovi 종료하기</a></li>
   <li><a href="#요약" id="toc-요약" class="nav-link" data-scroll-target="#요약"><span class="header-section-number">3.9</span> 요약</a></li>
   </ul>
-</nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/kilhwan/jamovi/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -476,7 +477,7 @@ window.Quarto = {
 <p>어떤 운영체제를 사용하든 jamovi를 실행하고 시작할 시간입니다. jamovi를 처음 시작하면 <a href="#fig-fig3-1" class="quarto-xref">Figure&nbsp;<span>3.1</span></a> 같은 사용자 인터페이스가 나타납니다.</p>
 <div class="cell" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig3-1" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="jamovi 인터페이스의 스크린샷. 왼쪽에 스프레드시트 뷰가 있고, 오른쪽에는 현재 빈 결과 창이 있습니다. 상단 메뉴 바에는 Variables, Data, Analyses, Edit와 같은 옵션이 포함되어 있습니다. Analyses 아래에 다양한 통계 분석 도구가 표시됩니다.">
+<div id="fig-fig3-1" class="quarto-float quarto-figure quarto-figure-left anchored" alt="jamovi 인터페이스의 스크린샷. 왼쪽에 스프레드시트 뷰가 있고, 오른쪽에는 현재 빈 결과 창이 있습니다. 상단 메뉴 바에는 Variables, Data, Analyses, Edit와 같은 옵션이 포함되어 있습니다. Analyses 아래에 다양한 통계 분석 도구가 표시됩니다." data-fig-align="left">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig3-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/fig3-1.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" alt="jamovi 인터페이스의 스크린샷. 왼쪽에 스프레드시트 뷰가 있고, 오른쪽에는 현재 빈 결과 창이 있습니다. 상단 메뉴 바에는 Variables, Data, Analyses, Edit와 같은 옵션이 포함되어 있습니다. Analyses 아래에 다양한 통계 분석 도구가 표시됩니다.">
@@ -652,7 +653,7 @@ Figure&nbsp;3.1. jamovi 시작 화면!
 <p>jamovi에서 가장 일반적으로 사용되는 변수는 ’데이터 변수(Data variables)’입니다. 이러한 변수는 데이터 파일에서 로드되거나 사용자가 ’직접 입력’한 데이터를 단순히 포함합니다. 데이터 변수는 여러 측정 수준 중 하나를 가질 수 있습니다(<a href="#fig-fig3-2" class="quarto-xref">Figure&nbsp;<span>3.2</span></a>).</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig3-2" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="jamovi 인터페이스에서 측정 유형과 데이터 유형 옵션이 있는 데이터 변수 정의 화면. 측정 유형으로 &quot;명명척도&quot;가 선택되어 있으며, 다른 옵션으로는 서열척도, 연속변수, 아이디가 있습니다. 오른쪽에는 레벨 섹션이 있습니다.">
+<div id="fig-fig3-2" class="quarto-float quarto-figure quarto-figure-left anchored" alt="jamovi 인터페이스에서 측정 유형과 데이터 유형 옵션이 있는 데이터 변수 정의 화면. 측정 유형으로 &quot;명명척도&quot;가 선택되어 있으며, 다른 옵션으로는 서열척도, 연속변수, 아이디가 있습니다. 오른쪽에는 레벨 섹션이 있습니다." data-fig-align="left">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig3-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig3-2.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" alt="jamovi 인터페이스에서 측정 유형과 데이터 유형 옵션이 있는 데이터 변수 정의 화면. 측정 유형으로 &quot;명명척도&quot;가 선택되어 있으며, 다른 옵션으로는 서열척도, 연속변수, 아이디가 있습니다. 오른쪽에는 레벨 섹션이 있습니다.">
@@ -768,7 +769,7 @@ MEAN(A, B)
 </div>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig3-3" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="jamovi 인터페이스에서 데이터 분석 작업 공간을 보여주는 이미지. 상단에는 계산된 변수 &quot;Zscore-len&quot;을 위한 수식 편집기가 있으며, 아래에는 'len', 'supp', 'dose' 열과 다양한 데이터 항목이 포함된 데이터 테이블이 표시됩니다.">
+<div id="fig-fig3-3" class="quarto-float quarto-figure quarto-figure-left anchored" alt="jamovi 인터페이스에서 데이터 분석 작업 공간을 보여주는 이미지. 상단에는 계산된 변수 &quot;Zscore-len&quot;을 위한 수식 편집기가 있으며, 아래에는 'len', 'supp', 'dose' 열과 다양한 데이터 항목이 포함된 데이터 테이블이 표시됩니다." data-fig-align="left">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig3-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig3-3.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" alt="jamovi 인터페이스에서 데이터 분석 작업 공간을 보여주는 이미지. 상단에는 계산된 변수 &quot;Zscore-len&quot;을 위한 수식 편집기가 있으며, 아래에는 'len', 'supp', 'dose' 열과 다양한 데이터 항목이 포함된 데이터 테이블이 표시됩니다.">
@@ -817,7 +818,7 @@ Figure&nbsp;3.3. dose의 z-점수로 계산된 새 변수
 <p>많이 사용되는 데이터 형식 중 하나는 CSV 파일입니다. 이러한 파일은 단순한 텍스트 파일로, 기본적으로 데이터를 테이블 형태로 저장합니다. <a href="#fig-fig3-4" class="quarto-xref">Figure&nbsp;<span>3.4</span></a> 에 CSV 파일의 예를 볼 수 있습니다. 예로 든 <em>booksales.csv</em> 파일에는 한 달 동안의 책 판매 데이터를 나타내는 행이 있습니다. 첫 번째 행은 실제 데이터가 아니라 변수 이름이 들어 있습니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig3-4" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="스프레드시트와 텍스트 편집기에 표시된 CSV 파일의 스크린샷. 스프레드시트는 월(Month), 일수(Days), 판매(Sales), 재고 수준(Stock Levels)을 나타내는 열을 포함하며, CSV 파일에는 쉼표로 구분된 동일한 데이터가 나열되어 있습니다.">
+<div id="fig-fig3-4" class="quarto-float quarto-figure quarto-figure-left anchored" alt="스프레드시트와 텍스트 편집기에 표시된 CSV 파일의 스크린샷. 스프레드시트는 월(Month), 일수(Days), 판매(Sales), 재고 수준(Stock Levels)을 나타내는 열을 포함하며, CSV 파일에는 쉼표로 구분된 동일한 데이터가 나열되어 있습니다." data-fig-align="left">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig3-4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/fig3-4.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" alt="스프레드시트와 텍스트 편집기에 표시된 CSV 파일의 스크린샷. 스프레드시트는 월(Month), 일수(Days), 판매(Sales), 재고 수준(Stock Levels)을 나타내는 열을 포함하며, CSV 파일에는 쉼표로 구분된 동일한 데이터가 나열되어 있습니다.">
@@ -832,7 +833,7 @@ Figure&nbsp;3.4. booksales.csv 데이터 파일. 왼쪽에서는 스프레드시
 <p>jamovi에서 CSV 파일을 여는 것은 간단합니다. 왼쪽 상단 메뉴(세 개의 평행선 버튼)에서 ‘열기’를 선택하고, 컴퓨터에 저장된 CSV 파일 위치를 찾아봅니다. Mac에서는 일반적인 Finder 창이 나타날 것이며, Windows에서는 Explorer 창이 표시됩니다. Mac에서 보이는 예는 <a href="#fig-fig3-5" class="quarto-xref">Figure&nbsp;<span>3.5</span></a> 에 나와 있습니다. 자신의 컴퓨터에 익숙하다는 가정하에, 가져오고 싶은 CSV 파일을 찾는 데 문제가 없을 것입니다! 원하는 파일을 찾은 다음, ’열기’ 버튼을 클릭하세요.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig3-5" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="컴퓨터 화면에 파일 탐색 창이 표시됩니다. 강조 표시된 파일은 booksales.csv이며, 오른쪽에는 크기, 생성 날짜 및 수정 날짜와 같은 세부 정보가 표시됩니다.">
+<div id="fig-fig3-5" class="quarto-float quarto-figure quarto-figure-left anchored" alt="컴퓨터 화면에 파일 탐색 창이 표시됩니다. 강조 표시된 파일은 booksales.csv이며, 오른쪽에는 크기, 생성 날짜 및 수정 날짜와 같은 세부 정보가 표시됩니다." data-fig-align="left">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig3-5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/fig3-5.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" alt="컴퓨터 화면에 파일 탐색 창이 표시됩니다. 강조 표시된 파일은 booksales.csv이며, 오른쪽에는 크기, 생성 날짜 및 수정 날짜와 같은 세부 정보가 표시됩니다.">
@@ -966,7 +967,7 @@ Figure&nbsp;3.5. Mac에서 jamovi가 가져올 CSV 파일을 선택하도록 요
 <p>추가 모듈을 설치하려면 jamovi 창의 오른쪽 상단에 있는 큰 <span class="math inline">\(+\)</span> 버튼을 클릭하고, “자모비 라이브러리(jamovi-library)”를 선택한 후 사용할 수 있는 다양한 추가 모듈을 찾아보세요. 원하는 모듈을 선택한 다음 설치하면 됩니다. 설치된 새 모듈은 “분석(Analyses)” 메뉴에서 액세스할 수 있습니다. 유용한 추가 모듈로는 “scatr”(“Descriptives” 아래 추가), <span class="math inline">\(R_j\)</span>, 그리고 <strong>물론</strong> 이 책의 데이터 파일인 “lsj-data”가 포함됩니다(<a href="#fig-fig3-6" class="quarto-xref">Figure&nbsp;<span>3.6</span></a> 참조).</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig3-6" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="jamovi 소프트웨어 인터페이스의 스크린샷. 모듈 탭이 선택되어 있으며, scatr, lsj-data, jpower 등의 모듈 목록이 표시됩니다. 각 모듈의 설명과 설치 상태가 제공되며, 숨김 또는 제거 버튼이 보입니다.">
+<div id="fig-fig3-6" class="quarto-float quarto-figure quarto-figure-left anchored" alt="jamovi 소프트웨어 인터페이스의 스크린샷. 모듈 탭이 선택되어 있으며, scatr, lsj-data, jpower 등의 모듈 목록이 표시됩니다. 각 모듈의 설명과 설치 상태가 제공되며, 숨김 또는 제거 버튼이 보입니다." data-fig-align="left">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig3-6-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig3-6.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" alt="jamovi 소프트웨어 인터페이스의 스크린샷. 모듈 탭이 선택되어 있으며, scatr, lsj-data, jpower 등의 모듈 목록이 표시됩니다. 각 모듈의 설명과 설치 상태가 제공되며, 숨김 또는 제거 버튼이 보입니다.">
@@ -1315,7 +1316,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/kilhwan\.github\.io\/jamovi\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -1668,7 +1669,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    </div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/kilhwan/jamovi/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a></p>
 </div>

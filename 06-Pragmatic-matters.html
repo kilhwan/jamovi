@@ -170,7 +170,8 @@ window.Quarto = {
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">JAMOVI로 배우는 통계학</a> 
-        <div class="sidebar-tools-main">
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/kilhwan/jamovi/" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
   <div class="quarto-reader-toggle-btn">
@@ -410,7 +411,7 @@ window.Quarto = {
   <li><a href="#데이터의-부분-집합-추출하기" id="toc-데이터의-부분-집합-추출하기" class="nav-link" data-scroll-target="#데이터의-부분-집합-추출하기"><span class="header-section-number">6.6</span> 데이터의 부분 집합 추출하기</a></li>
   <li><a href="#요약" id="toc-요약" class="nav-link" data-scroll-target="#요약"><span class="header-section-number">6.7</span> 요약</a></li>
   </ul>
-</nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/kilhwan/jamovi/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -506,7 +507,7 @@ Table&nbsp;6.1. 발화자(speaker) 변수의 빈도표
 이렇게 하면 <a href="#fig-fig6-1" class="quarto-xref">Figure&nbsp;<span>6.2</span></a> 같은 <strong>분할표(Contingency Table)</strong>를 얻을 수 있습니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig6-1" class="quarto-float quarto-figure quarto-figure-left anchored" alt="jamovi의 분할표 분석 화면 스크린샷. 왼쪽 패널에서 행, 열, 빈도, 계층 옵션이 표시되며, speaker와 utterance가 선택됨. 오른쪽에는 결과 분할표와 테스트 결과가 표시됨." data-fig-align="left">
+<div id="fig-fig6-1" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="jamovi의 분할표 분석 화면 스크린샷. 왼쪽 패널에서 행, 열, 빈도, 계층 옵션이 표시되며, speaker와 utterance가 선택됨. 오른쪽에는 결과 분할표와 테스트 결과가 표시됨.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig6-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig6-1.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" alt="jamovi의 분할표 분석 화면 스크린샷. 왼쪽 패널에서 행, 열, 빈도, 계층 옵션이 표시되며, speaker와 utterance가 선택됨. 오른쪽에는 결과 분할표와 테스트 결과가 표시됨.">
@@ -530,7 +531,7 @@ jamovi의 ‘분할표(Contingency Tables)’ 창에서 ‘칸’ 옵션을 선�
 <p>우선, ‘행’ 체크박스를 선택하면, 출력 창의 분할표가 <strong>행 기준 백분율(row percentages)</strong>을 포함한 형태로 변경됩니다. 결과는 <a href="#fig-fig6-2" class="quarto-xref">Figure&nbsp;<span>6.3</span></a> 에서 볼 수 있습니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig6-2" class="quarto-float quarto-figure quarto-figure-left anchored" alt="jamovi의 분할표에는 발화자(makka-pakka, tombliboo, upsy-daisy)와 발화 내용(ee, onk, oo, pip)의 관계가 나타남. 각 셀에는 관찰된 빈도와 행 내 백분율이 표시되며, 행과 열의 합계도 포함됨." data-fig-align="left">
+<div id="fig-fig6-2" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="jamovi의 분할표에는 발화자(makka-pakka, tombliboo, upsy-daisy)와 발화 내용(ee, onk, oo, pip)의 관계가 나타남. 각 셀에는 관찰된 빈도와 행 내 백분율이 표시되며, 행과 열의 합계도 포함됨.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig6-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/fig6-2.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" alt="jamovi의 분할표에는 발화자(makka-pakka, tombliboo, upsy-daisy)와 발화 내용(ee, onk, oo, pip)의 관계가 나타남. 각 셀에는 관찰된 빈도와 행 내 백분율이 표시되며, 행과 열의 합계도 포함됨.">
@@ -550,7 +551,7 @@ Figure&nbsp;6.3. speaker와 utterance 변수에 대한 분할표 (행 기준 백
 예를 들어, “ee”라는 말은 이 데이터에서 100%의 확률로 “Tombliboo”가 말한 것임을 보여줍니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig6-3" class="quarto-float quarto-figure quarto-figure-left anchored" alt="jamovi의 분할표에는 말한 내용(ee, onk, oo, pip)과 세 명의 말한 사람(makka-pakka, tombliboo, upsy-daisy)이 표시됨. 각 말한 사람별로 관찰된 값, 열 내 백분율, 그리고 총합이 포함됨." data-fig-align="left">
+<div id="fig-fig6-3" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="jamovi의 분할표에는 말한 내용(ee, onk, oo, pip)과 세 명의 말한 사람(makka-pakka, tombliboo, upsy-daisy)이 표시됨. 각 말한 사람별로 관찰된 값, 열 내 백분율, 그리고 총합이 포함됨.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig6-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/fig6-3.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" alt="jamovi의 분할표에는 말한 내용(ee, onk, oo, pip)과 세 명의 말한 사람(makka-pakka, tombliboo, upsy-daisy)이 표시됨. 각 말한 사람별로 관찰된 값, 열 내 백분율, 그리고 총합이 포함됨.">
@@ -803,7 +804,7 @@ Table&nbsp;6.4. jamovi가 처리하는 텍스트 문자 순서
 </blockquote>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig6-4" class="quarto-float quarto-figure quarto-figure-left anchored" alt="계산된 변수를 설정하는 jamovi 스크린샷. 주요 수식은 = likert.raw - 4. 인터페이스에는 변수, 데이터, 분석, 편집 등의 메뉴 옵션이 포함됨. 데이터 세트 값이 likert.raw 및 likert.centered 레이블과 함께 표시됨." data-fig-align="left">
+<div id="fig-fig6-4" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="계산된 변수를 설정하는 jamovi 스크린샷. 주요 수식은 = likert.raw - 4. 인터페이스에는 변수, 데이터, 분석, 편집 등의 메뉴 옵션이 포함됨. 데이터 세트 값이 likert.raw 및 likert.centered 레이블과 함께 표시됨.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig6-4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig6-4.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" alt="계산된 변수를 설정하는 jamovi 스크린샷. 주요 수식은 = likert.raw - 4. 인터페이스에는 변수, 데이터, 분석, 편집 등의 메뉴 옵션이 포함됨. 데이터 세트 값이 likert.raw 및 likert.centered 레이블과 함께 표시됨.">
@@ -819,7 +820,7 @@ Figure&nbsp;6.5. jamovi에서 새로 계산된 변수 생성하기
 <p>jamovi에서 ‘계산’ 버튼을 사용하여 새 변수를 만듭니다. 변수명을 ‘opinion.strength’로 설정한 후, ’수식’ 상자 옆의 fx 버튼을 클릭합니다. 여기에서 사용 가능한 ‘함수’ 및 ‘변수’ 목록이 나타납니다. <code>ABS</code>를 더블 클릭한 후 <code>likert.centered'를 더블 클릭하면</code>ABS(likert.centered)`라는 수식이 자동으로 입력되며, 새로운 변수가 생성됩니다(<a href="#fig-fig6-5" class="quarto-xref">Figure&nbsp;<span>6.6</span></a> 참조).</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig6-5" class="quarto-float quarto-figure quarto-figure-left anchored" alt="jamovi의 편집 탭이 활성화된 스크린샷. opinion_strength 변수는 ABS(likert.centred)라는 수식을 사용하여 계산됨. 데이터 표가 수식 패널 아래에 표시됨." data-fig-align="left">
+<div id="fig-fig6-5" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="jamovi의 편집 탭이 활성화된 스크린샷. opinion_strength 변수는 ABS(likert.centred)라는 수식을 사용하여 계산됨. 데이터 표가 수식 패널 아래에 표시됨.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig6-5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig6-5.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" alt="jamovi의 편집 탭이 활성화된 스크린샷. opinion_strength 변수는 ABS(likert.centred)라는 수식을 사용하여 계산됨. 데이터 표가 수식 패널 아래에 표시됨.">
@@ -857,7 +858,7 @@ Figure&nbsp;6.6. <span class="math inline">\(f_x\)</span> 버튼을 사용하여
 <p>연구 프로젝트의 맥락에서 생성된 범주가 의미가 있는지 시간을 들여 확인하는 것이 중요합니다. 만약 의미가 없다면, 해당 범주를 사용하는 데이터 분석 역시 의미가 없을 가능성이 큽니다. 저는 사람들이 (연속적이고 복잡한) 데이터를 몇 개의 (이산적이고 단순한) 범주로 나누고, 원본 데이터 대신 범주화된 데이터를 사용하여 분석을 수행하려는 경향이 강하다는 점을 자주 목격합니다.<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> 이것이 본질적으로 나쁜 아이디어라고 단언할 수는 없지만, 경우에 따라 상당히 심각한 단점이 있을 수 있으므로 신중할 필요가 있습니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig6-6" class="quarto-float quarto-figure quarto-figure-left anchored" alt="jamovi 스크린샷이 표시됩니다. 다중 계산 변수 섹션에서는 사용자 정의 연령 그룹화가 적용된 AgeCats 변수 생성이 보여집니다. 아래에는 Age와 AgeCats라는 두 개의 열이 있는 표가 표시되며, 연령 데이터가 새 범주로 그룹화되었습니다." data-fig-pos="H" data-fig-align="left">
+<div id="fig-fig6-6" class="quarto-float quarto-figure quarto-figure-left anchored" alt="jamovi 스크린샷이 표시됩니다. 다중 계산 변수 섹션에서는 사용자 정의 연령 그룹화가 적용된 AgeCats 변수 생성이 보여집니다. 아래에는 Age와 AgeCats라는 두 개의 열이 있는 표가 표시되며, 연령 데이터가 새 범주로 그룹화되었습니다." data-fig-align="left" data-fig-pos="H">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig6-6-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig6-6.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" data-fig-pos="H" alt="jamovi 스크린샷이 표시됩니다. 다중 계산 변수 섹션에서는 사용자 정의 연령 그룹화가 적용된 AgeCats 변수 생성이 보여집니다. 아래에는 Age와 AgeCats라는 두 개의 열이 있는 표가 표시되며, 연령 데이터가 새 범주로 그룹화되었습니다.">
@@ -917,7 +918,7 @@ Figure&nbsp;6.7. jamovi IF 함수를 사용하여 변수를 더 적은 개수의
 <p>때때로 여러 변수에 동일한 변환을 적용해야 할 때가 있습니다. 예를 들어, 여러 설문 항목을 동일한 방식으로 다시 계산하거나 재코딩해야 할 경우가 있습니다. jamovi의 유용한 기능 중 하나는 ‘데이터’-‘변환’ 메뉴를 사용하여 변환을 생성하고 저장한 후 여러 변수에 적용할 수 있다는 것입니다. 앞서 살펴본 첫 번째 예제를 다시 사용하여, 10명의 사람이 응답한 원래 리커트 척도 데이터가 포함된 <code>likert.omv</code> 데이터 파일을 활용해 보겠습니다. 변환을 생성하고 저장한 후 여러 변수에 적용하려면, 먼저 스프레드시트 편집기에서 변환을 생성할 변수를 선택합니다. 이 예제에서는 <code>likert.raw</code> 변수를 선택합니다. 그런 다음 jamovi의 ‘데이터’ 리본에서 ‘변환’ 메뉴를 클릭하면 <a href="#fig-fig6-7" class="quarto-xref">Figure&nbsp;<span>6.8</span></a> 같은 화면이 나타납니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig6-7" class="quarto-float quarto-figure quarto-figure-left anchored" alt="jamovi 스크린샷. 데이터 탭이 선택되어 있으며, 다중 변수 변환 창이 열려 있습니다. opinion.strength 변수의 설정 창이 표시됨" data-fig-pos="H" data-fig-align="left">
+<div id="fig-fig6-7" class="quarto-float quarto-figure quarto-figure-left anchored" alt="jamovi 스크린샷. 데이터 탭이 선택되어 있으며, 다중 변수 변환 창이 열려 있습니다. opinion.strength 변수의 설정 창이 표시됨" data-fig-align="left" data-fig-pos="H">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig6-7-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig6-7.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" data-fig-pos="H" alt="jamovi 스크린샷. 데이터 탭이 선택되어 있으며, 다중 변수 변환 창이 열려 있습니다. opinion.strength 변수의 설정 창이 표시됨">
@@ -931,7 +932,7 @@ Figure&nbsp;6.8. jamovi의 변환 명령을 사용하여 새로운 변수 변환
 </div>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig6-8" class="quarto-float quarto-figure quarto-figure-left anchored" alt="jamovi 스크린샷. 변환 탭이 열려 있으며, 새로운 관측치(레코드) 추가 옵션과 수학 함수(예, ABS, LOG10)가 표시됨. 오른쪽에는 opinion.strength 변수가 나열됨" data-fig-pos="h!" data-fig-align="left">
+<div id="fig-fig6-8" class="quarto-float quarto-figure quarto-figure-left anchored" alt="jamovi 스크린샷. 변환 탭이 열려 있으며, 새로운 관측치(레코드) 추가 옵션과 수학 함수(예, ABS, LOG10)가 표시됨. 오른쪽에는 opinion.strength 변수가 나열됨" data-fig-align="left" data-fig-pos="h!">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig6-8-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig6-8.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" data-fig-pos="h!" alt="jamovi 스크린샷. 변환 탭이 열려 있으며, 새로운 관측치(레코드) 추가 옵션과 수학 함수(예, ABS, LOG10)가 표시됨. 오른쪽에는 opinion.strength 변수가 나열됨">
@@ -947,7 +948,7 @@ Figure&nbsp;6.9. jamovi에서 변환을 지정하고 변환 1이라는 이름으
 <p>주목할 점은 변수 라벨을 직접 사용하지 않고, 대신 <code>$source</code>를 사용했다는 것입니다. 이는 동일한 변환을 여러 변수에 적용할 수 있도록 하기 위함이며, jamovi에서는 변환할 원본 변수를 <code>$source</code>로 참조해야 합니다. 변환은 저장되며, 데이터 세트를 <code>.omv</code> 파일로 저장하면 언제든 다시 사용할 수 있습니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig6-9" class="quarto-float quarto-figure quarto-figure-left anchored" alt="jamovi 스크린샷. 다중 변환 변수 대화 상자가 표시됨. 변수 Agegroupings이 편집 중이며, 재코딩 조건이 추가됨. source <= 20이면 young, source <= 40이면 adult, 그 외에는 older로 지정됨. 새로운 관측치(레코드) 추가 버튼을 가리키는 빨간색 화살표가 표시됨" data-fig-pos="h!" data-fig-align="left">
+<div id="fig-fig6-9" class="quarto-float quarto-figure quarto-figure-left anchored" alt="jamovi 스크린샷. 다중 변환 변수 대화 상자가 표시됨. 변수 Agegroupings이 편집 중이며, 재코딩 조건이 추가됨. source <= 20이면 young, source <= 40이면 adult, 그 외에는 older로 지정됨. 새로운 관측치(레코드) 추가 버튼을 가리키는 빨간색 화살표가 표시됨" data-fig-align="left" data-fig-pos="h!">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig6-9-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig6-9.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" data-fig-pos="h!" alt="jamovi 스크린샷. 다중 변환 변수 대화 상자가 표시됨. 변수 Agegroupings이 편집 중이며, 재코딩 조건이 추가됨. source <= 20이면 young, source <= 40이면 adult, 그 외에는 older로 지정됨. 새로운 관측치(레코드) 추가 버튼을 가리키는 빨간색 화살표가 표시됨">
@@ -1022,7 +1023,7 @@ Table&nbsp;6.5. 몇 가지 수학 연산자
 </blockquote>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig6-10" class="quarto-float quarto-figure quarto-figure-left anchored" alt="jamovi 스크린샷으로 행 필터 섹션을 보여줍니다. 필터는 speaker 값이 makka_paka인 행을 표시하도록 설정되어 있습니다. 아래 표는 필터링된 데이터를 반영하고, 오른쪽의 Results 창에는 speaker 열에 대한 기술 통계가 표시됩니다." data-fig-align="left">
+<div id="fig-fig6-10" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="jamovi 스크린샷으로 행 필터 섹션을 보여줍니다. 필터는 speaker 값이 makka_paka인 행을 표시하도록 설정되어 있습니다. 아래 표는 필터링된 데이터를 반영하고, 오른쪽의 Results 창에는 speaker 열에 대한 기술 통계가 표시됩니다.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig6-10-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig6-10.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" alt="jamovi 스크린샷으로 행 필터 섹션을 보여줍니다. 필터는 speaker 값이 makka_paka인 행을 표시하도록 설정되어 있습니다. 아래 표는 필터링된 데이터를 반영하고, 오른쪽의 Results 창에는 speaker 열에 대한 기술 통계가 표시됩니다.">
@@ -1305,7 +1306,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/kilhwan\.github\.io\/jamovi\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -1658,7 +1659,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    </div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/kilhwan/jamovi/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a></p>
 </div>

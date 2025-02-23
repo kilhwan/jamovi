@@ -190,7 +190,8 @@ window.Quarto = {
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">JAMOVI로 배우는 통계학</a> 
-        <div class="sidebar-tools-main">
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/kilhwan/jamovi/" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
   <div class="quarto-reader-toggle-btn">
@@ -429,7 +430,7 @@ window.Quarto = {
   </ul></li>
   <li><a href="#요약" id="toc-요약" class="nav-link" data-scroll-target="#요약"><span class="header-section-number">16.5</span> 요약</a></li>
   </ul>
-</nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/kilhwan/jamovi/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -862,7 +863,7 @@ Table&nbsp;16.12. 사전 검정에서 얻은 <span class="math inline">\(p\)</sp
 <p>그렇다면 실제로 얼마나 심각할까요? 시뮬레이션 연구 결과는 <a href="#fig-fig16-1" class="quarto-xref">Figure&nbsp;<span>16.1</span></a> 에서 실선으로 나타나 있으며, 그 결과는 충격적일 정도로 나쁩니다.</p>
 <div class="cell" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig16-1" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="새로운 데이터 포인트가 추가됨에 따라 '중간 확인' 간격과 1종 오류 확률의 관계를 나타내는 산점도 그래프. 파란색 원은 $p<0.05$를 나타내고, 초록색 삼각형은 $BF>3$를 나타냅니다. 빨간색 점선은 $alpha = 0.05$에서 귀무가설 기각 기준을 나타냅니다." data-fig-pos="h!">
+<div id="fig-fig16-1" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-pos="h!" alt="새로운 데이터 포인트가 추가됨에 따라 '중간 확인' 간격과 1종 오류 확률의 관계를 나타내는 산점도 그래프. 파란색 원은 $p<0.05$를 나타내고, 초록색 삼각형은 $BF>3$를 나타냅니다. 빨간색 점선은 $alpha = 0.05$에서 귀무가설 기각 기준을 나타냅니다." data-fig-align="left">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig16-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="16-Bayesian-statistics_files/figure-html/fig-fig16-1-1.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:90.0%" data-fig-pos="h!" alt="새로운 데이터 포인트가 추가됨에 따라 '중간 확인' 간격과 1종 오류 확률의 관계를 나타내는 산점도 그래프. 파란색 원은 $p<0.05$를 나타내고, 초록색 삼각형은 $BF>3$를 나타냅니다. 빨간색 점선은 $alpha = 0.05$에서 귀무가설 기각 기준을 나타냅니다.">
@@ -901,7 +902,7 @@ Figure&nbsp;16.1. 실험에서 각 집단의 목표 샘플 크기 <span class="m
 <p>그렇다면 베이지안 버전의 <span class="math inline">\(t\)</span>-검정은 어떨까요? ‘독립표본 T 검정’-‘검정’ 옵션에서 ‘베이즈 계수’ 체크박스를 선택하고 ’사전’의 기본값을 그대로 사용하면, <a href="#fig-fig16-3" class="quarto-xref">Figure&nbsp;<span>16.3</span></a> 에 표시된 결과를 얻을 수 있습니다. 이 표에서 얻은 베이지안 요인 통계값은 1.75이며, 이는 대립가설을 지지하는 증거가 약 1.8:1의 비율로 존재한다는 것을 의미합니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig16-2" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="학생 성적 데이터 세트와 기술 통계 요약을 보여주는 jamovi 스크린샷. 데이터 세트 표는 학생 ID와 두 개의 테스트 성적을 나열하고 있으며, 결과 패널에는 N, 평균, 중앙값, 표준 편차, 최소값 및 최대값을 포함한 기술 통계가 표시됨." data-fig-pos="H">
+<div id="fig-fig16-2" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-pos="H" alt="학생 성적 데이터 세트와 기술 통계 요약을 보여주는 jamovi 스크린샷. 데이터 세트 표는 학생 ID와 두 개의 테스트 성적을 나열하고 있으며, 결과 패널에는 N, 평균, 중앙값, 표준 편차, 최소값 및 최대값을 포함한 기술 통계가 표시됨." data-fig-align="left">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig16-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig16-ex1-1.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" data-fig-pos="H" alt="학생 성적 데이터 세트와 기술 통계 요약을 보여주는 jamovi 스크린샷. 데이터 세트 표는 학생 ID와 두 개의 테스트 성적을 나열하고 있으며, 결과 패널에는 N, 평균, 중앙값, 표준 편차, 최소값 및 최대값을 포함한 기술 통계가 표시됨.">
@@ -915,7 +916,7 @@ Figure&nbsp;16.2. jamovi에서의 베이지안 독립 표본 <span class="math i
 </div>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig16-3" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="독립표본 T 검정이라는 제목의 jamovi 표에서 학생 $t$-검정, 베이지안 요인 분석, 웰치(Welch) $t$-검정의 통계적 비교 데이터를 보여줌. 열에는 &quot;Statistic,&quot; &quot;±%&quot;, &quot;df,&quot; &quot;p,&quot; &quot;Mean difference,&quot; &quot;SE difference,&quot; &quot;Effect Size&quot;가 포함됨.">
+<div id="fig-fig16-3" class="quarto-float quarto-figure quarto-figure-left anchored" alt="독립표본 T 검정이라는 제목의 jamovi 표에서 학생 $t$-검정, 베이지안 요인 분석, 웰치(Welch) $t$-검정의 통계적 비교 데이터를 보여줌. 열에는 &quot;Statistic,&quot; &quot;±%&quot;, &quot;df,&quot; &quot;p,&quot; &quot;Mean difference,&quot; &quot;SE difference,&quot; &quot;Effect Size&quot;가 포함됨." data-fig-align="left">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig16-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig16-3.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" alt="독립표본 T 검정이라는 제목의 jamovi 표에서 학생 $t$-검정, 베이지안 요인 분석, 웰치(Welch) $t$-검정의 통계적 비교 데이터를 보여줌. 열에는 &quot;Statistic,&quot; &quot;±%&quot;, &quot;df,&quot; &quot;p,&quot; &quot;Mean difference,&quot; &quot;SE difference,&quot; &quot;Effect Size&quot;가 포함됨.">
@@ -960,7 +961,7 @@ Figure&nbsp;16.3. 독립 표본 <span class="math inline">\(t\)</span>-검정과
 <p><a href="11-Comparing-two-means.html#sec-paired-samples-t-test" class="quarto-xref"><span>Section 11.6</span></a> 절에서 <em>chico.csv</em> 데이터 세트를 다루면서, 학생들의 성적이 두 시험에서 측정되었으며, 시험 1에서 시험 2로 성적이 상승했는지 알아보는 것이 관심사였습니다. 모든 학생이 두 시험을 다 보았기 때문에 데이터를 분석하는 도구로 대응 표본 <span class="math inline">\(t\)</span>-검정을 사용하였습니다. <a href="#fig-fig16-4" class="quarto-xref">Figure&nbsp;<span>16.4</span></a> 는 일반적인 대응 <span class="math inline">\(t\)</span>-검정과 베이즈 인자 분석의 jamovi 결과 표를 보여줍니다. 이 시점에서는 이 출력을 어려움 없이 읽을 수 있기를 바랍니다. 데이터는 대립 가설을 지지하는 증거를 약 6000:1의 비율로 제공합니다. 우리는 귀무가설을 상당한 신뢰를 가지고 기각할 수 있을 것입니다!</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig16-4" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="대응 표본 $t$-검정의 결과를 보여주는 jamovi 표. 검정 이름, 통계량 (Student's t = 6.48, 베이즈 인자 = 5993.58), 자유도 (19), $p$-값 (<0.0001), 평균 차이 (1.40), 표준 오차 차이 (0.22), 신뢰 구간 (0.95~1.86), 효과 크기 (1.45)가 포함되어 있습니다.">
+<div id="fig-fig16-4" class="quarto-float quarto-figure quarto-figure-left anchored" alt="대응 표본 $t$-검정의 결과를 보여주는 jamovi 표. 검정 이름, 통계량 (Student's t = 6.48, 베이즈 인자 = 5993.58), 자유도 (19), $p$-값 (<0.0001), 평균 차이 (1.40), 표준 오차 차이 (0.22), 신뢰 구간 (0.95~1.86), 효과 크기 (1.45)가 포함되어 있습니다." data-fig-align="left">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig16-4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig16-4.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" alt="대응 표본 $t$-검정의 결과를 보여주는 jamovi 표. 검정 이름, 통계량 (Student's t = 6.48, 베이즈 인자 = 5993.58), 자유도 (19), $p$-값 (<0.0001), 평균 차이 (1.40), 표준 오차 차이 (0.22), 신뢰 구간 (0.95~1.86), 효과 크기 (1.45)가 포함되어 있습니다.">
@@ -1294,7 +1295,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/kilhwan\.github\.io\/jamovi\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -1647,7 +1648,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    </div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/kilhwan/jamovi/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a></p>
 </div>

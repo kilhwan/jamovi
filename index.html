@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="김길환 옮김">
 
 <title>JAMOVI로 배우는 통계학</title>
 <style>
@@ -111,7 +112,7 @@ ul.task-list li input[type="checkbox"] {
 
 <link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="JAMOVI로 배우는 통계학">
-<meta property="og:description" content="">
+<meta property="og:description" content="통계분석 초심자를 위한 지침서">
 <meta property="og:site_name" content="JAMOVI로 배우는 통계학">
 </head>
 
@@ -140,7 +141,8 @@ ul.task-list li input[type="checkbox"] {
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">JAMOVI로 배우는 통계학</a> 
-        <div class="sidebar-tools-main">
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/kilhwan/jamovi/" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
   <div class="quarto-reader-toggle-btn">
@@ -356,13 +358,15 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#역자-서문" id="toc-역자-서문" class="nav-link active" data-scroll-target="#역자-서문">역자 서문</a></li>
   <li><a href="#원문-서문" id="toc-원문-서문" class="nav-link" data-scroll-target="#원문-서문">원문 서문</a></li>
   </ul>
-</nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/kilhwan/jamovi/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header">
 <h1 class="title display-7">JAMOVI로 배우는 통계학</h1>
+<p class="subtitle lead">통계분석 초심자를 위한 지침서</p>
+<p class="author">김길환 옮김</p>
 
 </header>
 
@@ -391,9 +395,10 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p>세 번째로, jamovi의 한글화가 아직 불완전 하여 jamovi의 한글 인터페이스의 용어가 부적절한 곳이 많습니다. 대표적으로 test의 번역어로 ’검정’이라고 하는 것이 적절한 곳에 ’검증’이라고 한 것입니다. 이런 경우들이나 어떤 통계학 용어의 한글 용어가 여러 개 있는 경우에 역자가 각주를 단 곳이 있습니다. 이런 경우에는 각주의 시작 부분에 &lt;역주&gt;라는 표시를 두어 원저자의 각주와 구분할 수 있도록 하였습니다.</p>
 <p>이 책의 원본은 CC BY-SA 4.0 라이선스로 배포된 책입니다. 따라서 번역본인 이 책도 CC BY-SA 라이선스로 배포합니다. 이 책은 현재 번역 초안이라 할 수 있습니다. 이 책으로 강의를 하면서 더 매끄러운 번역이 될 수 있도록 문장이 조금씩 다듬어질 수 있으며, 새로운 실습이나 내용이 글상자로 추가될 수 있습니다.</p>
+<p>번역의 오류를 발견하거나 제안 사항이 있다면 <a href="https://github.com/kilhwan/jamovi/issues">https://github.com/kilhwan/jamovi/issues</a>로 알려주시기 바랍니다.</p>
 <p>아무쪼록, 이 책이 통계분석의 이론과 실제의 세계에 입문하고자 하는 많은 분들에게 도움이 되기를 희망합니다.</p>
-<p><em>김길환<br>
-2025년 2월 25일</em></p>
+<p><em>상명대학교 경영공학과 김길환<br>
+2025년 2월 23일 초안 배포</em></p>
 <p><br>
 <br>
 </p>
@@ -417,7 +422,7 @@ Note
 <p>이 책의 영문 PDF 버전은 Open Book Publishers 웹사이트 (<a href="https://www.openbookpublishers.com/books/10.11647/obp.0333">https://www.openbookpublishers.com/books/10.11647/obp.0333</a>)에서 무료로 다운로드할 수 있습니다. 필요한 모든 데이터 파일은 jamovi의 추가 모듈을 통해 무료로 접근할 수 있으며, <a href="https://www.learnstatswithjamovi.com">https://www.learnstatswithjamovi.com</a>에서도 다운로드할 수 있습니다.</p>
 </div>
 </div>
-<p>오류를 발견하거나 제안 사항이 있다면 <a href="https://github.com/davidfoxcroft/lsj-book/issues">https://github.com/davidfoxcroft/lsj-book/issues</a>에서 알려주시기 바랍니다.</p>
+<p>오류를 발견하거나 제안 사항이 있다면 <a href="https://github.com/davidfoxcroft/lsj-book/issues">https://github.com/davidfoxcroft/lsj-book/issues</a>로 알려주시기 바랍니다.</p>
 <p><em>David Foxcroft<br>
 2025년 1월 1일</em></p>
 <p><strong>인용</strong>: Danielle J. Navarro와 David R. Foxcroft, <em>Learning Statistics with jamovi: A Tutorial for Beginners in Statistical Analysis</em>. 영국 케임브리지: Open Book Publishers, 2025, https://doi.org/10.11647/OBP.0333</p>
@@ -662,7 +667,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/kilhwan\.github\.io\/jamovi\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -1012,7 +1017,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    </div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/kilhwan/jamovi/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a></p>
 </div>

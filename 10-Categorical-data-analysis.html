@@ -190,7 +190,8 @@ window.Quarto = {
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">JAMOVI로 배우는 통계학</a> 
-        <div class="sidebar-tools-main">
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/kilhwan/jamovi/" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
   <div class="quarto-reader-toggle-btn">
@@ -431,7 +432,7 @@ window.Quarto = {
   <li><a href="#맥네마-검정과-독립성-검정의-차이점" id="toc-맥네마-검정과-독립성-검정의-차이점" class="nav-link" data-scroll-target="#맥네마-검정과-독립성-검정의-차이점"><span class="header-section-number">10.8</span> 맥네마 검정과 독립성 검정의 차이점</a></li>
   <li><a href="#요약" id="toc-요약" class="nav-link" data-scroll-target="#요약"><span class="header-section-number">10.9</span> 요약</a></li>
   </ul>
-</nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/kilhwan/jamovi/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -627,7 +628,7 @@ Table&nbsp;10.5. 제곱된 차이값을 기대 빈도로 나눈 값(오차 점�
 <h3 data-number="10.1.5" class="anchored" data-anchor-id="자유도"><span class="header-section-number">10.1.5</span> 자유도</h3>
 <div class="cell" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig10-1" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" data-fig-pos="H" alt="세 개의 카이제곱 분포 곡선이 서로 다른 자유도(df) 값에 따라 그려져 있다:- 실선(df = 3), 점선(df = 4), 점점선(df = 5). x축은 0에서 12까지의 관측값을 나타내며, y축은 확률 밀도를 나타낸다.">
+<div id="fig-fig10-1" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="세 개의 카이제곱 분포 곡선이 서로 다른 자유도(df) 값에 따라 그려져 있다:- 실선(df = 3), 점선(df = 4), 점점선(df = 5). x축은 0에서 12까지의 관측값을 나타내며, y축은 확률 밀도를 나타낸다." data-fig-pos="H">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig10-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="10-Categorical-data-analysis_files/figure-html/fig-fig10-1-1.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" data-fig-pos="H" alt="세 개의 카이제곱 분포 곡선이 서로 다른 자유도(df) 값에 따라 그려져 있다:- 실선(df = 3), 점선(df = 4), 점점선(df = 5). x축은 0에서 12까지의 관측값을 나타내며, y축은 확률 밀도를 나타낸다.">
@@ -648,7 +649,7 @@ Figure&nbsp;10.1. 서로 다른 “자유도” 값을 가진 <span class="math 
 </p>
 <div class="cell" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig10-2" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="오른쪽으로 꼬리가 긴 카이제곱 분포 곡선이 나타나 있다. x축의 7.82 지점에 &quot;임계값은 7.82&quot;라는 레이블이 달린 화살표가 가리키고 있다. 또 다른 화살표가 8.44 지점을 가리키며 &quot;관측된 적합도(GOF) 값은 8.44&quot;라고 표시되어 있으며, 이 지점은 임계값을 초과하는 영역을 강조하고 있다.">
+<div id="fig-fig10-2" class="quarto-float quarto-figure quarto-figure-left anchored" alt="오른쪽으로 꼬리가 긴 카이제곱 분포 곡선이 나타나 있다. x축의 7.82 지점에 &quot;임계값은 7.82&quot;라는 레이블이 달린 화살표가 가리키고 있다. 또 다른 화살표가 8.44 지점을 가리키며 &quot;관측된 적합도(GOF) 값은 8.44&quot;라고 표시되어 있으며, 이 지점은 임계값을 초과하는 영역을 강조하고 있다." data-fig-align="left">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig10-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="10-Categorical-data-analysis_files/figure-html/fig-fig10-2-1.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" alt="오른쪽으로 꼬리가 긴 카이제곱 분포 곡선이 나타나 있다. x축의 7.82 지점에 &quot;임계값은 7.82&quot;라는 레이블이 달린 화살표가 가리키고 있다. 또 다른 화살표가 8.44 지점을 가리키며 &quot;관측된 적합도(GOF) 값은 8.44&quot;라고 표시되어 있으며, 이 지점은 임계값을 초과하는 영역을 강조하고 있다.">
@@ -711,7 +712,7 @@ Table&nbsp;10.6. 카이제곱 분포의 임계값 표
 <p>jamovi는 이러한 계산을 자동으로 수행하는 분석 기능을 제공합니다. <code>Randomness.omv</code> 파일을 사용해 보겠습니다. <code>분석</code> 리본의 ‘빈도’-‘단일표본 비율 검증’-<span class="math inline">\(N\)</span> 개의 결과’를 선택합니다. 그런 다음 나타나는 분석 창에서 분석하려는 변수인 <code>choice 1</code>을 ‘변수’ 상자로 이동합니다. 또한 ‘기대 빈도’ 체크박스를 선택하여 결과 표에 기대 빈도가 표시되도록 합니다. 이 모든 과정을 마치면, jamovi에서 <a href="#fig-fig10-3" class="quarto-xref">Figure&nbsp;<span>10.3</span></a> 같은 분석 결과를 확인할 수 있습니다.jamovi는 우리가 위에서 손으로 계산한 것과 동일한 기대 빈도 및 통계를 제공하며, <span class="math inline">\(\chi^2\)</span> 값은 8.44, 자유도(df)는 3, 그리고 <span class="math inline">\(p\)</span>-값은 0.038입니다. 이제 더 이상 표에서 임계 <span class="math inline">\(p\)</span>-값을 찾아볼 필요 없도록, jamovi가 자유도 3에 대한 실제 <span class="math inline">\(p\)</span>-값을 제공해 줍니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig10-3" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" data-fig-pos="H" alt="jamovi에서 비율 검정(N Outcomes) 분석을 수행한 스크린샷. 선택된 &quot;Variable&quot;은 &quot;choice_1&quot;이며, 클럽, 다이아몬드, 하트, 스페이드의 관측 및 기대 빈도가 표시됨. chi-square 검정 결과와 $p$ 값이 하단에 표시됨.">
+<div id="fig-fig10-3" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="jamovi에서 비율 검정(N Outcomes) 분석을 수행한 스크린샷. 선택된 &quot;Variable&quot;은 &quot;choice_1&quot;이며, 클럽, 다이아몬드, 하트, 스페이드의 관측 및 기대 빈도가 표시됨. chi-square 검정 결과와 $p$ 값이 하단에 표시됨." data-fig-pos="H">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig10-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig10-3.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" data-fig-pos="H" alt="jamovi에서 비율 검정(N Outcomes) 분석을 수행한 스크린샷. 선택된 &quot;Variable&quot;은 &quot;choice_1&quot;이며, 클럽, 다이아몬드, 하트, 스페이드의 관측 및 기대 빈도가 표시됨. chi-square 검정 결과와 $p$ 값이 하단에 표시됨.">
@@ -750,7 +751,7 @@ Table&nbsp;10.7. 다른 귀무가설 하의 기대 빈도
 <p>이러한 이론은 터무니없어 보이지만, jamovi 분석을 통해 이 귀무가설을 명시적으로 설정하여 쉽게 검정할 수 있습니다. 분석 창(<a href="#fig-fig10-3" class="quarto-xref">Figure&nbsp;<span>10.3</span></a> 의 ‘비율 테스트 (N개의 결과)’로 표시된 부분)에서 ’기대비율’ 옵션을 확장하면, 선택한 변수(여기서는 <code>choice 1</code>)에 대한 범주별 비율을 입력할 수 있습니다. 새로운 귀무가설을 반영하도록 비율을 변경하고, <a href="#fig-fig10-4" class="quarto-xref">Figure&nbsp;<span>10.4</span></a> 같이 결과를 확인합니다.</p>
 <div class="cell" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig10-4" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="jamovi에서 &quot;Expected Proportions&quot;이라는 제목의 테이블을 포함한 스크린샷. 열 제목은 Level, Ratio, Proportion이며, 클럽, 다이아몬드, 하트, 스페이드의 비율이 각각 1, 1.5, 1.5, 1로 설정되어 있고, 비율에 따른 기대 비율 값이 0.200, 0.300, 0.300, 0.200으로 표시됨.">
+<div id="fig-fig10-4" class="quarto-float quarto-figure quarto-figure-left anchored" alt="jamovi에서 &quot;Expected Proportions&quot;이라는 제목의 테이블을 포함한 스크린샷. 열 제목은 Level, Ratio, Proportion이며, 클럽, 다이아몬드, 하트, 스페이드의 비율이 각각 1, 1.5, 1.5, 1로 설정되어 있고, 비율에 따른 기대 비율 값이 0.200, 0.300, 0.300, 0.200으로 표시됨." data-fig-align="left">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig10-4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig10-4.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" alt="jamovi에서 &quot;Expected Proportions&quot;이라는 제목의 테이블을 포함한 스크린샷. 열 제목은 Level, Ratio, Proportion이며, 클럽, 다이아몬드, 하트, 스페이드의 비율이 각각 1, 1.5, 1.5, 1로 설정되어 있고, 비율에 따른 기대 비율 값이 0.200, 0.300, 0.300, 0.200으로 표시됨.">
@@ -960,7 +961,7 @@ df &amp; = \text{(관찰 개수) - (제약 조건 개수)} \\\\
 <p>간단하지 않습니까? 또한 jamovi에서 기대 빈도도 확인할 수도 있습니다. ‘칸’ 옵을 확장한 후 ‘빈도’-‘기대 빈도’ 체크박스를 선택하면 기대 빈도가 분할표에 나타납니다. 이와 함께 효과 크기도 확인하면 좋을 것입니다. 여기서는 크래머의 (V)(Cramér’s (V))를 사용할 것이며, ‘통계’ 옵션에서 ‘파이와 크레이머의 V’ 체크박스를 선택하면 확인할 수 있습니다. 크래머의 (V) 값은 (0.24)입니다. <a href="#fig-fig10-5" class="quarto-xref">Figure&nbsp;<span>10.5</span></a> 를 참고하세요. 이에 대해서는 나중에 좀 더 이야기하겠습니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig10-5" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" data-fig-pos="H" alt="jamovi에서 분할표를 보여주는 스크린샷. 인터페이스에는 행, 열 및 레이어를 선택할 수 있는 옵션이 있으며, 통계량, 셀, 그래프를 표시하는 기능이 포함되어 있다. 오른쪽에는 관찰값과 기대값이 포함된 표가 표시되어 있다.">
+<div id="fig-fig10-5" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="jamovi에서 분할표를 보여주는 스크린샷. 인터페이스에는 행, 열 및 레이어를 선택할 수 있는 옵션이 있으며, 통계량, 셀, 그래프를 표시하는 기능이 포함되어 있다. 오른쪽에는 관찰값과 기대값이 포함된 표가 표시되어 있다." data-fig-pos="H">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig10-5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig10-5.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" data-fig-pos="H" alt="jamovi에서 분할표를 보여주는 스크린샷. 인터페이스에는 행, 열 및 레이어를 선택할 수 있는 옵션이 있으며, 통계량, 셀, 그래프를 표시하는 기능이 포함되어 있다. 오른쪽에는 관찰값과 기대값이 포함된 표가 표시되어 있다.">
@@ -1097,7 +1098,7 @@ Table&nbsp;10.11. 피셔의 정확검정에서 사용되는 기호
 <p>jamovi에서 이 검정을 수행하려면, ‘분할표’ 분석의 ‘통계’ 옵션에서 피셔의 정확검정에 대한 체크 박스를 선택하면 됩니다. <code>salem.csv</code> 파일의 데이터를 사용해 이 옵션을 적용하면, 피셔의 정확검정 통계량이 결과에 표시됩니다. 여기서 우리가 주목할 것은 <span class="math inline">\(p\)</span>-값이며, 이 경우 <span class="math inline">\(p = 0.036\)</span>으로 귀무가설(화형 당하는 사람과 당하지 않는 사람의 행복 수준은 같다)을 기각하기에 충분히 작습니다. 결과는 <a href="#fig-fig10-6" class="quarto-xref">Figure&nbsp;<span>10.6</span></a> 을 참조하세요.</p>
 <div class="cell" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig10-6" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="분할표와 χ² 검정을 보여주는 통계 출력 이미지. 표에는 &quot;happy&quot; (FALSE/TRUE)와 &quot;on.fire&quot; (FALSE/TRUE) 변수가 포함되어 있습니다. 요약:- χ² 값 6.15, 자유도 1, $p$-값 0.01311, 피셔의 정확 검정 0.03571, 표본 크기 16.">
+<div id="fig-fig10-6" class="quarto-float quarto-figure quarto-figure-left anchored" alt="분할표와 χ² 검정을 보여주는 통계 출력 이미지. 표에는 &quot;happy&quot; (FALSE/TRUE)와 &quot;on.fire&quot; (FALSE/TRUE) 변수가 포함되어 있습니다. 요약:- χ² 값 6.15, 자유도 1, $p$-값 0.01311, 피셔의 정확 검정 0.03571, 표본 크기 16." data-fig-align="left">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig10-6-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig10-6.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:70.0%" alt="분할표와 χ² 검정을 보여주는 통계 출력 이미지. 표에는 &quot;happy&quot; (FALSE/TRUE)와 &quot;on.fire&quot; (FALSE/TRUE) 변수가 포함되어 있습니다. 요약:- χ² 값 6.15, 자유도 1, $p$-값 0.01311, 피셔의 정확 검정 0.03571, 표본 크기 16.">
@@ -1206,7 +1207,7 @@ Table&nbsp;10.13. 반복 측정 데이터를 다르게 정리하기
 <h3 data-number="10.7.1" class="anchored" data-anchor-id="jamovi에서-맥네마-검정-수행하기"><span class="header-section-number">10.7.1</span> jamovi에서 맥네마 검정 수행하기</h3>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig10-7" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="jamovi의 &quot;쌍체 샘플 분할표(Paired Samples Contingency Tables)&quot; 분석 화면. 인터페이스에는 행, 열, 카운트를 선택하는 옵션이 보이며, 오른쪽 패널에 분할표와 맥네마 검정 통계 결과가 표시되어 있습니다.">
+<div id="fig-fig10-7" class="quarto-float quarto-figure quarto-figure-left anchored" alt="jamovi의 &quot;쌍체 샘플 분할표(Paired Samples Contingency Tables)&quot; 분석 화면. 인터페이스에는 행, 열, 카운트를 선택하는 옵션이 보이며, 오른쪽 패널에 분할표와 맥네마 검정 통계 결과가 표시되어 있습니다." data-fig-align="left">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig10-7-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig10-7.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" alt="jamovi의 &quot;쌍체 샘플 분할표(Paired Samples Contingency Tables)&quot; 분석 화면. 인터페이스에는 행, 열, 카운트를 선택하는 옵션이 보이며, 오른쪽 패널에 분할표와 맥네마 검정 통계 결과가 표시되어 있습니다.">
@@ -1293,7 +1294,7 @@ Figure&nbsp;10.7. jamovi에서의 맥네마 검정 결과
 <p>이러한 두 가지 다른 분석에서 생성된 검정 결과가 <a href="#fig-fig10-8" class="quarto-xref">Figure&nbsp;<span>10.8</span></a> 에 있습니다. 결과가 다르다는 것에 주목하세요! 이 두 검정은 동일한 검정이 아닙니다.</p>
 <div class="cell" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig10-8" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" data-fig-pos="H" alt="이미지에는 두 부분으로 나누어진 분할표가 보입니다. 첫 번째 부분은 슈트 선택(클럽, 다이아몬드, 하트, 스페이드)의 분포와 카이제곱 검정 결과 및 $p$-값을 보여줍니다. 두 번째 부분은 쌍체 샘플 분할표와 맥네마 검정 결과를 보여줍니다.">
+<div id="fig-fig10-8" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="이미지에는 두 부분으로 나누어진 분할표가 보입니다. 첫 번째 부분은 슈트 선택(클럽, 다이아몬드, 하트, 스페이드)의 분포와 카이제곱 검정 결과 및 $p$-값을 보여줍니다. 두 번째 부분은 쌍체 샘플 분할표와 맥네마 검정 결과를 보여줍니다." data-fig-pos="H">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig10-8-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig10-8.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:90.0%" data-fig-pos="H" alt="이미지에는 두 부분으로 나누어진 분할표가 보입니다. 첫 번째 부분은 슈트 선택(클럽, 다이아몬드, 하트, 스페이드)의 분포와 카이제곱 검정 결과 및 $p$-값을 보여줍니다. 두 번째 부분은 쌍체 샘플 분할표와 맥네마 검정 결과를 보여줍니다.">
@@ -1636,7 +1637,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/kilhwan\.github\.io\/jamovi\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -1989,7 +1990,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    </div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/kilhwan/jamovi/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a></p>
 </div>

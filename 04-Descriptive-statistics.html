@@ -170,7 +170,8 @@ window.Quarto = {
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">JAMOVI로 배우는 통계학</a> 
-        <div class="sidebar-tools-main">
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/kilhwan/jamovi/" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
   <div class="quarto-reader-toggle-btn">
@@ -406,7 +407,7 @@ window.Quarto = {
   <li><a href="#sec-Standard-scores" id="toc-sec-Standard-scores" class="nav-link" data-scroll-target="#sec-Standard-scores"><span class="header-section-number">4.5</span> 표준 점수</a></li>
   <li><a href="#요약" id="toc-요약" class="nav-link" data-scroll-target="#요약"><span class="header-section-number">4.6</span> 요약</a></li>
   </ul>
-</nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/kilhwan/jamovi/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -550,7 +551,7 @@ Figure&nbsp;4.3. AFL 2010 시즌의 승리 점수 차(afl.margins 변수)의 기
 <p>구체적인 예를 들어보겠습니다. Bob(소득 $50,000), Kate(소득 $60,000), Jane(소득 $65,000)이 한 테이블에 앉아 있다고 가정합니다. 이때 테이블의 평균 소득은 $58,333이고, 중앙값은 $60,000입니다. 여기에 Bill(소득 $100,000,000)이 합류하면, 평균 소득은 $25,043,750으로 급증하지만 중앙값은 $62,500으로만 증가합니다. 테이블의 전체 소득 규모를 분석하려면 평균이 적절할 수 있습니다. 하지만 테이블에서 “전형적인 소득”을 알고 싶다면 중앙값이 더 적합한 선택이 될 것입니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig4-4" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-pos="H" data-fig-align="left" alt="왼쪽의 막대그래프는 48개의 관측값을 가진 계단식 패턴을 보여줍니다. 텍스트는 평균은 데이터의 무게중심입니다 라고 설명합니다. 그래프 아래에는 균형점이라는 텍스트와 삼각형 받침대가 표시됩니다. 오른쪽의 동일한 막대그래프는 관측값을 두 그룹으로 나눠 각각 24개의 관측값을 보여줍니다. 왼쪽 그룹은 연한 회색, 오른쪽 그룹은 짙은 회색으로 표시되며, 중앙값은 데이터 집합의 중간 관측값으로 설명됩니다.">
+<div id="fig-fig4-4" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" data-fig-pos="H" alt="왼쪽의 막대그래프는 48개의 관측값을 가진 계단식 패턴을 보여줍니다. 텍스트는 평균은 데이터의 무게중심입니다 라고 설명합니다. 그래프 아래에는 균형점이라는 텍스트와 삼각형 받침대가 표시됩니다. 오른쪽의 동일한 막대그래프는 관측값을 두 그룹으로 나눠 각각 24개의 관측값을 보여줍니다. 왼쪽 그룹은 연한 회색, 오른쪽 그룹은 짙은 회색으로 표시되며, 중앙값은 데이터 집합의 중간 관측값으로 설명됩니다.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig4-4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/fig4-4.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:100.0%" data-fig-pos="H" alt="왼쪽의 막대그래프는 48개의 관측값을 가진 계단식 패턴을 보여줍니다. 텍스트는 평균은 데이터의 무게중심입니다 라고 설명합니다. 그래프 아래에는 균형점이라는 텍스트와 삼각형 받침대가 표시됩니다. 오른쪽의 동일한 막대그래프는 관측값을 두 그룹으로 나눠 각각 24개의 관측값을 보여줍니다. 왼쪽 그룹은 연한 회색, 오른쪽 그룹은 짙은 회색으로 표시되며, 중앙값은 데이터 집합의 중간 관측값으로 설명됩니다.">
@@ -650,7 +651,7 @@ Figure&nbsp;4.5. aflsmall_finalists.csv 파일에 저장된 변수들을 보여�
 </div>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig4-6" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-pos="H" data-fig-align="left" alt="AFL 결승 진출팀을 분석한 jamovi 화면 캡처. 왼쪽 패널에는 변수 선택 및 데이터 분할 옵션이 있고, 오른쪽 패널에는 지역별 결승 진출팀에 대한 기술 통계와 빈도(%)가 표시됨.">
+<div id="fig-fig4-6" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" data-fig-pos="H" alt="AFL 결승 진출팀을 분석한 jamovi 화면 캡처. 왼쪽 패널에는 변수 선택 및 데이터 분할 옵션이 있고, 오른쪽 패널에는 지역별 결승 진출팀에 대한 기술 통계와 빈도(%)가 표시됨.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig4-6-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig4-6.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" data-fig-pos="H" alt="AFL 결승 진출팀을 분석한 jamovi 화면 캡처. 왼쪽 패널에는 변수 선택 및 데이터 분할 옵션이 있고, 오른쪽 패널에는 지역별 결승 진출팀에 대한 기술 통계와 빈도(%)가 표시됨.">
@@ -668,7 +669,7 @@ Figure&nbsp;4.6. afl.finalists 변수에 대한 빈도표를 보여주는 jamovi
 <p>jamovi에서 <code>afl.margins</code> 변수의 최빈값을 계산하려면 해당 데이터 세트로 돌아가 ‘기술통계’-‘기술통계’ 화면으로 이동하세요. ‘통계’ 섹션을 확장하고 ‘최빈값’이라고 표시된 체크박스를 클릭하면 ’기술통계’ 표에 최빈값이 표시됩니다(<a href="#fig-fig4-7" class="quarto-xref">Figure&nbsp;<span>4.7</span></a> 참고). 2010년 데이터에 따르면 3점 차를 선택하는 것이 가장 적합한 베팅이라고 제안합니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig4-7" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-pos="h!" data-fig-align="left" alt="afl.margins 변수를 분석한 jamovi 화면 캡처. 주요 섹션에는 기술 통계(Descriptives), 변수(Variables), 결과(Results)가 포함됨. 평균, 중앙값, 표준편차 등의 통계가 오른쪽에 표시됨.">
+<div id="fig-fig4-7" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" data-fig-pos="h!" alt="afl.margins 변수를 분석한 jamovi 화면 캡처. 주요 섹션에는 기술 통계(Descriptives), 변수(Variables), 결과(Results)가 포함됨. 평균, 중앙값, 표준편차 등의 통계가 오른쪽에 표시됨.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig4-7-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/fig4-7.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" data-fig-pos="h!" alt="afl.margins 변수를 분석한 jamovi 화면 캡처. 주요 섹션에는 기술 통계(Descriptives), 변수(Variables), 결과(Results)가 포함됨. 평균, 중앙값, 표준편차 등의 통계가 오른쪽에 표시됨.">
@@ -789,7 +790,7 @@ Table&nbsp;4.3. AFL 첫 5 경기의 변동성 측도
 <p>마지막 열에는 제곱 편차가 모두 있으므로, 이 값을 평균 내기만 하면 됩니다. 계산기를 사용해 직접 계산하면 분산이 <span class="math inline">\(324.64\)</span>임을 알 수 있습니다. 여기서 분산 <span class="math inline">\(324.64\)</span>가 실제로 무엇을 의미하는지는 잠시 신경 쓰지 마세요. 대신, jamovi에서 이 계산을 수행하는 방법을 알아보겠습니다. 이를 통해 매우 이상한 점을 발견할 것입니다. jamovi의 새로운 세션을 시작하려면 왼쪽 상단의 메뉴 버튼(가로 세 줄)을 클릭하고 ‘새로운’를 선택하세요. 이제 <code>afl.margins</code> 데이터 세트에서 첫 5개의 값(56, 31, 56, 8, 32)을 A 열에 입력하세요. 변수 유형을 ’연속변수’로 변경하고 ’기술통계’에서 ’분산’ 체크박스를 클릭하면 우리가 계산한 값(<span class="math inline">\(324.64\)</span>)과 동일한 분산 값이 나올까요? 아니, 전혀 다른 값(<span class="math inline">\(405.80\)</span>)이 나옵니다(<a href="#fig-fig4-9" class="quarto-xref">Figure&nbsp;<span>4.9</span></a> 참고).</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig4-9" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-pos="h!" data-fig-align="left" alt="jamovi 스크린샷. 기술 통계를 보여주는 인터페이스로, 변수 선택, 데이터 분할, 결과 보기, 참조 섹션으로 나뉘어 있습니다. 데이터 테이블은 분산, 평균, 중앙값, 표준 편차 등의 통계치를 보여줍니다.">
+<div id="fig-fig4-9" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" data-fig-pos="h!" alt="jamovi 스크린샷. 기술 통계를 보여주는 인터페이스로, 변수 선택, 데이터 분할, 결과 보기, 참조 섹션으로 나뉘어 있습니다. 데이터 테이블은 분산, 평균, 중앙값, 표준 편차 등의 통계치를 보여줍니다.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig4-9-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig4-9.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" data-fig-pos="h!" alt="jamovi 스크린샷. 기술 통계를 보여주는 인터페이스로, 변수 선택, 데이터 분할, 결과 보기, 참조 섹션으로 나뉘어 있습니다. 데이터 테이블은 분산, 평균, 중앙값, 표준 편차 등의 통계치를 보여줍니다.">
@@ -821,7 +822,7 @@ jamovi에서 ‘표준편차’ 체크박스는 ‘분산’ 체크박스 바로
 <p>표준편차를 해석하는 것은 조금 더 복잡합니다. 표준편차는 분산에서 유도되며, 분산은 인간에게 직관적으로 이해하기 어려운 값이기 때문에, 표준편차 역시 단순히 해석하기는 어렵습니다. 그래서 대부분의 경우 우리는 간단한 경험적 규칙에 의존합니다. 일반적으로, 평균에서 1 표준편차 이내에 데이터의 68%가 포함되고, 2 표준편차 이내에 95%, 3 표준편차 이내에 99.7%가 포함된다고 예상할 수 있습니다. 이 규칙은 대부분의 경우 잘 맞지만, 정확하지는 않습니다. 이는 히스토그램이 대칭적이고 “종 모양”이라는 가정을 기반으로 계산됩니다. <a href="#fig-fig4-2" class="quarto-xref">Figure&nbsp;<span>4.2</span></a> 에서 볼 수 있듯이, AFL 승리 마진 데이터의 히스토그램은 이 가정에 완전히 부합하지는 않습니다. 그럼에도 불구하고 이 규칙은 대략적으로 맞습니다. 실제로, <code>afl.margins</code> 데이터의 65.3%가 평균에서 1 표준편차 이내에 포함됩니다. 이는 <a href="#fig-fig4-10" class="quarto-xref">Figure&nbsp;<span>4.10</span></a> 에서 시각적으로 나타나 있습니다.</p>
 <div class="cell" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig4-10" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-pos="h!" data-fig-align="left" alt="AFL 승리 마진 데이터의 표준편차를 나타내는 막대 그래프. 평균의 왼쪽과 오른쪽 1 표준편차 이내의 막대는 파란색, 나머지는 흰색. 수평 축 레이블에는 Mean - s.d., Mean, Mean + s.d. 포함.">
+<div id="fig-fig4-10" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" data-fig-pos="h!" alt="AFL 승리 마진 데이터의 표준편차를 나타내는 막대 그래프. 평균의 왼쪽과 오른쪽 1 표준편차 이내의 막대는 파란색, 나머지는 흰색. 수평 축 레이블에는 Mean - s.d., Mean, Mean + s.d. 포함.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig4-10-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="04-Descriptive-statistics_files/figure-html/fig-fig4-10-1.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:60.0%" data-fig-pos="h!" alt="AFL 승리 마진 데이터의 표준편차를 나타내는 막대 그래프. 평균의 왼쪽과 오른쪽 1 표준편차 이내의 막대는 파란색, 나머지는 흰색. 수평 축 레이블에는 Mean - s.d., Mean, Mean + s.d. 포함.">
@@ -939,7 +940,7 @@ Table&nbsp;4.4. 첨도를 나타내는 얇은 꼬리부터 두꺼운 꼬리까�
 </div>
 <div class="cell" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig4-13" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-pos="H" data-fig-align="left" alt="ID, 약물, 치료 및 기분 향상 데이터를 담은 jamovi 스크린샷. 상단 메뉴 바에는 Variables, Data, Analyses, Edit 옵션과 Exploration, T-Tests, ANOVA, Regression과 같은 하위 옵션이 포함되어 있음.">
+<div id="fig-fig4-13" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" data-fig-pos="H" alt="ID, 약물, 치료 및 기분 향상 데이터를 담은 jamovi 스크린샷. 상단 메뉴 바에는 Variables, Data, Analyses, Edit 옵션과 Exploration, T-Tests, ANOVA, Regression과 같은 하위 옵션이 포함되어 있음.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig4-13-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig4-13.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:70.0%" data-fig-pos="H" alt="ID, 약물, 치료 및 기분 향상 데이터를 담은 jamovi 스크린샷. 상단 메뉴 바에는 Variables, Data, Analyses, Edit 옵션과 Exploration, T-Tests, ANOVA, Regression과 같은 하위 옵션이 포함되어 있음.">
@@ -1251,7 +1252,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/kilhwan\.github\.io\/jamovi\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -1604,7 +1605,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    </div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/kilhwan/jamovi/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a></p>
 </div>
