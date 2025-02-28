@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.5.57">
@@ -77,17 +77,17 @@ div.csl-indent {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "일치 없음",
+    "search-matching-documents-text": "일치된 문서",
+    "search-copy-link-title": "검색 링크 복사",
+    "search-hide-matches-text": "추가 검색 결과 숨기기",
+    "search-more-match-text": "추가 검색결과",
+    "search-more-matches-text": "추가 검색결과",
+    "search-clear-button-title": "제거",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "취소",
+    "search-submit-button-title": "검색",
+    "search-label": "검색"
   }
 }</script>
 <script type="text/x-mathjax-config">
@@ -171,13 +171,13 @@ window.Quarto = {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="사이드바 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./10-Categorical-data-analysis.html">통계 기법</a></li><li class="breadcrumb-item"><a href="./14-Factorial-ANOVA.html"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">요인분산분석</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="사이드바 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="검색" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -191,9 +191,9 @@ window.Quarto = {
     <div class="sidebar-title mb-0 py-0">
       <a href="./">JAMOVI로 배우는 통계학</a> 
         <div class="sidebar-tools-main tools-wide">
-    <a href="https://github.com/kilhwan/jamovi/" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
-  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+    <a href="https://github.com/kilhwan/jamovi/" title="소스 코드" class="quarto-navigation-tool px-1" aria-label="소스 코드"><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="다크 모드 전환"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="리더 모드 전환">
   <div class="quarto-reader-toggle-btn">
   <i class="bi"></i>
   </div>
@@ -203,7 +203,7 @@ window.Quarto = {
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
+        <div id="quarto-search" class="" title="검색"></div>
         </div>
         </div>
     <div class="sidebar-menu-container"> 
@@ -218,7 +218,7 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
  <span class="menu-text">시작하며</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="토글 섹션">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -241,7 +241,7 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
  <span class="menu-text">jamovi 소개</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="토글 섹션">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -258,7 +258,7 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
  <span class="menu-text">데이터 다루기</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="토글 섹션">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -287,7 +287,7 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
  <span class="menu-text">통계 이론</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="토글 섹션">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -322,7 +322,7 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
  <span class="menu-text">통계 기법</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="토글 섹션">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -369,7 +369,7 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
  <span class="menu-text">마무리하며, 대안과 전망</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="토글 섹션">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -401,7 +401,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
+    <h2 id="toc-title">목차</h2>
    
   <ul>
   <li><a href="#요인분산분석-1-균형-설계-주효과-분석" id="toc-요인분산분석-1-균형-설계-주효과-분석" class="nav-link active" data-scroll-target="#요인분산분석-1-균형-설계-주효과-분석"><span class="header-section-number">14.1</span> 요인분산분석 1: 균형 설계, 주효과 분석</a>
@@ -461,7 +461,7 @@ window.Quarto = {
   </ul></li>
   <li><a href="#요약" id="toc-요약" class="nav-link" data-scroll-target="#요약"><span class="header-section-number">14.11</span> 요약</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/kilhwan/jamovi/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/kilhwan/jamovi/issues/new" class="toc-action"><i class="bi bi-github"></i>이슈 보고</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -472,13 +472,13 @@ window.Quarto = {
 </header>
 
 
-<p>지난 몇 개의 장에 걸쳐 우리는 많은 것을 다루었습니다. 두 개의 범주를 가진 하나의 명목 예측변수가 있을 때 사용할 수 있는 통계적 검정(예: <a href="11-Comparing-two-means.html" class="quarto-xref"><span>Chapter 11</span></a> 의 <span class="math inline">\(t\)</span>-검정)이나 세 개 이상의 집단이 있을 때 사용할 수 있는 통계적 검정(<a href="13-Comparing-several-means-one-way-ANOVA.html" class="quarto-xref"><span>Chapter 13</span></a> 의 일원분산분석)을 살펴보았습니다. 또한, <a href="12-Correlation-and-linear-regression.html" class="quarto-xref"><span>Chapter 12</span></a> 에서는 여러 개의 연속형 예측변수를 사용하여 하나의 결과변수를 설명하는 통계적 모형을 구축하는 강력한 개념을 도입하였습니다. 예를 들어, 회귀 모형을 사용하여 학생이 독해력 시험에서 범한 오류의 수를 시험 공부 시간과 표준화된 IQ 시험 점수를 기반으로 예측할 수 있습니다.</p>
-<p>이번 장의 목표는 다중 예측변수를 사용하는 개념을 ANOVA 틀로 확장하는 것입니다. 예를 들어, 우리가 세 개의 다른 학교에서 학생들의 성취도를 측정하기 위해 독해력 시험을 사용한다고 가정해 보겠습니다. 또한, 남학생과 여학생이 서로 다른 속도로 발달하기 때문에 평균적으로 서로 다른 성과를 보일 것이라고 예상하고 있습니다. 각 학생은 성별과 학교를 기준으로 두 가지 방식으로 분류됩니다. 우리가 하고 싶은 것은 이 두 가지 집단 변수를 기반으로 독해력 점수를 분석하는 것입니다. 이를 수행하는 도구를 일반적으로 <strong>요인분산분석(factorial ANOVA)</strong>라고 합니다. 특히, 이러한 분석에서 두 개의 집단 변수를 고려하게 되므로, <a href="13-Comparing-several-means-one-way-ANOVA.html" class="quarto-xref"><span>Chapter 13</span></a> 에서 수행한 일원분산분석과 구분하여, 이를 <strong>이원분산분석(two-way ANOVA)</strong>이라고 부르기도 합니다.</p>
+<p>지난 몇 개의 장에 걸쳐 우리는 많은 것을 다루었습니다. 두 개의 범주를 가진 하나의 명목 예측변수가 있을 때 사용할 수 있는 통계적 검정(예: <a href="11-Comparing-two-means.html" class="quarto-xref"><span>장 11</span></a> 의 <span class="math inline">\(t\)</span>-검정)이나 세 개 이상의 집단이 있을 때 사용할 수 있는 통계적 검정(<a href="13-Comparing-several-means-one-way-ANOVA.html" class="quarto-xref"><span>장 13</span></a> 의 일원분산분석)을 살펴보았습니다. 또한, <a href="12-Correlation-and-linear-regression.html" class="quarto-xref"><span>장 12</span></a> 에서는 여러 개의 연속형 예측변수를 사용하여 하나의 결과변수를 설명하는 통계적 모형을 구축하는 강력한 개념을 도입하였습니다. 예를 들어, 회귀 모형을 사용하여 학생이 독해력 시험에서 범한 오류의 수를 시험 공부 시간과 표준화된 IQ 시험 점수를 기반으로 예측할 수 있습니다.</p>
+<p>이번 장의 목표는 다중 예측변수를 사용하는 개념을 ANOVA 틀로 확장하는 것입니다. 예를 들어, 우리가 세 개의 다른 학교에서 학생들의 성취도를 측정하기 위해 독해력 시험을 사용한다고 가정해 보겠습니다. 또한, 남학생과 여학생이 서로 다른 속도로 발달하기 때문에 평균적으로 서로 다른 성과를 보일 것이라고 예상하고 있습니다. 각 학생은 성별과 학교를 기준으로 두 가지 방식으로 분류됩니다. 우리가 하고 싶은 것은 이 두 가지 집단 변수를 기반으로 독해력 점수를 분석하는 것입니다. 이를 수행하는 도구를 일반적으로 <strong>요인분산분석(factorial ANOVA)</strong>라고 합니다. 특히, 이러한 분석에서 두 개의 집단 변수를 고려하게 되므로, <a href="13-Comparing-several-means-one-way-ANOVA.html" class="quarto-xref"><span>장 13</span></a> 에서 수행한 일원분산분석과 구분하여, 이를 <strong>이원분산분석(two-way ANOVA)</strong>이라고 부르기도 합니다.</p>
 <section id="요인분산분석-1-균형-설계-주효과-분석" class="level2" data-number="14.1">
 <h2 data-number="14.1" class="anchored" data-anchor-id="요인분산분석-1-균형-설계-주효과-분석"><span class="header-section-number">14.1</span> 요인분산분석 1: 균형 설계, 주효과 분석</h2>
-<p><a href="13-Comparing-several-means-one-way-ANOVA.html" class="quarto-xref"><span>Chapter 13</span></a> 에서 분산분석을 논의할 때, 우리는 비교적 단순한 실험 설계를 가정하였습니다. 각 개인은 여러 집단 중 하나에 속하며, 우리는 이 집단들이 특정 결과변수에 대해 서로 다른 평균 점수를 가지는지 알고자 하였습니다. 이번 절에서는 <strong>요인 설계(factorial design)</strong>라고 알려진 더 넓은 범주의 실험 설계를 논의하겠습니다. 요인 설계에서는 하나 이상의 집단 변수를 포함하게 됩니다. 앞서 이와 같은 설계가 발생할 수 있는 한 가지 예를 들었습니다. 또 다른 예는 <a href="13-Comparing-several-means-one-way-ANOVA.html" class="quarto-xref"><span>Chapter 13</span></a> 에서 살펴본 것으로, 서로 다른 약물(<code>drug</code>)이 개인이 경험하는 기분 향상(<code>mood.gain</code>)에 미치는 영향을 연구한 경우입니다. 그 장에서 우리는 약물의 유의한 효과를 발견하였지만, 장의 마지막에서는 치료(<code>therapy</code>)의 효과가 있는지도 분석하였습니다. 치료의 효과는 발견되지 않았지만, 동일한 결과변수를 예측하기 위해 두 개의 별도 분석을 수행하는 것은 다소 걱정스러운 부분이 있습니다. 어쩌면 실제로 치료가 기분 향상에 영향을 미치지만, 약물의 효과에 의해 “숨겨져” 있어서 발견하지 못했을 수도 있습니다. 즉, 약물과 치료를 모두 예측변수로 포함하는 단일 분석을 수행하는 것이 필요합니다.</p>
+<p><a href="13-Comparing-several-means-one-way-ANOVA.html" class="quarto-xref"><span>장 13</span></a> 에서 분산분석을 논의할 때, 우리는 비교적 단순한 실험 설계를 가정하였습니다. 각 개인은 여러 집단 중 하나에 속하며, 우리는 이 집단들이 특정 결과변수에 대해 서로 다른 평균 점수를 가지는지 알고자 하였습니다. 이번 절에서는 <strong>요인 설계(factorial design)</strong>라고 알려진 더 넓은 범주의 실험 설계를 논의하겠습니다. 요인 설계에서는 하나 이상의 집단 변수를 포함하게 됩니다. 앞서 이와 같은 설계가 발생할 수 있는 한 가지 예를 들었습니다. 또 다른 예는 <a href="13-Comparing-several-means-one-way-ANOVA.html" class="quarto-xref"><span>장 13</span></a> 에서 살펴본 것으로, 서로 다른 약물(<code>drug</code>)이 개인이 경험하는 기분 향상(<code>mood.gain</code>)에 미치는 영향을 연구한 경우입니다. 그 장에서 우리는 약물의 유의한 효과를 발견하였지만, 장의 마지막에서는 치료(<code>therapy</code>)의 효과가 있는지도 분석하였습니다. 치료의 효과는 발견되지 않았지만, 동일한 결과변수를 예측하기 위해 두 개의 별도 분석을 수행하는 것은 다소 걱정스러운 부분이 있습니다. 어쩌면 실제로 치료가 기분 향상에 영향을 미치지만, 약물의 효과에 의해 “숨겨져” 있어서 발견하지 못했을 수도 있습니다. 즉, 약물과 치료를 모두 예측변수로 포함하는 단일 분석을 수행하는 것이 필요합니다.</p>
 <p>이 분석에서 각 개인은 제공받은 약물(3가지 수준을 가지는 요인)과 받은 치료(2가지 수준을 가지는 요인)에 의해 교차 분류됩니다. 이를 <span class="math inline">\(3 \times 2\)</span> 요인 설계라고 합니다.</p>
-<p>jamovi에서 ‘빈도분석’-‘분할표’ 분석을 사용하여 약물과 치료를 교차 집계하면, <a href="#fig-fig14-1" class="quarto-xref">Figure&nbsp;<span>14.1</span></a> 에 나타난 표를 얻을 수 있습니다 (자세한 내용은 <a href="06-Pragmatic-matters.html#sec-Tabulating-and-cross-tabulating-data" class="quarto-xref"><span>Section 6.1</span></a> 참조).</p>
+<p>jamovi에서 ‘빈도분석’-‘분할표’ 분석을 사용하여 약물과 치료를 교차 집계하면, <a href="#fig-fig14-1" class="quarto-xref">그림&nbsp;<span>14.1</span></a> 에 나타난 표를 얻을 수 있습니다 (자세한 내용은 <a href="06-Pragmatic-matters.html#sec-Tabulating-and-cross-tabulating-data" class="quarto-xref"><span>섹션 6.1</span></a> 참조).</p>
 <div class="cell" data-layout-align="left">
 <div class="cell-output-display">
 <div id="fig-fig14-1" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="분할표라는 제목의 jamovi 결과 표로, 'drug' 유형(Anxifree, Joyzepam, Placebo)과 'therapy' 유형(CBT, no therapy, Total)의 데이터를 포함함. 각 약물 유형에 대해 두 가지 치료 유형(CBT 3명, 치료 없음 3명)이 동일한 수로 포함되어 있으며, 총 6명씩 해당함. CBT 총 인원 9명, 치료 없음 총 인원 9명, 전체 18명임.">
@@ -487,7 +487,7 @@ window.Quarto = {
 <img src="images/fig14-1.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" alt="분할표라는 제목의 jamovi 결과 표로, 'drug' 유형(Anxifree, Joyzepam, Placebo)과 'therapy' 유형(CBT, no therapy, Total)의 데이터를 포함함. 각 약물 유형에 대해 두 가지 치료 유형(CBT 3명, 치료 없음 3명)이 동일한 수로 포함되어 있으며, 총 6명씩 해당함. CBT 총 인원 9명, 치료 없음 총 인원 9명, 전체 18명임.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fig14-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;14.1. jamovi에서 생성한 약물과 치료의 교차표
+그림&nbsp;14.1. jamovi에서 생성한 약물과 치료의 교차표
 </figcaption>
 </figure>
 </div>
@@ -516,7 +516,7 @@ Tip&nbsp;14.1. 실습: Clinical Trial 데이터의 분할표
 <li><code>mood.gain</code>: 연속변수, 소수</li>
 </ul>
 <ol start="4" type="1">
-<li>다음 단계를 거쳐 <a href="#fig-fig14-1" class="quarto-xref">Figure&nbsp;<span>14.1</span></a> 같은 <code>drug</code>을 행, <code>therapy</code>를 열로 하는 분할표를 구해봅니다.</li>
+<li>다음 단계를 거쳐 <a href="#fig-fig14-1" class="quarto-xref">그림&nbsp;<span>14.1</span></a> 같은 <code>drug</code>을 행, <code>therapy</code>를 열로 하는 분할표를 구해봅니다.</li>
 </ol>
 <ul>
 <li>‘분석’-‘빈도’-‘분할표’-‘독립표본’ 메뉴를 선택합니다.</li>
@@ -535,12 +535,12 @@ Tip&nbsp;14.1. 실습: Clinical Trial 데이터의 분할표
 </div>
 <section id="sec-What-hypotheses-are-we-testing" class="level3" data-number="14.1.1">
 <h3 data-number="14.1.1" class="anchored" data-anchor-id="sec-What-hypotheses-are-we-testing"><span class="header-section-number">14.1.1</span> 가설</h3>
-<p>일원분산분석과 마찬가지로, 요인분산분석은 모집단의 평균에 대한 특정 유형의 가설을 검정하는 도구입니다. 따라서 가장 먼저 해야 할 일은 우리가 실제로 어떤 가설을 검정하는지 명확히 하는 것입니다. 하지만 그 전에, 모집단 평균을 표현하는 간결하고 체계적인 표기법을 정하는 것이 유용합니다. 관측값이 두 개의 서로 다른 요인에 의해 교차 분류되기 때문에, 관심을 가질 수 있는 평균이 상당히 많습니다. 이를 이해하기 위해, 먼저 이러한 설계에서 계산할 수 있는 다양한 표본 평균을 생각해 보겠습니다. 가장 먼저 떠오르는 것은 각 집단 평균의 목록(<a href="#tbl-tab14-1" class="quarto-xref">Table&nbsp;<span>14.1</span></a>)입니다.</p>
+<p>일원분산분석과 마찬가지로, 요인분산분석은 모집단의 평균에 대한 특정 유형의 가설을 검정하는 도구입니다. 따라서 가장 먼저 해야 할 일은 우리가 실제로 어떤 가설을 검정하는지 명확히 하는 것입니다. 하지만 그 전에, 모집단 평균을 표현하는 간결하고 체계적인 표기법을 정하는 것이 유용합니다. 관측값이 두 개의 서로 다른 요인에 의해 교차 분류되기 때문에, 관심을 가질 수 있는 평균이 상당히 많습니다. 이를 이해하기 위해, 먼저 이러한 설계에서 계산할 수 있는 다양한 표본 평균을 생각해 보겠습니다. 가장 먼저 떠오르는 것은 각 집단 평균의 목록(<a href="#tbl-tab14-1" class="quarto-xref">표&nbsp;<span>14.1</span></a>)입니다.</p>
 <div class="cell" data-layout-align="left">
 <div id="tbl-tab14-1" class="cell quarto-float quarto-figure quarto-figure-left anchored" data-layout-align="left">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tab14-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;14.1. clinicaltrial.csv 데이터에서 약물 및 치료 집단의 평균값
+표&nbsp;14.1. clinicaltrial.csv 데이터에서 약물 및 치료 집단의 평균값
 </figcaption>
 <div aria-describedby="tbl-tab14-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
@@ -566,12 +566,12 @@ Table&nbsp;14.1. clinicaltrial.csv 데이터에서 약물 및 치료 집단의 �
 </figure>
 </div>
 </div>
-<p>다음으로, <a href="#tbl-tab14-2" class="quarto-xref">Table&nbsp;<span>14.2</span></a> 도 두 요인의 가능한 모든 조합에 대한 집단 평균 목록을 보여줍니다(예: 위약을 받고 치료를 받지 않은 사람, 위약을 받고 CBT를 받은 사람 등). 이러한 모든 값과 주변 평균(marginal means), 전체 평균(grand mean)을 하나의 표로 정리하는 것이 도움이 됩니다.</p>
+<p>다음으로, <a href="#tbl-tab14-2" class="quarto-xref">표&nbsp;<span>14.2</span></a> 도 두 요인의 가능한 모든 조합에 대한 집단 평균 목록을 보여줍니다(예: 위약을 받고 치료를 받지 않은 사람, 위약을 받고 CBT를 받은 사람 등). 이러한 모든 값과 주변 평균(marginal means), 전체 평균(grand mean)을 하나의 표로 정리하는 것이 도움이 됩니다.</p>
 <div class="cell" data-layout-align="left">
 <div id="tbl-tab14-2" class="cell quarto-float quarto-figure quarto-figure-left anchored" data-layout-align="left">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tab14-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;14.2. clinicaltrial.csv 데이터에서 약물 및 치료 집단의 평균과 총 평균
+표&nbsp;14.2. clinicaltrial.csv 데이터에서 약물 및 치료 집단의 평균과 총 평균
 </figcaption>
 <div aria-describedby="tbl-tab14-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
@@ -593,12 +593,12 @@ Table&nbsp;14.2. clinicaltrial.csv 데이터에서 약물 및 치료 집단의 �
 </figure>
 </div>
 </div>
-<p>이러한 평균들은 모두 표본 통계량이며, 연구에서 수집한 특정 관측값을 기반으로 한 수치입니다. 하지만 우리가 관심을 가지는 것은 이와 대응되는 모집단의 모수, 즉 보다 넓은 모집단 내에서 존재하는 참된 평균입니다. 이러한 모집단 평균 또한 유사한 표로 정리할 수 있지만, 이를 위해서는 약간의 수학적 표기법이 필요합니다(<a href="#tbl-tab14-3" class="quarto-xref">Table&nbsp;<span>14.3</span></a>). 보통 모집단 평균을 나타낼 때 기호 <span class="math inline">\(\mu\)</span>를 사용합니다. 하지만 평균이 여러 개 있기 때문에, 이를 구별하기 위해 첨자를 사용해야 합니다.</p>
+<p>이러한 평균들은 모두 표본 통계량이며, 연구에서 수집한 특정 관측값을 기반으로 한 수치입니다. 하지만 우리가 관심을 가지는 것은 이와 대응되는 모집단의 모수, 즉 보다 넓은 모집단 내에서 존재하는 참된 평균입니다. 이러한 모집단 평균 또한 유사한 표로 정리할 수 있지만, 이를 위해서는 약간의 수학적 표기법이 필요합니다(<a href="#tbl-tab14-3" class="quarto-xref">표&nbsp;<span>14.3</span></a>). 보통 모집단 평균을 나타낼 때 기호 <span class="math inline">\(\mu\)</span>를 사용합니다. 하지만 평균이 여러 개 있기 때문에, 이를 구별하기 위해 첨자를 사용해야 합니다.</p>
 <div class="cell" data-layout-align="left">
 <div id="tbl-tab14-3" class="cell quarto-float quarto-figure quarto-figure-left anchored" data-layout-align="left">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tab14-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;14.3. 요인표에서 모집단 평균을 나타내는 표기법
+표&nbsp;14.3. 요인표에서 모집단 평균을 나타내는 표기법
 </figcaption>
 <div aria-describedby="tbl-tab14-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
@@ -621,12 +621,12 @@ Table&nbsp;14.3. 요인표에서 모집단 평균을 나타내는 표기법
 </div>
 </div>
 <p>표기법에 대하여 설명하자면, 이 표는 두 개의 요인을 기준으로 정의됩니다. 각 행은 요인 A(이 경우 약물)의 서로 다른 수준을 나타내며, 각 열(column)은 요인 B(이 경우 치료)의 서로 다른 수준을 나타냅니다. 만약 <span class="math inline">\(R\)</span>이 표의 행 개수이고, <span class="math inline">\(C\)</span>가 열 개수라면, 이를 <span class="math inline">\(R \times C\)</span> 요인분산분석이라고 합니다. 이번 경우에는 <span class="math inline">\(R = 3\)</span>, <span class="math inline">\(C = 2\)</span>입니다. 특정 행과 열을 나타내기 위해 소문자 첨자를 사용하며, 예를 들어 <span class="math inline">\(\mu_{rc}\)</span>는 요인 A의 <span class="math inline">\(r\)</span>번째 수준(즉, <span class="math inline">\(r\)</span>번째 행)과 요인 B의 <span class="math inline">\(c\)</span>번째 수준(즉, <span class="math inline">\(c\)</span>번째 열)에 해당하는 모집단 평균을 의미합니다.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
-<p>그렇다면 나머지 항목들은 어떻게 표현할까요? 예를 들어, CBT를 받았는지와 관계없이 Joyzepam을 투여받은 전체 (가상의) 모집단에서 기분 향상의 평균은 어떻게 표현할 수 있을까요? 이를 나타내기 위해 “점(dot) 표기법”을 사용합니다. Joyzepam의 경우, 표의 세 번째 행에 해당하는 평균을 의미하며, 두 개의 셀 평균(<span class="math inline">\(\mu_{31}\)</span>과 <span class="math inline">\(\mu_{32}\)</span>)을 평균 내어 계산합니다. 이 평균을 <strong>주변 평균(marginal mean)</strong>이라고 하며, 이를 <span class="math inline">\(\mu_{3.}\)</span>로 나타냅니다. 마찬가지로, CBT에 대한 주변 평균은 표의 두 번째 열과 관련된 모집단 평균을 의미하며, 모든 행에 대해 평균을 구한 것입니다(즉, 주변화(marginalisation)된 값).<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> 따라서 모집단 평균을 정리한 전체 표는 <a href="#tbl-tab14-4" class="quarto-xref">Table&nbsp;<span>14.4</span></a> 같이 나타낼 수 있습니다.</p>
+<p>그렇다면 나머지 항목들은 어떻게 표현할까요? 예를 들어, CBT를 받았는지와 관계없이 Joyzepam을 투여받은 전체 (가상의) 모집단에서 기분 향상의 평균은 어떻게 표현할 수 있을까요? 이를 나타내기 위해 “점(dot) 표기법”을 사용합니다. Joyzepam의 경우, 표의 세 번째 행에 해당하는 평균을 의미하며, 두 개의 셀 평균(<span class="math inline">\(\mu_{31}\)</span>과 <span class="math inline">\(\mu_{32}\)</span>)을 평균 내어 계산합니다. 이 평균을 <strong>주변 평균(marginal mean)</strong>이라고 하며, 이를 <span class="math inline">\(\mu_{3.}\)</span>로 나타냅니다. 마찬가지로, CBT에 대한 주변 평균은 표의 두 번째 열과 관련된 모집단 평균을 의미하며, 모든 행에 대해 평균을 구한 것입니다(즉, 주변화(marginalisation)된 값).<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> 따라서 모집단 평균을 정리한 전체 표는 <a href="#tbl-tab14-4" class="quarto-xref">표&nbsp;<span>14.4</span></a> 같이 나타낼 수 있습니다.</p>
 <div class="cell" data-layout-align="left">
 <div id="tbl-tab14-4" class="cell quarto-float quarto-figure quarto-figure-left anchored" data-layout-align="left">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tab14-4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;14.4. 요인표에서 모집단 평균과 총 평균을 나타내는 표기법
+표&nbsp;14.4. 요인표에서 모집단 평균과 총 평균을 나타내는 표기법
 </figcaption>
 <div aria-describedby="tbl-tab14-4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
@@ -652,15 +652,15 @@ Table&nbsp;14.4. 요인표에서 모집단 평균과 총 평균을 나타내는 
 <p>먼저 약물 효과에 대한 검정을 고려해 보겠습니다. 만약 약물이 영향을 미치지 않는다면, 모든 행 평균이 동일해야 합니다. 따라서 귀무가설은 행 평균이 동일하다는 것입니다. 반면, 약물이 영향을 미친다면 행 평균이 서로 다를 것입니다. 이를 공식적으로 표현하면 다음과 같습니다.</p>
 <p><span class="math display">\[\text{귀무가설 } H_0: \text{ 행 평균이 동일하다, 즉 } \mu_{1. } = \mu_{2. } = \mu_{3. }\]</span><br>
 <span class="math display">\[\text{대립가설 } H_1: \text{ 적어도 하나의 행 평균이 다르다}\]</span></p>
-<p>이 가설들은 사실 <a href="13-Comparing-several-means-one-way-ANOVA.html" class="quarto-xref"><span>Chapter 13</span></a> 에서 일원분산분석을 수행할 때 설정한 것과 동일합니다. 그때는 <span class="math inline">\(\mu_{P}\)</span>를 위약 집단의 평균 기분 향상을 나타내는 기호로 사용했으며, <span class="math inline">\(\mu_{A}\)</span>와 <span class="math inline">\(\mu_{J}\)</span>는 두 약물 집단의 평균을 의미했습니다. 그때의 귀무가설은 <span class="math inline">\(\mu_{P} = \mu_{A} = \mu_{J}\)</span>이었습니다. 이번에도 동일한 가설을 다루지만, 다중 집단 변수를 고려해야 하므로 더 정교한 표기법이 필요했습니다.</p>
+<p>이 가설들은 사실 <a href="13-Comparing-several-means-one-way-ANOVA.html" class="quarto-xref"><span>장 13</span></a> 에서 일원분산분석을 수행할 때 설정한 것과 동일합니다. 그때는 <span class="math inline">\(\mu_{P}\)</span>를 위약 집단의 평균 기분 향상을 나타내는 기호로 사용했으며, <span class="math inline">\(\mu_{A}\)</span>와 <span class="math inline">\(\mu_{J}\)</span>는 두 약물 집단의 평균을 의미했습니다. 그때의 귀무가설은 <span class="math inline">\(\mu_{P} = \mu_{A} = \mu_{J}\)</span>이었습니다. 이번에도 동일한 가설을 다루지만, 다중 집단 변수를 고려해야 하므로 더 정교한 표기법이 필요했습니다.</p>
 <p>이제 두 번째 가설 검정을 살펴보겠습니다. 약물과 마찬가지로, 심리 치료가 기분 향상에 영향을 미치지 않는다면 모든 열 평균이 동일해야 합니다. 따라서 귀무가설과 대립가설은 다음과 같이 설정됩니다.</p>
 <p><span class="math display">\[\text{귀무가설 } H_0: \text{ 열 평균이 동일하다, 즉 } \mu_{ .1} = \mu_{ .2} \]</span><br>
 <span class="math display">\[\text{대립가설 } H_1: \text{ 열 평균이 다르다, 즉 } \mu_{ .1} \neq \mu_{ .2}\]</span></p>
 </section>
 <section id="jamovi에서-분석-실행하기" class="level3" data-number="14.1.2">
 <h3 data-number="14.1.2" class="anchored" data-anchor-id="jamovi에서-분석-실행하기"><span class="header-section-number">14.1.2</span> jamovi에서 분석 실행하기</h3>
-<p>이전 절에서 설명한 귀무가설과 대립가설이 매우 익숙하게 느껴지실 것입니다. 이는 기본적으로 <a href="13-Comparing-several-means-one-way-ANOVA.html" class="quarto-xref"><span>Chapter 13</span></a> 에서 일원분산분석을 수행할 때 검정했던 가설과 동일합니다. 따라서 요인분산분석에서 사용하는 가설 검정이 <a href="13-Comparing-several-means-one-way-ANOVA.html" class="quarto-xref"><span>Chapter 13</span></a> 에서 사용한 <span class="math inline">\(F\)</span>-검정과 본질적으로 동일할 것이라고 예상하실 것입니다. 즉, 제곱합(<span class="math inline">\(SS\)</span>), 평균제곱(<span class="math inline">\(MS\)</span>), 자유도(<span class="math inline">\(df\)</span>), 그리고 최종적으로 <span class="math inline">\(p\)</span>-값으로 변환할 수 있는 <span class="math inline">\(F\)</span>-통계를 확인할 것으로 예상하셨을 것입니다. 네, 정확히 맞습니다. 그래서 이번에는 평소의 접근방식을 바꿔보려 합니다. 이 책에서는 일반적으로 특정 분석을 뒷받침하는 논리(그리고 어느 정도의 수학)를 먼저 설명한 후, jamovi에서 해당 분석을 수행하는 방법을 소개하는 방식으로 설명해 왔습니다. 하지만 이번에는 반대로 jamovi에서 먼저 분석을 수행하는 방법을 보여드리고, 이후에 논의를 진행하려고 합니다. 이렇게 하는 이유는 <a href="13-Comparing-several-means-one-way-ANOVA.html" class="quarto-xref"><span>Chapter 13</span></a> 에서 논의한 단순한 일원분산분석 도구와 이번 장에서 다룰 보다 복잡한 접근방식 사이의 유사성을 강조하기 위함입니다.</p>
-<p>분석하려는 데이터가 균형 잡힌 요인설계에 해당한다면, 분산분석을 실행하는 것은 매우 간단합니다. 얼마나 쉬운지 확인하기 위해 <a href="13-Comparing-several-means-one-way-ANOVA.html" class="quarto-xref"><span>Chapter 13</span></a> 에서 수행한 원래 분석을 재현하는 것부터 시작해 보겠습니다. 혹시 잊으셨다면, 해당 분석에서는 단일 요인(즉, <code>drug</code>)을 사용하여 결과변수(즉, <code>mood.gain</code>)를 예측하였으며, <a href="#fig-fig14-2" class="quarto-xref">Figure&nbsp;<span>14.2</span></a> 의 결과를 얻었습니다.</p>
+<p>이전 절에서 설명한 귀무가설과 대립가설이 매우 익숙하게 느껴지실 것입니다. 이는 기본적으로 <a href="13-Comparing-several-means-one-way-ANOVA.html" class="quarto-xref"><span>장 13</span></a> 에서 일원분산분석을 수행할 때 검정했던 가설과 동일합니다. 따라서 요인분산분석에서 사용하는 가설 검정이 <a href="13-Comparing-several-means-one-way-ANOVA.html" class="quarto-xref"><span>장 13</span></a> 에서 사용한 <span class="math inline">\(F\)</span>-검정과 본질적으로 동일할 것이라고 예상하실 것입니다. 즉, 제곱합(<span class="math inline">\(SS\)</span>), 평균제곱(<span class="math inline">\(MS\)</span>), 자유도(<span class="math inline">\(df\)</span>), 그리고 최종적으로 <span class="math inline">\(p\)</span>-값으로 변환할 수 있는 <span class="math inline">\(F\)</span>-통계를 확인할 것으로 예상하셨을 것입니다. 네, 정확히 맞습니다. 그래서 이번에는 평소의 접근방식을 바꿔보려 합니다. 이 책에서는 일반적으로 특정 분석을 뒷받침하는 논리(그리고 어느 정도의 수학)를 먼저 설명한 후, jamovi에서 해당 분석을 수행하는 방법을 소개하는 방식으로 설명해 왔습니다. 하지만 이번에는 반대로 jamovi에서 먼저 분석을 수행하는 방법을 보여드리고, 이후에 논의를 진행하려고 합니다. 이렇게 하는 이유는 <a href="13-Comparing-several-means-one-way-ANOVA.html" class="quarto-xref"><span>장 13</span></a> 에서 논의한 단순한 일원분산분석 도구와 이번 장에서 다룰 보다 복잡한 접근방식 사이의 유사성을 강조하기 위함입니다.</p>
+<p>분석하려는 데이터가 균형 잡힌 요인설계에 해당한다면, 분산분석을 실행하는 것은 매우 간단합니다. 얼마나 쉬운지 확인하기 위해 <a href="13-Comparing-several-means-one-way-ANOVA.html" class="quarto-xref"><span>장 13</span></a> 에서 수행한 원래 분석을 재현하는 것부터 시작해 보겠습니다. 혹시 잊으셨다면, 해당 분석에서는 단일 요인(즉, <code>drug</code>)을 사용하여 결과변수(즉, <code>mood.gain</code>)를 예측하였으며, <a href="#fig-fig14-2" class="quarto-xref">그림&nbsp;<span>14.2</span></a> 의 결과를 얻었습니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
 <div id="fig-fig14-2" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="jamovi 결과 표로, mood.gain에 대한 ANOVA 결과를 보여줌. 열에는 제곱합, 자유도(df), 평균제곱, F, $p$-값, 그리고 η²(에타제곱)가 포함됨. &quot;drug&quot;의 경우, 제곱합은 3.45, 자유도는 2, 평균제곱은 1.73, F는 18.61, p는 0.00009, η²는 0.71임. 잔차의 경우, 제곱합은 1.39, 자유도는 15, 평균제곱은 0.09임.">
@@ -669,22 +669,22 @@ Table&nbsp;14.4. 요인표에서 모집단 평균과 총 평균을 나타내는 
 <img src="images/kor/fig14-2.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" alt="jamovi 결과 표로, mood.gain에 대한 ANOVA 결과를 보여줌. 열에는 제곱합, 자유도(df), 평균제곱, F, $p$-값, 그리고 η²(에타제곱)가 포함됨. &quot;drug&quot;의 경우, 제곱합은 3.45, 자유도는 2, 평균제곱은 1.73, F는 18.61, p는 0.00009, η²는 0.71임. 잔차의 경우, 제곱합은 1.39, 자유도는 15, 평균제곱은 0.09임.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fig14-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;14.2. 약물에 따른 mood.gain의 jamovi 일원분산분석
+그림&nbsp;14.2. 약물에 따른 mood.gain의 jamovi 일원분산분석
 </figcaption>
 </figure>
 </div>
 </div>
 </div>
-<p>이제 치료가 <code>mood.gain</code>과 관계가 있는지 궁금하다고 가정해 보겠습니다. <a href="12-Correlation-and-linear-regression.html" class="quarto-xref"><span>Chapter 12</span></a> 에서 다중회귀분석을 논의했을 때 보았던 내용을 고려하면, 분석에서 치료 변수를 두 번째 ’고정 요인’으로 추가하기만 하면 된다는 사실에 놀라지 않으실 것입니다. <a href="#fig-fig14-3" class="quarto-xref">Figure&nbsp;<span>14.3</span></a> 을 참고하십시오.</p>
+<p>이제 치료가 <code>mood.gain</code>과 관계가 있는지 궁금하다고 가정해 보겠습니다. <a href="12-Correlation-and-linear-regression.html" class="quarto-xref"><span>장 12</span></a> 에서 다중회귀분석을 논의했을 때 보았던 내용을 고려하면, 분석에서 치료 변수를 두 번째 ’고정 요인’으로 추가하기만 하면 된다는 사실에 놀라지 않으실 것입니다. <a href="#fig-fig14-3" class="quarto-xref">그림&nbsp;<span>14.3</span></a> 을 참고하십시오.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig14-3" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="jamovi 결과 표로, &quot;drug&quot; 및 &quot;therapy&quot; 요인과 이들의 상호작용을 포함한 ANOVA 결과를 보여줌. 제곱합, 자유도, 평균제곱, F, $p$-값, η², η²p, 그리고 ω²가 포함됨. 주요 결과는 &quot;drug&quot;과 &quot;therapy&quot;가 유의한 효과를 가지지만, 이들의 상호작용은 유의하지 않음을 나타냄." data-fig-pos="H">
+<div id="fig-fig14-3" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-pos="H" data-fig-align="left" alt="jamovi 결과 표로, &quot;drug&quot; 및 &quot;therapy&quot; 요인과 이들의 상호작용을 포함한 ANOVA 결과를 보여줌. 제곱합, 자유도, 평균제곱, F, $p$-값, η², η²p, 그리고 ω²가 포함됨. 주요 결과는 &quot;drug&quot;과 &quot;therapy&quot;가 유의한 효과를 가지지만, 이들의 상호작용은 유의하지 않음을 나타냄.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig14-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig14-3.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" data-fig-pos="H" alt="jamovi 결과 표로, &quot;drug&quot; 및 &quot;therapy&quot; 요인과 이들의 상호작용을 포함한 ANOVA 결과를 보여줌. 제곱합, 자유도, 평균제곱, F, $p$-값, η², η²p, 그리고 ω²가 포함됨. 주요 결과는 &quot;drug&quot;과 &quot;therapy&quot;가 유의한 효과를 가지지만, 이들의 상호작용은 유의하지 않음을 나타냄.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fig14-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;14.3. 약물과 치료에 따른 mood.gain의 jamovi 이원분산분석
+그림&nbsp;14.3. 약물과 치료에 따른 mood.gain의 jamovi 이원분산분석
 </figcaption>
 </figure>
 </div>
@@ -745,12 +745,12 @@ Tip&nbsp;14.2. 실습: 이원분산분석 - 균형 설계
 <section id="제곱합은-어떻게-계산되는가" class="level3" data-number="14.1.3">
 <h3 data-number="14.1.3" class="anchored" data-anchor-id="제곱합은-어떻게-계산되는가"><span class="header-section-number">14.1.3</span> 제곱합은 어떻게 계산되는가?</h3>
 <p>이전 절에서 저는 두 가지 목표를 가지고 있었습니다. 첫째, 요인분산분석을 수행하는 jamovi 방법이 일원분산분석에서 사용했던 방법과 거의 동일하다는 것을 보여주는 것이었습니다. 유일한 차이점은 두 번째 요인이 추가된다는 점입니다. 둘째, 이 경우 ANOVA 표가 어떻게 생겼는지를 보여주어, 요인분산분석의 기본 논리와 구조가 일원분산분석과 동일하다는 것을 처음부터 이해할 수 있도록 하는 것이었습니다. 이러한 감각을 유지하려고 노력해 보십시오. 요인분산분석은 본질적으로 단순한 일원분산분석 모형과 거의 같은 방식으로 구축되므로, 이는 사실입니다. 다만, 세부 사항을 깊이 파고들기 시작하면 이러한 친숙한 느낌이 점차 사라지기 시작합니다. 전통적으로, 이러한 편안한 감각은 통계학 교과서 저자들에게 불만을 표출하고 싶은 충동으로 변화합니다.</p>
-<p>좋습니다. 이제 몇 가지 세부 사항을 살펴보겠습니다. 이전 절에서 설명한 내용은 약물과 치료 요인의 주효과에 대한 가설 검정이 <span class="math inline">\(F\)</span>-검정이라는 사실을 보여주지만, 제곱합(<span class="math inline">\(SS\)</span>) 값이 어떻게 계산되는지는 설명하지 않았습니다. 또한 자유도(<span class="math inline">\(df\)</span>) 값을 구하는 방법을 명확히 설명하지 않았는데, 이는 상대적으로 간단한 과정입니다. 지금은 예측변수로 두 개의 요인, 즉 요인 A와 요인 B만 있는 경우를 가정하겠습니다. 결과변수를 <span class="math inline">\(Y\)</span>라고 하면, <span class="math inline">\(Y_{rci}\)</span>는 집단 <span class="math inline">\(rc\)</span>의 <span class="math inline">\(i\)</span>번째 구성원과 관련된 결과를 나타냅니다(즉, 요인 A의 <span class="math inline">\(r\)</span>번째 수준/행과 요인 B의 <span class="math inline">\(c\)</span>번째 수준/열). 따라서 표본 평균을 <span class="math inline">\(\bar{Y}\)</span>라고 하면, 이전과 동일한 표기법을 사용하여 집단 평균, 주변 평균(marginal means), 전체 평균(grand mean)을 나타낼 수 있습니다. 즉, <span class="math inline">\(\bar{Y}_{rc}\)</span>는 요인 A의 <span class="math inline">\(r\)</span>번째 수준과 요인 B의 <span class="math inline">\(c\)</span>번째 수준에 대한 표본 평균이고, <span class="math inline">\(\bar{Y}_{r.}\)</span>은 요인 A의 <span class="math inline">\(r\)</span>번째 수준에 대한 주변 평균, <span class="math inline">\(\bar{Y}_{.c}\)</span>는 요인 B의 <span class="math inline">\(c\)</span>번째 수준에 대한 주변 평균, <span class="math inline">\(\bar{Y}_{..}\)</span>은 전체 평균입니다. 다시 말해, 표본 평균을 모집단 평균과 동일한 표에 정리할 수 있습니다. 임상 시험 데이터의 경우의 평균 표는 <a href="#tbl-tab14-5" class="quarto-xref">Table&nbsp;<span>14.5</span></a> 에 제시되어 있습니다.</p>
+<p>좋습니다. 이제 몇 가지 세부 사항을 살펴보겠습니다. 이전 절에서 설명한 내용은 약물과 치료 요인의 주효과에 대한 가설 검정이 <span class="math inline">\(F\)</span>-검정이라는 사실을 보여주지만, 제곱합(<span class="math inline">\(SS\)</span>) 값이 어떻게 계산되는지는 설명하지 않았습니다. 또한 자유도(<span class="math inline">\(df\)</span>) 값을 구하는 방법을 명확히 설명하지 않았는데, 이는 상대적으로 간단한 과정입니다. 지금은 예측변수로 두 개의 요인, 즉 요인 A와 요인 B만 있는 경우를 가정하겠습니다. 결과변수를 <span class="math inline">\(Y\)</span>라고 하면, <span class="math inline">\(Y_{rci}\)</span>는 집단 <span class="math inline">\(rc\)</span>의 <span class="math inline">\(i\)</span>번째 구성원과 관련된 결과를 나타냅니다(즉, 요인 A의 <span class="math inline">\(r\)</span>번째 수준/행과 요인 B의 <span class="math inline">\(c\)</span>번째 수준/열). 따라서 표본 평균을 <span class="math inline">\(\bar{Y}\)</span>라고 하면, 이전과 동일한 표기법을 사용하여 집단 평균, 주변 평균(marginal means), 전체 평균(grand mean)을 나타낼 수 있습니다. 즉, <span class="math inline">\(\bar{Y}_{rc}\)</span>는 요인 A의 <span class="math inline">\(r\)</span>번째 수준과 요인 B의 <span class="math inline">\(c\)</span>번째 수준에 대한 표본 평균이고, <span class="math inline">\(\bar{Y}_{r.}\)</span>은 요인 A의 <span class="math inline">\(r\)</span>번째 수준에 대한 주변 평균, <span class="math inline">\(\bar{Y}_{.c}\)</span>는 요인 B의 <span class="math inline">\(c\)</span>번째 수준에 대한 주변 평균, <span class="math inline">\(\bar{Y}_{..}\)</span>은 전체 평균입니다. 다시 말해, 표본 평균을 모집단 평균과 동일한 표에 정리할 수 있습니다. 임상 시험 데이터의 경우의 평균 표는 <a href="#tbl-tab14-5" class="quarto-xref">표&nbsp;<span>14.5</span></a> 에 제시되어 있습니다.</p>
 <div class="cell" data-layout-align="left">
 <div id="tbl-tab14-5" class="cell quarto-float quarto-figure quarto-figure-left anchored" data-layout-align="left">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tab14-5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;14.5. 임상 시험 데이터의 표본 평균 표기법
+표&nbsp;14.5. 임상 시험 데이터의 표본 평균 표기법
 </figcaption>
 <div aria-describedby="tbl-tab14-5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
@@ -780,10 +780,10 @@ Table&nbsp;14.5. 임상 시험 데이터의 표본 평균 표기법
 <p>일원분산분석과 마찬가지로, 이 공식에서 가장 흥미로운 부분은 수준 <span class="math inline">\(r\)</span>과 관련된 제곱 편차입니다. 이 공식은 요인의 모든 <span class="math inline">\(R\)</span> 수준에 대해 이러한 제곱 편차를 계산하고, 이를 합산한 후 <span class="math inline">\(K \times C\)</span>를 곱하는 역할을 합니다. 이렇게 하는 이유는 설계 내에서 요인 A의 수준 <span class="math inline">\(r\)</span>에 해당하는 여러 개의 셀이 존재하기 때문입니다. 실제로 요인 B의 가능한 각 수준마다 하나씩 총 <span class="math inline">\(C\)</span>개의 셀이 존재합니다. 예를 들어, 우리의 예제에서는 “anxifree” 약물에 해당하는 두 개의 서로 다른 셀(무치료 집단과 CBT 집단)이 존재합니다. 뿐만 아니라, 각 셀에는 <span class="math inline">\(K\)</span>개의 관측값이 존재합니다. 따라서 <span class="math inline">\(SS\)</span> 값을 “관측값당” 집단 간 제곱합을 계산하는 양으로 변환하려면, <span class="math inline">\(K \times C\)</span>를 곱해야 합니다. 요인 B의 경우 공식이 동일하지만, 일부 첨자가 바뀝니다.</p>
 <p><span class="math display">\[SS_B=(K \times R)\sum_{c=1}^C (\bar{Y}_{.c}-\bar{Y}_{..})^2\]</span></p>
 <p>이제 이 공식을 사용하여 이전 절의 jamovi 출력과 비교할 수 있습니다. 이러한 계산을 수행하는 데에는 스프레드시트 프로그램이 유용하므로 직접 시도해 보시기 바랍니다. 또한, Excel에서 수행한 예제는 <em>clinicaltrial_factorialanova.xls</em> 파일에서 확인할 수 있습니다.</p>
-<p>먼저, 약물의 주효과에 대한 제곱합을 계산하겠습니다. 각 집단에는 총 <span class="math inline">\(K = 3\)</span>명의 사람이 있고, 치료법의 종류는 <span class="math inline">\(C = 2\)</span>가지입니다. 즉, 특정 약물을 받은 사람의 수는 <span class="math inline">\(3 \times 2 = 6\)</span>명입니다. 이 계산을 스프레드시트 프로그램에서 수행하면, 약물의 주요 효과에 대한 제곱합 값이 3.45로 나옵니다. 이는 이전에 제시한 ANOVA 표(<a href="#fig-fig14-3" class="quarto-xref">Figure&nbsp;<span>14.3</span></a>)에서 약물 요인의 <span class="math inline">\(SS\)</span> 값을 확인했을 때 얻는 값과 동일합니다.</p>
-<p>같은 방법으로 치료법의 효과도 계산할 수 있습니다. 이번에도 각 집단에는 <span class="math inline">\(K = 3\)</span>명의 사람이 있지만, 약물의 종류는 <span class="math inline">\(R = 3\)</span>가지이므로, 인지행동치료(CBT)를 받은 사람은 <span class="math inline">\(3 \times 3 = 9\)</span>명이며, 치료를 받지 않은 사람도 9명입니다. 따라서 이 경우 치료법의 주요 효과에 대한 제곱합 값은 0.47로 계산됩니다. 마찬가지로, 이 값도 ANOVA 표(<a href="#fig-fig14-3" class="quarto-xref">Figure&nbsp;<span>14.3</span></a>)에서 확인한 값과 동일합니다.</p>
-<p>이제 두 주효과에 대한 <span class="math inline">\(SS\)</span> 값을 계산하는 방법을 알게 되었습니다. 이러한 <span class="math inline">\(SS\)</span> 값은 일원분산분석에서 계산한 집단 간 제곱합과 유사합니다(<a href="13-Comparing-several-means-one-way-ANOVA.html" class="quarto-xref"><span>Chapter 13</span></a> 참고). 그러나 이제는 두 개의 독립적인 집단 변수가 있으므로, 이를 단순히 집단 간 <span class="math inline">\(SS\)</span> 값이라고 생각하는 것은 혼동을 일으킬 수 있습니다.</p>
-<p><span class="math inline">\(F\)</span> 검정을 수행하려면 집단 내 제곱합도 계산해야 합니다. 회귀 분석(<a href="12-Correlation-and-linear-regression.html" class="quarto-xref"><span>Chapter 12</span></a>) 장에서 사용했던 용어와 jamovi의 ANOVA 표 출력 방식과 일관성을 유지하기 위해, 이제부터 집단 내 <span class="math inline">\(SS\)</span> 값을 잔차 제곱합(residual sum of squares, <span class="math inline">\(SS_R\)</span>)이라고 부르겠습니다. 이 문맥에서 잔차 <span class="math inline">\(SS\)</span> 값을 이해하는 가장 쉬운 방법은, 결과변수의 변동 중 주변 평균의 차이를 고려한 후 남는 변동으로 생각하는 것입니다(즉, <span class="math inline">\(SS_A\)</span>와 <span class="math inline">\(SS_B\)</span>를 제거한 후 남는 변동). 이를 설명하기 위해 먼저 총제곱합을 계산하겠습니다. 이를 <span class="math inline">\(SS_T\)</span>로 표기하며, 그 공식은 일원분산분석에서 사용한 것과 거의 동일합니다. 각 관측값 <span class="math inline">\(Y_{rci}\)</span>와 전체 평균 <span class="math inline">\(\bar{Y}_{..}\)</span>의 차이를 구한 후 제곱하고, 이를 모두 합산합니다.</p>
+<p>먼저, 약물의 주효과에 대한 제곱합을 계산하겠습니다. 각 집단에는 총 <span class="math inline">\(K = 3\)</span>명의 사람이 있고, 치료법의 종류는 <span class="math inline">\(C = 2\)</span>가지입니다. 즉, 특정 약물을 받은 사람의 수는 <span class="math inline">\(3 \times 2 = 6\)</span>명입니다. 이 계산을 스프레드시트 프로그램에서 수행하면, 약물의 주요 효과에 대한 제곱합 값이 3.45로 나옵니다. 이는 이전에 제시한 ANOVA 표(<a href="#fig-fig14-3" class="quarto-xref">그림&nbsp;<span>14.3</span></a>)에서 약물 요인의 <span class="math inline">\(SS\)</span> 값을 확인했을 때 얻는 값과 동일합니다.</p>
+<p>같은 방법으로 치료법의 효과도 계산할 수 있습니다. 이번에도 각 집단에는 <span class="math inline">\(K = 3\)</span>명의 사람이 있지만, 약물의 종류는 <span class="math inline">\(R = 3\)</span>가지이므로, 인지행동치료(CBT)를 받은 사람은 <span class="math inline">\(3 \times 3 = 9\)</span>명이며, 치료를 받지 않은 사람도 9명입니다. 따라서 이 경우 치료법의 주요 효과에 대한 제곱합 값은 0.47로 계산됩니다. 마찬가지로, 이 값도 ANOVA 표(<a href="#fig-fig14-3" class="quarto-xref">그림&nbsp;<span>14.3</span></a>)에서 확인한 값과 동일합니다.</p>
+<p>이제 두 주효과에 대한 <span class="math inline">\(SS\)</span> 값을 계산하는 방법을 알게 되었습니다. 이러한 <span class="math inline">\(SS\)</span> 값은 일원분산분석에서 계산한 집단 간 제곱합과 유사합니다(<a href="13-Comparing-several-means-one-way-ANOVA.html" class="quarto-xref"><span>장 13</span></a> 참고). 그러나 이제는 두 개의 독립적인 집단 변수가 있으므로, 이를 단순히 집단 간 <span class="math inline">\(SS\)</span> 값이라고 생각하는 것은 혼동을 일으킬 수 있습니다.</p>
+<p><span class="math inline">\(F\)</span> 검정을 수행하려면 집단 내 제곱합도 계산해야 합니다. 회귀 분석(<a href="12-Correlation-and-linear-regression.html" class="quarto-xref"><span>장 12</span></a>) 장에서 사용했던 용어와 jamovi의 ANOVA 표 출력 방식과 일관성을 유지하기 위해, 이제부터 집단 내 <span class="math inline">\(SS\)</span> 값을 잔차 제곱합(residual sum of squares, <span class="math inline">\(SS_R\)</span>)이라고 부르겠습니다. 이 문맥에서 잔차 <span class="math inline">\(SS\)</span> 값을 이해하는 가장 쉬운 방법은, 결과변수의 변동 중 주변 평균의 차이를 고려한 후 남는 변동으로 생각하는 것입니다(즉, <span class="math inline">\(SS_A\)</span>와 <span class="math inline">\(SS_B\)</span>를 제거한 후 남는 변동). 이를 설명하기 위해 먼저 총제곱합을 계산하겠습니다. 이를 <span class="math inline">\(SS_T\)</span>로 표기하며, 그 공식은 일원분산분석에서 사용한 것과 거의 동일합니다. 각 관측값 <span class="math inline">\(Y_{rci}\)</span>와 전체 평균 <span class="math inline">\(\bar{Y}_{..}\)</span>의 차이를 구한 후 제곱하고, 이를 모두 합산합니다.</p>
 <p><span class="math display">\[SS_T=\sum_{r=1}^R \sum_{c=1}^C \sum_{i=1}^K (Y_{rci}-\bar{Y}_{..})^2\]</span></p>
 <p>위의 삼중 합 기호는 복잡해 보일 수 있지만, 실제로는 그렇지 않습니다. 첫 번째와 두 번째 합에서는 요인 A의 모든 수준(즉, 표에서 모든 행 <span class="math inline">\(r\)</span>)과 요인 B의 모든 수준(즉, 모든 열 <span class="math inline">\(c\)</span>)을 합산합니다. 각 <span class="math inline">\((r,c)\)</span> 조합은 하나의 집단을 나타내며, 각 집단에는 <span class="math inline">\(K\)</span>명의 사람이 포함됩니다. 따라서 해당 집단 내 모든 관측값(즉, 모든 <span class="math inline">\(i\)</span> 값)에 대해 합산해야 합니다. 다시 말해, 데이터셋에 포함된 모든 관측값(즉, 모든 가능한 <span class="math inline">\(rci\)</span> 조합)을 합산하는 것입니다.</p>
 <p>이제 결과변수의 전체 변동량(<span class="math inline">\(SS_T\)</span>)을 알게 되었고, 그중 요인 A(<span class="math inline">\(SS_A\)</span>)와 요인 B(<span class="math inline">\(SS_B\)</span>)에 기인하는 변동량도 알게 되었습니다. 따라서 잔차 제곱합은 두 요인(또는 상호작용 효과도 계산하는 경우에는 그 상호작용 효과)으로 설명할 수 없는 <span class="math inline">\(Y\)</span>의 변동량으로 정의됩니다. 즉, 다음과 같습니다.</p>
@@ -796,13 +796,13 @@ Table&nbsp;14.5. 임상 시험 데이터의 표본 평균 표기법
 <section id="자유도" class="level3" data-number="14.1.4">
 <h3 data-number="14.1.4" class="anchored" data-anchor-id="자유도"><span class="header-section-number">14.1.4</span> 자유도</h3>
 <p>자유도는 일원분산분석에서 계산하는 방식과 거의 동일합니다. 특정 요인에 대한 자유도는 해당 요인의 수준 개수에서 1을 뺀 값과 같습니다(즉, 행 변수 요인 A의 경우 <span class="math inline">\(R - 1\)</span>, 열 변수 요인 B의 경우 <span class="math inline">\(C - 1\)</span>). 따라서, 약물 요인의 자유도는 <span class="math inline">\(df = 2\)</span>, 치료법 요인의 자유도는 <span class="math inline">\(df = 1\)</span>입니다.</p>
-<p>이후에 ANOVA를 회귀 모형으로 해석하는 방법(<a href="#sec-ANOVA-as-a-linear-model" class="quarto-xref"><span>Section 14.6</span></a>)을 다룰 때, 이러한 자유도 값이 도출되는 과정에 대해 더 명확하게 설명하겠습니다. 하지만 지금은 자유도를 단순히 “관측된 수량의 개수에서 제약 조건의 개수를 뺀 값”으로 정의하여 사용할 수 있습니다. 즉, 약물 요인의 경우 3개의 집단 평균을 관측하지만, 이 값들은 하나의 전체 평균에 의해 제약을 받으므로 자유도는 2가 됩니다.</p>
+<p>이후에 ANOVA를 회귀 모형으로 해석하는 방법(<a href="#sec-ANOVA-as-a-linear-model" class="quarto-xref"><span>섹션 14.6</span></a>)을 다룰 때, 이러한 자유도 값이 도출되는 과정에 대해 더 명확하게 설명하겠습니다. 하지만 지금은 자유도를 단순히 “관측된 수량의 개수에서 제약 조건의 개수를 뺀 값”으로 정의하여 사용할 수 있습니다. 즉, 약물 요인의 경우 3개의 집단 평균을 관측하지만, 이 값들은 하나의 전체 평균에 의해 제약을 받으므로 자유도는 2가 됩니다.</p>
 </section>
 <section id="요인분산분석과-일원분산분석-비교" class="level3" data-number="14.1.5">
 <h3 data-number="14.1.5" class="anchored" data-anchor-id="요인분산분석과-일원분산분석-비교"><span class="header-section-number">14.1.5</span> 요인분산분석과 일원분산분석 비교</h3>
 <p>이제 요인분산분석이 어떻게 작동하는지 살펴보았으므로, 잠시 시간을 내어 이를 일원분산분석 결과와 비교해 보겠습니다. 이렇게 하면 요인분산분석을 수행하는 것이 왜 좋은지 명확하게 이해할 수 있습니다.</p>
-<p><a href="13-Comparing-several-means-one-way-ANOVA.html" class="quarto-xref"><span>Chapter 13</span></a> 에서 저는 약물 간 차이가 있는지 확인하기 위한 일원분산분석을 수행했고, 치료법 간 차이가 있는지 확인하기 위한 또 다른 일원분산분석을 수행했습니다. <a href="#sec-What-hypotheses-are-we-testing" class="quarto-xref"><span>Section 14.1.1</span></a> 에서 살펴본 바와 같이, 일원분산분석에서 검정하는 귀무가설과 대립가설은 요인분산분석에서 검정하는 가설과 사실상 동일합니다.</p>
-<p>ANOVA 표를 더 면밀히 살펴보면, 두 분석에서 각 요인에 대한 제곱합은 동일함을 알 수 있습니다(약물 요인의 경우 3.45, 치료법 요인의 경우 0.92). 자유도 역시 동일합니다(약물 요인은 2, 치료법 요인은 1). 하지만 분석 결과는 다릅니다! 특히, <a href="13-Comparing-several-means-one-way-ANOVA.html#sec-On-the-relationship-between-ANOVA-and-the-Student-t-test" class="quarto-xref"><span>Section 13.9</span></a> 에서 치료법에 대한 일원분산분석을 수행했을 때는 유의한 효과를 발견하지 못했습니다(<span class="math inline">\(p\)</span>-값이 .21이었습니다). 그러나 동일한 데이터를 사용하여 이원분산분석에서 치료법의 주요 효과를 살펴보면 유의한 효과를 발견할 수 있습니다(<span class="math inline">\(p = .019\)</span>). 두 분석이 분명히 동일하지 않다는 것을 알 수 있습니다.</p>
+<p><a href="13-Comparing-several-means-one-way-ANOVA.html" class="quarto-xref"><span>장 13</span></a> 에서 저는 약물 간 차이가 있는지 확인하기 위한 일원분산분석을 수행했고, 치료법 간 차이가 있는지 확인하기 위한 또 다른 일원분산분석을 수행했습니다. <a href="#sec-What-hypotheses-are-we-testing" class="quarto-xref"><span>섹션 14.1.1</span></a> 에서 살펴본 바와 같이, 일원분산분석에서 검정하는 귀무가설과 대립가설은 요인분산분석에서 검정하는 가설과 사실상 동일합니다.</p>
+<p>ANOVA 표를 더 면밀히 살펴보면, 두 분석에서 각 요인에 대한 제곱합은 동일함을 알 수 있습니다(약물 요인의 경우 3.45, 치료법 요인의 경우 0.92). 자유도 역시 동일합니다(약물 요인은 2, 치료법 요인은 1). 하지만 분석 결과는 다릅니다! 특히, <a href="13-Comparing-several-means-one-way-ANOVA.html#sec-On-the-relationship-between-ANOVA-and-the-Student-t-test" class="quarto-xref"><span>섹션 13.9</span></a> 에서 치료법에 대한 일원분산분석을 수행했을 때는 유의한 효과를 발견하지 못했습니다(<span class="math inline">\(p\)</span>-값이 .21이었습니다). 그러나 동일한 데이터를 사용하여 이원분산분석에서 치료법의 주요 효과를 살펴보면 유의한 효과를 발견할 수 있습니다(<span class="math inline">\(p = .019\)</span>). 두 분석이 분명히 동일하지 않다는 것을 알 수 있습니다.</p>
 <p>이러한 차이가 발생하는 이유는 무엇일까요? 그 해답은 잔차가 어떻게 계산되는지 이해하는 데 있습니다. <span class="math inline">\(F\)</span>-검정의 핵심 개념은 특정 요인에 기인하는 변동성과 설명되지 않는 변동성(잔차)을 비교하는 것입니다. 치료법에 대한 일원분산분석을 수행할 때 약물 요인의 영향을 무시하면, ANOVA는 약물로 인해 발생한 변동성을 모두 잔차에 포함시킵니다. 이렇게 되면 실제보다 데이터가 더 노이즈가 많은 것처럼 보이며, 이원분산분석에서는 유의한 것으로 나타나는 치료법의 효과가 일원분산분석에서는 유의하지 않게 됩니다. 즉, 특정 요인(예: 약물 요인)의 영향을 고려하지 않고 다른 요인(예: 치료법 요인)의 기여도를 평가하면, 분석 결과가 왜곡될 수 있습니다.</p>
 <p>물론 연구 대상과 무관한 변수를 무시하는 것은 전혀 문제가 되지 않습니다. 예를 들어, 실험실 벽의 색깔을 기록했는데, 이를 포함한 삼원분산분석(three-way ANOVA)에서 유의한 요인이 아니라고 판명되었다면, 이를 무시하고 더 단순한 이원분산분석을 보고하는 것이 합리적입니다. 하지만 실제로 결과에 영향을 미치는 변수를 제거해서는 안 됩니다!</p>
 </section>
@@ -810,7 +810,7 @@ Table&nbsp;14.5. 임상 시험 데이터의 표본 평균 표기법
 <h3 data-number="14.1.6" class="anchored" data-anchor-id="이-분석이-포착하는-결과-유형"><span class="header-section-number">14.1.6</span> 이 분석이 포착하는 결과 유형</h3>
 <p>지금까지 논의한 ANOVA 모형은 데이터에서 관찰될 수 있는 다양한 패턴을 설명할 수 있습니다. 예를 들어, 이원분산분석 설계에서는 네 가지 가능한 결과가 있습니다.<br>
 (a) 요인 A만 영향을 미치는 경우, (b) 요인 B만 영향을 미치는 경우, (c) 요인 A와 B 모두 영향을 미치는 경우, (d) 요인 A와 B 모두 영향을 미치지 않는 경우.<br>
-이 네 가지 경우 각각의 예시는 <a href="#fig-fig14-4" class="quarto-xref">Figure&nbsp;<span>14.4</span></a> 그래프로 나타나 있습니다.</p>
+이 네 가지 경우 각각의 예시는 <a href="#fig-fig14-4" class="quarto-xref">그림&nbsp;<span>14.4</span></a> 그래프로 나타나 있습니다.</p>
 <div class="cell" data-layout-align="left">
 <div class="cell-output-display">
 <div id="fig-fig14-4" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="두 요인(A와 B)이 집단 평균에 미치는 영향을 보여주는 네 개의 그래프. 그래프 (a):- 요인 A는 효과가 있으며, 요인 B는 효과가 없음. 그래프 (b):- 요인 B는 효과가 있으며, 요인 A는 효과가 없음. 그래프 (c):- 요인 A와 B 모두 효과가 있음. 그래프 (d):- 요인 A와 B 모두 효과가 없음.">
@@ -819,7 +819,7 @@ Table&nbsp;14.5. 임상 시험 데이터의 표본 평균 표기법
 <img src="14-Factorial-ANOVA_files/figure-html/fig-fig14-4-1.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" alt="두 요인(A와 B)이 집단 평균에 미치는 영향을 보여주는 네 개의 그래프. 그래프 (a):- 요인 A는 효과가 있으며, 요인 B는 효과가 없음. 그래프 (b):- 요인 B는 효과가 있으며, 요인 A는 효과가 없음. 그래프 (c):- 요인 A와 B 모두 효과가 있음. 그래프 (d):- 요인 A와 B 모두 효과가 없음.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fig14-4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;14.4. 상호작용이 없는 <span class="math inline">\(2 \times 2\)</span> ANOVA의 네 가지 가능한 결과. 패널 (a)에서는 요인 A의 주 효과가 나타나며, 요인 B의 효과는 없습니다. 패널 (b)에서는 요인 B의 주 효과가 나타나고, 요인 A의 효과는 없습니다. 패널 (c)에서는 요인 A와 요인 B 모두 주 효과를 가지고 있습니다. 마지막으로, 패널 (d)에서는 어느 요인도 효과가 없습니다.
+그림&nbsp;14.4. 상호작용이 없는 <span class="math inline">\(2 \times 2\)</span> ANOVA의 네 가지 가능한 결과. 패널 (a)에서는 요인 A의 주 효과가 나타나며, 요인 B의 효과는 없습니다. 패널 (b)에서는 요인 B의 주 효과가 나타나고, 요인 A의 효과는 없습니다. 패널 (c)에서는 요인 A와 요인 B 모두 주 효과를 가지고 있습니다. 마지막으로, 패널 (d)에서는 어느 요인도 효과가 없습니다.
 </figcaption>
 </figure>
 </div>
@@ -829,33 +829,33 @@ Figure&nbsp;14.4. 상호작용이 없는 <span class="math inline">\(2 \times 2\
 </section>
 <section id="요인분산분석-2-균형-설계와-상호작용의-해석" class="level2" data-number="14.2">
 <h2 data-number="14.2" class="anchored" data-anchor-id="요인분산분석-2-균형-설계와-상호작용의-해석"><span class="header-section-number">14.2</span> 요인분산분석 2: 균형 설계와 상호작용의 해석</h2>
-<p><a href="#fig-fig14-4" class="quarto-xref">Figure&nbsp;<span>14.4</span></a> 에서 보여주는 네 가지 데이터 패턴은 매우 현실적인 경우입니다. 실제로 이러한 패턴을 정확히 따르는 데이터가 많이 존재합니다. 하지만 이것이 전부는 아니며, 지금까지 논의한 ANOVA 모형만으로는 집단 평균을 완전히 설명할 수 없습니다. 그 이유는 무엇일까요?</p>
+<p><a href="#fig-fig14-4" class="quarto-xref">그림&nbsp;<span>14.4</span></a> 에서 보여주는 네 가지 데이터 패턴은 매우 현실적인 경우입니다. 실제로 이러한 패턴을 정확히 따르는 데이터가 많이 존재합니다. 하지만 이것이 전부는 아니며, 지금까지 논의한 ANOVA 모형만으로는 집단 평균을 완전히 설명할 수 없습니다. 그 이유는 무엇일까요?</p>
 <p>지금까지는 약물이 기분 향상에 영향을 미칠 수 있고, 치료법이 기분 향상에 영향을 미칠 수 있다는 개념을 다룰 수 있었습니다. 하지만 두 요인의 <strong>상호작용(교호작용, interaction)</strong> 가능성에 대해 이야기할 방법이 없었습니다.</p>
-<p>A와 B 간의 상호작용이 발생한다고 말하는 것은, 요인 <span class="math inline">\(A\)</span>의 효과가 요인 <span class="math inline">\(B\)</span>의 수준에 따라 <em>다르게</em> 나타난다는 의미입니다. <span class="math inline">\(2 \times 2\)</span> ANOVA에서 상호작용 효과가 발생하는 몇 가지 예시는 <a href="#fig-fig14-5" class="quarto-xref">Figure&nbsp;<span>14.5</span></a> 에 표현되어 있습니다.</p>
+<p>A와 B 간의 상호작용이 발생한다고 말하는 것은, 요인 <span class="math inline">\(A\)</span>의 효과가 요인 <span class="math inline">\(B\)</span>의 수준에 따라 <em>다르게</em> 나타난다는 의미입니다. <span class="math inline">\(2 \times 2\)</span> ANOVA에서 상호작용 효과가 발생하는 몇 가지 예시는 <a href="#fig-fig14-5" class="quarto-xref">그림&nbsp;<span>14.5</span></a> 에 표현되어 있습니다.</p>
 <div class="cell" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig14-5" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="네 개의 선 그래프(a-d)는 두 요인(A와 B)의 두 수준(1과 2) 간의 상호작용을 보여줍니다. 각 그래프에서 y축은 &quot;집단 평균&quot;으로, x축은 &quot;요인 B&quot;로 표시되어 있습니다. 그래프 (a)는 교차 상호작용을 나타냅니다. 그래프 (b), (c), (d)는 요인 A 또는 B의 특정 수준에서 서로 다른 효과를 강조하거나, 하나의 셀이 차이를 보이는 경우를 나타냅니다." data-fig-pos="h!">
+<div id="fig-fig14-5" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-pos="h!" data-fig-align="left" alt="네 개의 선 그래프(a-d)는 두 요인(A와 B)의 두 수준(1과 2) 간의 상호작용을 보여줍니다. 각 그래프에서 y축은 &quot;집단 평균&quot;으로, x축은 &quot;요인 B&quot;로 표시되어 있습니다. 그래프 (a)는 교차 상호작용을 나타냅니다. 그래프 (b), (c), (d)는 요인 A 또는 B의 특정 수준에서 서로 다른 효과를 강조하거나, 하나의 셀이 차이를 보이는 경우를 나타냅니다.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig14-5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="14-Factorial-ANOVA_files/figure-html/fig-fig14-5-1.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" data-fig-pos="h!" alt="네 개의 선 그래프(a-d)는 두 요인(A와 B)의 두 수준(1과 2) 간의 상호작용을 보여줍니다. 각 그래프에서 y축은 &quot;집단 평균&quot;으로, x축은 &quot;요인 B&quot;로 표시되어 있습니다. 그래프 (a)는 교차 상호작용을 나타냅니다. 그래프 (b), (c), (d)는 요인 A 또는 B의 특정 수준에서 서로 다른 효과를 강조하거나, 하나의 셀이 차이를 보이는 경우를 나타냅니다.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fig14-5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;14.5. <span class="math inline">\(2 \times 2\)</span> 분산분석(ANOVA)에 대한 질적으로 다른 상호작용
+그림&nbsp;14.5. <span class="math inline">\(2 \times 2\)</span> 분산분석(ANOVA)에 대한 질적으로 다른 상호작용
 </figcaption>
 </figure>
 </div>
 </div>
 </div>
-<p>보다 구체적인 예를 들어 설명하겠습니다. Anxifree와 Joyzepam의 작용이 매우 다른 생리학적 기전에 의해 조절된다고 가정해 보겠습니다. 이로 인해 나타나는 한 가지 결과는, Joyzepam은 치료를 받고 있는지 여부와 관계없이 기분에 거의 동일한 영향을 미치는 반면, Anxifree는 CBT와 함께 투여될 때 훨씬 더 효과적이라는 것입니다. 앞 절에서 설명한 분산분석 모형은 이러한 개념을 반영하지 못합니다. 상호작용이 실제로 발생하는지 여부를 파악하기 위해서는 여러 집단의 평균을 그래프로 나타내는 것이 도움이 됩니다. jamovi에서는 ANOVA의 ‘추정된 주변 평균(Estimated Marginal Means)’ 옵션을 통해 이를 수행할 수 있습니다. ‘Term 1’ 아래의 ‘주변 평균(Marginal Means)’ 상자에 약물과 치료 변수를 이동하면 됩니다. 이렇게 하면 <a href="#fig-fig14-6" class="quarto-xref">Figure&nbsp;<span>14.6</span></a> 같은 화면이 나타납니다.</p>
+<p>보다 구체적인 예를 들어 설명하겠습니다. Anxifree와 Joyzepam의 작용이 매우 다른 생리학적 기전에 의해 조절된다고 가정해 보겠습니다. 이로 인해 나타나는 한 가지 결과는, Joyzepam은 치료를 받고 있는지 여부와 관계없이 기분에 거의 동일한 영향을 미치는 반면, Anxifree는 CBT와 함께 투여될 때 훨씬 더 효과적이라는 것입니다. 앞 절에서 설명한 분산분석 모형은 이러한 개념을 반영하지 못합니다. 상호작용이 실제로 발생하는지 여부를 파악하기 위해서는 여러 집단의 평균을 그래프로 나타내는 것이 도움이 됩니다. jamovi에서는 ANOVA의 ‘추정된 주변 평균(Estimated Marginal Means)’ 옵션을 통해 이를 수행할 수 있습니다. ‘Term 1’ 아래의 ‘주변 평균(Marginal Means)’ 상자에 약물과 치료 변수를 이동하면 됩니다. 이렇게 하면 <a href="#fig-fig14-6" class="quarto-xref">그림&nbsp;<span>14.6</span></a> 같은 화면이 나타납니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig14-6" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="임상 시험 데이터를 분석하는 jamovi 인터페이스의 스크린샷이 표시되어 있습니다. 화면에는 분산분석 출력이 있으며, 다양한 약물 치료에 따른 기분 향상의 추정 주변 평균을 보여주는 그래프가 포함되어 있습니다. 치료 옵션은 CBT와 치료 없음이며, 그래프의 축은 기분 향상과 약물 종류를 나타냅니다." data-fig-pos="H">
+<div id="fig-fig14-6" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-pos="H" data-fig-align="left" alt="임상 시험 데이터를 분석하는 jamovi 인터페이스의 스크린샷이 표시되어 있습니다. 화면에는 분산분석 출력이 있으며, 다양한 약물 치료에 따른 기분 향상의 추정 주변 평균을 보여주는 그래프가 포함되어 있습니다. 치료 옵션은 CBT와 치료 없음이며, 그래프의 축은 기분 향상과 약물 종류를 나타냅니다.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig14-6-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig14-6.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" data-fig-pos="H" alt="임상 시험 데이터를 분석하는 jamovi 인터페이스의 스크린샷이 표시되어 있습니다. 화면에는 분산분석 출력이 있으며, 다양한 약물 치료에 따른 기분 향상의 추정 주변 평균을 보여주는 그래프가 포함되어 있습니다. 치료 옵션은 CBT와 치료 없음이며, 그래프의 축은 기분 향상과 약물 종류를 나타냅니다.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fig14-6-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;14.6. 임상 시험 데이터를 사용하여 분산분석에서 기술적 상호작용 그래프를 생성하는 방법을 보여주는 jamovi 화면
+그림&nbsp;14.6. 임상 시험 데이터를 사용하여 분산분석에서 기술적 상호작용 그래프를 생성하는 방법을 보여주는 jamovi 화면
 </figcaption>
 </figure>
 </div>
@@ -875,7 +875,7 @@ Tip&nbsp;14.3. 실습: 이원분산분석 - 추정된 주변 평균 검토
 <p><a href="#tip-ex-balanced-anova" class="quarto-xref">Tip&nbsp;<span>14.2</span></a> 에 이어서 추정된 주변 평균을 분석해 봅니다.</p>
 <ol type="1">
 <li><p>오른쪽 결과 창에서 ‘분산분석’을 클릭하면 왼쪽에 ’분산분석’ 설정 창이 나타납니다.</p></li>
-<li><p>왼쪽의 ‘분산분석’ 설정 창에서 ‘Expected Marginal Means’ 옵션을 확장하여 다음을 수행하면 <a href="#fig-fig14-6" class="quarto-xref">Figure&nbsp;<span>14.6</span></a> 같은 결과를 얻습니다.</p></li>
+<li><p>왼쪽의 ‘분산분석’ 설정 창에서 ‘Expected Marginal Means’ 옵션을 확장하여 다음을 수행하면 <a href="#fig-fig14-6" class="quarto-xref">그림&nbsp;<span>14.6</span></a> 같은 결과를 얻습니다.</p></li>
 </ol>
 <ul>
 <li><code>drug</code>와 <code>therapy</code>를 ‘Marginal Means’ 상자의 ’Term 1’로 이동합니다.</li>
@@ -887,7 +887,7 @@ Tip&nbsp;14.3. 실습: 이원분산분석 - 추정된 주변 평균 검토
 <h3 data-number="14.2.1" class="anchored" data-anchor-id="상호작용-효과란-정확히-무엇인가"><span class="header-section-number">14.2.1</span> 상호작용 효과란 정확히 무엇인가?</h3>
 <p>이번 절에서 소개할 핵심 개념은 <strong>상호작용 효과</strong>입니다. 지금까지 살펴본 분산분석 모형에는 두 개의 요인(예: 약물과 치료)만 포함되었습니다. 그러나 상호작용을 추가하면 모형에 새로운 요소가 포함됩니다. 즉, <em>약물과 치료의 조합</em>이 추가되는 것입니다.</p>
 <p>직관적으로 보면, 상호작용 효과의 개념은 비교적 간단합니다. 즉, <em>요인 A의 효과가 요인 B의 수준에 따라 달라지는 경우</em>를 의미합니다. 그러나 이러한 개념이 실제 데이터에서 어떤 의미를 가지는지 이해하는 것은 조금 더 어렵습니다.</p>
-<p><a href="#fig-fig14-5" class="quarto-xref">Figure&nbsp;<span>14.5</span></a> 그래프는 여러 가지 유형의 상호작용 패턴을 보여줍니다. 이들은 서로 다르게 보이지만 모두 상호작용 효과에 해당합니다. 따라서 이 개념을 통계적으로 수학적 표현으로 변환하는 것은 다소 복잡합니다.</p>
+<p><a href="#fig-fig14-5" class="quarto-xref">그림&nbsp;<span>14.5</span></a> 그래프는 여러 가지 유형의 상호작용 패턴을 보여줍니다. 이들은 서로 다르게 보이지만 모두 상호작용 효과에 해당합니다. 따라서 이 개념을 통계적으로 수학적 표현으로 변환하는 것은 다소 복잡합니다.</p>
 <section id="추가-기술적-설명-1" class="level4 unnumbered">
 <h4 class="unnumbered anchored" data-anchor-id="추가-기술적-설명-1">추가 기술적 설명</h4>
 <p>이러한 이유로, 상호작용 효과를 귀무가설과 대립가설의 형태로 공식화하는 과정은 약간 까다롭습니다. 아마도 이 책의 많은 독자들이 이 부분에 큰 관심을 가지지 않을 수도 있습니다. 하지만 기본적인 개념은 간략히 설명해 보겠습니다.</p>
@@ -958,7 +958,7 @@ df_{A:B} &amp; = (R \times C - 1) - (R - 1) - (C - 1) \\
 </section>
 <section id="jamovi에서-anova-실행하기" class="level3" data-number="14.2.3">
 <h3 data-number="14.2.3" class="anchored" data-anchor-id="jamovi에서-anova-실행하기"><span class="header-section-number">14.2.3</span> jamovi에서 ANOVA 실행하기</h3>
-<p>jamovi에서 ANOVA 모형에 상호작용 항을 추가하는 것은 매우 간단합니다. 사실, ANOVA의 기본 옵션이므로 더욱 쉽습니다. 즉, 예를 들어 약물(<code>drug</code>)과 치료(<code>therapy</code>)라는 두 개의 요인을 포함하는 ANOVA를 지정하면, 상호작용 항인 <code>drug</code> <span class="math inline">\(\times\)</span> <code>therapy</code>가 자동으로 모형에 추가됩니다.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> 상호작용 항을 포함한 ANOVA를 실행하면 <a href="#fig-fig14-7" class="quarto-xref">Figure&nbsp;<span>14.7</span></a> 같은 결과를 얻을 수 있습니다.</p>
+<p>jamovi에서 ANOVA 모형에 상호작용 항을 추가하는 것은 매우 간단합니다. 사실, ANOVA의 기본 옵션이므로 더욱 쉽습니다. 즉, 예를 들어 약물(<code>drug</code>)과 치료(<code>therapy</code>)라는 두 개의 요인을 포함하는 ANOVA를 지정하면, 상호작용 항인 <code>drug</code> <span class="math inline">\(\times\)</span> <code>therapy</code>가 자동으로 모형에 추가됩니다.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> 상호작용 항을 포함한 ANOVA를 실행하면 <a href="#fig-fig14-7" class="quarto-xref">그림&nbsp;<span>14.7</span></a> 같은 결과를 얻을 수 있습니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
 <div id="fig-fig14-7" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="기분 향상(mood gain)에 대한 ANOVA 검정 결과를 요약한 jamovi 표. 약물(drug), 치료(therapy), 상호작용, 잔차에 대한 제곱합(Sum of Squares), 자유도(df), 평균제곱(Mean Square), $F$-값, $p$-값, η², η²p, ω²을 보여줍니다.">
@@ -967,7 +967,7 @@ df_{A:B} &amp; = (R \times C - 1) - (R - 1) - (C - 1) \\
 <img src="images/kor/fig14-7.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" alt="기분 향상(mood gain)에 대한 ANOVA 검정 결과를 요약한 jamovi 표. 약물(drug), 치료(therapy), 상호작용, 잔차에 대한 제곱합(Sum of Squares), 자유도(df), 평균제곱(Mean Square), $F$-값, $p$-값, η², η²p, ω²을 보여줍니다.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fig14-7-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;14.7. 상호작용 항 drug <span class="math inline">\(\times\)</span> therapy를 포함한 전체 요인 모형의 결과
+그림&nbsp;14.7. 상호작용 항 drug <span class="math inline">\(\times\)</span> therapy를 포함한 전체 요인 모형의 결과
 </figcaption>
 </figure>
 </div>
@@ -979,7 +979,7 @@ Figure&nbsp;14.7. 상호작용 항 drug <span class="math inline">\(\times\)</sp
 <h3 data-number="14.2.4" class="anchored" data-anchor-id="결과-해석하기"><span class="header-section-number">14.2.4</span> 결과 해석하기</h3>
 <p>요인분산분석 결과를 해석할 때 고려해야 할 몇 가지 중요한 사항이 있습니다.</p>
 <p>첫째, 일원분산분석에서와 마찬가지로, 특정 요인의 주효과(예: 약물 효과)가 유의하다고 해서 어떤 약물의 효과가 서로 다른지를 알 수 있는 것은 아닙니다. 이를 알아내기 위해서는 추가적인 분석을 수행해야 합니다. 이후 <a href="#대비를-지정하는-다양한-방법">대비를 지정하는 다양한 방법</a> 및 <a href="#sec-Post-hoc-tests">사후 검정</a> 절에서 실행할 수 있는 몇 가지 분석 방법을 다룰 것입니다. 이는 상호작용 효과에도 동일하게 적용됩니다. 상호작용 효과가 유의하다고 해서 어떤 종류의 상호작용이 존재하는지를 알 수 있는 것은 아닙니다. 마찬가지로, 추가적인 분석이 필요합니다.</p>
-<p>둘째, 유의한 상호작용 효과는 나타났지만 해당 요인들의 주효과는 유의하지 않은 경우에 대한 해석 문제가 있습니다. 이러한 상황은 가끔 발생합니다. 예를 들어, <a href="#fig-fig14-5" class="quarto-xref">Figure&nbsp;<span>14.5</span></a>(a)에 나타난 교차 상호작용(crossover interaction)에서는 바로 이러한 결과가 나타납니다. 즉, 두 요인의 주효과는 유의하지 않지만, 상호작용 효과는 유의하게 나타납니다. 이는 해석하기 어려운 상황이며, 많은 사람들이 혼란스러워하는 경우가 많습니다. 통계학자들이 일반적으로 제공하는 조언은, 상호작용 효과가 존재하는 경우 주효과에 너무 많은 의미를 부여하지 않는 것이 좋다는 것입니다. 수학적으로 보면 주효과 검정은 완전히 타당하지만, 상호작용 효과가 유의할 때 주효과는 흥미로운 가설을 검정하는 경우가 드뭅니다. <a href="#sec-What-hypotheses-are-we-testing" class="quarto-xref"><span>Section 14.1.1</span></a> 에서 논의했듯이, 주효과의 귀무가설은 변인의 주변 평균이 서로 같다는 것입니다. 주변 평균은 여러 다른 집단의 평균을 내어 계산됩니다. 그러나 상호작용 효과가 유의하다는 것은 주변 평균을 구성하는 집단들이 동질적이지 않다는 것을 의미하므로, 동질적이지 않은 집단을 평균하여 만들어지는 주변 평균에 관심을 가질 이유가 분명하지 않을 수도 있습니다.</p>
+<p>둘째, 유의한 상호작용 효과는 나타났지만 해당 요인들의 주효과는 유의하지 않은 경우에 대한 해석 문제가 있습니다. 이러한 상황은 가끔 발생합니다. 예를 들어, <a href="#fig-fig14-5" class="quarto-xref">그림&nbsp;<span>14.5</span></a>(a)에 나타난 교차 상호작용(crossover interaction)에서는 바로 이러한 결과가 나타납니다. 즉, 두 요인의 주효과는 유의하지 않지만, 상호작용 효과는 유의하게 나타납니다. 이는 해석하기 어려운 상황이며, 많은 사람들이 혼란스러워하는 경우가 많습니다. 통계학자들이 일반적으로 제공하는 조언은, 상호작용 효과가 존재하는 경우 주효과에 너무 많은 의미를 부여하지 않는 것이 좋다는 것입니다. 수학적으로 보면 주효과 검정은 완전히 타당하지만, 상호작용 효과가 유의할 때 주효과는 흥미로운 가설을 검정하는 경우가 드뭅니다. <a href="#sec-What-hypotheses-are-we-testing" class="quarto-xref"><span>섹션 14.1.1</span></a> 에서 논의했듯이, 주효과의 귀무가설은 변인의 주변 평균이 서로 같다는 것입니다. 주변 평균은 여러 다른 집단의 평균을 내어 계산됩니다. 그러나 상호작용 효과가 유의하다는 것은 주변 평균을 구성하는 집단들이 동질적이지 않다는 것을 의미하므로, 동질적이지 않은 집단을 평균하여 만들어지는 주변 평균에 관심을 가질 이유가 분명하지 않을 수도 있습니다.</p>
 <p>이를 임상 연구 예제를 통해 설명해 보겠습니다. 공포증 치료법(예: 체계적 둔감법(systematic desensitisation)과 홍수법(flooding)) 두 가지와 불안 감소 약물(예: Anxifree와 Joyzepam) 두 가지를 비교하는 <span class="math inline">\(2 \times 2\)</span> 실험 설계를 가정해 보겠습니다. 실험 결과, Anxifree는 둔감법 치료를 받을 때 효과가 없었고, Joyzepam은 홍수법 치료를 받을 때 효과가 없었다고 가정합시다. 하지만 두 약물 모두 다른 치료법에서는 효과가 있었습니다. 이는 전형적인 교차 상호작용이며, ANOVA를 수행하면 약물의 주효과는 유의하지 않지만, 상호작용 효과는 유의하게 나타납니다. 그렇다면, “주효과가 유의하지 않다”는 것이 실제로 의미하는 바는 무엇일까요? 이는 두 가지 심리 치료법을 평균했을 때 Anxifree와 Joyzepam의 평균 효과가 동일하다는 것을 의미합니다. 하지만 이는 실질적으로 중요하지 않습니다. 공포증 치료를 할 때, 환자가 “홍수법과 둔감법의 평균적인 치료”를 받을 수는 없습니다. 즉, 환자는 두 치료법 중 하나만을 받게 됩니다. 한 치료법에서는 한 약물이 효과적이고, 다른 치료법에서는 다른 약물이 효과적입니다. 이 경우 중요한 것은 상호작용 효과이며, 주효과는 별로 의미가 없습니다.</p>
 <p>이러한 상황은 자주 발생합니다. 주효과 검정은 주변 평균을 기준으로 수행되며, 상호작용 효과가 존재하는 경우에는 이러한 주변 평균이 의미를 갖지 않는 경우가 많습니다. 이는 상호작용 효과가 집단 간 차이를 나타내므로, 서로 평균을 내는 것이 적절하지 않기 때문입니다. 물론, 항상 주효과가 무의미한 것은 아닙니다. 때로는 주효과가 크고 상호작용 효과가 작게 나타날 수도 있습니다. 이 경우, “약물 A가 전반적으로 약물 B보다 효과적이다”라고 말할 수 있습니다(즉, 약물의 주효과가 상호작용 효과보다 상대적으로 크기 때문입니다). 다만, “그 효과의 크기는 심리 치료법에 따라 다르다”라는 설명을 추가해야 합니다.</p>
 <p>어떤 경우든, 중요한 점은 상호작용 효과가 유의할 때 주효과가 실제로 어떤 의미를 가지는지를 신중하게 생각해야 한다는 것입니다. 주효과가 자동적으로 중요한 것이라고 가정하지 마십시오.</p>
@@ -995,12 +995,12 @@ Figure&nbsp;14.7. 상호작용 항 drug <span class="math inline">\(\times\)</sp
 <p><span class="math display">\[\text{partial }\eta_A^2= \frac{SS_A}{SS_A+SS_R}\]</span></p>
 <p>이 값은 항상 <span class="math inline">\(\eta^2\)</span>보다 크게 나오는데, 저의 회의적인 관점에서는 이 때문에 부분 <span class="math inline">\(\eta^2\)</span>가 널리 사용되는 것 같습니다. 부분 <span class="math inline">\(\eta^2\)</span>도 0(효과 없음)에서 1(완전한 효과) 사이의 값을 가집니다. 하지만 부분 <span class="math inline">\(\eta^2\)</span> 값이 클 때 이를 해석하는 것이 다소 까다로울 수 있습니다. 특히, 부분 <span class="math inline">\(\eta^2\)</span> 값들은 서로 비교할 수 없다는 점을 유의해야 합니다.</p>
 <p>예를 들어, 집단 내 변동이 전혀 없다고 가정해 봅시다(<span class="math inline">\(SS_R = 0\)</span>인 경우). 이 경우, 모든 항목의 부분 <span class="math inline">\(\eta^2\)</span> 값이 1이 됩니다. 하지만 이것이 모든 항목이 동일하게 중요하거나 크다는 의미는 아닙니다. 단지 모든 항목이 잔차 변동과 비교했을 때 상대적으로 큰 효과 크기를 가진다는 것일 뿐입니다. 즉, 부분 <span class="math inline">\(\eta^2\)</span> 값들은 서로 비교할 수 없습니다.</p>
-<p>이를 좀 더 명확하게 이해하기 위해 구체적인 예를 살펴보겠습니다. 먼저, <a href="#fig-fig14-3" class="quarto-xref">Figure&nbsp;<span>14.3</span></a> 의 상호작용 요인이 포함되지 않은 ANOVA 결과에서 효과 크기를 살펴보겠습니다(<a href="#tbl-tab14-6" class="quarto-xref">Table&nbsp;<span>14.6</span></a>).</p>
+<p>이를 좀 더 명확하게 이해하기 위해 구체적인 예를 살펴보겠습니다. 먼저, <a href="#fig-fig14-3" class="quarto-xref">그림&nbsp;<span>14.3</span></a> 의 상호작용 요인이 포함되지 않은 ANOVA 결과에서 효과 크기를 살펴보겠습니다(<a href="#tbl-tab14-6" class="quarto-xref">표&nbsp;<span>14.6</span></a>).</p>
 <div class="cell" data-layout-align="left">
 <div id="tbl-tab14-6" class="cell quarto-float quarto-figure quarto-figure-left anchored" data-layout-align="left">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tab14-6-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;14.6. ANOVA 모형에서 상호작용 항이 <strong>포함되지 않은</strong> 경우의 효과 크기
+표&nbsp;14.6. ANOVA 모형에서 상호작용 항이 <strong>포함되지 않은</strong> 경우의 효과 크기
 </figcaption>
 <div aria-describedby="tbl-tab14-6-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
@@ -1019,14 +1019,14 @@ Table&nbsp;14.6. ANOVA 모형에서 상호작용 항이 <strong>포함되지 않
 </div>
 </div>
 <p>먼저 <span class="math inline">\(\eta^2\)</span> 값을 살펴보면, 약물(<code>drug</code>)이 기분 향상(<code>mood.gain</code>) 변동의 71%를 설명하는 반면(즉, <span class="math inline">\(\eta^2 = 0.71\)</span>), 치료법(<code>therapy</code>)는 10%만을 설명합니다. 따라서 19%의 변동은 설명되지 않은 상태로 남아 있습니다(즉, 잔차 변동이 전체 변동의 19%를 차지함). 이는 약물의 효과가 매우 크고<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a>, 치료법의 효과는 상대적으로 작음을 의미합니다.</p>
-<p>이제 부분 <span class="math inline">\(\eta^2\)</span> 값을 살펴보겠습니다(<a href="#fig-fig14-3" class="quarto-xref">Figure&nbsp;<span>14.3</span></a>). 치료법의 효과가 크지 않기 때문에 이를 통제한다고 해도 큰 차이가 발생하지 않습니다. 따라서 약물의 부분 <span class="math inline">\(\eta^2\)</span> 값은 크게 증가하지 않으며, <span class="math inline">\(p^{\eta^2} = 0.79\)</span>가 됩니다. 반면, 약물의 효과가 매우 컸기 때문에 이를 통제하면 치료법의 부분 <span class="math inline">\(\eta^2\)</span> 값이 크게 증가하여 <span class="math inline">\(p^{\eta^2} = 0.34\)</span>가 됩니다.</p>
+<p>이제 부분 <span class="math inline">\(\eta^2\)</span> 값을 살펴보겠습니다(<a href="#fig-fig14-3" class="quarto-xref">그림&nbsp;<span>14.3</span></a>). 치료법의 효과가 크지 않기 때문에 이를 통제한다고 해도 큰 차이가 발생하지 않습니다. 따라서 약물의 부분 <span class="math inline">\(\eta^2\)</span> 값은 크게 증가하지 않으며, <span class="math inline">\(p^{\eta^2} = 0.79\)</span>가 됩니다. 반면, 약물의 효과가 매우 컸기 때문에 이를 통제하면 치료법의 부분 <span class="math inline">\(\eta^2\)</span> 값이 크게 증가하여 <span class="math inline">\(p^{\eta^2} = 0.34\)</span>가 됩니다.</p>
 <p>그렇다면, 이 부분 <span class="math inline">\(\eta^2\)</span> 값들은 실제로 무엇을 의미할까요? 일반적으로 저는 요인 A의 부분 <span class="math inline">\(\eta^2\)</span> 값을 해석할 때, 요인 A만을 조작하는 가상의 실험에서 기대할 수 있는 효과 크기를 나타내는 것으로 해석합니다. 즉, 이 실험에서는 요인 A와 B를 모두 조작했지만, 만약 요인 A만 조작한 실험을 상상해 본다면, 해당 실험에서 결과변수의 변동을 얼마나 설명할 수 있는지를 알려주는 값이 됩니다. 그러나 주효과와 관련된 많은 개념들과 마찬가지로, 상호작용 효과가 크고 유의할 경우 이 해석이 적절하지 않을 수도 있습니다.</p>
-<p>이제 상호작용 효과를 포함했을 때의 효과 크기를 살펴보겠습니다(<a href="#tbl-tab14-7" class="quarto-xref">Table&nbsp;<span>14.7</span></a>). <a href="#fig-fig14-7" class="quarto-xref">Figure&nbsp;<span>14.7</span></a> 의 모형과 같이 상호작용 항이 포함된 경우의 효과 크기 값은 다음과 같습니다. <span class="math inline">\(\eta^2\)</span> 값 자체는 변하지 않지만, 부분 <span class="math inline">\(\eta^2\)</span> 값들은 변합니다.</p>
+<p>이제 상호작용 효과를 포함했을 때의 효과 크기를 살펴보겠습니다(<a href="#tbl-tab14-7" class="quarto-xref">표&nbsp;<span>14.7</span></a>). <a href="#fig-fig14-7" class="quarto-xref">그림&nbsp;<span>14.7</span></a> 의 모형과 같이 상호작용 항이 포함된 경우의 효과 크기 값은 다음과 같습니다. <span class="math inline">\(\eta^2\)</span> 값 자체는 변하지 않지만, 부분 <span class="math inline">\(\eta^2\)</span> 값들은 변합니다.</p>
 <div class="cell" data-layout-align="left">
 <div id="tbl-tab14-7" class="cell quarto-float quarto-figure quarto-figure-left anchored" data-layout-align="left">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tab14-7-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;14.7. ANOVA 모형에서 상호작용 항이 <strong>포함된</strong> 경우의 효과 크기
+표&nbsp;14.7. ANOVA 모형에서 상호작용 항이 <strong>포함된</strong> 경우의 효과 크기
 </figcaption>
 <div aria-describedby="tbl-tab14-7-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
@@ -1078,7 +1078,7 @@ Tip&nbsp;14.4. 실습: 이원분산분석 - 상호작용 요인 제거하기
 </ol>
 <ul>
 <li>‘모형’ 옵션을 확장하여 ’모형 항’에 있는 주성분의 <code>drug</code>와 <code>therapy</code>를 선택한 후, 가운데 두 개의 화상표 중 아래 화살표에서 ’상호작용’을 선택합니다(아래 그림 참조).</li>
-<li>그러면 <code>drug * therapy</code> 교차항이 ’모형 항’에 다시 들어와서 <a href="#fig-fig14-7" class="quarto-xref">Figure&nbsp;<span>14.7</span></a> 결과가 다시 나타납니다.</li>
+<li>그러면 <code>drug * therapy</code> 교차항이 ’모형 항’에 다시 들어와서 <a href="#fig-fig14-7" class="quarto-xref">그림&nbsp;<span>14.7</span></a> 결과가 다시 나타납니다.</li>
 </ul>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
@@ -1093,7 +1093,7 @@ Tip&nbsp;14.4. 실습: 이원분산분석 - 상호작용 요인 제거하기
 </div>
 <section id="추정된-집단-평균" class="level3" data-number="14.3.1">
 <h3 data-number="14.3.1" class="anchored" data-anchor-id="추정된-집단-평균"><span class="header-section-number">14.3.1</span> 추정된 집단 평균</h3>
-<p>많은 경우 ANOVA 결과에서 모든 집단 평균의 추정값과 신뢰 구간을 보고하고 싶을 것입니다. 이를 위해 jamovi 분산분석에서 ‘추정 주변 평균(Estimated Marginal Means)’ 옵션을 사용할 수 있습니다. <a href="#fig-fig14-8" class="quarto-xref">Figure&nbsp;<span>14.8</span></a> 같이 이를 수행할 수 있습니다.</p>
+<p>많은 경우 ANOVA 결과에서 모든 집단 평균의 추정값과 신뢰 구간을 보고하고 싶을 것입니다. 이를 위해 jamovi 분산분석에서 ‘추정 주변 평균(Estimated Marginal Means)’ 옵션을 사용할 수 있습니다. <a href="#fig-fig14-8" class="quarto-xref">그림&nbsp;<span>14.8</span></a> 같이 이를 수행할 수 있습니다.</p>
 <p>만약 실행한 ANOVA가 포화 모형(saturated model)이라면(즉, 가능한 모든 주효과와 모든 상호작용 효과를 포함하는 경우), 집단 평균의 추정값은 실제로 표본 평균과 동일합니다. 다만, 신뢰 구간은 각 집단별로 개별 표준 오차를 사용하는 것이 아니라, 공통으로 추정된 표준 오차를 사용하여 계산됩니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
@@ -1103,7 +1103,7 @@ Tip&nbsp;14.4. 실습: 이원분산분석 - 상호작용 요인 제거하기
 <img src="images/fig14-8.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" alt="임상 시험 분석 소프트웨어의 jamovi ANOVA 분석 화면 스크린샷. 화면에는 가정 검토(Assumptions Checks), 추정(Estimates), 추정 주변 평균(Estimated Marginal Means) 절이 표시됨. 데이터 테이블에는 약물 치료에 대한 ANOVA 결과와 추정 주변 평균이 나열됨.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fig14-8-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;14.8. jamovi에서 포화 모형(즉, 상호작용 항 포함)으로 추정된 주변 평균을 보여주는 스크린샷 (임상 시험 데이터셋)
+그림&nbsp;14.8. jamovi에서 포화 모형(즉, 상호작용 항 포함)으로 추정된 주변 평균을 보여주는 스크린샷 (임상 시험 데이터셋)
 </figcaption>
 </figure>
 </div>
@@ -1113,16 +1113,16 @@ Figure&nbsp;14.8. jamovi에서 포화 모형(즉, 상호작용 항 포함)으로
 <p>모형에 상호작용 항이 포함되지 않은 경우, 추정된 집단 평균은 표본 평균과 다르게 나타납니다. jamovi는 표본 평균을 직접 보고하는 대신, 주변 평균을 기반으로 집단 평균 값을 계산합니다(즉, 상호작용이 없다고 가정함).</p>
 <p>이전에 사용한 표기법을 활용하면, 행(row) 요인 A의 수준 <span class="math inline">\(r\)</span>과 열(column) 요인 B의 수준 <span class="math inline">\(c\)</span>에 대한 평균 <span class="math inline">\(\mu_{rc}\)</span>의 추정값은 다음과 같이 계산됩니다.</p>
 <p><span class="math display">\[\mu_{rc} = \mu_{..} + \alpha_r + \beta_c\]</span></p>
-<p>만약 두 요인 간의 실제 상호작용이 없다면, 이는 원래 표본 평균보다 모집단 평균을 더 잘 추정하는 방법이 됩니다. jamovi ANOVA 분석의 ‘모형’ 옵션에서 상호작용 항을 제거하면, <a href="#fig-fig14-9" class="quarto-xref">Figure&nbsp;<span>14.9</span></a> 에서 볼 수 있는 분석 결과처럼 주변 평균이 제공됩니다.</p>
+<p>만약 두 요인 간의 실제 상호작용이 없다면, 이는 원래 표본 평균보다 모집단 평균을 더 잘 추정하는 방법이 됩니다. jamovi ANOVA 분석의 ‘모형’ 옵션에서 상호작용 항을 제거하면, <a href="#fig-fig14-9" class="quarto-xref">그림&nbsp;<span>14.9</span></a> 에서 볼 수 있는 분석 결과처럼 주변 평균이 제공됩니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig14-9" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="기분 향상 분석을 위한 ANOVA 테이블과 추정 주변 평균 테이블. ANOVA 테이블에서 약물 효과가 유의미하며, F(3,14) = 7.08, p = 0.01866으로 나타남. 추정 주변 평균 테이블에는 치료법과 약물 간의 상호작용에 대한 평균과 신뢰 구간이 나열됨." data-fig-pos="H">
+<div id="fig-fig14-9" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-pos="H" data-fig-align="left" alt="기분 향상 분석을 위한 ANOVA 테이블과 추정 주변 평균 테이블. ANOVA 테이블에서 약물 효과가 유의미하며, F(3,14) = 7.08, p = 0.01866으로 나타남. 추정 주변 평균 테이블에는 치료법과 약물 간의 상호작용에 대한 평균과 신뢰 구간이 나열됨.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig14-9-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/fig14-9.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" data-fig-pos="H" alt="기분 향상 분석을 위한 ANOVA 테이블과 추정 주변 평균 테이블. ANOVA 테이블에서 약물 효과가 유의미하며, F(3,14) = 7.08, p = 0.01866으로 나타남. 추정 주변 평균 테이블에는 치료법과 약물 간의 상호작용에 대한 평균과 신뢰 구간이 나열됨.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fig14-9-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;14.9. jamovi에서 비포화 모형(즉, 상호작용 항이 없는 경우)의 추정 주변 평균을 보여주는 스크린샷 (임상 시험 데이터셋)
+그림&nbsp;14.9. jamovi에서 비포화 모형(즉, 상호작용 항이 없는 경우)의 추정 주변 평균을 보여주는 스크린샷 (임상 시험 데이터셋)
 </figcaption>
 </figure>
 </div>
@@ -1191,13 +1191,13 @@ Tip&nbsp;14.5. 실습: 이원분산분석 - 추정된 주변 평균 비교
 <p>그렇다면, 앞에서 언급한 분산의 동질성과 잔차의 정규성은 어떻게 확인할 수 있을까요? 다행히도 이는 일원분산분석에서 수행했던 검토 방법과 다르지 않고 비교적 쉽게 확인할 수 있습니다.</p>
 <section id="분산의-동질성" class="level3" data-number="14.4.1">
 <h3 data-number="14.4.1" class="anchored" data-anchor-id="분산의-동질성"><span class="header-section-number">14.4.1</span> 분산의 동질성</h3>
-<p>이전 장의 <a href="13-Comparing-several-means-one-way-ANOVA.html#sec-Checking-the-homogeneity-of-variance-assumption" class="quarto-xref"><span>Section 13.6.1</span></a> 에서 설명한 것처럼, 서로 다른 집단/범주 간의 표준 편차를 시각적으로 비교하는 것이 좋은 방법입니다. 또한, Levene 검정을 수행하여 시각적 검토 결과와 일치하는지 확인하는 것이 좋습니다.</p>
-<p>Levene 검정의 이론적 배경은 <a href="13-Comparing-several-means-one-way-ANOVA.html#sec-Checking-the-homogeneity-of-variance-assumption" class="quarto-xref"><span>Section 13.6.1</span></a> 에서 다루었으므로, 여기서 다시 설명하지 않겠습니다. 이 검정은 포화 모형(즉, 모든 관련 항을 포함하는 모형)을 가정합니다. 왜냐하면 이 검정은 주로 집단 내 분산과 관련이 있으며, 완전 모형을 기준으로 계산하는 것이 가장 타당하기 때문입니다.</p>
-<p>jamovi의 ANOVA 분석에서 ‘가설검증’-‘등분산 검정’ 옵션을 통해 Levene 검정을 수행할 수 있으며, 결과는 <a href="#fig-fig14-10" class="quarto-xref">Figure&nbsp;<span>14.10</span></a> 같이 나타납니다. Levene 검정이 유의하지 않고(즉, 통계적으로 유의한 차이가 없다면), 표준 편차 그래프의 시각적 검토 결과와도 일치하는 경우, 분산의 동질성 가정이 위배되지 않았다고 안전하게 가정할 수 있습니다.</p>
+<p>이전 장의 <a href="13-Comparing-several-means-one-way-ANOVA.html#sec-Checking-the-homogeneity-of-variance-assumption" class="quarto-xref"><span>섹션 13.6.1</span></a> 에서 설명한 것처럼, 서로 다른 집단/범주 간의 표준 편차를 시각적으로 비교하는 것이 좋은 방법입니다. 또한, Levene 검정을 수행하여 시각적 검토 결과와 일치하는지 확인하는 것이 좋습니다.</p>
+<p>Levene 검정의 이론적 배경은 <a href="13-Comparing-several-means-one-way-ANOVA.html#sec-Checking-the-homogeneity-of-variance-assumption" class="quarto-xref"><span>섹션 13.6.1</span></a> 에서 다루었으므로, 여기서 다시 설명하지 않겠습니다. 이 검정은 포화 모형(즉, 모든 관련 항을 포함하는 모형)을 가정합니다. 왜냐하면 이 검정은 주로 집단 내 분산과 관련이 있으며, 완전 모형을 기준으로 계산하는 것이 가장 타당하기 때문입니다.</p>
+<p>jamovi의 ANOVA 분석에서 ‘가설검증’-‘등분산 검정’ 옵션을 통해 Levene 검정을 수행할 수 있으며, 결과는 <a href="#fig-fig14-10" class="quarto-xref">그림&nbsp;<span>14.10</span></a> 같이 나타납니다. Levene 검정이 유의하지 않고(즉, 통계적으로 유의한 차이가 없다면), 표준 편차 그래프의 시각적 검토 결과와도 일치하는 경우, 분산의 동질성 가정이 위배되지 않았다고 안전하게 가정할 수 있습니다.</p>
 </section>
 <section id="잔차의-정규성" class="level3" data-number="14.4.2">
 <h3 data-number="14.4.2" class="anchored" data-anchor-id="잔차의-정규성"><span class="header-section-number">14.4.2</span> 잔차의 정규성</h3>
-<p>일원분산분석과 마찬가지로, 잔차의 정규성을 확인하는 것은 간단합니다(<a href="13-Comparing-several-means-one-way-ANOVA.html#sec-Checking-the-normality-assumption" class="quarto-xref"><span>Section 13.6.4</span></a> 참고). 우선, QQ 플롯을 사용하여 잔차를 그래픽적으로 검사하는 것이 좋습니다. 자세한 내용은 <a href="#fig-fig14-10" class="quarto-xref">Figure&nbsp;<span>14.10</span></a> 을 참조하십시오.</p>
+<p>일원분산분석과 마찬가지로, 잔차의 정규성을 확인하는 것은 간단합니다(<a href="13-Comparing-several-means-one-way-ANOVA.html#sec-Checking-the-normality-assumption" class="quarto-xref"><span>섹션 13.6.4</span></a> 참고). 우선, QQ 플롯을 사용하여 잔차를 그래픽적으로 검사하는 것이 좋습니다. 자세한 내용은 <a href="#fig-fig14-10" class="quarto-xref">그림&nbsp;<span>14.10</span></a> 을 참조하십시오.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
 <div id="fig-fig14-10" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="통계 분석을 위한 가정 검토 결과를 보여주는 이미지입니다. Levene 검정 결과(F = 0.22, df1 = 5, df2 = 12, p = 0.94731)와 Shapiro-Wilk 검정 결과(통계량 = 0.96, p = 0.53290)가 포함되어 있습니다. 아래에는 표준화된 잔차 대 이론적 분위수(Q-Q 플롯)가 나타나 있습니다.">
@@ -1206,7 +1206,7 @@ Tip&nbsp;14.5. 실습: 이원분산분석 - 추정된 주변 평균 비교
 <img src="images/kor/fig14-10.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" alt="통계 분석을 위한 가정 검토 결과를 보여주는 이미지입니다. Levene 검정 결과(F = 0.22, df1 = 5, df2 = 12, p = 0.94731)와 Shapiro-Wilk 검정 결과(통계량 = 0.96, p = 0.53290)가 포함되어 있습니다. 아래에는 표준화된 잔차 대 이론적 분위수(Q-Q 플롯)가 나타나 있습니다.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fig14-10-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;14.10. ANOVA 모형에서 가정 검토
+그림&nbsp;14.10. ANOVA 모형에서 가정 검토
 </figcaption>
 </figure>
 </div>
@@ -1219,16 +1219,16 @@ Figure&nbsp;14.10. ANOVA 모형에서 가정 검토
 <p>분산분석의 변형 중 하나는 종속변수와 관련이 있을 것으로 생각되는 추가적인 연속변수를 포함하는 경우입니다. 이 추가 변수를 공변량(covariate)이라하며 이를 포함한 분석을 공분산분석(ANCOVA, Analysis of Covariance)이라고 합니다.</p>
 <p>ANCOVA에서는 종속변수의 값이 공변량의 영향을 고려하여 “조정”되며, 이후 조정된 평균을 사용하여 집단 간 차이를 일반적인 분산분석 방법으로 검정합니다. 이 기법은 실험의 정밀도를 높이고, 종속변수의 집단 평균이 동일한지에 대한 “강한 검정력”으로 수행할 수 있도록 합니다.</p>
 <p>ANCOVA가 이를 수행하는 방식은 무엇일까요? 공변량 자체는 일반적으로 실험에서 관심 있는 변수가 아니지만, 공변량을 조정함으로써 실험 오차의 추정값을 줄일 수 있습니다. 오차 분산을 감소시키면 정밀도가 향상되며, 이는 대립가설의 잘못된 기각(2종 오류)이 발생할 가능성을 낮춥니다.</p>
-<p>이러한 장점에도 불구하고, ANCOVA는 집단 간의 실제 차이를 무효화할 위험이 있으며, 이는 피해야 합니다. 예를 들어, <a href="#fig-fig14-11" class="quarto-xref">Figure&nbsp;<span>14.11</span></a> 을 보면 연령에 따른 통계학 불안(statistics anxiety)을 나타내는 그래프가 있으며, 두 개의 뚜렷한 집단(예술(Arts) 또는 과학(Science) 배경을 가진 학생들)을 보여주고 있습니다. 이때, 연령을 공변량으로 설정하여 ANCOVA를 수행하면, 두 집단 간에 통계학 불안 차이가 없다는 결론이 도출될 수 있습니다. 이러한 결론이 합리적일까요? 아마도 그렇지 않을 것입니다. 왜냐하면 두 집단의 연령이 겹치지 않으며, 분산분석이 사실상 “데이터가 없는 영역으로 외삽(extrapolation)한 것”이기 때문입니다 (<span class="citation" data-cites="Everitt1996">Everitt (<a href="References.html#ref-Everitt1996" role="doc-biblioref">1996</a>)</span>, p.&nbsp;68). 따라서 뚜렷히 구별되는 집단이 존재하는 경우, 공분산분석을 신중하게 수행해야 합니다. 이 점은 일원설계(one-way design)와 요인설계(factorial design) 모두에 적용됩니다. ANCOVA는 두 설계에서 모두 사용할 수 있기 때문입니다.</p>
+<p>이러한 장점에도 불구하고, ANCOVA는 집단 간의 실제 차이를 무효화할 위험이 있으며, 이는 피해야 합니다. 예를 들어, <a href="#fig-fig14-11" class="quarto-xref">그림&nbsp;<span>14.11</span></a> 을 보면 연령에 따른 통계학 불안(statistics anxiety)을 나타내는 그래프가 있으며, 두 개의 뚜렷한 집단(예술(Arts) 또는 과학(Science) 배경을 가진 학생들)을 보여주고 있습니다. 이때, 연령을 공변량으로 설정하여 ANCOVA를 수행하면, 두 집단 간에 통계학 불안 차이가 없다는 결론이 도출될 수 있습니다. 이러한 결론이 합리적일까요? 아마도 그렇지 않을 것입니다. 왜냐하면 두 집단의 연령이 겹치지 않으며, 분산분석이 사실상 “데이터가 없는 영역으로 외삽(extrapolation)한 것”이기 때문입니다 (<span class="citation" data-cites="Everitt1996">Everitt (<a href="References.html#ref-Everitt1996" role="doc-biblioref">1996</a>)</span>, p.&nbsp;68). 따라서 뚜렷히 구별되는 집단이 존재하는 경우, 공분산분석을 신중하게 수행해야 합니다. 이 점은 일원설계(one-way design)와 요인설계(factorial design) 모두에 적용됩니다. ANCOVA는 두 설계에서 모두 사용할 수 있기 때문입니다.</p>
 <div class="cell" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig14-11" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="Y축에는 '통계 불안', X축에는 '연령'이 표시된 산점도입니다. '과학 전공자'의 데이터 점은 Y축에서 낮은 값에, X축에서 젊은 연령대에 분포하며, '예술 전공자'의 데이터 점은 Y축에서 높은 값에, X축에서 나이 든 연령대에 분포합니다." data-fig-pos="h!">
+<div id="fig-fig14-11" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-pos="h!" data-fig-align="left" alt="Y축에는 '통계 불안', X축에는 '연령'이 표시된 산점도입니다. '과학 전공자'의 데이터 점은 Y축에서 낮은 값에, X축에서 젊은 연령대에 분포하며, '예술 전공자'의 데이터 점은 Y축에서 높은 값에, X축에서 나이 든 연령대에 분포합니다.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig14-11-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/fig14-11.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:90.0%" data-fig-pos="h!" alt="Y축에는 '통계 불안', X축에는 '연령'이 표시된 산점도입니다. '과학 전공자'의 데이터 점은 Y축에서 낮은 값에, X축에서 젊은 연령대에 분포하며, '예술 전공자'의 데이터 점은 Y축에서 높은 값에, X축에서 나이 든 연령대에 분포합니다.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fig14-11-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;14.11. 두 개의 뚜렷한 집단에 대한 연령과 통계 불안의 산점도
+그림&nbsp;14.11. 두 개의 뚜렷한 집단에 대한 연령과 통계 불안의 산점도
 </figcaption>
 </figure>
 </div>
@@ -1236,33 +1236,33 @@ Figure&nbsp;14.11. 두 개의 뚜렷한 집단에 대한 연령과 통계 불안
 </div>
 <section id="jamovi에서-ancova-실행하기" class="level3" data-number="14.5.1">
 <h3 data-number="14.5.1" class="anchored" data-anchor-id="jamovi에서-ancova-실행하기"><span class="header-section-number">14.5.1</span> jamovi에서 ANCOVA 실행하기</h3>
-<p>한 건강 심리학자는 일상적인 자전거 이용과 스트레스가 행복 수준에 미치는 영향을 연구하고자 했으며, 연령을 공변량으로 포함하였습니다. 데이터 파일 <em>ancova.csv</em>에서 해당 데이터를 찾을 수 있습니다. 이 파일을 jamovi에서 열고, ANCOVA를 수행하려면 ‘분석’-‘분산분석’-‘공분산 분석’ 메뉴를 선택하여 ANCOVA 분석 창을 엽니다(<a href="#fig-fig14-12" class="quarto-xref">Figure&nbsp;<span>14.12</span></a>).</p>
+<p>한 건강 심리학자는 일상적인 자전거 이용과 스트레스가 행복 수준에 미치는 영향을 연구하고자 했으며, 연령을 공변량으로 포함하였습니다. 데이터 파일 <em>ancova.csv</em>에서 해당 데이터를 찾을 수 있습니다. 이 파일을 jamovi에서 열고, ANCOVA를 수행하려면 ‘분석’-‘분산분석’-‘공분산 분석’ 메뉴를 선택하여 ANCOVA 분석 창을 엽니다(<a href="#fig-fig14-12" class="quarto-xref">그림&nbsp;<span>14.12</span></a>).</p>
 <p>종속변수인 <code>happiness</code>를 선택하여 ‘종속변수’ 입력란으로 이동합니다. 독립 변수인 <code>stress</code>와 <code>commute</code>를 선택하여 ‘고정요인’ 입력란으로 이동합니다. 공변량인 <code>age</code>를 선택하여 ‘독립변수(Covariates의 한글 jamovi의 번역 용어)’<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> 입력란으로 이동합니다. 그런 다음 ’Estimated Marginal Means’를 클릭하여 그래프 및 표 옵션을 확인합니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig14-12" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="jamovi에서 ANCOVA 설정을 보여주는 스크린샷입니다. 창에는 종속 변수, 고정 요인, 공변량을 추가하는 옵션이 있습니다. 'happiness'가 종속 변수로 선택되었으며, 'stress'와 'commute'가 고정 요인으로, 'age'가 공변량으로 설정되었습니다." data-fig-pos="h!">
+<div id="fig-fig14-12" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-pos="h!" data-fig-align="left" alt="jamovi에서 ANCOVA 설정을 보여주는 스크린샷입니다. 창에는 종속 변수, 고정 요인, 공변량을 추가하는 옵션이 있습니다. 'happiness'가 종속 변수로 선택되었으며, 'stress'와 'commute'가 고정 요인으로, 'age'가 공변량으로 설정되었습니다.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig14-12-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig14-12.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:75.0%" data-fig-pos="h!" alt="jamovi에서 ANCOVA 설정을 보여주는 스크린샷입니다. 창에는 종속 변수, 고정 요인, 공변량을 추가하는 옵션이 있습니다. 'happiness'가 종속 변수로 선택되었으며, 'stress'와 'commute'가 고정 요인으로, 'age'가 공변량으로 설정되었습니다.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fig14-12-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;14.12. jamovi ANCOVA 분석 창
+그림&nbsp;14.12. jamovi ANCOVA 분석 창
 </figcaption>
 </figure>
 </div>
 </div>
 </div>
-<p>jamovi 결과 창에서 ’참가자 간 효과의 검정’을 포함한 ANCOVA 표가 생성됩니다 (<a href="#fig-fig14-13" class="quarto-xref">Figure&nbsp;<span>14.13</span></a>). 공변량 <code>age</code>의 <span class="math inline">\(F\)</span>-값이 <span class="math inline">\(p = .023\)</span>에서 유의미하며, 이는 연령이 종속변수인 행복(<code>happiness</code>)의 중요한 예측변수임을 시사합니다.</p>
-<p>추정된 주변 평균을 보면 (<a href="#fig-fig14-14" class="quarto-xref">Figure&nbsp;<span>14.14</span></a>), ANCOVA에 공변량 <code>age</code>가 포함됨에 따라 (공변량이 없는 분석과 비교했을 때) 조정이 이루어졌습니다. 그래프(<a href="#fig-fig14-15" class="quarto-xref">Figure&nbsp;<span>14.15</span></a>)를 활용하면 유의미한 효과를 보다 쉽게 시각화하고 해석할 수 있습니다.</p>
+<p>jamovi 결과 창에서 ’참가자 간 효과의 검정’을 포함한 ANCOVA 표가 생성됩니다 (<a href="#fig-fig14-13" class="quarto-xref">그림&nbsp;<span>14.13</span></a>). 공변량 <code>age</code>의 <span class="math inline">\(F\)</span>-값이 <span class="math inline">\(p = .023\)</span>에서 유의미하며, 이는 연령이 종속변수인 행복(<code>happiness</code>)의 중요한 예측변수임을 시사합니다.</p>
+<p>추정된 주변 평균을 보면 (<a href="#fig-fig14-14" class="quarto-xref">그림&nbsp;<span>14.14</span></a>), ANCOVA에 공변량 <code>age</code>가 포함됨에 따라 (공변량이 없는 분석과 비교했을 때) 조정이 이루어졌습니다. 그래프(<a href="#fig-fig14-15" class="quarto-xref">그림&nbsp;<span>14.15</span></a>)를 활용하면 유의미한 효과를 보다 쉽게 시각화하고 해석할 수 있습니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig14-13" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="happiness라는 제목의 ANCOVA 표가 표시되어 있으며, 제곱합(Sum of Squares), 자유도(df), 평균제곱(Mean Square), $F$ 비율(F), $p$-값(p), 에타 제곱(η²), 부분 에타 제곱(ηp²), 오메가 제곱(ω²) 등의 통계 결과가 스트레스, 출퇴근 방식, 연령 및 상호작용 항목별로 나타나 있습니다." data-fig-pos="H">
+<div id="fig-fig14-13" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-pos="H" data-fig-align="left" alt="happiness라는 제목의 ANCOVA 표가 표시되어 있으며, 제곱합(Sum of Squares), 자유도(df), 평균제곱(Mean Square), $F$ 비율(F), $p$-값(p), 에타 제곱(η²), 부분 에타 제곱(ηp²), 오메가 제곱(ω²) 등의 통계 결과가 스트레스, 출퇴근 방식, 연령 및 상호작용 항목별로 나타나 있습니다.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig14-13-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/fig14-13.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" data-fig-pos="H" alt="happiness라는 제목의 ANCOVA 표가 표시되어 있으며, 제곱합(Sum of Squares), 자유도(df), 평균제곱(Mean Square), $F$ 비율(F), $p$-값(p), 에타 제곱(η²), 부분 에타 제곱(ηp²), 오메가 제곱(ω²) 등의 통계 결과가 스트레스, 출퇴근 방식, 연령 및 상호작용 항목별로 나타나 있습니다.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fig14-13-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;14.13. 연령을 공변량으로 포함한 스트레스와 출퇴근 방식에 따른 행복도의 jamovi ANCOVA 결과
+그림&nbsp;14.13. 연령을 공변량으로 포함한 스트레스와 출퇴근 방식에 따른 행복도의 jamovi ANCOVA 결과
 </figcaption>
 </figure>
 </div>
@@ -1270,13 +1270,13 @@ Figure&nbsp;14.13. 연령을 공변량으로 포함한 스트레스와 출퇴근
 </div>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig14-14" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="Estimated Marginal Means - stress × commute라는 제목의 jamovi 결과 표로, 스트레스 수준(높음, 낮음)과 출퇴근 방식(운전, 자전거)에 따른 평균 행복도 및 표준 오차(SE), 95% 신뢰구간이 포함되어 있습니다." data-fig-pos="H">
+<div id="fig-fig14-14" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-pos="H" data-fig-align="left" alt="Estimated Marginal Means - stress × commute라는 제목의 jamovi 결과 표로, 스트레스 수준(높음, 낮음)과 출퇴근 방식(운전, 자전거)에 따른 평균 행복도 및 표준 오차(SE), 95% 신뢰구간이 포함되어 있습니다.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig14-14-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/fig14-14.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:75.0%" data-fig-pos="H" alt="Estimated Marginal Means - stress × commute라는 제목의 jamovi 결과 표로, 스트레스 수준(높음, 낮음)과 출퇴근 방식(운전, 자전거)에 따른 평균 행복도 및 표준 오차(SE), 95% 신뢰구간이 포함되어 있습니다.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fig14-14-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;14.14. 공변량 연령을 조정한 스트레스와 출퇴근 방식에 따른 평균 행복도 (95% 신뢰구간 포함)
+그림&nbsp;14.14. 공변량 연령을 조정한 스트레스와 출퇴근 방식에 따른 평균 행복도 (95% 신뢰구간 포함)
 </figcaption>
 </figure>
 </div>
@@ -1290,7 +1290,7 @@ Figure&nbsp;14.14. 공변량 연령을 조정한 스트레스와 출퇴근 방�
 <img src="images/fig14-15.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" alt="선 그래프는 스트레스 수준(높음, 낮음)과 출퇴근 방식(운전 또는 자전거)에 따른 행복도를 비교합니다. '자전거' 집단에서는 스트레스가 낮을 때 행복도가 더 큰 폭으로 증가하는 경향이 있으며, 오차 막대가 포함되어 있습니다.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fig14-15-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;14.15. 스트레스와 출퇴근 방식에 따른 평균 행복도 그래프
+그림&nbsp;14.15. 스트레스와 출퇴근 방식에 따른 평균 행복도 그래프
 </figcaption>
 </figure>
 </div>
@@ -1298,7 +1298,7 @@ Figure&nbsp;14.15. 스트레스와 출퇴근 방식에 따른 평균 행복도 �
 </div>
 <p><code>stress</code>의 주효과에 대한 <span class="math inline">\(F\)</span>-값은 52.61이며, 관련된 확률 값은 <span class="math inline">\(p &lt; .001\)</span>입니다. 독립 변수 <code>commute</code>의 주효과에 대한 <span class="math inline">\(F\)</span>-값은 42.33이며, 관련된 확률 값은 <span class="math inline">\(p &lt; .001\)</span>입니다.</p>
 <p>이 두 값이 통계적으로 유의한 결과를 판별하는 일반적인 기준인 <span class="math inline">\(p &lt; .05\)</span>보다 작으므로, 스트레스의 주효과가 유의함(<span class="math inline">\(F(1, 15) = 52.61, p &lt; .001\)</span>)과 출퇴근 방식의 주효과가 유의함(<span class="math inline">\(F(1, 15) = 42.33, p &lt; .001\)</span>)을 결론지을 수 있습니다. 또한 스트레스와 출퇴근 방식 사이의 상호작용 효과 역시 유의하게 나타났습니다 (<span class="math inline">\(F(1, 15) = 14.15, p = .002\)</span>).</p>
-<p><a href="#fig-fig14-15" class="quarto-xref">Figure&nbsp;<span>14.15</span></a> 에서 ANCOVA에서 연령을 공변량으로 포함했을 때 조정된 주변 평균 행복 점수를 볼 수 있습니다. 이 분석에서는 유의한 상호작용 효과가 나타났으며, 스트레스가 낮고 자전거를 이용하여 출퇴근하는 사람이 스트레스가 낮고 운전하는 사람 및 스트레스가 높은 사람(출퇴근 방식과 관계없이)보다 더 행복하다는 결과를 보여줍니다. 또한, 스트레스의 주효과가 유의하여 스트레스가 낮은 사람이 스트레스가 높은 사람보다 더 행복하다는 결론을 내릴 수 있습니다. 출퇴근 방식의 주효과 또한 유의하여, 자전거를 이용하는 사람이 평균적으로 운전하는 사람보다 더 행복하다는 결과가 도출되었습니다.</p>
+<p><a href="#fig-fig14-15" class="quarto-xref">그림&nbsp;<span>14.15</span></a> 에서 ANCOVA에서 연령을 공변량으로 포함했을 때 조정된 주변 평균 행복 점수를 볼 수 있습니다. 이 분석에서는 유의한 상호작용 효과가 나타났으며, 스트레스가 낮고 자전거를 이용하여 출퇴근하는 사람이 스트레스가 낮고 운전하는 사람 및 스트레스가 높은 사람(출퇴근 방식과 관계없이)보다 더 행복하다는 결과를 보여줍니다. 또한, 스트레스의 주효과가 유의하여 스트레스가 낮은 사람이 스트레스가 높은 사람보다 더 행복하다는 결론을 내릴 수 있습니다. 출퇴근 방식의 주효과 또한 유의하여, 자전거를 이용하는 사람이 평균적으로 운전하는 사람보다 더 행복하다는 결과가 도출되었습니다.</p>
 <p>마지막으로, ANOVA에 공변량을 포함하려는 경우 추가적인 가정을 고려해야 합니다. 즉, 공변량과 종속변수의 관계가 모든 요인의 수준에서 유사해야 합니다. 이를 확인하려면 jamovi의 ‘모형’-‘모형 항’ 옵션에서 공변량과 각 요인의 상호작용 항을 추가하여 확인할 수 있습니다. 만약 공변량과 요인의 상호작용 효과가 유의하지 않다면 이를 제거할 수 있습니다. 그러나 상호작용 효과가 유의하다면, 보다 고급 통계 기법을 적용하는 것이 적절할 수 있으며, 이는 본 책의 범위를 벗어나므로 통계 전문가와 상담하는 것이 좋습니다.</p>
 <div id="tip-ex-ancova" class="callout callout-style-default callout-tip callout-titled" title="실습: 공분산 분석">
 <div class="callout-header d-flex align-content-center">
@@ -1366,7 +1366,7 @@ Tip&nbsp;14.6. 실습: 공분산 분석
 </section>
 <section id="sec-ANOVA-as-a-linear-model" class="level2" data-number="14.6">
 <h2 data-number="14.6" class="anchored" data-anchor-id="sec-ANOVA-as-a-linear-model"><span class="header-section-number">14.6</span> 선형 모형으로서의 ANOVA</h2>
-<p>ANOVA와 회귀분석에 대해 가장 중요한 점 중 하나는 이 둘이 본질적으로 동일하다는 것입니다. 표면적으로 보면, 이는 사실이 아니라고 생각할 수도 있습니다. 지금까지 설명한 방식에 따르면, ANOVA는 주로 집단 간 차이를 검정하는 데 중점을 두고 있고, 회귀분석은 주로 변수 간의 상관 관계를 이해하는 데 중점을 두고 있기 때문입니다. 그리고 이런 설명 자체는 전적으로 맞는 말입니다. 하지만 이를 더 깊이 들여다보면, 즉 “보닛을 열어 보면” ANOVA와 회귀분석의 기본적인 메커니즘이 상당히 유사하다는 것을 알 수 있습니다. 사실, 이를 곰곰이 생각해 보면, 이미 그러한 증거를 본 적이 있을 것입니다. ANOVA와 회귀 분석 모두 제곱합 (<span class="math inline">\(SS\)</span>)을 많이 활용하며, <span class="math inline">\(F\)</span>-검정을 사용하고 있습니다. 되돌아보면, <a href="12-Correlation-and-linear-regression.html" class="quarto-xref"><span>Chapter 12</span></a> 및 <a href="13-Comparing-several-means-one-way-ANOVA.html" class="quarto-xref"><span>Chapter 13</span></a> 에서 다룬 내용이 다소 반복적이었다는 느낌을 지울 수 없습니다.</p>
+<p>ANOVA와 회귀분석에 대해 가장 중요한 점 중 하나는 이 둘이 본질적으로 동일하다는 것입니다. 표면적으로 보면, 이는 사실이 아니라고 생각할 수도 있습니다. 지금까지 설명한 방식에 따르면, ANOVA는 주로 집단 간 차이를 검정하는 데 중점을 두고 있고, 회귀분석은 주로 변수 간의 상관 관계를 이해하는 데 중점을 두고 있기 때문입니다. 그리고 이런 설명 자체는 전적으로 맞는 말입니다. 하지만 이를 더 깊이 들여다보면, 즉 “보닛을 열어 보면” ANOVA와 회귀분석의 기본적인 메커니즘이 상당히 유사하다는 것을 알 수 있습니다. 사실, 이를 곰곰이 생각해 보면, 이미 그러한 증거를 본 적이 있을 것입니다. ANOVA와 회귀 분석 모두 제곱합 (<span class="math inline">\(SS\)</span>)을 많이 활용하며, <span class="math inline">\(F\)</span>-검정을 사용하고 있습니다. 되돌아보면, <a href="12-Correlation-and-linear-regression.html" class="quarto-xref"><span>장 12</span></a> 및 <a href="13-Comparing-several-means-one-way-ANOVA.html" class="quarto-xref"><span>장 13</span></a> 에서 다룬 내용이 다소 반복적이었다는 느낌을 지울 수 없습니다.</p>
 <p>이러한 이유는 ANOVA와 회귀 분석이 모두 <strong>선형 모형</strong>의 한 종류이기 때문입니다. 회귀분석의 경우, 이는 비교적 명확합니다. 예측변수와 결과변수의 관계를 정의하는 회귀 방정식은 직선의 방정식이므로, 이는 명백한 선형 모형이며, 그 식은 다음과 같습니다.</p>
 <p><span class="math display">\[Y_p=b_0+b_1 X_{1p} +b_2 X_{2p} + \epsilon_p\]</span></p>
 <p>여기서 <span class="math inline">\(Y_p\)</span>는 <span class="math inline">\(p\)</span>번째 관찰값(예: <span class="math inline">\(p\)</span>번째 사람)의 결과 값이며, <span class="math inline">\(X_{1p}\)</span>는 <span class="math inline">\(p\)</span>번째 관찰값의 첫 번째 예측변수 값, <span class="math inline">\(X_{2p}\)</span>는 두 번째 예측변수 값, <span class="math inline">\(b_0\)</span>, <span class="math inline">\(b_1\)</span>, <span class="math inline">\(b_2\)</span>는 회귀 계수, 그리고 <span class="math inline">\(\epsilon_p\)</span>는 <span class="math inline">\(p\)</span>번째 잔차입니다. 잔차 <span class="math inline">\(\epsilon_p\)</span>을 무시하고 회귀선 자체에만 집중하면, 다음과 같은 식이 됩니다.</p>
@@ -1377,12 +1377,12 @@ Tip&nbsp;14.6. 실습: 공분산 분석
 <p>좀 더 구체적으로 설명하기 위해, 제 강의의 학생의 성적이 결과변수라고 가정해 보겠습니다. 이 변수는 <span class="math inline">\(0\)</span>에서 <span class="math inline">\(100\)</span>까지의 점수로 표현되는 비율척도 변수입니다. 우리가 관심을 두는 두 가지 예측변수는 학생이 강의에 출석했는지 여부(출석 변수)와 교재를 실제로 읽었는지 여부(독서 변수)입니다. 출석 변수(<code>attend</code>)의 경우, 학생이 출석했다면 attend = 1, 출석하지 않았다면 attend = 0이라고 하겠습니다. 마찬가지로, 독서 변수(<code>reading</code>)의 경우, 학생이 교재를 읽었다면 reading = 1, 읽지 않았다면 reading = 0이라고 하겠습니다.</p>
 <p>지금까지는 비교적 단순한 개념입니다. 이제 여기에 수학적 표현을 추가해야 합니다(죄송합니다!). 이 예제에서는 <span class="math inline">\(p\)</span>번째 학생의 성적을 <span class="math inline">\(Y_p\)</span>로 나타내겠습니다. 이는 이 장의 앞에서 사용한 표기법과는 다소 다릅니다. 이전에는 <span class="math inline">\(Y_{rci}\)</span>라는 표기법을 사용하여, 예측변수 1(행 요인)의 <span class="math inline">\(r\)</span>번째 집단과 예측변수 2(열 요인)의 <span class="math inline">\(c\)</span>번째 집단에 속하는 <span class="math inline">\(i\)</span>번째 사람을 나타냈습니다. 이 확장된 표기법은 제곱합(<span class="math inline">\(SS\)</span>) 값을 계산하는 과정을 설명하는 데 유용했지만, 현재 문맥에서는 다소 불편하기 때문에 여기서는 표기법을 변경하겠습니다.</p>
 <p>새로운 표기법인 <span class="math inline">\(Y_p\)</span>는 <span class="math inline">\(Y_{rci}\)</span>보다 시각적으로 단순하지만, 단점은 집단 소속 정보를 유지하지 않는다는 점입니다. 예를 들어, 만약 <span class="math inline">\(Y_{0,0,3} = 35\)</span>라고 하면, 이는 강의에 출석하지 않았고(attend = 0) 교재도 읽지 않은(reading = 0) 한 학생(동일한 조건의 학생 중 3 번째 학생)이 결과적으로 성적이 35점으로 낙제하였다는 것을 즉시 알 수 있습니다. 하지만 <span class="math inline">\(Y_p = 35\)</span>라고 하면, 단순히 <span class="math inline">\(p\)</span>번째 학생의 성적이 좋지 않다는 것만 알 수 있을 뿐입니다. 즉, 중요한 정보를 일부 잃어버리게 됩니다.</p>
-<p>물론, 이러한 문제를 해결하는 것은 어렵지 않습니다. 대신, 이러한 정보를 추적할 수 있도록 두 개의 새로운 변수를 도입하겠습니다. 즉, 출석 여부를 추적하는 변수 <span class="math inline">\(X_{1p}\)</span>와 독서 여부를 추적하는 변수 <span class="math inline">\(X_{2p}\)</span>입니다. 좀 전의 가상의 학생을 예로 들면, 우리는 <span class="math inline">\(X_{1p} = 0\)</span>(즉, attend = 0)이고 <span class="math inline">\(X_{2p} = 0\)</span>(즉, reading = 0)이라는 것을 알고 있습니다. 따라서 데이터는 <a href="#tbl-tab14-8" class="quarto-xref">Table&nbsp;<span>14.8</span></a> 같은 형식이 될 것입니다.</p>
+<p>물론, 이러한 문제를 해결하는 것은 어렵지 않습니다. 대신, 이러한 정보를 추적할 수 있도록 두 개의 새로운 변수를 도입하겠습니다. 즉, 출석 여부를 추적하는 변수 <span class="math inline">\(X_{1p}\)</span>와 독서 여부를 추적하는 변수 <span class="math inline">\(X_{2p}\)</span>입니다. 좀 전의 가상의 학생을 예로 들면, 우리는 <span class="math inline">\(X_{1p} = 0\)</span>(즉, attend = 0)이고 <span class="math inline">\(X_{2p} = 0\)</span>(즉, reading = 0)이라는 것을 알고 있습니다. 따라서 데이터는 <a href="#tbl-tab14-8" class="quarto-xref">표&nbsp;<span>14.8</span></a> 같은 형식이 될 것입니다.</p>
 <div class="cell" data-layout-align="left">
 <div id="tbl-tab14-8" class="cell quarto-float quarto-figure quarto-figure-left anchored" data-layout-align="left">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tab14-8-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;14.8. 성적, 출석, 교재 읽기에 대한 데이터
+표&nbsp;14.8. 성적, 출석, 교재 읽기에 대한 데이터
 </figcaption>
 <div aria-describedby="tbl-tab14-8-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
@@ -1412,7 +1412,7 @@ Table&nbsp;14.8. 성적, 출석, 교재 읽기에 대한 데이터
 </figure>
 </div>
 </div>
-<p>이것은 특별한 것이 아닙니다. 우리가 데이터를 기대하는 바로 그 형식입니다! 데이터 파일 <em>rtfm.csv</em>를 확인해 보십시오. jamovi의 ‘기술 통계’ 분석을 사용하면, 이 데이터셋이 출석과 독서의 모든 조합에 대해 각각 2개의 관찰값을 갖는 균형 설계를 따르고 있음을 확인할 수 있습니다. 같은 방식으로, 각 조합에 대한 평균 성적도 계산할 수 있습니다. 이는 <a href="#fig-fig14-16" class="quarto-xref">Figure&nbsp;<span>14.16</span></a> 에 나타나 있습니다. 평균 점수를 살펴보면, 교재를 읽는 것과 강의에 출석하는 것이 성적에 상당한 영향을 미친다는 강한 인상을 받을 수 있습니다.</p>
+<p>이것은 특별한 것이 아닙니다. 우리가 데이터를 기대하는 바로 그 형식입니다! 데이터 파일 <em>rtfm.csv</em>를 확인해 보십시오. jamovi의 ‘기술 통계’ 분석을 사용하면, 이 데이터셋이 출석과 독서의 모든 조합에 대해 각각 2개의 관찰값을 갖는 균형 설계를 따르고 있음을 확인할 수 있습니다. 같은 방식으로, 각 조합에 대한 평균 성적도 계산할 수 있습니다. 이는 <a href="#fig-fig14-16" class="quarto-xref">그림&nbsp;<span>14.16</span></a> 에 나타나 있습니다. 평균 점수를 살펴보면, 교재를 읽는 것과 강의에 출석하는 것이 성적에 상당한 영향을 미친다는 강한 인상을 받을 수 있습니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
 <div id="fig-fig14-16" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="jamovi의 스크린샷으로, 상단에 변수(Variables), 데이터(Data), 분석(Analyses), 편집(Edit) 등의 탭이 있습니다. 현재 화면에는 기술 통계 분석 옵션이 표시되어 있으며, &quot;grade&quot;와 같은 변수가 포함되어 있습니다. &quot;결과(Results)&quot; 절에는 평균 및 표준 편차와 같은 기술 통계가 포함된 표가 있습니다. 하단의 &quot;참고 문헌(References)&quot; 절에는 사용된 소프트웨어 및 패키지가 인용되어 있습니다.">
@@ -1421,7 +1421,7 @@ Table&nbsp;14.8. 성적, 출석, 교재 읽기에 대한 데이터
 <img src="images/fig14-16.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" alt="jamovi의 스크린샷으로, 상단에 변수(Variables), 데이터(Data), 분석(Analyses), 편집(Edit) 등의 탭이 있습니다. 현재 화면에는 기술 통계 분석 옵션이 표시되어 있으며, &quot;grade&quot;와 같은 변수가 포함되어 있습니다. &quot;결과(Results)&quot; 절에는 평균 및 표준 편차와 같은 기술 통계가 포함된 표가 있습니다. 하단의 &quot;참고 문헌(References)&quot; 절에는 사용된 소프트웨어 및 패키지가 인용되어 있습니다.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fig14-16-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;14.16. rtfm.csv 데이터셋에 대한 jamovi 기술 통계 분석
+그림&nbsp;14.16. rtfm.csv 데이터셋에 대한 jamovi 기술 통계 분석
 </figcaption>
 </figure>
 </div>
@@ -1449,7 +1449,7 @@ Tip&nbsp;14.7. 실습: RTFM 데이터
 <li><code>attend</code>, `reading``: 명명척도, 정수</li>
 </ul>
 <ol start="4" type="1">
-<li>다음 단계를 거쳐 <a href="#fig-fig14-1" class="quarto-xref">Figure&nbsp;<span>14.1</span></a> 같은 기술통계 표를 구해봅니다.</li>
+<li>다음 단계를 거쳐 <a href="#fig-fig14-1" class="quarto-xref">그림&nbsp;<span>14.1</span></a> 같은 기술통계 표를 구해봅니다.</li>
 </ol>
 <ul>
 <li>‘분석’-‘기술통계’-‘기술통계’ 메뉴를 선택합니다.</li>
@@ -1464,7 +1464,7 @@ Tip&nbsp;14.7. 실습: RTFM 데이터
 <h3 data-number="14.6.2" class="anchored" data-anchor-id="이항-요인-anova를-회귀-모형으로-표현하기"><span class="header-section-number">14.6.2</span> 이항 요인 ANOVA를 회귀 모형으로 표현하기</h3>
 <p>이제 다시 수학적인 내용으로 돌아가 보겠습니다. 현재 데이터는 연속 변수 <span class="math inline">\(Y\)</span>와 두 개의 이항 변수 <span class="math inline">\(X_1\)</span> 및 <span class="math inline">\(X_2\)</span>로 표현되어 있습니다. 여기서 중요한 점은, 우리가 다루는 <span class="math inline">\(2 \times 2\)</span> 요인 ANOVA가 아래의 회귀 모형과 정확히 동일하다는 것입니다.</p>
 <p><span class="math display">\[Y_p=b_0+b_1 X_{1p} + b_2 X_{2p} + \epsilon_p\]</span></p>
-<p>이는 앞서 설명했던 두 개의 예측변수를 포함하는 회귀 모형과 정확히 같은 식입니다! 단 한 가지 차이점은, 회귀 분석에서는 <span class="math inline">\(X_1\)</span>과 <span class="math inline">\(X_2\)</span>가 일반적으로 연속 변수인 반면, 여기에서는 이항 변수(즉, 값이 0 또는 1만 가능)라는 점입니다. 이를 이해할 수 있도록 여러 가지 방법으로 설명할 수 있습니다. 수학적으로 두 개념이 동일함을 길게 증명할 수도 있지만, 이 책의 대부분의 독자들에게는 오히려 도움이 되기보다는 지루할 것이라 생각됩니다. 대신, 기본적인 개념을 설명한 후, jamovi를 이용해 ANOVA 분석과 회귀 분석이 단순히 유사한 것이 아니라, 사실상 동일하다는 것을 보여드리겠습니다. 우선, ANOVA 분석을 실행해 보겠습니다. 이를 위해 <em>rtfm.csv</em> 데이터셋을 사용하고, jamovi에서 실행한 결과가 <a href="#fig-fig14-17" class="quarto-xref">Figure&nbsp;<span>14.17</span></a> 에 나와 있습니다.</p>
+<p>이는 앞서 설명했던 두 개의 예측변수를 포함하는 회귀 모형과 정확히 같은 식입니다! 단 한 가지 차이점은, 회귀 분석에서는 <span class="math inline">\(X_1\)</span>과 <span class="math inline">\(X_2\)</span>가 일반적으로 연속 변수인 반면, 여기에서는 이항 변수(즉, 값이 0 또는 1만 가능)라는 점입니다. 이를 이해할 수 있도록 여러 가지 방법으로 설명할 수 있습니다. 수학적으로 두 개념이 동일함을 길게 증명할 수도 있지만, 이 책의 대부분의 독자들에게는 오히려 도움이 되기보다는 지루할 것이라 생각됩니다. 대신, 기본적인 개념을 설명한 후, jamovi를 이용해 ANOVA 분석과 회귀 분석이 단순히 유사한 것이 아니라, 사실상 동일하다는 것을 보여드리겠습니다. 우선, ANOVA 분석을 실행해 보겠습니다. 이를 위해 <em>rtfm.csv</em> 데이터셋을 사용하고, jamovi에서 실행한 결과가 <a href="#fig-fig14-17" class="quarto-xref">그림&nbsp;<span>14.17</span></a> 에 나와 있습니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
 <div id="fig-fig14-17" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="ANOVA 테이블에는 &quot;grade&quot; 변수에 대한 &quot;attend&quot; 및 &quot;reading&quot; 요인의 결과가 제시되어 있습니다. 테이블에는 제곱합(Sum of Squares), 자유도(df), 평균제곱(Mean Square), F값(F), p값(p), η², η²p, ω² 등의 열이 포함되어 있습니다. 주요 결과로는 &quot;attend&quot;의 F값이 21.60, p값이 0.00559이며, &quot;reading&quot;의 F값이 52.27, p값이 0.00079로 나타나 있습니다.">
@@ -1473,7 +1473,7 @@ Tip&nbsp;14.7. 실습: RTFM 데이터
 <img src="images/kor/fig14-17.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" alt="ANOVA 테이블에는 &quot;grade&quot; 변수에 대한 &quot;attend&quot; 및 &quot;reading&quot; 요인의 결과가 제시되어 있습니다. 테이블에는 제곱합(Sum of Squares), 자유도(df), 평균제곱(Mean Square), F값(F), p값(p), η², η²p, ω² 등의 열이 포함되어 있습니다. 주요 결과로는 &quot;attend&quot;의 F값이 21.60, p값이 0.00559이며, &quot;reading&quot;의 F값이 52.27, p값이 0.00079로 나타나 있습니다.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fig14-17-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;14.17. jamovi에서 상호작용 항을 제외한 <em>rtfm.csv</em> 데이터셋의 ANOVA 분석
+그림&nbsp;14.17. jamovi에서 상호작용 항을 제외한 <em>rtfm.csv</em> 데이터셋의 ANOVA 분석
 </figcaption>
 </figure>
 </div>
@@ -1508,12 +1508,12 @@ Figure&nbsp;14.17. jamovi에서 상호작용 항을 제외한 <em>rtfm.csv</em> 
 \end{split}
 \]</span></p>
 <p>따라서, 만약 강의에 출석하는 것이 성적을 높이는 데 도움이 된다고 가정하면 (<span class="math inline">\(b_1 &gt; 0\)</span>), 그리고 교재를 읽는 것이 또한 성적을 높이는 데 도움이 된다고 가정하면 (<span class="math inline">\(b_2 &gt; 0\)</span>), 1번 학생의 성적은 6번 학생과 7번 학생보다 높을 것으로 예상됩니다.</p>
-<p>이제 회귀 모형이 강의에 출석하지 않았지만 교재를 읽은 3번 학생에 대해 <span class="math inline">\(b_2 + b_0\)</span>의 성적을 예측한다고 해도 전혀 놀랍지 않을 것입니다. 더 이상의 회귀식을 나열하는 대신, <em>예상 성적</em>을 보여주는 <a href="#tbl-tab14-9" class="quarto-xref">Table&nbsp;<span>14.9</span></a> 을 확인해 보겠습니다.</p>
+<p>이제 회귀 모형이 강의에 출석하지 않았지만 교재를 읽은 3번 학생에 대해 <span class="math inline">\(b_2 + b_0\)</span>의 성적을 예측한다고 해도 전혀 놀랍지 않을 것입니다. 더 이상의 회귀식을 나열하는 대신, <em>예상 성적</em>을 보여주는 <a href="#tbl-tab14-9" class="quarto-xref">표&nbsp;<span>14.9</span></a> 을 확인해 보겠습니다.</p>
 <div class="cell" data-layout-align="left">
 <div id="tbl-tab14-9" class="cell quarto-float quarto-figure quarto-figure-left anchored" data-layout-align="left">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tab14-9-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;14.9. 회귀 모형에서 예측된 성적
+표&nbsp;14.9. 회귀 모형에서 예측된 성적
 </figcaption>
 <div aria-describedby="tbl-tab14-9-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
@@ -1534,24 +1534,24 @@ Table&nbsp;14.9. 회귀 모형에서 예측된 성적
 </div>
 </div>
 <p>위에서 볼 수 있듯이, 절편 항 <span class="math inline">\(b_0\)</span>은 강의에 출석하지 않고 교재도 읽지 않은 학생들에게 기대되는 “기준” 성적 역할을 합니다. 마찬가지로, <span class="math inline">\(b_1\)</span>은 강의에 출석함으로써 기대할 수 있는 성적 증가분을 나타내고, <span class="math inline">\(b_2\)</span>는 교재를 읽음으로써 기대할 수 있는 성적 증가분을 나타냅니다. 사실, 이것이 ANOVA 분석이었다면, <span class="math inline">\(b_1\)</span>을 출석의 주 효과로, <span class="math inline">\(b_2\)</span>를 독서의 주 효과로 간주할 수도 있을 것입니다. 실제로, 간단한 <span class="math inline">\(2 \times 2\)</span> ANOVA에서는 정확히 이러한 방식으로 해석됩니다.</p>
-<p>이제 ANOVA와 회귀 분석이 기본적으로 동일한 개념이라는 것이 점점 더 분명해지고 있으므로, 실제로 <em>rtfm</em> 데이터를 사용하여 회귀 분석을 실행하고, jamovi 회귀 분석을 통해 이것이 정말로 사실인지 확인해 보겠습니다. 일반적인 방법으로 회귀 분석을 실행한 결과는 <a href="#fig-fig14-18" class="quarto-xref">Figure&nbsp;<span>14.18</span></a> 에서 확인할 수 있습니다.</p>
+<p>이제 ANOVA와 회귀 분석이 기본적으로 동일한 개념이라는 것이 점점 더 분명해지고 있으므로, 실제로 <em>rtfm</em> 데이터를 사용하여 회귀 분석을 실행하고, jamovi 회귀 분석을 통해 이것이 정말로 사실인지 확인해 보겠습니다. 일반적인 방법으로 회귀 분석을 실행한 결과는 <a href="#fig-fig14-18" class="quarto-xref">그림&nbsp;<span>14.18</span></a> 에서 확인할 수 있습니다.</p>
 <p>여기서 주목할 몇 가지 흥미로운 점이 있습니다. 첫째, 절편 항이 43.5로 나타났으며, 이는 교재를 읽지 않고 강의에도 출석하지 않은 두 학생의 평균 성적인 42.5에 근접한 값입니다. 둘째, 출석 변수의 회귀 계수 <span class="math inline">\(b_1 = 18.0\)</span>이며, 이는 강의에 출석한 학생들이 출석하지 않은 학생들보다 18점 높은 성적을 받았음을 시사합니다. 따라서, 강의에 출석했지만 교재를 읽지 않은 학생들의 예상 성적은 <span class="math inline">\(b_0 + b_1\)</span>이며, 이는 <span class="math inline">\(43.5 + 18.0 = 61.5\)</span>가 됩니다. 같은 방식으로 교재를 읽은 학생들의 성적도 검토해 볼 수 있습니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig14-18" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="jamovi 결과 테이블 &quot;Model Coefficients - grade&quot;에서는 절편, 출석, 독서 변수를 포함한 회귀 계수, 표준 오차(SE), t값, p값을 보여줍니다. 절편 값:- 43.50, 3.35, 12.97, 0.00005. 출석 변수:- 18.00, 3.87, 4.65, 0.00559. 독서 변수:- 28.00, 3.87, 7.23, 0.00079" data-fig-pos="H">
+<div id="fig-fig14-18" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-pos="H" data-fig-align="left" alt="jamovi 결과 테이블 &quot;Model Coefficients - grade&quot;에서는 절편, 출석, 독서 변수를 포함한 회귀 계수, 표준 오차(SE), t값, p값을 보여줍니다. 절편 값:- 43.50, 3.35, 12.97, 0.00005. 출석 변수:- 18.00, 3.87, 4.65, 0.00559. 독서 변수:- 28.00, 3.87, 7.23, 0.00079">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig14-18-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig14-18.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:70.0%" data-fig-pos="H" alt="jamovi 결과 테이블 &quot;Model Coefficients - grade&quot;에서는 절편, 출석, 독서 변수를 포함한 회귀 계수, 표준 오차(SE), t값, p값을 보여줍니다. 절편 값:- 43.50, 3.35, 12.97, 0.00005. 출석 변수:- 18.00, 3.87, 4.65, 0.00559. 독서 변수:- 28.00, 3.87, 7.23, 0.00079">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fig14-18-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;14.18. jamovi에서 <em>rtfm.csv</em> 데이터셋의 회귀 분석 (상호작용 항 제외)
+그림&nbsp;14.18. jamovi에서 <em>rtfm.csv</em> 데이터셋의 회귀 분석 (상호작용 항 제외)
 </figcaption>
 </figure>
 </div>
 </div>
 </div>
-<p>사실, ANOVA와 회귀분석의 동등성을 좀 더 깊이 살펴볼 수도 있습니다. 회귀분석 결과에서 출석 변수와 독서 변수의 <span class="math inline">\(p\)</span>-값을 확인해 보면, 이는 이전에 ANOVA를 실행했을 때 얻은 값과 동일합니다. 이는 다소 놀라울 수도 있지만, 회귀 분석에서는 <span class="math inline">\(t\)</span>-통계를 사용하고 ANOVA에서는 <span class="math inline">\(F\)</span>-통계를 사용함에도 불구하고, 두 분포 간의 관계를 고려하면 그리 놀라운 일이 아닙니다. <a href="07-Introduction-to-probability.html" class="quarto-xref"><span>Chapter 7</span></a> 에서 설명한 바와 같이, 자유도가 <span class="math inline">\(k\)</span>인 <span class="math inline">\(t\)</span>-분포를 따르는 어떤 값의 제곱은 자유도가 1과 <span class="math inline">\(k\)</span>인 <span class="math inline">\(F\)</span>-분포를 따릅니다. 우리 회귀 모형에서 출석 변수의 <span class="math inline">\(t\)</span>-값이 4.65인데, 이를 제곱하면 21.6이 됩니다. 이는 ANOVA 분석에서 얻은 해당 변수의 <span class="math inline">\(F\)</span>-통계량과 일치합니다.</p>
-<p>마지막으로 한 가지 더 알아두어야 할 점이 있습니다. jamovi는 ANOVA와 회귀 분석이 모두 선형 모형의 예제임을 이해하고 있기 때문에, ‘선형 회귀분석’-‘모형 계수’-‘모형 검정’-’분산분석 검정’를 사용하여 회귀분석 모형에서 전형적인 ANOVA 테이블을 추출할 수 있습니다. 이를 실행하면 <a href="#fig-fig14-19" class="quarto-xref">Figure&nbsp;<span>14.19</span></a> 를 얻을 수 있습니다.</p>
+<p>사실, ANOVA와 회귀분석의 동등성을 좀 더 깊이 살펴볼 수도 있습니다. 회귀분석 결과에서 출석 변수와 독서 변수의 <span class="math inline">\(p\)</span>-값을 확인해 보면, 이는 이전에 ANOVA를 실행했을 때 얻은 값과 동일합니다. 이는 다소 놀라울 수도 있지만, 회귀 분석에서는 <span class="math inline">\(t\)</span>-통계를 사용하고 ANOVA에서는 <span class="math inline">\(F\)</span>-통계를 사용함에도 불구하고, 두 분포 간의 관계를 고려하면 그리 놀라운 일이 아닙니다. <a href="07-Introduction-to-probability.html" class="quarto-xref"><span>장 7</span></a> 에서 설명한 바와 같이, 자유도가 <span class="math inline">\(k\)</span>인 <span class="math inline">\(t\)</span>-분포를 따르는 어떤 값의 제곱은 자유도가 1과 <span class="math inline">\(k\)</span>인 <span class="math inline">\(F\)</span>-분포를 따릅니다. 우리 회귀 모형에서 출석 변수의 <span class="math inline">\(t\)</span>-값이 4.65인데, 이를 제곱하면 21.6이 됩니다. 이는 ANOVA 분석에서 얻은 해당 변수의 <span class="math inline">\(F\)</span>-통계량과 일치합니다.</p>
+<p>마지막으로 한 가지 더 알아두어야 할 점이 있습니다. jamovi는 ANOVA와 회귀 분석이 모두 선형 모형의 예제임을 이해하고 있기 때문에, ‘선형 회귀분석’-‘모형 계수’-‘모형 검정’-’분산분석 검정’를 사용하여 회귀분석 모형에서 전형적인 ANOVA 테이블을 추출할 수 있습니다. 이를 실행하면 <a href="#fig-fig14-19" class="quarto-xref">그림&nbsp;<span>14.19</span></a> 를 얻을 수 있습니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
 <div id="fig-fig14-19" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="jamovi 결과 테이블 &quot;Omnibus ANOVA Test&quot;에서는 출석, 독서, 잔차 항목에 대한 제곱합, 자유도(df), 평균제곱, F값, p값을 보여줍니다. 주석에는 &quot;Type 3 sum of squares&quot;가 표시되어 있습니다.">
@@ -1560,7 +1560,7 @@ Figure&nbsp;14.18. jamovi에서 <em>rtfm.csv</em> 데이터셋의 회귀 분석 
 <img src="images/kor/fig14-19.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" alt="jamovi 결과 테이블 &quot;Omnibus ANOVA Test&quot;에서는 출석, 독서, 잔차 항목에 대한 제곱합, 자유도(df), 평균제곱, F값, p값을 보여줍니다. 주석에는 &quot;Type 3 sum of squares&quot;가 표시되어 있습니다.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fig14-19-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;14.19. jamovi 회귀 분석에서의 Omnibus ANOVA Test 결과
+그림&nbsp;14.19. jamovi 회귀 분석에서의 Omnibus ANOVA Test 결과
 </figcaption>
 </figure>
 </div>
@@ -1624,12 +1624,12 @@ Tip&nbsp;14.8. 실습: 이항 요인 ANOVA와 선형회귀 모형 비교
 <section id="비이항-요인을-대비로서-인코딩하는-방법" class="level3" data-number="14.6.3">
 <h3 data-number="14.6.3" class="anchored" data-anchor-id="비이항-요인을-대비로서-인코딩하는-방법"><span class="header-section-number">14.6.3</span> 비이항 요인을 대비로서 인코딩하는 방법</h3>
 <p>지금까지 <span class="math inline">\(2 \times 2\)</span> ANOVA를 선형 모형으로 볼 수 있다는 것을 설명하였습니다. 그리고 이것이 <span class="math inline">\(2 \times 2 \times 2\)</span> ANOVA 또는 <span class="math inline">\(2 \times 2 \times 2 \times 2\)</span> ANOVA로 일반화되는 방식도 쉽게 이해할 수 있을 것입니다. 사실 같은 개념입니다. 각 요인에 대해 새로운 이항 변수를 추가하면 됩니다. 하지만 두 개 이상의 수준을 가진 요인을 고려할 때는 다소 복잡해집니다. 예를 들어, 이번 장에서 <em>clinicaltrial.csv</em> 데이터를 사용하여 수행한 <span class="math inline">\(3 \times 2\)</span> ANOVA를 고려해 보겠습니다. 이 세 수준을 가진 약물 요인을 회귀분석에 적합한 수치 형태로 변환하려면 어떻게 해야 할까요?</p>
-<p>이 질문에 대한 답은 사실 간단합니다. 세 수준을 가진 요인은 두 개의 이항 변수로 다시 표현될 수 있다는 점만 깨달으면 됩니다. 예를 들어, 새로운 이항 변수 <code>druganxifree</code>를 생성한다고 가정해 보겠습니다. 이 변수는 “anxifree”일 경우 <code>druganxifree</code> = 1로 설정하고, 그렇지 않으면 0으로 설정합니다. 이 변수는는 anxifree와 나머지 두 약물 사이의 대비(contrast)를 설정합니다. 물론, <code>druganxifree</code> 대비 변수(contrast variable)만으로 약물 변수의 모든 정보를 완벽하게 표현할 수는 없습니다. Joyzepam과 위약을 구별할 수 있도록 두 번째 대비 변수가 필요합니다. 이를 위해, 두 번째 이항 대비 변수 <code>drugjoyzepam</code>을 생성할 수 있습니다. 이 변수는 약물이 joyzepam일 경우 1, 그렇지 않으면 0이 됩니다. 이렇게 두 개의 대비 변수를 함께 사용하면 세 가지 약물을 완벽하게 구별할 수 있습니다. 이에 대한 예시는 <a href="#tbl-tab14-10" class="quarto-xref">Table&nbsp;<span>14.10</span></a> 에 나와 있습니다.</p>
+<p>이 질문에 대한 답은 사실 간단합니다. 세 수준을 가진 요인은 두 개의 이항 변수로 다시 표현될 수 있다는 점만 깨달으면 됩니다. 예를 들어, 새로운 이항 변수 <code>druganxifree</code>를 생성한다고 가정해 보겠습니다. 이 변수는 “anxifree”일 경우 <code>druganxifree</code> = 1로 설정하고, 그렇지 않으면 0으로 설정합니다. 이 변수는는 anxifree와 나머지 두 약물 사이의 대비(contrast)를 설정합니다. 물론, <code>druganxifree</code> 대비 변수(contrast variable)만으로 약물 변수의 모든 정보를 완벽하게 표현할 수는 없습니다. Joyzepam과 위약을 구별할 수 있도록 두 번째 대비 변수가 필요합니다. 이를 위해, 두 번째 이항 대비 변수 <code>drugjoyzepam</code>을 생성할 수 있습니다. 이 변수는 약물이 joyzepam일 경우 1, 그렇지 않으면 0이 됩니다. 이렇게 두 개의 대비 변수를 함께 사용하면 세 가지 약물을 완벽하게 구별할 수 있습니다. 이에 대한 예시는 <a href="#tbl-tab14-10" class="quarto-xref">표&nbsp;<span>14.10</span></a> 에 나와 있습니다.</p>
 <div class="cell" data-layout-align="left">
 <div id="tbl-tab14-10" class="cell quarto-float quarto-figure quarto-figure-left anchored" data-layout-align="left">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tab14-10-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;14.10. 세 가지 약물을 구별하기 위한 이항 대비 변수
+표&nbsp;14.10. 세 가지 약물을 구별하기 위한 이항 대비 변수
 </figcaption>
 <div aria-describedby="tbl-tab14-10-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
@@ -1716,7 +1716,7 @@ Tip&nbsp;14.9. 실습: 대비 변수 생성하기
 </section>
 <section id="비이항-요인에-대한-anova와-회귀-분석의-동등성" class="level3" data-number="14.6.4">
 <h3 data-number="14.6.4" class="anchored" data-anchor-id="비이항-요인에-대한-anova와-회귀-분석의-동등성"><span class="header-section-number">14.6.4</span> 비이항 요인에 대한 ANOVA와 회귀 분석의 동등성</h3>
-<p>이제 동일한 데이터 집합에 대해 두 가지 다른 버전이 있습니다. 하나는 <em>clinicaltrial.csv</em> 파일에서 약물 변수가 단일한 세 수준 요인으로 표현된 원본 데이터이고, 다른 하나는 <em>clinicaltrial2.omv</em> 파일에서 이를 두 개의 이항 대비 변수로 확장한 데이터입니다. 다시 한번 우리가 증명하고자 하는 것은, 원래의 <span class="math inline">\(3 \times 2\)</span> 요인 ANOVA가 이 대비 변수들을 사용한 회귀 모형과 동등하다는 점입니다. 먼저 ANOVA를 다시 실행해 보겠습니다. 결과는 <a href="#fig-fig14-20" class="quarto-xref">Figure&nbsp;<span>14.20</span></a> 에 나타나 있습니다.</p>
+<p>이제 동일한 데이터 집합에 대해 두 가지 다른 버전이 있습니다. 하나는 <em>clinicaltrial.csv</em> 파일에서 약물 변수가 단일한 세 수준 요인으로 표현된 원본 데이터이고, 다른 하나는 <em>clinicaltrial2.omv</em> 파일에서 이를 두 개의 이항 대비 변수로 확장한 데이터입니다. 다시 한번 우리가 증명하고자 하는 것은, 원래의 <span class="math inline">\(3 \times 2\)</span> 요인 ANOVA가 이 대비 변수들을 사용한 회귀 모형과 동등하다는 점입니다. 먼저 ANOVA를 다시 실행해 보겠습니다. 결과는 <a href="#fig-fig14-20" class="quarto-xref">그림&nbsp;<span>14.20</span></a> 에 나타나 있습니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
 <div id="fig-fig14-20" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="ANOVA 표에는 요인 'drug' 및 'therapy'가 기분 향상(mood gain) 잔차에 미치는 영향을 분석한 결과가 표시되어 있습니다. 합제곱(sum of squares), 자유도(degrees of freedom, df), 평균제곱(mean square), $F$-값, $p$-값, 에타 제곱(η²), 부분 에타 제곱(η²p), 오메가 제곱(ω²)이 포함됩니다.">
@@ -1725,13 +1725,13 @@ Tip&nbsp;14.9. 실습: 대비 변수 생성하기
 <img src="images/kor/fig14-20.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" alt="ANOVA 표에는 요인 'drug' 및 'therapy'가 기분 향상(mood gain) 잔차에 미치는 영향을 분석한 결과가 표시되어 있습니다. 합제곱(sum of squares), 자유도(degrees of freedom, df), 평균제곱(mean square), $F$-값, $p$-값, 에타 제곱(η²), 부분 에타 제곱(η²p), 오메가 제곱(ω²)이 포함됩니다.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fig14-20-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;14.20. 상호작용 항목을 포함하지 않은 jamovi ANOVA 결과
+그림&nbsp;14.20. 상호작용 항목을 포함하지 않은 jamovi ANOVA 결과
 </figcaption>
 </figure>
 </div>
 </div>
 </div>
-<p>당연히 여기에는 새로운 내용이 없습니다. 이것은 우리가 앞서 수행한 ANOVA와 동일합니다. 이제 회귀 분석을 실행하되, 예측변수로 <code>druganxifree</code>, <code>drugjoyzepam</code>, <code>CBTtherapy</code>를 사용하겠습니다. 결과는 <a href="#fig-fig14-21" class="quarto-xref">Figure&nbsp;<span>14.21</span></a> 에 나타나 있습니다.</p>
+<p>당연히 여기에는 새로운 내용이 없습니다. 이것은 우리가 앞서 수행한 ANOVA와 동일합니다. 이제 회귀 분석을 실행하되, 예측변수로 <code>druganxifree</code>, <code>drugjoyzepam</code>, <code>CBTtherapy</code>를 사용하겠습니다. 결과는 <a href="#fig-fig14-21" class="quarto-xref">그림&nbsp;<span>14.21</span></a> 에 나타나 있습니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
 <div id="fig-fig14-21" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="jamovi 결과 표에는 기분 향상(mood.gain)의 모형 계수가 표시되어 있습니다. 예측변수로는 절편(Intercept), druganxifree, drugjoyzepam, CBTtherapy가 있으며, 각각의 추정값(estimate), 표준 오차(standard error), t-값(t-value), $p$-값이 포함되어 있습니다. 특히, drugjoyzepam의 $p$-값은 매우 유의미한 수준(<.00001)입니다.">
@@ -1740,14 +1740,14 @@ Figure&nbsp;14.20. 상호작용 항목을 포함하지 않은 jamovi ANOVA 결�
 <img src="images/kor/fig14-21.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:70.0%" alt="jamovi 결과 표에는 기분 향상(mood.gain)의 모형 계수가 표시되어 있습니다. 예측변수로는 절편(Intercept), druganxifree, drugjoyzepam, CBTtherapy가 있으며, 각각의 추정값(estimate), 표준 오차(standard error), t-값(t-value), $p$-값이 포함되어 있습니다. 특히, drugjoyzepam의 $p$-값은 매우 유의미한 수준(<.00001)입니다.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fig14-21-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;14.21. 대비 변수 druganxifree 및 drugjoyzepam을 포함한 jamovi 회귀 분석 결과
+그림&nbsp;14.21. 대비 변수 druganxifree 및 drugjoyzepam을 포함한 jamovi 회귀 분석 결과
 </figcaption>
 </figure>
 </div>
 </div>
 </div>
 <p>이번 출력 결과는 앞서 얻었던 것과 다릅니다. 예상할 수 있듯이, 회귀 분석의 출력은 세 개의 예측변수 각각에 대한 결과를 개별적으로 제시합니다. 기존 ANOVA에서 치료 요인(<code>therapy</code>)에 대한 <span class="math inline">\(p\)</span>-값과 <code>CBTtherapy</code> 변수의 <span class="math inline">\(p\)</span>-값이 동일하다는 점에서, 회귀 모형이 ANOVA와 동일한 작업을 수행하고 있음을 확인할 수 있습니다. 그러나 이 회귀 모형에서는 <code>druganxifree</code> 대비 변수와 <code>drugjoyzepam</code> 대비 변수를 <em>개별적으로</em> 검정하고 있으며, 마치 서로 완전히 독립적인 변수인 것처럼 다루고 있습니다. 이는 당연한 결과입니다. 회귀 분석 자체로는 <code>druganxifree</code>와 <code>drugjoyzepam</code>이 세 수준의 약물 요인을 인코딩하기 위해 사용된 두 개의 대비 변수라는 사실을 알 방법이 없기 때문입니다. 회귀 모형의 입장에서 보면, <code>druganxifree</code>와 <code>drugjoyzepam</code>의 관계는 <code>drugjoyzepam</code>과 <code>CBTtherapy</code>의 관계와 다를 바가 없습니다. 그러나 우리는 이를 알고 있습니다.</p>
-<p>현재 우리의 관심은 두 대비 변수가 개별적으로 유의한지를 평가하는 것이 아닙니다. 우리가 알고 싶은 것은 약물(<code>drug</code>) 요인이 “전반적으로” 효과가 있는지 여부입니다. 즉, jamovi가 두 개의 “약물 관련” 대비 변수를 하나의 묶음으로 처리하여 모형 비교 검정을 수행하도록 설정해야 합니다. 이 방식이 익숙하게 들리시나요? 우리가 해야 할 일은 귀무 모형을 지정하는 것입니다. 이 경우, 귀무 모형에는 <code>CBTtherapy</code> 예측변수를 포함하고, 두 개의 약물 관련 변수를 생략하면 됩니다. 결과는 <a href="#fig-fig14-22" class="quarto-xref">Figure&nbsp;<span>14.22</span></a> 에 나타나 있습니다.</p>
+<p>현재 우리의 관심은 두 대비 변수가 개별적으로 유의한지를 평가하는 것이 아닙니다. 우리가 알고 싶은 것은 약물(<code>drug</code>) 요인이 “전반적으로” 효과가 있는지 여부입니다. 즉, jamovi가 두 개의 “약물 관련” 대비 변수를 하나의 묶음으로 처리하여 모형 비교 검정을 수행하도록 설정해야 합니다. 이 방식이 익숙하게 들리시나요? 우리가 해야 할 일은 귀무 모형을 지정하는 것입니다. 이 경우, 귀무 모형에는 <code>CBTtherapy</code> 예측변수를 포함하고, 두 개의 약물 관련 변수를 생략하면 됩니다. 결과는 <a href="#fig-fig14-22" class="quarto-xref">그림&nbsp;<span>14.22</span></a> 에 나타나 있습니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
 <div id="fig-fig14-22" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="jamovi에서 임상 실험 데이터를 대상으로 선형 회귀 분석을 수행한 결과를 보여주는 이미지입니다. 화면에는 모형 측정값, 비교 결과, 특정 분석 결과가 표시되며, 분석 변수에는 'drug'과 'CBTtherapy'가 포함됩니다.">
@@ -1756,29 +1756,29 @@ Figure&nbsp;14.21. 대비 변수 druganxifree 및 drugjoyzepam을 포함한 jamo
 <img src="images/fig14-22.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" alt="jamovi에서 임상 실험 데이터를 대상으로 선형 회귀 분석을 수행한 결과를 보여주는 이미지입니다. 화면에는 모형 측정값, 비교 결과, 특정 분석 결과가 표시되며, 분석 변수에는 'drug'과 'CBTtherapy'가 포함됩니다.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fig14-22-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;14.22. jamovi 회귀 분석에서의 모형 비교 - 귀무 모형 1과 대립 모형 2 비교
+그림&nbsp;14.22. jamovi 회귀 분석에서의 모형 비교 - 귀무 모형 1과 대립 모형 2 비교
 </figcaption>
 </figure>
 </div>
 </div>
 </div>
 <p>이제 제대로 나왔습니다. <span class="math inline">\(F\)</span>-통계량은 26.15이고, 자유도는 2와 14이며, <span class="math inline">\(p\)</span>-값은 0.00002입니다. 이 값들은 원래 ANOVA에서 약물 주효과에 대해 얻었던 값과 동일합니다. 다시 한번 ANOVA와 회귀 분석이 본질적으로 동일하다는 점을 확인할 수 있습니다. 두 분석 모두 선형 모형에 속하며, ANOVA와 회귀 분석의 기저에 있는 통계적 원리는 완전히 동일합니다. 이 사실은 매우 중요하며, 이번 장의 나머지 부분에서도 이를 기반으로 논의를 진행할 것입니다.</p>
-<p>우리는 대비 변수 <code>druganxifree</code>와 <code>drugjoyzepam</code>을 만들기 위해 jamovi에서 새로운 변수를 계산하는 번거로운 작업을 수행했습니다. 이는 ANOVA와 회귀 분석이 본질적으로 동일함을 보여주기 위한 과정이었습니다. 그러나 jamovi의 선형 회귀 분석에서는 이러한 대비 변수를 자동으로 생성하는 편리한 방법이 있습니다. 이를 <a href="#fig-fig14-23" class="quarto-xref">Figure&nbsp;<span>14.23</span></a> 에서 확인할 수 있습니다. jamovi는 예측변수를 요인 그대로 입력할 수 있도록 허용합니다. 매우 스마트한 기능입니다. 또한 ‘준거 수준(Reference Levels)’ 옵션을 통해 기준 수준을 지정할 수도 있습니다. 여기서는 ’placebo’와 ’no.therapy’를 기준 수준으로 설정하였습니다. 이는 가장 논리적인 선택입니다.</p>
+<p>우리는 대비 변수 <code>druganxifree</code>와 <code>drugjoyzepam</code>을 만들기 위해 jamovi에서 새로운 변수를 계산하는 번거로운 작업을 수행했습니다. 이는 ANOVA와 회귀 분석이 본질적으로 동일함을 보여주기 위한 과정이었습니다. 그러나 jamovi의 선형 회귀 분석에서는 이러한 대비 변수를 자동으로 생성하는 편리한 방법이 있습니다. 이를 <a href="#fig-fig14-23" class="quarto-xref">그림&nbsp;<span>14.23</span></a> 에서 확인할 수 있습니다. jamovi는 예측변수를 요인 그대로 입력할 수 있도록 허용합니다. 매우 스마트한 기능입니다. 또한 ‘준거 수준(Reference Levels)’ 옵션을 통해 기준 수준을 지정할 수도 있습니다. 여기서는 ’placebo’와 ’no.therapy’를 기준 수준으로 설정하였습니다. 이는 가장 논리적인 선택입니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig14-23" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="jamovi 소프트웨어 인터페이스에서 선형 회귀 분석을 수행한 결과를 보여주는 스크린샷입니다. 왼쪽에는 데이터 입력 및 설정이, 오른쪽에는 분석 결과(ANOVA 및 모형 계수 포함)가 표시되어 있습니다. 데이터, 분석, 편집 등의 메뉴가 화면에 보입니다." data-fig-pos="H">
+<div id="fig-fig14-23" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-pos="H" data-fig-align="left" alt="jamovi 소프트웨어 인터페이스에서 선형 회귀 분석을 수행한 결과를 보여주는 스크린샷입니다. 왼쪽에는 데이터 입력 및 설정이, 오른쪽에는 분석 결과(ANOVA 및 모형 계수 포함)가 표시되어 있습니다. 데이터, 분석, 편집 등의 메뉴가 화면에 보입니다.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig14-23-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig14-23.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" data-fig-pos="H" alt="jamovi 소프트웨어 인터페이스에서 선형 회귀 분석을 수행한 결과를 보여주는 스크린샷입니다. 왼쪽에는 데이터 입력 및 설정이, 오른쪽에는 분석 결과(ANOVA 및 모형 계수 포함)가 표시되어 있습니다. 데이터, 분석, 편집 등의 메뉴가 화면에 보입니다.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fig14-23-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;14.23. jamovi에서 요인 및 대비 변수를 포함한 회귀 분석 (포괄적 ANOVA 검정 포함)
+그림&nbsp;14.23. jamovi에서 요인 및 대비 변수를 포함한 회귀 분석 (포괄적 ANOVA 검정 포함)
 </figcaption>
 </figure>
 </div>
 </div>
 </div>
-<p>또한 ‘모형 계수’의 ’모형 검정’ 옵션 아래에 있는 ‘분산분석 검정’ 테스트 체크박스를 클릭하면, <span class="math inline">\(F\)</span>-통계량이 26.15, 자유도가 2와 14, <span class="math inline">\(p\)</span>-값이 0.00002로 나타납니다 (<a href="#fig-fig14-23" class="quarto-xref">Figure&nbsp;<span>14.23</span></a>). 이 값들은 원래 ANOVA에서 약물 주효과에 대해 얻었던 값과 정확히 일치합니다. 다시 한번 ANOVA와 회귀 분석이 본질적으로 동일하다는 점을 확인할 수 있습니다. 두 분석 모두 선형 모형이며, ANOVA와 회귀 분석의 기저에 있는 통계적 원리는 완전히 동일합니다.</p>
+<p>또한 ‘모형 계수’의 ’모형 검정’ 옵션 아래에 있는 ‘분산분석 검정’ 테스트 체크박스를 클릭하면, <span class="math inline">\(F\)</span>-통계량이 26.15, 자유도가 2와 14, <span class="math inline">\(p\)</span>-값이 0.00002로 나타납니다 (<a href="#fig-fig14-23" class="quarto-xref">그림&nbsp;<span>14.23</span></a>). 이 값들은 원래 ANOVA에서 약물 주효과에 대해 얻었던 값과 정확히 일치합니다. 다시 한번 ANOVA와 회귀 분석이 본질적으로 동일하다는 점을 확인할 수 있습니다. 두 분석 모두 선형 모형이며, ANOVA와 회귀 분석의 기저에 있는 통계적 원리는 완전히 동일합니다.</p>
 <div id="tip-ex-lm-nonbinary-factors" class="callout callout-style-default callout-tip callout-titled" title="실습: 비이항 요인 ANOVA와 선형회귀 모형 비교">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1835,7 +1835,7 @@ Tip&nbsp;14.10. 실습: 비이항 요인 ANOVA와 선형회귀 모형 비교
 
 -->
 <ol start="2" type="1">
-<li>다음 단계를 거쳐 <code>mood.gain</code>을 대비 변수인 <code>druganxifree</code>, <code>drugjoyzepam</code>, <code>CBTtherapy</code>로 선형회귀 분석을 수행합니다. 그러면 <a href="#fig-fig14-23" class="quarto-xref">Figure&nbsp;<span>14.23</span></a> 같은 결과를 얻습니다.</li>
+<li>다음 단계를 거쳐 <code>mood.gain</code>을 대비 변수인 <code>druganxifree</code>, <code>drugjoyzepam</code>, <code>CBTtherapy</code>로 선형회귀 분석을 수행합니다. 그러면 <a href="#fig-fig14-23" class="quarto-xref">그림&nbsp;<span>14.23</span></a> 같은 결과를 얻습니다.</li>
 </ol>
 <ul>
 <li>‘분석’-‘회귀분석’-‘선형 회귀분석’ 메뉴를 선택</li>
@@ -1865,12 +1865,12 @@ Tip&nbsp;14.10. 실습: 비이항 요인 ANOVA와 선형회귀 모형 비교
 </section>
 <section id="대비를-지정하는-다양한-방법" class="level2" data-number="14.7">
 <h2 data-number="14.7" class="anchored" data-anchor-id="대비를-지정하는-다양한-방법"><span class="header-section-number">14.7</span> 대비를 지정하는 다양한 방법</h2>
-<p>이전 절에서는 요인을 여러 개의 대비(contrast)로 변환하는 방법을 설명하였습니다. 앞에서 소개한 방법에서는 이항 변수 집합을 지정하여 <a href="#tbl-tab14-11" class="quarto-xref">Table&nbsp;<span>14.11</span></a> 같은 표를 정의하였습니다.</p>
+<p>이전 절에서는 요인을 여러 개의 대비(contrast)로 변환하는 방법을 설명하였습니다. 앞에서 소개한 방법에서는 이항 변수 집합을 지정하여 <a href="#tbl-tab14-11" class="quarto-xref">표&nbsp;<span>14.11</span></a> 같은 표를 정의하였습니다.</p>
 <div class="cell" data-layout-align="left">
 <div id="tbl-tab14-11" class="cell quarto-float quarto-figure quarto-figure-left anchored" data-layout-align="left">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tab14-11-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;14.11. 세 가지 가능한 약물을 구별하기 위한 이항 대비
+표&nbsp;14.11. 세 가지 가능한 약물을 구별하기 위한 이항 대비
 </figcaption>
 <div aria-describedby="tbl-tab14-11-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
@@ -1895,12 +1895,12 @@ Table&nbsp;14.11. 세 가지 가능한 약물을 구별하기 위한 이항 대�
 <h3 data-number="14.7.1" class="anchored" data-anchor-id="처리-대비"><span class="header-section-number">14.7.1</span> 처리 대비</h3>
 <p>앞서 설명한 대비에서는 요인의 한 수준이 특별한 역할을 하며, 일종의 기준(baseline) 범주(예제에서는 위약)가 되어 다른 두 수준을 이와 비교하여 정의합니다. 이러한 유형의 대비를 <strong>처리 대비(treatment contrasts)</strong> 또는 <strong>더미 코딩(dummy coding)</strong>이라고 합니다. 이 대비에서 각 수준은 기준 준거 수준(base reference level)과 비교되며, 기준 준거 수준의 값은 모형의 절편의 값이 됩니다.</p>
 <p>이러한 명칭은 요인의 한 범주가 실제로 특별한 의미를 가지며 기준선을 나타내는 경우에 자연스럽고 합리적인 선택이라는 점을 반영합니다. 예를 들어, 임상 시험에서 위약 조건(placebo condition)은 참가자에게 실제 약물을 투여하지 않는 경우이므로 특별한 의미를 가집니다. 따라서 다른 두 조건은 위약과 비교하여 정의됩니다. 한 경우에는 위약을 Anxifree로 대체하고, 다른 경우에는 Joyzepam으로 대체하는 방식입니다.</p>
-<p>위에서 제시한 표는 3 수준 요인에 대한 처리 대비 행렬입니다. 그렇다면, 5 수준 요인에 대한 처리 대비 행렬을 만들고 싶다면 어떻게 해야 할까요? 이에 대한 예시는 <a href="#tbl-tab14-12" class="quarto-xref">Table&nbsp;<span>14.12</span></a> 에서 확인할 수 있습니다.</p>
+<p>위에서 제시한 표는 3 수준 요인에 대한 처리 대비 행렬입니다. 그렇다면, 5 수준 요인에 대한 처리 대비 행렬을 만들고 싶다면 어떻게 해야 할까요? 이에 대한 예시는 <a href="#tbl-tab14-12" class="quarto-xref">표&nbsp;<span>14.12</span></a> 에서 확인할 수 있습니다.</p>
 <div class="cell" data-layout-align="left">
 <div id="tbl-tab14-12" class="cell quarto-float quarto-figure quarto-figure-left anchored" data-layout-align="left">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tab14-12-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;14.12. 5수준 처리 대비 행렬
+표&nbsp;14.12. 5수준 처리 대비 행렬
 </figcaption>
 <div aria-describedby="tbl-tab14-12-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
@@ -1990,12 +1990,12 @@ Tip&nbsp;14.11. 실습: 처리 대비와 ANOVA
 <section id="helmert-대비" class="level3" data-number="14.7.2">
 <h3 data-number="14.7.2" class="anchored" data-anchor-id="helmert-대비"><span class="header-section-number">14.7.2</span> Helmert 대비</h3>
 <p>처리 대비는 다양한 상황에서 유용합니다. 그러나 이러한 대비는 기준이 되는 범주가 명확하게 존재하고, 다른 모든 집단을 그 기준과 비교하려는 경우에 가장 적절합니다. 하지만 어떤 경우에는 이러한 기준 범주가 존재하지 않으며, 각 집단을 다른 집단들의 평균과 비교하는 것이 더 의미가 있을 수 있습니다. 이러한 상황에서 사용되는 것이 Helmert 대비이며, 이는 jamovi의 ‘분산분석’-‘대비’ 옵션에서 ’Helmert’을 선택하여 생성할 수 있습니다.</p>
-<p>Helmert 대비의 기본 개념은 각 집단을 이전 집단들의 평균과 비교하는 것입니다. 즉, 첫 번째 대비는 집단 2와 집단 1의 차이를 나타내며, 두 번째 대비는 집단 3과 집단 1과 2의 평균 사이의 차이를 나타냅니다. 이러한 방식으로 진행되며, 다섯 개의 수준을 가진 요인의 경우 <a href="#tbl-tab14-13" class="quarto-xref">Table&nbsp;<span>14.13</span></a> 에 제시된 대비 행렬로 변환됩니다.</p>
+<p>Helmert 대비의 기본 개념은 각 집단을 이전 집단들의 평균과 비교하는 것입니다. 즉, 첫 번째 대비는 집단 2와 집단 1의 차이를 나타내며, 두 번째 대비는 집단 3과 집단 1과 2의 평균 사이의 차이를 나타냅니다. 이러한 방식으로 진행되며, 다섯 개의 수준을 가진 요인의 경우 <a href="#tbl-tab14-13" class="quarto-xref">표&nbsp;<span>14.13</span></a> 에 제시된 대비 행렬로 변환됩니다.</p>
 <div class="cell" data-layout-align="left">
 <div id="tbl-tab14-13" class="cell quarto-float quarto-figure quarto-figure-left anchored" data-layout-align="left">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tab14-13-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;14.13. 5개 수준을 가진 Helmert 대비 행렬
+표&nbsp;14.13. 5개 수준을 가진 Helmert 대비 행렬
 </figcaption>
 <div aria-describedby="tbl-tab14-13-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
@@ -2021,12 +2021,12 @@ Table&nbsp;14.13. 5개 수준을 가진 Helmert 대비 행렬
 </section>
 <section id="합이-0이-되는-대비-sum-to-zero-contrasts" class="level3" data-number="14.7.3">
 <h3 data-number="14.7.3" class="anchored" data-anchor-id="합이-0이-되는-대비-sum-to-zero-contrasts"><span class="header-section-number">14.7.3</span> 합이 0이 되는 대비 (Sum to zero contrasts)</h3>
-<p>세 번째로 간략히 언급해야 할 옵션은 “합이 0이 되는” 대비(sum to zero contrasts)이며, jamovi에서는 “단순(Simple)” 대비라고 불립니다. 이 대비는 집단 간의 <strong>쌍별(pairwise) 비교</strong>를 수행하는 데 사용됩니다. 구체적으로, 각 대비는 특정 집단과 기준 범주의 차이를 나타냅니다. 다음은 기준 범주가 첫 번째 집단일 때의 단순 대비에 해당합니다 (<a href="#tbl-tab14-14" class="quarto-xref">Table&nbsp;<span>14.14</span></a>).</p>
+<p>세 번째로 간략히 언급해야 할 옵션은 “합이 0이 되는” 대비(sum to zero contrasts)이며, jamovi에서는 “단순(Simple)” 대비라고 불립니다. 이 대비는 집단 간의 <strong>쌍별(pairwise) 비교</strong>를 수행하는 데 사용됩니다. 구체적으로, 각 대비는 특정 집단과 기준 범주의 차이를 나타냅니다. 다음은 기준 범주가 첫 번째 집단일 때의 단순 대비에 해당합니다 (<a href="#tbl-tab14-14" class="quarto-xref">표&nbsp;<span>14.14</span></a>).</p>
 <div class="cell" data-layout-align="left">
 <div id="tbl-tab14-14" class="cell quarto-float quarto-figure quarto-figure-left anchored" data-layout-align="left">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tab14-14-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;14.14. 5개 수준을 가진 “합이 0이 되는” 대비 행렬
+표&nbsp;14.14. 5개 수준을 가진 “합이 0이 되는” 대비 행렬
 </figcaption>
 <div aria-describedby="tbl-tab14-14-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
@@ -2062,12 +2062,12 @@ Table&nbsp;14.14. 5개 수준을 가진 “합이 0이 되는” 대비 행렬
 </section>
 <section id="jamovi에서의-대비-옵션" class="level3" data-number="14.7.4">
 <h3 data-number="14.7.4" class="anchored" data-anchor-id="jamovi에서의-대비-옵션"><span class="header-section-number">14.7.4</span> jamovi에서의 대비 옵션</h3>
-<p>jamovi에서는 ANOVA에서 다양한 유형의 대비를 생성할 수 있는 옵션이 제공됩니다. 이러한 대비 옵션은 ‘분산분석’ 창의 ‘대비’ 옵션에서 확인할 수 있으며, <a href="#tbl-tab14-15" class="quarto-xref">Table&nbsp;<span>14.15</span></a> 에 나열되어 있습니다.</p>
+<p>jamovi에서는 ANOVA에서 다양한 유형의 대비를 생성할 수 있는 옵션이 제공됩니다. 이러한 대비 옵션은 ‘분산분석’ 창의 ‘대비’ 옵션에서 확인할 수 있으며, <a href="#tbl-tab14-15" class="quarto-xref">표&nbsp;<span>14.15</span></a> 에 나열되어 있습니다.</p>
 <div class="cell" data-layout-align="left">
 <div id="tbl-tab14-15" class="cell quarto-float quarto-figure quarto-figure-left anchored" data-layout-align="left">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tab14-15-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;14.15. jamovi ANOVA 분석에서 사용 가능한 대비 옵션
+표&nbsp;14.15. jamovi ANOVA 분석에서 사용 가능한 대비 옵션
 </figcaption>
 <div aria-describedby="tbl-tab14-15-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
@@ -2159,7 +2159,7 @@ Tip&nbsp;14.12. 실습: 단순 대비와 ANOVA
 <section id="sec-Post-hoc-tests" class="level2" data-number="14.8">
 <h2 data-number="14.8" class="anchored" data-anchor-id="sec-Post-hoc-tests"><span class="header-section-number">14.8</span> 사후 검정</h2>
 <p>이제 다른 주제로 넘어가 보겠습니다. 대비를 사용하여 사전에 계획된 비교를 수행하는 대신, ANOVA를 수행하여 유의한 효과를 발견했다고 가정해 보겠습니다. <span class="math inline">\(F\)</span>-검정은 “일괄(omnibus)” 검정으로서 여러 집단 사이의 차이가 없다는 귀무가설을 검정합니다. 따라서 유의한 효과가 나타났다고 해서 어떤 집단 사이에 차이가 있는지를 즉시 알 수 있는 것은 아닙니다.</p>
-<p>이 문제는 <a href="13-Comparing-several-means-one-way-ANOVA.html" class="quarto-xref"><span>Chapter 13</span></a> 에서 이미 논의한 바 있습니다. 그 장에서의 해결 방법은 가능한 모든 집단 쌍들에 대해 <span class="math inline">\(t\)</span>-검정을 수행하고, 다중 비교 전체의 일종 오류를 통제하기 위해 본페로니 또는 Holm 방법을 사용하여 <span class="math inline">\(p\)</span>-값을 보정하였습니다. 이러한 방법들은 상대적으로 단순하며, 여러 가설을 검정하는 다양한 상황에서 사용할 수 있는 일반적인 도구라는 장점이 있습니다. 그러나 ANOVA의 사후 검정을 보다 효율적으로 수행하려는 경우, 최적의 선택은 아닐 수 있습니다. 실제로 다중 비교를 수행하는 다양한 방법이 통계학 문헌에서 논의되어 왔으며<span class="citation" data-cites="Hsu1996">(<a href="References.html#ref-Hsu1996" role="doc-biblioref">Hsu, 1996</a>)</span>, 이 입문서에서 모든 방법을 상세히 설명하는 것은 범위를 벗어나는 일입니다.</p>
+<p>이 문제는 <a href="13-Comparing-several-means-one-way-ANOVA.html" class="quarto-xref"><span>장 13</span></a> 에서 이미 논의한 바 있습니다. 그 장에서의 해결 방법은 가능한 모든 집단 쌍들에 대해 <span class="math inline">\(t\)</span>-검정을 수행하고, 다중 비교 전체의 일종 오류를 통제하기 위해 본페로니 또는 Holm 방법을 사용하여 <span class="math inline">\(p\)</span>-값을 보정하였습니다. 이러한 방법들은 상대적으로 단순하며, 여러 가설을 검정하는 다양한 상황에서 사용할 수 있는 일반적인 도구라는 장점이 있습니다. 그러나 ANOVA의 사후 검정을 보다 효율적으로 수행하려는 경우, 최적의 선택은 아닐 수 있습니다. 실제로 다중 비교를 수행하는 다양한 방법이 통계학 문헌에서 논의되어 왔으며<span class="citation" data-cites="Hsu1996">(<a href="References.html#ref-Hsu1996" role="doc-biblioref">Hsu, 1996</a>)</span>, 이 입문서에서 모든 방법을 상세히 설명하는 것은 범위를 벗어나는 일입니다.</p>
 <p>그럼에도 불구하고, 주목할 만한 중요한 도구가 하나 있습니다. 바로 Tukey의 “정직한 유의 차이”(Honestly Significant Difference) 또는 <strong>Tukey의 HSD</strong>라고 불리는 방법입니다. 이번에는 수식을 생략하고 개념적인 내용만 설명하겠습니다. Tukey의 HSD는 모든 집단 쌍 사이의 비교를 수행하는 방법입니다. 따라서 모든 두 집단 사이의 차이가 관심일 경우에만 Tukey의 HSD를 사용하는 것이 적절합니다.<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a> 예를 들어, 앞에서 <em>clinicaltrial.csv</em> 데이터 세트를 사용하여 요인분산분석을 수행했습니다. 약물과 치료법의 주효과를 검정하는 경우, 다음 네 가지 비교에 관심을 가질 수 있습니다.</p>
 <ul>
 <li>Anxifree를 투여받은 사람과 위약을 투여받은 사람의 기분 향상 차이<br>
@@ -2171,16 +2171,16 @@ Tip&nbsp;14.12. 실습: 단순 대비와 ANOVA
 <li>인지행동치료(CBT)를 받은 사람과 아무 치료도 받지 않은 사람의 기분 향상 차이</li>
 </ul>
 <p>이러한 비교에서 관심을 가지는 것은 각 집단의 (모집단) 평균의 차이입니다. Tukey의 HSD는 이 모든 비교에 대해 동시신뢰구간(simultaneous confidence intervals)을 제공합니다. 여기서 “95% 동시신뢰구간”이란, 만약 이 연구를 여러 번 반복할 경우 95%의 경우에 해당 신뢰구간이 참값을 포함한다**는 의미입니다. 또한, 이 신뢰구간을 사용하여 특정 비교에 대한 조정된 <span class="math inline">\(p\)</span>-값을 계산할 수 있습니다.</p>
-<p>jamovi에서 Tukey의 HSD를 수행하는 것은 매우 쉽습니다. ‘분산분석’ 모형에서 ‘사후 검정’을 수행하려는 항을 지정하기만 하면 됩니다. 예를 들어, 주효과에 대한 사후 검정을 수행하고 상호작용 효과는 고려하지 않는 경우, ’분산분석’ 창의 ‘사후 검정’ 옵션을 열어 <code>drug</code> 및 <code>therapy</code> 변수를 선택한 후 ‘Tukey’ 옵션을 체크하면 됩니다. 이와 관련된 결과 표는 <a href="#fig-fig14-24" class="quarto-xref">Figure&nbsp;<span>14.24</span></a> 에 제시되어 있습니다.</p>
+<p>jamovi에서 Tukey의 HSD를 수행하는 것은 매우 쉽습니다. ‘분산분석’ 모형에서 ‘사후 검정’을 수행하려는 항을 지정하기만 하면 됩니다. 예를 들어, 주효과에 대한 사후 검정을 수행하고 상호작용 효과는 고려하지 않는 경우, ’분산분석’ 창의 ‘사후 검정’ 옵션을 열어 <code>drug</code> 및 <code>therapy</code> 변수를 선택한 후 ‘Tukey’ 옵션을 체크하면 됩니다. 이와 관련된 결과 표는 <a href="#fig-fig14-24" class="quarto-xref">그림&nbsp;<span>14.24</span></a> 에 제시되어 있습니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig14-24" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="jamovi에서 ANOVA 결과를 보여주는 스크린샷. 'drug' 및 'therapy' 변수가 선택되어 있으며, 결과 창에 ANOVA 검정 결과와 사후 비교 결과가 표시됨" data-fig-pos="H">
+<div id="fig-fig14-24" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-pos="H" data-fig-align="left" alt="jamovi에서 ANOVA 결과를 보여주는 스크린샷. 'drug' 및 'therapy' 변수가 선택되어 있으며, 결과 창에 ANOVA 검정 결과와 사후 비교 결과가 표시됨">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig14-24-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/fig14-24.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" data-fig-pos="H" alt="jamovi에서 ANOVA 결과를 보여주는 스크린샷. 'drug' 및 'therapy' 변수가 선택되어 있으며, 결과 창에 ANOVA 검정 결과와 사후 비교 결과가 표시됨">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fig14-24-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;14.24. jamovi 요인배치 ANOVA에서 상호작용 효과 없이 수행한 Tukey HSD 사후 검정
+그림&nbsp;14.24. jamovi 요인배치 ANOVA에서 상호작용 효과 없이 수행한 Tukey HSD 사후 검정
 </figcaption>
 </figure>
 </div>
@@ -2197,16 +2197,16 @@ Figure&nbsp;14.24. jamovi 요인배치 ANOVA에서 상호작용 효과 없이 �
 <li>등등…</li>
 </ul>
 <p>이처럼 고려해야 할 비교가 많아집니다.</p>
-<p>실제로, Tukey 사후 검정을 수행하면 총 19개의 쌍별 비교가 이루어지며, 결과는 <a href="#fig-fig14-25" class="quarto-xref">Figure&nbsp;<span>14.25</span></a> 에 나타나 있습니다.</p>
+<p>실제로, Tukey 사후 검정을 수행하면 총 19개의 쌍별 비교가 이루어지며, 결과는 <a href="#fig-fig14-25" class="quarto-xref">그림&nbsp;<span>14.25</span></a> 에 나타나 있습니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig14-25" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="약물과 치료법 간 사후 검정 결과를 보여주는 jamovi 테이블. 각 비교에 대한 평균 차이, 표준오차, 자유도, $t$-값, $p$-값이 포함됨." data-fig-pos="H">
+<div id="fig-fig14-25" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-pos="H" data-fig-align="left" alt="약물과 치료법 간 사후 검정 결과를 보여주는 jamovi 테이블. 각 비교에 대한 평균 차이, 표준오차, 자유도, $t$-값, $p$-값이 포함됨.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig14-25-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig14-25.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" data-fig-pos="H" alt="약물과 치료법 간 사후 검정 결과를 보여주는 jamovi 테이블. 각 비교에 대한 평균 차이, 표준오차, 자유도, $t$-값, $p$-값이 포함됨.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fig14-25-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;14.25. jamovi 요인배치 ANOVA에서 상호작용 효과를 포함한 Tukey HSD 사후 검정
+그림&nbsp;14.25. jamovi 요인배치 ANOVA에서 상호작용 효과를 포함한 Tukey HSD 사후 검정
 </figcaption>
 </figure>
 </div>
@@ -2230,7 +2230,7 @@ Tip&nbsp;14.13. 실습: 요인분산분석에서 사후 검정
 <ul>
 <li><code>drug</code>와 <code>therapy</code>를 오른편 상자로 이동시킵니다.</li>
 <li>‘교정’ 옵션에서 ’Tukey’를 선택합니다.</li>
-<li>그러면 <a href="#fig-fig14-24" class="quarto-xref">Figure&nbsp;<span>14.24</span></a> 의 결과를 얻습니다.</li>
+<li>그러면 <a href="#fig-fig14-24" class="quarto-xref">그림&nbsp;<span>14.24</span></a> 의 결과를 얻습니다.</li>
 </ul>
 <ol start="3" type="1">
 <li>상호작용 효과를 포함하여 ’사후 검정’하기 위하여 다음을 수행합니다.</li>
@@ -2239,7 +2239,7 @@ Tip&nbsp;14.13. 실습: 요인분산분석에서 사후 검정
 <li>‘모형’ 옵션을 확장하여 왼편의 <code>drug</code>와 <code>therapy</code>를 선택한 후 아래 화살표의 ‘상호작용’을 선택하여 ’모형 항’ 상자에 ’drug * therapy`를 넣습니다.</li>
 <li><code>drug</code>와 <code>therapy</code>를 오른편 상자로 이동시킵니다.</li>
 <li>그러면 ‘사후 검정’ 옵션에서 왼편 상장에 <code>drug * therapy</code> 항이 나타납니다. 이를 오픈편 상자로 옮깁니다.</li>
-<li>그러면 <a href="#fig-fig14-25" class="quarto-xref">Figure&nbsp;<span>14.25</span></a> 의 결과를 얻습니다.</li>
+<li>그러면 <a href="#fig-fig14-25" class="quarto-xref">그림&nbsp;<span>14.25</span></a> 의 결과를 얻습니다.</li>
 </ul>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
@@ -2256,7 +2256,7 @@ Tip&nbsp;14.13. 실습: 요인분산분석에서 사후 검정
 <section id="sec-The-method-of-planned-comparisons" class="level2" data-number="14.9">
 <h2 data-number="14.9" class="anchored" data-anchor-id="sec-The-method-of-planned-comparisons"><span class="header-section-number">14.9</span> 계획된 비교</h2>
 <p>앞서 ANOVA에서 대비와 사후 검정에 대해 논의하였는데, <strong>계획된 비교(method of planned comparisons)</strong>는 별도로 다룰 가치가 있는 중요한 개념이라고 생각합니다.</p>
-<p><a href="13-Comparing-several-means-one-way-ANOVA.html" class="quarto-xref"><span>Chapter 13</span></a> 과 이전 절에서 다중 비교에 대해 논의할 때, 저는 여러분이 수행하려는 검정이 진정한 의미에서 사후 검정이라고 가정했습니다. 예를 들어, 앞의 약물 실험에서 약물이 기분 향상에 미치는 효과가 다를 것이라고 가정했을 수 있습니다(즉, 약물의 주효과를 가설로 설정한 경우). 하지만 약물이 어떻게 다를지에 대한 구체적인 가설이 없었고, 어떤 쌍별 비교가 중요한지도 알지 못했다고 가정해 보겠습니다. 이러한 경우라면, Tukey의 HSD 같은 방법을 사용하여 쌍별 비교를 수행하는 것이 적절합니다.</p>
+<p><a href="13-Comparing-several-means-one-way-ANOVA.html" class="quarto-xref"><span>장 13</span></a> 과 이전 절에서 다중 비교에 대해 논의할 때, 저는 여러분이 수행하려는 검정이 진정한 의미에서 사후 검정이라고 가정했습니다. 예를 들어, 앞의 약물 실험에서 약물이 기분 향상에 미치는 효과가 다를 것이라고 가정했을 수 있습니다(즉, 약물의 주효과를 가설로 설정한 경우). 하지만 약물이 어떻게 다를지에 대한 구체적인 가설이 없었고, 어떤 쌍별 비교가 중요한지도 알지 못했다고 가정해 보겠습니다. 이러한 경우라면, Tukey의 HSD 같은 방법을 사용하여 쌍별 비교를 수행하는 것이 적절합니다.</p>
 <p>그러나 관심 있는 비교가 명확하게 정해져 있는 경우에는 상황이 달라집니다. 즉, 어떤 비교를 수행할지에 대한 구체적인 가설이 있으며, 사전에 결정한 비교 이외의 다른 비교는 절대 수행할 의도가 없는 경우입니다.</p>
 <p>이 조건을 철저히 지킨다면(즉, 여러분의 가설에 없었던 것들 사이에 유의한 결과가 발결되었더라도 원래의 가설에 대한 검정으로 한정한다면), Tukey의 HSD를 수행하는 것은 비효율적일 수 있습니다. 왜냐하면, Tukey의 HSD는 여러 비교를 동시에 수행한다는 전제하에 오류율을 조정하는 방법인데, 여러분은 계획이 없던 집단 쌍들에 대해서는 애초에 검정할 생각이 없기 때문입니다.</p>
 <p>이러한 경우라면, 다중 검정에 대한 조정을 하지 않고도 제한된 수의 가설 검정을 안전하게 수행할 수 있습니다. 이러한 접근법을 계획된 비교라고 하며, 임상시험에서 때때로 사용됩니다. 본 입문서에서는 이에 대한 추가적인 논의를 다루지 않겠지만, 이러한 방법이 존재한다는 점만큼은 기억해 두시기 바랍니다!</p>
@@ -2269,7 +2269,7 @@ Tip&nbsp;14.13. 실습: 요인분산분석에서 사후 검정
 <h3 data-number="14.10.1" class="anchored" data-anchor-id="coffee-데이터"><span class="header-section-number">14.10.1</span> <em>coffee</em> 데이터</h3>
 <p>언제나 그렇듯이, 실제 데이터를 다루면서 이해를 돕도록 하겠습니다. <em>coffee.csv</em> 파일에는 불균형한 <span class="math inline">\(3 \times 2\)</span> 요인분산분석을 해야하는 가상의 데이터가 포함되어 있습니다.</p>
 <p>이번에는 사람들이 커피를 너무 많이 마시면 말을 많이 하게 되는 것이 순수하게 커피 자체의 영향인지, 아니면 커피에 첨가하는 우유나 설탕의 영향도 있는지 알아보려고 한다고 가정하겠습니다. 이를 위해 18명의 참가자에게 커피를 제공하였습니다. 이때 커피(카페인)의 양은 일정하게 유지하면서, 우유를 첨가하는지 여부를 다르게 하였습니다. 우유 변수는 이항 요인(binary factor)으로, “yes”(첨가) 또는 “no”(미첨가)의 두 수준을 가집니다. 사용한 설탕의 종류도 다르게 하였습니다. 설탕 변수는 세 가지 수준을 가지며, “real”(일반 설탕), “fake”(인공 감미료), “none”(설탕 없음) 중 하나로 설정됩니다. 결과변수는 연속형 변수이며, 참가자가 “말을 많이 하는 정도(babbling)”를 심리학적으로 적절한 방식으로 측정한 값이라고 가정하겠습니다. 세부적인 측정 방식은 여기서 중요하지 않으므로 넘어가겠습니다.</p>
-<p>데이터를 jamovi의 스프레드시트 보기에서 확인하면 <a href="#fig-fig14-26" class="quarto-xref">Figure&nbsp;<span>14.26</span></a> 같습니다.</p>
+<p>데이터를 jamovi의 스프레드시트 보기에서 확인하면 <a href="#fig-fig14-26" class="quarto-xref">그림&nbsp;<span>14.26</span></a> 같습니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
 <div id="fig-fig14-26" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="jamovi 스크린샷. 왼쪽에는 'milk', 'sugar', 'bubble' 등의 열을 가진 원시 데이터 테이블이 표시되며, 오른쪽에는 평균 및 표준편차와 같은 기술 통계 결과가 나타나 있음.">
@@ -2278,14 +2278,14 @@ Tip&nbsp;14.13. 실습: 요인분산분석에서 사후 검정
 <img src="images/kor/fig14-26.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" alt="jamovi 스크린샷. 왼쪽에는 'milk', 'sugar', 'bubble' 등의 열을 가진 원시 데이터 테이블이 표시되며, 오른쪽에는 평균 및 표준편차와 같은 기술 통계 결과가 나타나 있음.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fig14-26-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;14.26. jamovi에서 본 <em>coffee.csv</em> 데이터셋. 요인 수준별로 집계된 기술적 정보 포함.
+그림&nbsp;14.26. jamovi에서 본 <em>coffee.csv</em> 데이터셋. 요인 수준별로 집계된 기술적 정보 포함.
 </figcaption>
 </figure>
 </div>
 </div>
 </div>
-<p><a href="#fig-fig14-26" class="quarto-xref">Figure&nbsp;<span>14.26</span></a> 의 평균값 표를 보면, 집단 간에 차이가 있다는 강한 인상을 받게 됩니다. 특히, <code>babble</code> 변수의 평균의 크기와을 표준편차의 크기를 비교해 보면 더욱 그렇습니다. 각 집단에서 <code>babble</code> 변수의 표준편차는 <span class="math inline">\(0.14\)</span>에서 <span class="math inline">\(0.71\)</span>까지 변하는데, 집단 사이의 평균 차이에 비하면 비교적 작은 값입니다.<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a></p>
-<p>처음에는 이것이 단순한 요인분산분석 문제처럼 보일 수 있지만, 데이터를 자세히 보면 각 집단별 관측 수가 다르다는 문제가 있습니다. <a href="#fig-fig14-26" class="quarto-xref">Figure&nbsp;<span>14.26</span></a> 에 표시된 각 집단별 사례수를 보면 이를 확인할 수 있습니다. 이는 각 집단의 표본 크기가 동일하다는 균형 설계 ANOVA의 가정이 위배되었음을 의미합니다. 이러한 상황을 어떻게 처리해야 하는지에 대해서는 아직 논의하지 않았습니다.</p>
+<p><a href="#fig-fig14-26" class="quarto-xref">그림&nbsp;<span>14.26</span></a> 의 평균값 표를 보면, 집단 간에 차이가 있다는 강한 인상을 받게 됩니다. 특히, <code>babble</code> 변수의 평균의 크기와을 표준편차의 크기를 비교해 보면 더욱 그렇습니다. 각 집단에서 <code>babble</code> 변수의 표준편차는 <span class="math inline">\(0.14\)</span>에서 <span class="math inline">\(0.71\)</span>까지 변하는데, 집단 사이의 평균 차이에 비하면 비교적 작은 값입니다.<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a></p>
+<p>처음에는 이것이 단순한 요인분산분석 문제처럼 보일 수 있지만, 데이터를 자세히 보면 각 집단별 관측 수가 다르다는 문제가 있습니다. <a href="#fig-fig14-26" class="quarto-xref">그림&nbsp;<span>14.26</span></a> 에 표시된 각 집단별 사례수를 보면 이를 확인할 수 있습니다. 이는 각 집단의 표본 크기가 동일하다는 균형 설계 ANOVA의 가정이 위배되었음을 의미합니다. 이러한 상황을 어떻게 처리해야 하는지에 대해서는 아직 논의하지 않았습니다.</p>
 <div id="tip-ex-coffee" class="callout callout-style-default callout-tip callout-titled" title="실습: Coffee 데이터">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -2308,7 +2308,7 @@ Tip&nbsp;14.14. 실습: Coffee 데이터
 <li><code>babble</code>: 연속변수, 소수</li>
 </ul>
 <ol start="4" type="1">
-<li>다음 단계를 거쳐 <a href="#fig-fig14-26" class="quarto-xref">Figure&nbsp;<span>14.26</span></a> 같은 기술통계량을 구해봅니다.</li>
+<li>다음 단계를 거쳐 <a href="#fig-fig14-26" class="quarto-xref">그림&nbsp;<span>14.26</span></a> 같은 기술통계량을 구해봅니다.</li>
 </ol>
 <ul>
 <li>‘분석’-‘기술분석’-‘기술분석’ 메뉴를 선택합니다.</li>
@@ -2343,12 +2343,12 @@ babble \sim 1
 <p><span class="math display">\[
 babble \sim sugar
 \]</span></p>
-<p>이 모형은 첫 번째 대립가설이 됩니다. 따라서 첫 번째 가설 검정은 다음 두 모형을 비교하는 것입니다(<a href="#tbl-tab14-16" class="quarto-xref">Table&nbsp;<span>14.16</span></a>). 해당 비교를 통해 설탕의 주효과를 검정하게 됩니다.</p>
+<p>이 모형은 첫 번째 대립가설이 됩니다. 따라서 첫 번째 가설 검정은 다음 두 모형을 비교하는 것입니다(<a href="#tbl-tab14-16" class="quarto-xref">표&nbsp;<span>14.16</span></a>). 해당 비교를 통해 설탕의 주효과를 검정하게 됩니다.</p>
 <div class="cell" data-layout-align="left">
 <div id="tbl-tab14-16" class="cell quarto-float quarto-figure quarto-figure-left anchored" data-layout-align="left">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tab14-16-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;14.16. 결과변수 “babble”에 대한 귀무가설과 대립가설
+표&nbsp;14.16. 결과변수 “babble”에 대한 귀무가설과 대립가설
 </figcaption>
 <div aria-describedby="tbl-tab14-16-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
@@ -2368,12 +2368,12 @@ Table&nbsp;14.16. 결과변수 “babble”에 대한 귀무가설과 대립가�
 <p><span class="math display">\[
 babble \sim sugar + milk
 \]</span></p>
-<p>이제 두 번째 가설 검정을 수행합니다. 이때의 비교 대상이 되는 모형 쌍은 <a href="#tbl-tab14-17" class="quarto-xref">Table&nbsp;<span>14.17</span></a> 과 같습니다. 이 비교를 통해 우유의 주효과를 검정하게 됩니다.</p>
+<p>이제 두 번째 가설 검정을 수행합니다. 이때의 비교 대상이 되는 모형 쌍은 <a href="#tbl-tab14-17" class="quarto-xref">표&nbsp;<span>14.17</span></a> 과 같습니다. 이 비교를 통해 우유의 주효과를 검정하게 됩니다.</p>
 <div class="cell" data-layout-align="left">
 <div id="tbl-tab14-17" class="cell quarto-float quarto-figure quarto-figure-left anchored" data-layout-align="left">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tab14-17-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;14.17. 결과변수 “babble”에 대한 추가적인 귀무가설과 대립가설
+표&nbsp;14.17. 결과변수 “babble”에 대한 추가적인 귀무가설과 대립가설
 </figcaption>
 <div aria-describedby="tbl-tab14-17-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
@@ -2394,12 +2394,12 @@ Table&nbsp;14.17. 결과변수 “babble”에 대한 추가적인 귀무가설�
 <p><span class="math display">\[
 babble \sim sugar + milk + sugar {\times} milk
 \]</span></p>
-<p>이제 세 번째 가설 검정을 수행합니다. 이때의 비교 대상이 되는 모형 쌍은 <a href="#tbl-tab14-18" class="quarto-xref">Table&nbsp;<span>14.18</span></a> 과 같습니다. 해당 비교를 통해 설탕과 우유의 상호작용 효과를 검정합니다.</p>
+<p>이제 세 번째 가설 검정을 수행합니다. 이때의 비교 대상이 되는 모형 쌍은 <a href="#tbl-tab14-18" class="quarto-xref">표&nbsp;<span>14.18</span></a> 과 같습니다. 해당 비교를 통해 설탕과 우유의 상호작용 효과를 검정합니다.</p>
 <div class="cell" data-layout-align="left">
 <div id="tbl-tab14-18" class="cell quarto-float quarto-figure quarto-figure-left anchored" data-layout-align="left">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tab14-18-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;14.18. 결과변수 “babble”에 대한 추가적인 귀무가설과 대립가설
+표&nbsp;14.18. 결과변수 “babble”에 대한 추가적인 귀무가설과 대립가설
 </figcaption>
 <div aria-describedby="tbl-tab14-18-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
@@ -2415,22 +2415,22 @@ Table&nbsp;14.18. 결과변수 “babble”에 대한 추가적인 귀무가설�
 </figure>
 </div>
 </div>
-<p>제곱합 유형 III 방식이 jamovi의 ANOVA에서 기본적으로 사용되는 가설 검정 방법입니다. 따라서 제곱합 유형 I 방식으로 분석을 수행하려면 jamovi의 ‘분산분석’-‘모형’ 옵션에서 ‘제곱합’ 선택 상자를 ’Type 1’로 설정해야 합니다. 이렇게 설정하면 <a href="#fig-fig14-27" class="quarto-xref">Figure&nbsp;<span>14.27</span></a> 에 제시된 ANOVA 표가 생성됩니다.</p>
+<p>제곱합 유형 III 방식이 jamovi의 ANOVA에서 기본적으로 사용되는 가설 검정 방법입니다. 따라서 제곱합 유형 I 방식으로 분석을 수행하려면 jamovi의 ‘분산분석’-‘모형’ 옵션에서 ‘제곱합’ 선택 상자를 ’Type 1’로 설정해야 합니다. 이렇게 설정하면 <a href="#fig-fig14-27" class="quarto-xref">그림&nbsp;<span>14.27</span></a> 에 제시된 ANOVA 표가 생성됩니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig14-27" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="설탕과 우유가 종속 변수에 미치는 영향을 나타내는 ANOVA 표. 열에는 Sum of Squares, df, Mean Square, F, 그리고 $p$ 값이 포함되며, 행에는 sugar, milk, sugar * milk(상호작용 항), 그리고 잔차(residuals)의 값이 표시됨." data-fig-pos="H">
+<div id="fig-fig14-27" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-pos="H" data-fig-align="left" alt="설탕과 우유가 종속 변수에 미치는 영향을 나타내는 ANOVA 표. 열에는 Sum of Squares, df, Mean Square, F, 그리고 $p$ 값이 포함되며, 행에는 sugar, milk, sugar * milk(상호작용 항), 그리고 잔차(residuals)의 값이 표시됨.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig14-27-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig14-27.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" data-fig-pos="H" alt="설탕과 우유가 종속 변수에 미치는 영향을 나타내는 ANOVA 표. 열에는 Sum of Squares, df, Mean Square, F, 그리고 $p$ 값이 포함되며, 행에는 sugar, milk, sugar * milk(상호작용 항), 그리고 잔차(residuals)의 값이 표시됨.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fig14-27-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;14.27. jamovi에서 제곱합 유형 I을 사용한 ANOVA 결과표
+그림&nbsp;14.27. jamovi에서 제곱합 유형 I을 사용한 ANOVA 결과표
 </figcaption>
 </figure>
 </div>
 </div>
 </div>
-<p>제곱합 유형 I 방식의 가장 큰 문제점은 요인을 입력하는 순서에 따라 결과가 달라진다는 것입니다. 그러나 많은 경우 연구자는 특정한 요인 순서를 선호할 이유가 없습니다. 이는 우리 예제인 우유와 설탕 문제에서도 마찬가지입니다. <code>milk</code>를 먼저 추가해야 할까요? 아니면 <code>sugar</code>를 먼저 추가해야 할까요? 이 선택은 커피를 만들 때와 마찬가지로 임의적입니다. 일부 사람들은 특정 순서에 대한 강한 의견을 가질 수도 있겠지만, 이 문제에 대해 원칙적으로 옳은 답을 찾기는 어렵습니다. 그런데, 예측변수의 순서를 변경하면 결과가 어떻게 변하는지 살펴보겠습니다(<a href="#fig-fig14-28" class="quarto-xref">Figure&nbsp;<span>14.28</span></a>).</p>
+<p>제곱합 유형 I 방식의 가장 큰 문제점은 요인을 입력하는 순서에 따라 결과가 달라진다는 것입니다. 그러나 많은 경우 연구자는 특정한 요인 순서를 선호할 이유가 없습니다. 이는 우리 예제인 우유와 설탕 문제에서도 마찬가지입니다. <code>milk</code>를 먼저 추가해야 할까요? 아니면 <code>sugar</code>를 먼저 추가해야 할까요? 이 선택은 커피를 만들 때와 마찬가지로 임의적입니다. 일부 사람들은 특정 순서에 대한 강한 의견을 가질 수도 있겠지만, 이 문제에 대해 원칙적으로 옳은 답을 찾기는 어렵습니다. 그런데, 예측변수의 순서를 변경하면 결과가 어떻게 변하는지 살펴보겠습니다(<a href="#fig-fig14-28" class="quarto-xref">그림&nbsp;<span>14.28</span></a>).</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
 <div id="fig-fig14-28" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="jamovi에서 생성된 ANOVA 결과표. 열에는 Sum of Squares, $df$ (자유도), Mean Square, $F$, 그리고 $p$ 값이 포함되며, 행에는 milk, sugar, milk × sugar(상호작용 항), 그리고 잔차(residuals)의 값이 표시됨.">
@@ -2439,7 +2439,7 @@ Figure&nbsp;14.27. jamovi에서 제곱합 유형 I을 사용한 ANOVA 결과표
 <img src="images/kor/fig14-28.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" alt="jamovi에서 생성된 ANOVA 결과표. 열에는 Sum of Squares, $df$ (자유도), Mean Square, $F$, 그리고 $p$ 값이 포함되며, 행에는 milk, sugar, milk × sugar(상호작용 항), 그리고 잔차(residuals)의 값이 표시됨.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fig14-28-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;14.28. jamovi에서 제곱합 유형 I을 사용한 ANOVA 결과표 (변수를 다른 순서로 입력한 경우, 우유 먼저)
+그림&nbsp;14.28. jamovi에서 제곱합 유형 I을 사용한 ANOVA 결과표 (변수를 다른 순서로 입력한 경우, 우유 먼저)
 </figcaption>
 </figure>
 </div>
@@ -2457,12 +2457,12 @@ Figure&nbsp;14.28. jamovi에서 제곱합 유형 I을 사용한 ANOVA 결과표 
 <li>대립가설: 사용자가 지정한 완전한(full) ANOVA 모형</li>
 <li>귀무가설: 전체 모형에서 검정하려는 특정 항만 제거한 모형</li>
 </ul>
-<p>예를 들어, 커피 데이터에서 전체 모형이 <code>babble ~ sugar + milk + sugar × milk</code>라고 가정해 보겠습니다. 이때, 설탕(<code>sugar</code>)의 주효과에 대한 검정은 다음 두 개의 모형을 비교하는 것입니다 (<a href="#tbl-tab14-19" class="quarto-xref">Table&nbsp;<span>14.19</span></a>).</p>
+<p>예를 들어, 커피 데이터에서 전체 모형이 <code>babble ~ sugar + milk + sugar × milk</code>라고 가정해 보겠습니다. 이때, 설탕(<code>sugar</code>)의 주효과에 대한 검정은 다음 두 개의 모형을 비교하는 것입니다 (<a href="#tbl-tab14-19" class="quarto-xref">표&nbsp;<span>14.19</span></a>).</p>
 <div class="cell" data-layout-align="left">
 <div id="tbl-tab14-19" class="cell quarto-float quarto-figure quarto-figure-left anchored" data-layout-align="left">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tab14-19-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;14.19. 제곱합 유형 III을 사용한 ’babble’에 대한 귀무 가설과 대립 가설 (설탕 효과 검정)
+표&nbsp;14.19. 제곱합 유형 III을 사용한 ’babble’에 대한 귀무 가설과 대립 가설 (설탕 효과 검정)
 </figcaption>
 <div aria-describedby="tbl-tab14-19-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
@@ -2478,12 +2478,12 @@ Table&nbsp;14.19. 제곱합 유형 III을 사용한 ’babble’에 대한 귀�
 </figure>
 </div>
 </div>
-<p>우유(<code>milk)</code>의 주효과는 우유 항을 제거한 귀무 모형과 완전 모형을 비교하여 검정합니다(<a href="#tbl-tab14-20" class="quarto-xref">Table&nbsp;<span>14.20</span></a>).</p>
+<p>우유(<code>milk)</code>의 주효과는 우유 항을 제거한 귀무 모형과 완전 모형을 비교하여 검정합니다(<a href="#tbl-tab14-20" class="quarto-xref">표&nbsp;<span>14.20</span></a>).</p>
 <div class="cell" data-layout-align="left">
 <div id="tbl-tab14-20" class="cell quarto-float quarto-figure quarto-figure-left anchored" data-layout-align="left">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tab14-20-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;14.20. 제곱합 유형 III을 사용한 ’babble’에 대한 귀무 가설과 대립 가설 (우유 효과 검정)
+표&nbsp;14.20. 제곱합 유형 III을 사용한 ’babble’에 대한 귀무 가설과 대립 가설 (우유 효과 검정)
 </figcaption>
 <div aria-describedby="tbl-tab14-20-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
@@ -2500,12 +2500,12 @@ Table&nbsp;14.20. 제곱합 유형 III을 사용한 ’babble’에 대한 귀�
 </div>
 </div>
 <p>상호작용 항 <code>sugar * milk</code> 역시 같은 방식으로 검정합니다.<br>
-즉, 완전 모형에서 <code>sugar * milk</code> 항을 제거한 귀무 모형과 완전 모형을 비교합니다(<a href="#tbl-tab14-21" class="quarto-xref">Table&nbsp;<span>14.21</span></a>).</p>
+즉, 완전 모형에서 <code>sugar * milk</code> 항을 제거한 귀무 모형과 완전 모형을 비교합니다(<a href="#tbl-tab14-21" class="quarto-xref">표&nbsp;<span>14.21</span></a>).</p>
 <div class="cell" data-layout-align="left">
 <div id="tbl-tab14-21" class="cell quarto-float quarto-figure quarto-figure-left anchored" data-layout-align="left">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tab14-21-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;14.21. 제곱합 유형 III을 사용한 ’babble’에 대한 귀무 가설과 대립 가설 (상호작용 항 제거)
+표&nbsp;14.21. 제곱합 유형 III을 사용한 ’babble’에 대한 귀무 가설과 대립 가설 (상호작용 항 제거)
 </figcaption>
 <div aria-describedby="tbl-tab14-21-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
@@ -2521,12 +2521,12 @@ Table&nbsp;14.21. 제곱합 유형 III을 사용한 ’babble’에 대한 귀�
 </figure>
 </div>
 </div>
-<p>이 개념은 더 높은 차원의 ANOVA에도 적용할 수 있습니다. 예를 들어, 요인 A, B, C가 있는 세 요인 ANOVA(Three-way ANOVA)를 수행한다고 가정해 보겠습니다. 이때, 모든 주효과와 상호작용 항을 포함하여 세 요인 간의 상호작용(A × B × C)까지 고려할 수 있습니다. 이러한 경우, 제곱합 유형 III 검정의 원리는 다음과 같습니다(<a href="#tbl-tab14-22" class="quarto-xref">Table&nbsp;<span>14.22</span></a>).</p>
+<p>이 개념은 더 높은 차원의 ANOVA에도 적용할 수 있습니다. 예를 들어, 요인 A, B, C가 있는 세 요인 ANOVA(Three-way ANOVA)를 수행한다고 가정해 보겠습니다. 이때, 모든 주효과와 상호작용 항을 포함하여 세 요인 간의 상호작용(A × B × C)까지 고려할 수 있습니다. 이러한 경우, 제곱합 유형 III 검정의 원리는 다음과 같습니다(<a href="#tbl-tab14-22" class="quarto-xref">표&nbsp;<span>14.22</span></a>).</p>
 <div class="cell" data-layout-align="left">
 <div id="tbl-tab14-22" class="cell quarto-float quarto-figure quarto-figure-left anchored" data-layout-align="left">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tab14-22-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;14.22. 세 개의 요인이 포함된 경우의 제곱합 유형 III 검정
+표&nbsp;14.22. 세 개의 요인이 포함된 경우의 제곱합 유형 III 검정
 </figcaption>
 <div aria-describedby="tbl-tab14-22-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
@@ -2564,7 +2564,7 @@ Table&nbsp;14.22. 세 개의 요인이 포함된 경우의 제곱합 유형 III 
 <p>처음 보면, 제곱합 유형 III 방식은 매우 바람직한 방법처럼 보입니다. 유형 I 방식에서 문제가 되었던 비대칭성 문제가 사라졌습니다. 유형 I 방식에서는 변수 입력 순서에 따라 검정 결과가 달라졌습니다. 유형 III 방식에서는 모든 항이 동일한 방식으로 처리되므로, 변수 입력 순서의 영향을 받지 않습니다.</p>
 <p>이러한 성질은 매우 좋은 성질입니다. 그러나 유형 III에서는 주효과에 대한 해석의 어려움이라는 문제가 발생합니다. 예를 들어, 커피 데이터에서 우유의 주효과가 유의하지 않다고 가정해 보겠습니다. 이는 <code>babble ~ sugar + sugar × milk</code> 모형이 완전 모형보다 데이터를 더 잘 설명한다는 의미입니다. 하지만 이것이 실제로 어떤 의미를 가지는지 명확하지 않습니다. 특히, 상호작용 항이 유의한데 그것의 주효과가 유의하지 않은 경우에는 해석이 더욱 어렵습니다. <code>sugar * milk</code> 상호작용 항이 유의미한데, <code>milk</code>의 주효과는 유의하지 않다면? <code>sugar</code>의 효과는 존재하지만, <code>milk</code>의 효과는 존재하지 않는다”라고 해석해야 할까요? 하지만 <code>milk</code>와 <code>sugar</code>의 상호작용이 존재한다면, <code>milk</code>의 효과가 아예 없다고 보는 것은 말이 되지 않습니다. 일반적으로 많은 통계학자들은 상호작용 항이 유의할 때 개별 주효과를 논하는 것은 무의미하다고 조언합니다.<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a></p>
 <p>상호작용 항이 유의할 때 주효과를 논의하는 것이 무의미하다면, 유형 III에서 귀무 가설을 설정할 때 상호작용 항은 유지하면서 주효과 항을 제거하여 가설 검정하는 것도 전혀 타당한지 않습니다. 이에 대한 논란이 있으며, 이러한 이유로 제곱합 유형 III 방식의 귀무 가설 설정 방식은 논리적으로 문제가 있을 수 있습니다.</p>
-<p>뒤에서 유형 III 검정이 적절한 문맥을 볼 수 있을 것입니다. 이제 jamovi에서 제곱합 유형 III 방식을 사용한 ANOVA 결과표를 살펴보겠습니다(<a href="#fig-fig14-29" class="quarto-xref">Figure&nbsp;<span>14.29</span></a>).</p>
+<p>뒤에서 유형 III 검정이 적절한 문맥을 볼 수 있을 것입니다. 이제 jamovi에서 제곱합 유형 III 방식을 사용한 ANOVA 결과표를 살펴보겠습니다(<a href="#fig-fig14-29" class="quarto-xref">그림&nbsp;<span>14.29</span></a>).</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
 <div id="fig-fig14-29" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="ANOVA - babble이라는 제목의 jamovi 표. 열에는 Sum of Squares, df, Mean Square, F, p 값이 포함되며, 행에는 milk, sugar, milk ✻ sugar(상호작용 항), 그리고 Residuals(잔차)의 값이 표시됨. milk ✻ sugar의 F 값은 11.28이며, p 값은 0.00175임.">
@@ -2573,7 +2573,7 @@ Table&nbsp;14.22. 세 개의 요인이 포함된 경우의 제곱합 유형 III 
 <img src="images/kor/fig14-29.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" alt="ANOVA - babble이라는 제목의 jamovi 표. 열에는 Sum of Squares, df, Mean Square, F, p 값이 포함되며, 행에는 milk, sugar, milk ✻ sugar(상호작용 항), 그리고 Residuals(잔차)의 값이 표시됨. milk ✻ sugar의 F 값은 11.28이며, p 값은 0.00175임.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fig14-29-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;14.29. jamovi에서 제곱합 유형 III을 사용한 ANOVA 결과표
+그림&nbsp;14.29. jamovi에서 제곱합 유형 III을 사용한 ANOVA 결과표
 </figcaption>
 </figure>
 </div>
@@ -2588,12 +2588,12 @@ Figure&nbsp;14.29. jamovi에서 제곱합 유형 III을 사용한 ANOVA 결과�
 <h3 data-number="14.10.5" class="anchored" data-anchor-id="제곱합-유형-ii"><span class="header-section-number">14.10.5</span> 제곱합 유형 II</h3>
 <p>지금까지 유형 I과 유형 III형 검정을 살펴보았으며, 둘 다 비교적 간단하였습니다. 유형 I 검정은 항을 순차적으로 추가하여 수행하며, 유형 III 검정은 완전 모형에서 각 항을 제거했을 때 어떤 일이 발생하는지를 확인하는 방식입니다. 하지만 두 방법 모두 몇 가지 한계를 가질 수 있습니다. 유형 I 검정은 항을 입력하는 순서에 따라 결과가 달라지며, 유형 III 검정은 대비를 설정하는 방식에 따라 결과가 달라질 수 있습니다. 유형 II 검정은 설명하기가 조금 더 어렵지만, 이러한 두 가지 문제를 모두 회피하며 결과의 해석이 보다 용이한 방법입니다.</p>
 <p>유형 II 검정은 전체적인 방식이 유형 III 검정과 유사합니다. 즉, “완전” 모형을 시작점으로 삼고 특정 항을 제거하여 그 항을 검정하는 방식입니다. 하지만 유형 II 검정은 주변성 원칙(marginality principle)에 기반을 둡니다. 이는 어떤 모형에서 고차 항(higher-order term)이 포함되어 있다면, 해당 항이 의존하는 저차 항(lower-order term)을 모형에서 생략해서는 안 된다는 원칙입니다. 예를 들어, 모형에 이차(2차) 상호작용 항인 A <span class="math inline">\(\times\)</span> B가 포함되어 있다면, 주효과인 A와 B도 반드시 포함되어야 합니다. 마찬가지로, 삼차(3차) 상호작용 A <span class="math inline">\(\times\)</span> B <span class="math inline">\(\times\)</span> C가 포함된 경우, 주효과 A, B, C뿐만 아니라 이차 상호작용 A <span class="math inline">\(\times\)</span> B, A <span class="math inline">\(\times\)</span> C, B <span class="math inline">\(\times\)</span> C도 포함해야 합니다.</p>
-<p>유형 III 검정은 종종 주변성 원칙을 위반합니다. 예를 들어, 모든 가능한 상호작용 항이 포함된 삼원분산분석에서 A의 주효과를 검정한다고 가정해 보겠습니다. 유형 III 검정에서의 귀무가설과 대립가설은 <a href="#tbl-tab14-23" class="quarto-xref">Table&nbsp;<span>14.23</span></a> 에 나와 있습니다.</p>
+<p>유형 III 검정은 종종 주변성 원칙을 위반합니다. 예를 들어, 모든 가능한 상호작용 항이 포함된 삼원분산분석에서 A의 주효과를 검정한다고 가정해 보겠습니다. 유형 III 검정에서의 귀무가설과 대립가설은 <a href="#tbl-tab14-23" class="quarto-xref">표&nbsp;<span>14.23</span></a> 에 나와 있습니다.</p>
 <div class="cell" data-layout-align="left">
 <div id="tbl-tab14-23" class="cell quarto-float quarto-figure quarto-figure-left anchored" data-layout-align="left">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tab14-23-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;14.23. 모든 가능한 상호작용 항이 포함된 삼원 분산분석에서 A의 주효과에 대한 유형 III 검정
+표&nbsp;14.23. 모든 가능한 상호작용 항이 포함된 삼원 분산분석에서 A의 주효과에 대한 유형 III 검정
 </figcaption>
 <div aria-describedby="tbl-tab14-23-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
@@ -2609,12 +2609,12 @@ Table&nbsp;14.23. 모든 가능한 상호작용 항이 포함된 삼원 분산�
 </figure>
 </div>
 </div>
-<p>여기서 귀무가설은 A를 제외하지만, A <span class="math inline">\(\times\)</span> B, A <span class="math inline">\(\times\)</span> C 및 A <span class="math inline">\(\times\)</span> B <span class="math inline">\(\times\)</span> C는 포함하고 있습니다. 유형 II 검정 관점에서 보면, 이는 적절한 귀무 가설이 아닙니다. 대신, A가 결과변수에 영향을 미치지 않는다는 귀무 가설을 검정하려면, A와 관련된 어떤 항도 포함하지 않는 가장 복잡한 모형을 귀무가설로 설정해야 합니다. 대립가설은 이 귀무 모형에 A의 주효과 항을 추가한 것입니다. 이는 대부분의 사람들이 직관적으로 “A의 주효과”라고 생각하는 것과 훨씬 더 가까운 개념이며, 유형 II 검정에서는 A의 주효과에 대한 검정을 <a href="#tbl-tab14-24" class="quarto-xref">Table&nbsp;<span>14.24</span></a> 같이 수행합니다.<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a></p>
+<p>여기서 귀무가설은 A를 제외하지만, A <span class="math inline">\(\times\)</span> B, A <span class="math inline">\(\times\)</span> C 및 A <span class="math inline">\(\times\)</span> B <span class="math inline">\(\times\)</span> C는 포함하고 있습니다. 유형 II 검정 관점에서 보면, 이는 적절한 귀무 가설이 아닙니다. 대신, A가 결과변수에 영향을 미치지 않는다는 귀무 가설을 검정하려면, A와 관련된 어떤 항도 포함하지 않는 가장 복잡한 모형을 귀무가설로 설정해야 합니다. 대립가설은 이 귀무 모형에 A의 주효과 항을 추가한 것입니다. 이는 대부분의 사람들이 직관적으로 “A의 주효과”라고 생각하는 것과 훨씬 더 가까운 개념이며, 유형 II 검정에서는 A의 주효과에 대한 검정을 <a href="#tbl-tab14-24" class="quarto-xref">표&nbsp;<span>14.24</span></a> 같이 수행합니다.<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a></p>
 <div class="cell" data-layout-align="left">
 <div id="tbl-tab14-24" class="cell quarto-float quarto-figure quarto-figure-left anchored" data-layout-align="left">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tab14-24-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;14.24. 모든 가능한 상호작용 항이 포함된 삼원 분산분석에서 A의 주효과에 대한 유형 II 검정
+표&nbsp;14.24. 모든 가능한 상호작용 항이 포함된 삼원 분산분석에서 A의 주효과에 대한 유형 II 검정
 </figcaption>
 <div aria-describedby="tbl-tab14-24-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
@@ -2630,12 +2630,12 @@ Table&nbsp;14.24. 모든 가능한 상호작용 항이 포함된 삼원 분산�
 </figure>
 </div>
 </div>
-<p>어쨌든, 유형 II 검정이 어떻게 적용되는지를 보다 직관적으로 이해하기 위해, 삼원분산분석에서 적용되는 전체 검정표를 <a href="#tbl-tab14-25" class="quarto-xref">Table&nbsp;<span>14.25</span></a> 에서 확인할 수 있습니다.</p>
+<p>어쨌든, 유형 II 검정이 어떻게 적용되는지를 보다 직관적으로 이해하기 위해, 삼원분산분석에서 적용되는 전체 검정표를 <a href="#tbl-tab14-25" class="quarto-xref">표&nbsp;<span>14.25</span></a> 에서 확인할 수 있습니다.</p>
 <div class="cell" data-layout-align="left">
 <div id="tbl-tab14-25" class="cell quarto-float quarto-figure quarto-figure-left anchored" data-layout-align="left">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tab14-25-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;14.25. 삼원 요인 모형에 대한 유형 II 검정
+표&nbsp;14.25. 삼원 요인 모형에 대한 유형 II 검정
 </figcaption>
 <div aria-describedby="tbl-tab14-25-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
@@ -2663,12 +2663,12 @@ Table&nbsp;14.25. 삼원 요인 모형에 대한 유형 II 검정
 </figure>
 </div>
 </div>
-<p><em>커피</em> 데이터를 이용한 이원분산분석에서는 가설 검정이 더욱 단순해집니다. 설탕의 주효과는 <a href="#tbl-tab14-26" class="quarto-xref">Table&nbsp;<span>14.26</span></a> 에 나타난 두 모형을 비교하는 <span class="math inline">\(F\)</span>-검정에 해당합니다. 우유의 주효과 검정은 <a href="#tbl-tab14-27" class="quarto-xref">Table&nbsp;<span>14.27</span></a> 에 나와 있습니다. 마지막으로, 설탕 <span class="math inline">\(\times\)</span> 우유의 상호작용 항 검정은 <a href="#tbl-tab14-28" class="quarto-xref">Table&nbsp;<span>14.28</span></a> 에 제시되어 있습니다.</p>
+<p><em>커피</em> 데이터를 이용한 이원분산분석에서는 가설 검정이 더욱 단순해집니다. 설탕의 주효과는 <a href="#tbl-tab14-26" class="quarto-xref">표&nbsp;<span>14.26</span></a> 에 나타난 두 모형을 비교하는 <span class="math inline">\(F\)</span>-검정에 해당합니다. 우유의 주효과 검정은 <a href="#tbl-tab14-27" class="quarto-xref">표&nbsp;<span>14.27</span></a> 에 나와 있습니다. 마지막으로, 설탕 <span class="math inline">\(\times\)</span> 우유의 상호작용 항 검정은 <a href="#tbl-tab14-28" class="quarto-xref">표&nbsp;<span>14.28</span></a> 에 제시되어 있습니다.</p>
 <div class="cell" data-layout-align="left">
 <div id="tbl-tab14-26" class="cell quarto-float quarto-figure quarto-figure-left anchored" data-layout-align="left">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tab14-26-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;14.26. Coffee 데이터에서 설탕의 주효과에 대한 유형 II 검정
+표&nbsp;14.26. Coffee 데이터에서 설탕의 주효과에 대한 유형 II 검정
 </figcaption>
 <div aria-describedby="tbl-tab14-26-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
@@ -2688,7 +2688,7 @@ Table&nbsp;14.26. Coffee 데이터에서 설탕의 주효과에 대한 유형 II
 <div id="tbl-tab14-27" class="cell quarto-float quarto-figure quarto-figure-left anchored" data-layout-align="left">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tab14-27-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;14.27. Coffee 데이터에서 우유의 주효과에 대한 유형 II 검정
+표&nbsp;14.27. Coffee 데이터에서 우유의 주효과에 대한 유형 II 검정
 </figcaption>
 <div aria-describedby="tbl-tab14-27-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
@@ -2708,7 +2708,7 @@ Table&nbsp;14.27. Coffee 데이터에서 우유의 주효과에 대한 유형 II
 <div id="tbl-tab14-28" class="cell quarto-float quarto-figure quarto-figure-left anchored" data-layout-align="left">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tab14-28-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;14.28. 설탕 <span class="math inline">\(\times\)</span> 우유 상호작용 항에 대한 유형 II 검정
+표&nbsp;14.28. 설탕 <span class="math inline">\(\times\)</span> 우유 상호작용 항에 대한 유형 II 검정
 </figcaption>
 <div aria-describedby="tbl-tab14-28-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
@@ -2724,7 +2724,7 @@ Table&nbsp;14.28. 설탕 <span class="math inline">\(\times\)</span> 우유 상�
 </figure>
 </div>
 </div>
-<p>검정을 실행하는 과정은 매우 간단합니다. jamovi에서 ‘분산부석’-‘모형’ 옵션에서 ‘제곱합’ 선택 상자에서 ’Type 2’를 선택하면, <a href="#fig-fig14-30" class="quarto-xref">Figure&nbsp;<span>14.30</span></a> 에 나타난 ANOVA 표를 얻을 수 있습니다.</p>
+<p>검정을 실행하는 과정은 매우 간단합니다. jamovi에서 ‘분산부석’-‘모형’ 옵션에서 ‘제곱합’ 선택 상자에서 ’Type 2’를 선택하면, <a href="#fig-fig14-30" class="quarto-xref">그림&nbsp;<span>14.30</span></a> 에 나타난 ANOVA 표를 얻을 수 있습니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
 <div id="fig-fig14-30" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="우유와 설탕의 상호작용에 대한 ANOVA 결과를 보여주는 표. 열에는 제곱합(Sum of Squares), 자유도(df), 평균제곱(Mean Square), F값(F), 유의확률(p), η², η²p, ω²가 포함되어 있으며, 상호작용 효과가 유의미한 것으로 나타남.">
@@ -2733,7 +2733,7 @@ Table&nbsp;14.28. 설탕 <span class="math inline">\(\times\)</span> 우유 상�
 <img src="images/kor/fig14-30.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" alt="우유와 설탕의 상호작용에 대한 ANOVA 결과를 보여주는 표. 열에는 제곱합(Sum of Squares), 자유도(df), 평균제곱(Mean Square), F값(F), 유의확률(p), η², η²p, ω²가 포함되어 있으며, 상호작용 효과가 유의미한 것으로 나타남.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fig14-30-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;14.30. jamovi에서 유형 II 제곱합을 사용한 ANOVA 결과 표
+그림&nbsp;14.30. jamovi에서 유형 II 제곱합을 사용한 ANOVA 결과 표
 </figcaption>
 </figure>
 </div>
@@ -2823,14 +2823,14 @@ Figure&nbsp;14.30. jamovi에서 유형 II 제곱합을 사용한 ANOVA 결과 �
 </section>
 <section id="효과-크기-및-비가산적-제곱합" class="level3" data-number="14.10.6">
 <h3 data-number="14.10.6" class="anchored" data-anchor-id="효과-크기-및-비가산적-제곱합"><span class="header-section-number">14.10.6</span> 효과 크기 (및 비가산적 제곱합)</h3>
-<p>jamovi에서는 <a href="#fig-fig14-30" class="quarto-xref">Figure&nbsp;<span>14.30</span></a> 같이 해당 옵션을 선택하면 효과 크기 <span class="math inline">\(\eta^2\)</span> 및 부분 <span class="math inline">\(\eta^2\)</span>도 제공합니다. 그러나 불균형 설계에서는 약간의 추가적인 복잡성이 존재합니다.</p>
+<p>jamovi에서는 <a href="#fig-fig14-30" class="quarto-xref">그림&nbsp;<span>14.30</span></a> 같이 해당 옵션을 선택하면 효과 크기 <span class="math inline">\(\eta^2\)</span> 및 부분 <span class="math inline">\(\eta^2\)</span>도 제공합니다. 그러나 불균형 설계에서는 약간의 추가적인 복잡성이 존재합니다.</p>
 <p>ANOVA에 대한 초기 논의에서 기억할 만한 핵심 개념 중 하나는 제곱합 계산의 기본 원리입니다. 모형에서 각 효과에 해당하는 <span class="math inline">\(SS\)</span> 항들을 모두 더하고, 여기에 잔차 <span class="math inline">\(SS\)</span>를 추가하면 전체 제곱합과 같아야 합니다. 또한, <span class="math inline">\(\eta^2\)</span>의 기본 개념은 특정 효과의 <span class="math inline">\(SS\)</span> 값을 전체 <span class="math inline">\(SS\)</span> 값으로 나누기 때문에, <span class="math inline">\(\eta^2\)</span> 값이 특정 효과가 설명하는 분산의 비율로 해석될 수 있다는 점입니다. 하지만 불균형 설계에서는 일부 분산이 “사라지기” 때문에 이러한 해석이 단순하지 않습니다.</p>
-<p>처음에는 이것이 다소 이상하게 보일 수 있지만, 이유는 다음과 같습니다. 불균형 설계에서는 요인 사이에 상관성이 생기며, 요인 A의 효과와 요인 B의 효과를 구별하는 것이 어려워집니다. 극단적인 경우를 생각해 보겠습니다. <a href="#tbl-tab14-29" class="quarto-xref">Table&nbsp;<span>14.29</span></a> 같이 각 집단에 속한 참가자 수가 다음과 같은 <span class="math inline">\(2 \times 2\)</span> 설계를 실행했다고 가정해 보겠습니다.</p>
+<p>처음에는 이것이 다소 이상하게 보일 수 있지만, 이유는 다음과 같습니다. 불균형 설계에서는 요인 사이에 상관성이 생기며, 요인 A의 효과와 요인 B의 효과를 구별하는 것이 어려워집니다. 극단적인 경우를 생각해 보겠습니다. <a href="#tbl-tab14-29" class="quarto-xref">표&nbsp;<span>14.29</span></a> 같이 각 집단에 속한 참가자 수가 다음과 같은 <span class="math inline">\(2 \times 2\)</span> 설계를 실행했다고 가정해 보겠습니다.</p>
 <div class="cell" data-layout-align="left">
 <div id="tbl-tab14-29" class="cell quarto-float quarto-figure quarto-figure-left anchored" data-layout-align="left">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tab14-29-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;14.29. <span class="math inline">\(2 \times 2\)</span> 극단적으로 불균형한 요인 설계에서 각 집단의 참가자 수
+표&nbsp;14.29. <span class="math inline">\(2 \times 2\)</span> 극단적으로 불균형한 요인 설계에서 각 집단의 참가자 수
 </figcaption>
 <div aria-describedby="tbl-tab14-29-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
@@ -2849,12 +2849,12 @@ Table&nbsp;14.29. <span class="math inline">\(2 \times 2\)</span> 극단적으�
 </div>
 </div>
 <p>여기서는 극도로 불균형한 설계를 가지고 있습니다. 100명은 우유와 설탕을 모두 섭취했으며, 100명은 우유와 설탕을 모두 섭취하지 않았습니다. 하지만 우유는 있지만 설탕이 없는 경우, 설탕은 있지만 우유가 없는 경우에는 참가자가 없습니다. 이제 데이터를 수집했을 때, “우유와 설탕” 집단과 “우유 없음, 설탕 없음” 집단 간에 큰 (그리고 통계적으로 유의한) 차이가 나타났다고 가정해 보겠습니다. 그렇다면 이것이 설탕의 주효과일까요? 우유의 주효과일까요? 아니면 상호작용 효과일까요? 이를 구분하는 것은 불가능합니다. 왜냐하면 설탕의 사용 여부가 우유의 사용 여부가 완벽하게 연관되어 있기 때문입니다.</p>
-<p>이제 설계가 약간 더 균형을 이루었다고 가정해 보겠습니다(<a href="#tbl-tab14-30" class="quarto-xref">Table&nbsp;<span>14.30</span></a>).</p>
+<p>이제 설계가 약간 더 균형을 이루었다고 가정해 보겠습니다(<a href="#tbl-tab14-30" class="quarto-xref">표&nbsp;<span>14.30</span></a>).</p>
 <div class="cell" data-layout-align="left">
 <div id="tbl-tab14-30" class="cell quarto-float quarto-figure quarto-figure-left anchored" data-layout-align="left">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tab14-30-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;14.30. <span class="math inline">\(2 \times 2\)</span> 여전히 불균형한 요인 설계에서 각 집단의 참가자 수
+표&nbsp;14.30. <span class="math inline">\(2 \times 2\)</span> 여전히 불균형한 요인 설계에서 각 집단의 참가자 수
 </figcaption>
 <div aria-describedby="tbl-tab14-30-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
@@ -2896,10 +2896,10 @@ Table&nbsp;14.30. <span class="math inline">\(2 \times 2\)</span> 여전히 불�
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
 <div id="ref-Everitt1996" class="csl-entry" role="listitem">
-Everitt, B. S. (1996). <em>Making sense of statistics in psychology. A second-level course</em>. Oxford University Press.
+Everitt, B. S. (1996). <em>Making Sense of Statistics in Psychology. A Second-Level Course</em>. Oxford University Press.
 </div>
 <div id="ref-Hsu1996" class="csl-entry" role="listitem">
-Hsu, J. C. (1996). <em>Multiple comparisons: Theory and methods</em>. Chapman &amp; Hall. <a href="https://doi.org/10.1201/b15074">https://doi.org/10.1201/b15074</a>
+Hsu, J. C. (1996). <em>Multiple Comparisons: Theory and Methods</em>. Chapman &amp; Hall. <a href="https://doi.org/10.1201/b15074">https://doi.org/10.1201/b15074</a>
 </div>
 </div>
 </section>
@@ -3112,12 +3112,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
+    button.setAttribute("title", "복사완료!");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
+      button.setAttribute("data-bs-title", "복사완료!");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",
@@ -3514,7 +3514,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/kilhwan/jamovi/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/kilhwan/jamovi/issues/new" class="toc-action"><i class="bi bi-github"></i>이슈 보고</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a></p>
 </div>
