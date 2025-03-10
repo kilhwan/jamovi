@@ -429,7 +429,7 @@ Figure&nbsp;5.1. 존 스노우의 원래 런던 콜레라 지도에서 스타일
 </div>
 <section id="sec-Histograms" class="level2" data-number="5.1">
 <h2 data-number="5.1" class="anchored" data-anchor-id="sec-Histograms"><span class="header-section-number">5.1</span> 히스토그램</h2>
-<p>가장 기본이라 할 수 있는 <strong>히스토그램</strong>부터 시작해 보겠습니다. 히스토그램은 데이터를 시각화하는 가장 간단하고 유용한 방법 중 하나입니다. 히스토그램은 구간척도 또는 비율척도 변수(예: <a href="04-Descriptive-statistics.html" class="quarto-xref"><span>Chapter 4</span></a> 에서 다룬 <em>afl.margins</em> 데이터)를 사용할 때 가장 적절하며, 해당 변수에 대한 인상을 전체적으로 파악하는 데 유용합니다. 여러분 대부분은 히스토그램이 어떻게 작동하는지 알고 있을 것입니다. 그러나 설명의 완전성을 위해 간략히 설명하도록 하겠습니다. 먼저 가능한 값을 여러 개의 <strong>구간(빈, bin)</strong>으로 나누고, 각 구간에 속하는 관측값의 개수를 계산합니다. 이 개수를 해당 구간의 빈도 또는 밀도라고 하며, 이를 세로 막대로 표시됩니다. 예를 들어 AFL 승리 마진 데이터에서는 승리 마진이 10점 미만인 경기가 33경기 있었으며, 이는 앞서 <a href="04-Descriptive-statistics.html" class="quarto-xref"><span>Chapter 4</span></a> 에서 보여준 <a href="04-Descriptive-statistics.html#fig-fig4-2" class="quarto-xref">Figure&nbsp;<span>4.2</span></a> 의 왼쪽 끝 막대의 높이로 나타납니다. 이 그래프들은 R의 고급 플로팅 패키지를 사용하여 생성되었으며, 현재 jamovi의 기능을 넘어서는 수준입니다. 그러나 jamovi에서도 유사한 결과를 쉽게 얻을 수 있습니다. jamovi에서 히스토그램을 그리는 방법은 간단합니다. ‘기술통계’-‘기술 통계’에서 ’도표’ 옵션을 열고, ‘히스토그램’ 체크 박스를 클릭하면 됩니다. <a href="#fig-fig5-2" class="quarto-xref">Figure&nbsp;<span>5.2</span></a> 에 나와 있듯이 jamovi는 기본적으로 y축을 ’밀도(density)’로, x축을 변수명으로 축 이름을 붙입니다. <strong>구간(빈, bins)</strong>의 크기와 개수는 자동으로 선택되며, <a href="04-Descriptive-statistics.html#fig-fig4-2" class="quarto-xref">Figure&nbsp;<span>4.2</span></a> 와 달리 y축에 스케일이나 개수 정보가 표시되지 않습니다. 그러나 이 점은 크게 중요하지 않습니다. 우리가 궁극적으로 관심을 가지는 것은 분포의 형태에 대한 전반적인 인상입니다. 데이터가 정규 분포를 따르는지, 왜도가 있는지, 첨도가 높은지 등을 처음으로 파악하는 데 <strong>히스토그램</strong>이 유용합니다.</p>
+<p>가장 기본이라 할 수 있는 <strong>히스토그램</strong>부터 시작해 보겠습니다. 히스토그램은 데이터를 시각화하는 가장 간단하고 유용한 방법 중 하나입니다. 히스토그램은 구간척도 또는 비율척도 변수(예: <a href="04-Descriptive-statistics.html" class="quarto-xref"><span>Chapter 4</span></a> 에서 다룬 <em>afl.margins</em> 데이터)를 사용할 때 가장 적절하며, 해당 변수에 대한 인상을 전체적으로 파악하는 데 유용합니다. 여러분 대부분은 히스토그램이 어떻게 작동하는지 알고 있을 것입니다. 그러나 설명의 완전성을 위해 간략히 설명하도록 하겠습니다. 먼저 가능한 값을 여러 개의 <strong>구간(빈, bin)</strong>으로 나누고, 각 구간에 속하는 관측값의 개수를 계산합니다. 이 개수를 해당 구간의 빈도 또는 밀도라고 하며, 이를 세로 막대로 표시됩니다. 예를 들어 AFL 승리 마진 데이터에서는 승리 마진이 10점 미만인 경기가 33경기 있었으며, 이는 앞서 <a href="04-Descriptive-statistics.html" class="quarto-xref"><span>Chapter 4</span></a> 에서 보여준 <a href="04-Descriptive-statistics.html#fig-fig4-2" class="quarto-xref">Figure&nbsp;<span>4.2</span></a> 의 왼쪽 끝 막대의 높이로 나타납니다. 이 그래프들은 R의 고급 플로팅 패키지를 사용하여 생성되었으며, 현재 jamovi의 기능을 넘어서는 수준입니다. 그러나 jamovi에서도 유사한 결과를 쉽게 얻을 수 있습니다. jamovi에서 히스토그램을 그리는 방법은 간단합니다. ‘탐구’-‘기술 통계’에서 ’도표’ 옵션을 열고, ‘히스토그램’ 체크 박스를 클릭하면 됩니다. <a href="#fig-fig5-2" class="quarto-xref">Figure&nbsp;<span>5.2</span></a> 에 나와 있듯이 jamovi는 기본적으로 y축을 ’밀도(density)’로, x축을 변수명으로 축 이름을 붙입니다. <strong>구간(빈, bins)</strong>의 크기와 개수는 자동으로 선택되며, <a href="04-Descriptive-statistics.html#fig-fig4-2" class="quarto-xref">Figure&nbsp;<span>4.2</span></a> 와 달리 y축에 스케일이나 개수 정보가 표시되지 않습니다. 그러나 이 점은 크게 중요하지 않습니다. 우리가 궁극적으로 관심을 가지는 것은 분포의 형태에 대한 전반적인 인상입니다. 데이터가 정규 분포를 따르는지, 왜도가 있는지, 첨도가 높은지 등을 처음으로 파악하는 데 <strong>히스토그램</strong>이 유용합니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
 <div id="fig-fig5-2" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="jamovi의 스크린샷으로, afl.margins 변수의 히스토그램이 도표 패널에 표시됨. 화면 왼쪽에는 기술 통계, 변수, 구분 기준(Split by), 도표 유형(히스토그램, 박스도표, 막대도표) 옵션이 나열됨.">
@@ -475,7 +475,7 @@ Figure&nbsp;5.3. jamovi에서 <em>afl.margins</em> 변수의 밀도 도표
 <ol type="1">
 <li><p>‘파일’-‘열기’-’데이터 라이브러리’를 메뉴에서 선택합니다. 그러면 ’learning statistics with jamovi’라는 폴더가 보일 것입니다. 이 폴더를 선택합니다. 이미 이전 실습에서 이 폴더를 선택했으면 바로 이 폴더가 열릴 수도 있습니다.</p></li>
 <li><p>데이터 라이브러리에서 ’AFL Margins’를 선택합니다. 그러면 <a href="04-Descriptive-statistics.html#fig-fig4-1" class="quarto-xref">Figure&nbsp;<span>4.1</span></a> 같은 데이터가 스프레드시트 뷰에 나타납니다.</p></li>
-<li><p>‘기술통계’-’기술통계’를 선택합니다.</p></li>
+<li><p>‘탐구’-’기술통계’를 선택합니다.</p></li>
 <li><p>왼편의 ‘기술통계’ 패널에서 <code>afl.margins</code>를 ‘변수’ 상자에 넣습니다.</p></li>
 <li><p>‘도표’ 옵션에서 ’히스토그램’을 체크 합니다. 그러면 <a href="#fig-fig5-2" class="quarto-xref">Figure&nbsp;<span>5.2</span></a> 그래프와 같은 히스토그램이 오른편 결과 패널에 나타납니다.</p></li>
 <li><p>‘도표’ 옵션에서 ’히스토그램’과 ’밀도’를 체크합니다. 그러면 그래프와 같이 히스토그램 위에 밀도 그래프가 겹쳐 그려져서 오른편 결과 패널에 나타납니다.</p></li>
@@ -641,7 +641,7 @@ Figure&nbsp;5.7. jamovi에서 연도별 margin 변수에 대해 그린 여러 �
 <ol type="1">
 <li><p>‘파일’-‘열기’-’데이터 라이브러리’를 메뉴에서 선택합니다. 그러면 ’learning statistics with jamovi’라는 폴더가 보일 것입니다. 이 폴더를 선택합니다. 이미 이전 실습에서 이 폴더를 선택했으면 바로 이 폴더가 열릴 수도 있습니다.</p></li>
 <li><p>데이터 라이브러리 목록에서 ’AFL Margins By Year’를 선택합니다.</p></li>
-<li><p>‘기술통계’-’기술통계’를 선택합니다.</p></li>
+<li><p>‘탐구’-’기술통계’를 선택합니다.</p></li>
 <li><p>왼편의 ‘기술통계’ 패널에서 <code>margins</code>를 ‘변수’ 상자에 넣습니다. <code>year</code>를 ‘Split by’ 상자에 넣습니다.</p></li>
 <li><p>‘도표’ 옵션에서 ’박스도표’를 체크 합니다. 박스들이 많아서 특이치의 사례 레이블이 표시되면 번잡하므로 <code>Label outliers</code>의 체크를 해제합니다.</p></li>
 </ol>
@@ -691,7 +691,7 @@ Figure&nbsp;5.9. jamovi 필터 화면
 </div>
 </div>
 </div>
-<p>이 필터를 적용하면 스프레드시트 보기에서 필터를 통과한 관측값만 포함된 새로운 열(column)이 생성된다. 이러한 관측값을 빠르게 식별하는 한 가지 방법은 jamovi에서 <strong>‘빈도표(Frequency table)’</strong>를 생성하는 것이다(메뉴: ‘기술통계’-‘기술통계’). 단, 빈도표를 만들려면 ID 변수가 명목형(nominal)이어야 한다.</p>
+<p>이 필터를 적용하면 스프레드시트 보기에서 필터를 통과한 관측값만 포함된 새로운 열(column)이 생성된다. 이러한 관측값을 빠르게 식별하는 한 가지 방법은 jamovi에서 <strong>‘빈도표(Frequency table)’</strong>를 생성하는 것이다(메뉴: ‘탐구’-‘기술통계’). 단, 빈도표를 만들려면 ID 변수가 명목형(nominal)이어야 한다.</p>
 <p><a href="#fig-fig5-10" class="quarto-xref">Figure&nbsp;<span>5.10</span></a> 을 보면 margin이 300을 초과한 관측값의 ID가 176과 202임을 알 수 있다. 이런 경우, 원본 데이터로 돌아가 어떤 문제가 있었는지 확인하는 것이 좋다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
@@ -723,7 +723,7 @@ Figure&nbsp;5.10. ID 변수에 대한 빈도표, 두 개의 의심스러운 특�
 <ol type="1">
 <li><p>‘파일’-‘열기’-’데이터 라이브러리’를 메뉴에서 선택합니다. 그러면 ’learning statistics with jamovi’라는 폴더가 보일 것입니다. 이 폴더를 선택합니다. 이미 이전 실습에서 이 폴더를 선택했으면 바로 이 폴더가 열릴 수도 있습니다.</p></li>
 <li><p>데이터 라이브러리 목록에서 ’AFL Margins’를 선택합니다.</p></li>
-<li><p>‘기술통계’-’기술통계’를 선택합니다.</p></li>
+<li><p>‘탐구’-’기술통계’를 선택합니다.</p></li>
 <li><p>왼편의 ‘기술통계’ 패널에서 <code>afl.margins</code>를 ‘변수’ 상자에 넣습니다.</p></li>
 <li><p>‘도표’ 옵션에서 ’박스도표’를 체크 합니다. 그러면 <a href="#fig-fig5-4" class="quarto-xref">Figure&nbsp;<span>5.4</span></a> 같은 박스도표가 표시됩니다.</p></li>
 <li><p>박스도표에 표시된 특이치를 살펴보기 위하여 ‘데이터’-’필터’를 선택합니다.</p></li>
@@ -767,7 +767,7 @@ Figure&nbsp;5.10. ID 변수에 대한 빈도표, 두 개의 의심스러운 특�
 <blockquote class="blockquote">
 <p>afl.finalists <span class="math inline">\(==\)</span> ‘Brisbane’ or afl.finalists <span class="math inline">\(==\)</span> ‘Carlton’ or afl.finalists <span class="math inline">\(==\)</span> ‘Fremantle’ or afl.finalists <span class="math inline">\(==\)</span> ‘Richmond’ <a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
 </blockquote>
-<p>이렇게 설정하면 jamovi의 ‘데이터’ 보기에서 우리가 지정한 팀을 제외한 모든 값이 필터링됩니다. 다음으로 ‘기술통계’-‘기술통계’ 창을 열고 ‘막대도표’ 체크 박스를 선택하세요. (이때, <code>afl.finalists</code> 변수를 ‘변수’ 박스로 이동시켜 jamovi가 어떤 변수를 사용할지 알 수 있도록 해야 합니다.)<br>
+<p>이렇게 설정하면 jamovi의 ‘데이터’ 보기에서 우리가 지정한 팀을 제외한 모든 값이 필터링됩니다. 다음으로 ‘탐구’-‘기술통계’ 창을 열고 ‘막대도표’ 체크 박스를 선택하세요. (이때, <code>afl.finalists</code> 변수를 ‘변수’ 박스로 이동시켜 jamovi가 어떤 변수를 사용할지 알 수 있도록 해야 합니다.)<br>
 그러면 <a href="#fig-fig5-11" class="quarto-xref">Figure&nbsp;<span>5.11</span></a> 같은 막대도표가 생성될 것입니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">

@@ -577,7 +577,7 @@ Figure&nbsp;6.4. speaker와 utterance 변수에 대한 분할표 (열 기준 백
 <ol type="1">
 <li><p>‘파일’-‘열기’-’데이터 라이브러리’를 메뉴에서 선택합니다. 그러면 ’learning statistics with jamovi’라는 폴더가 보일 것입니다. 이 폴더를 선택합니다. 이미 이전 실습에서 이 폴더를 선택했으면 바로 이 폴더가 열릴 수도 있습니다.</p></li>
 <li><p>데이터 라이브러리에서 ’Night Garden’을 선택합니다. 그러면 <a href="#fig-fig6-0" class="quarto-xref">Figure&nbsp;<span>6.1</span></a> 같은 데이터가 스프레드시트 뷰에 나타납니다.</p></li>
-<li><p>‘기술통계’-’기술통계’를 선택합니다.</p></li>
+<li><p>‘탐구’-’기술통계’를 선택합니다.</p></li>
 <li><p>‘기술통계’ 창에서 ‘speaker’를 ’변수’ 상자로 옮깁니다.</p></li>
 <li><p>‘빈도분포표’ 체크 박스를 체크합니다. 그러면 결과 창에 빈도표가 나타납니다.</p></li>
 </ol>
@@ -683,7 +683,7 @@ Table&nbsp;6.2. 다양한 논리 연산자
 <p>하지만 아직 다 끝난 게 아닙니다! 알아두면 유용한 논리 연산자 세 개가 더 있습니다. <a href="#tbl-tab6-3" class="quarto-xref">Table&nbsp;<span>6.3</span></a> 에서 볼 수 있는 <strong>“부정(not)”</strong> 연산자 <code>!</code>, <strong>“논리곱(and)”</strong> 연산자 <code>and</code>, <strong>“논리합(or)”</strong> 연산자 <code>or</code>입니다. 이들 연산자의 동작 방식은 이름에서 쉽게 유추할 수 있습니다.<br>
 예를 들어, 다음 명제를 평가해 보겠습니다. “2 + 2 = 4 또는 2 + 2 = 5”. 이 문장은 참입니다. 왜냐하면 <strong>“논리합(or)”</strong> 연산자는 하나만 참이면 전체가 참이 되기 때문입니다.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a></p>
 <div class="cell" data-layout-align="left" data-tbl-pos="h!">
-<div id="tbl-tab6-3" class="cell quarto-float quarto-figure quarto-figure-left anchored" data-tbl-pos="h!" data-layout-align="left">
+<div id="tbl-tab6-3" class="cell quarto-float quarto-figure quarto-figure-left anchored" data-layout-align="left" data-tbl-pos="h!">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tab6-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;6.3. 추가적인 논리 연산자
@@ -899,7 +899,7 @@ Figure&nbsp;6.7. jamovi IF 함수를 사용하여 변수를 더 적은 개수의
 <p>IF(Age &gt;= 0 and Age &lt;= 20, 1, IF(Age &gt;= 21 and Age &lt;= 40, 2, IF(Age &gt;= 41 and Age &lt;= 60, 3 )))</p>
 </blockquote>
 <ol start="5" type="1">
-<li><p>‘분석’-‘기술통계’-‘기술통계’ 메뉴를 선택한다.</p></li>
+<li><p>‘분석’-‘탐구’-‘기술통계’ 메뉴를 선택한다.</p></li>
 <li><p><code>AgeCat</code>을 ‘변수’ 상자로 옮긴 후, ’빈도분포표’를 클릭한다. 그러면 결과 창에 나이대 별로 다음과 같은 빈도표가 나타난다.</p></li>
 </ol>
 <div class="cell enlarge-image" data-layout-align="left">
@@ -969,7 +969,7 @@ Figure&nbsp;6.10. jamovi의 새로운 관측치(레코드) 추가 버튼을 사�
 <h2 data-number="6.5" class="anchored" data-anchor-id="추가적인-수학-함수와-연산"><span class="header-section-number">6.5</span> 추가적인 수학 함수와 연산</h2>
 <p><a href="#sec-Transforming-and-recoding-a-variable">변수 변환 및 재코딩</a> 절에서 변수 변환의 개념을 논의하면서, 데이터에 적용할 수 있는 많은 변환들이 비교적 간단한 수학 함수와 연산을 기반으로 한다는 점을 설명했습니다. 이번 절에서는 그 논의를 다시 살펴보고, 실제 데이터 분석에서 유용하게 사용될 수 있는 몇 가지 추가적인 수학 함수와 산술 연산을 소개하고자 합니다. <a href="#tbl-tab6-5" class="quarto-xref">Table&nbsp;<span>6.5</span></a> 에서는 여기서 다루거나 이후에 언급할 다양한 수학 함수들을 간략하게 개괄하고 있습니다.<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a> 물론, 이 표가 가능한 모든 기능을 포괄하는 것은 아니지만, 데이터 분석에서 자주 사용되며 jamovi에서 지원하는 함수들을 포함하고 있습니다.</p>
 <div class="cell" data-layout-align="left" data-tbl-pos="h!">
-<div id="tbl-tab6-5" class="cell quarto-float quarto-figure quarto-figure-left anchored" data-tbl-pos="h!" data-layout-align="left">
+<div id="tbl-tab6-5" class="cell quarto-float quarto-figure quarto-figure-left anchored" data-layout-align="left" data-tbl-pos="h!">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tab6-5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;6.5. 몇 가지 수학 연산자
@@ -1035,7 +1035,7 @@ Figure&nbsp;6.11. jamovi의 필터 옵션을 사용하여 nightgarden 데이터�
 </div>
 </div>
 </div>
-<p>이 작업을 완료하면 스프레드시트 창에 ‘필터 1’이라는 새로운 열이 추가된 것을 볼 수 있습니다(<a href="#fig-fig6-10" class="quarto-xref">Figure&nbsp;<span>6.11</span></a> 참조). 여기에서 speaker가 ’makka-pakka’가 <u>아니면</u> 회색으로 표시되며(즉, 필터링됨), speaker가 ’makka-pakka’가 <u>맞으면</u> 초록색 체크 표시가 되어 필터링된 상태임을 나타냅니다. 이를 확인하려면 ’기술통계’-‘기술통계’ 창에서 <code>speaker</code> 변수에 대한 ’빈도분포표’를 실행하여 어떤 결과가 나오는지 확인해 보세요. 직접 시도해 보세요!</p>
+<p>이 작업을 완료하면 스프레드시트 창에 ‘필터 1’이라는 새로운 열이 추가된 것을 볼 수 있습니다(<a href="#fig-fig6-10" class="quarto-xref">Figure&nbsp;<span>6.11</span></a> 참조). 여기에서 speaker가 ’makka-pakka’가 <u>아니면</u> 회색으로 표시되며(즉, 필터링됨), speaker가 ’makka-pakka’가 <u>맞으면</u> 초록색 체크 표시가 되어 필터링된 상태임을 나타냅니다. 이를 확인하려면 ’탐구’-‘기술통계’ 창에서 <code>speaker</code> 변수에 대한 ’빈도분포표’를 실행하여 어떤 결과가 나오는지 확인해 보세요. 직접 시도해 보세요!</p>
 <p>이 간단한 예제에 이어, jamovi에서는 논리 표현식을 사용하여 보다 복잡한 필터를 만들 수도 있습니다. 예를 들어, <code>utterance</code> 값이 “pip” 또는 “oo”인 경우만 유지하고 싶다고 가정해 보겠습니다. 이 경우 ‘필터 1’ 텍스트 상자에서 ‘=’ 기호 옆에 다음과 같이 입력하면 됩니다:</p>
 <blockquote class="blockquote">
 <p>utterance == ‘pip’ or utterance == ‘oo’</p>

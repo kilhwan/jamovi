@@ -498,7 +498,7 @@ Figure&nbsp;15.1. 여러 관찰된 변수 간의 관계를 설명하는 기저�
 </ol>
 <p><span class="math inline">\(N=250\)</span>명의 응답을 포함하는 샘플 데이터가 <em>bfi_sample.csv</em>에 있습니다. 연구자로서 우리는 이 데이터를 탐색하여 25개의 관찰된 변수가 어떠한 잠재 요인을 적절하게 측정하고 있는지를 확인하는 데 관심이 있습니다. 데이터를 열어 25개 변수가 연속형 변수로 코딩되어 있는지 확인하십시오(기술적으로는 서열 변수이지만, jamovi에서 EFA를 수행하는 경우 가중치가 적용된 요인 점수를 계산하지 않는 한 크게 문제가 되지 않습니다).</p>
 <div class="cell" data-layout-align="left" data-tbl-pos="ht!">
-<div id="tbl-tab15-1" class="cell quarto-float quarto-figure quarto-figure-left anchored" data-layout-align="left" data-tbl-pos="ht!">
+<div id="tbl-tab15-1" class="cell quarto-float quarto-figure quarto-figure-left anchored" data-tbl-pos="ht!" data-layout-align="left">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tab15-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;15.1. 데이터 세트 <em>bfi_sample.csv</em>에서 다섯 가지 잠정적 성격 요인으로 구성된 25개 관찰 변수 항목
@@ -567,7 +567,7 @@ Table&nbsp;15.1. 데이터 세트 <em>bfi_sample.csv</em>에서 다섯 가지 �
 </div>
 <p>jamovi에서 EFA를 수행하는 방법은 다음과 같습니다.</p>
 <ul>
-<li><p>jamovi에서 ‘분석’-‘요인분석’-’탐색적 요인분석’을 선택하여 EFA 분석 창을 엽니다(<a href="#fig-fig15-2" class="quarto-xref">Figure&nbsp;<span>15.2</span></a> 참조).</p></li>
+<li><p>jamovi에서 ‘분석’-‘요인’-’탐색적 요인분석’을 선택하여 EFA 분석 창을 엽니다(<a href="#fig-fig15-2" class="quarto-xref">Figure&nbsp;<span>15.2</span></a> 참조).</p></li>
 <li><p>25개의 성격 질문을 선택하고 ‘변수’ 상자로 이동합니다.</p></li>
 <li><p>‘가정검증’을 포함한 적절한 옵션을 선택하고, 회전 ’방법’, 추출할 ‘요인 갯수’, ‘추가 결과’ 옵션을 확인합니다. <a href="#fig-fig15-2" class="quarto-xref">Figure&nbsp;<span>15.2</span></a> 에서는 예시적인 EFA에 대한 추천 옵션을 보여주고 있으며, 회전 ‘방법’ 및 추출된 ’요인 수’는 분석 중에 연구자가 최상의 결과를 찾기 위해 조정하는 것이 일반적입니다.</p></li>
 </ul>
@@ -588,7 +588,7 @@ Figure&nbsp;15.2. jamovi의 탐색적 요인분석(EFA) 분석 창
 </div>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig15-3" class="quarto-float quarto-figure quarto-figure-left anchored" alt="가정 검토 결과를 보여주는 jamovi의 표. &quot;Bartlett의 구형성 검정&quot;에서 값이 χ² = 2204.28, df = 300, p < .00001로 나타남. 아래에는 &quot;KMO 표본 적합도 측정값&quot;이 있으며, 개별 항목의 MSA 값은 0.59에서 0.85 사이로 분포함." data-fig-align="left" data-fig-pos="H">
+<div id="fig-fig15-3" class="quarto-float quarto-figure quarto-figure-left anchored" alt="가정 검토 결과를 보여주는 jamovi의 표. &quot;Bartlett의 구형성 검정&quot;에서 값이 χ² = 2204.28, df = 300, p < .00001로 나타남. 아래에는 &quot;KMO 표본 적합도 측정값&quot;이 있으며, 개별 항목의 MSA 값은 0.59에서 0.85 사이로 분포함." data-fig-pos="H" data-fig-align="left">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig15-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig15-3.png" class="quarto-figure quarto-figure-left figure-img" style="width:80.0%;height:93.0%" data-fig-pos="H" alt="가정 검토 결과를 보여주는 jamovi의 표. &quot;Bartlett의 구형성 검정&quot;에서 값이 χ² = 2204.28, df = 300, p < .00001로 나타남. 아래에는 &quot;KMO 표본 적합도 측정값&quot;이 있으며, 개별 항목의 MSA 값은 0.59에서 0.85 사이로 분포함.">
@@ -610,7 +610,7 @@ Figure&nbsp;15.3. 성격 설문지 데이터에 대한 jamovi의 EFA 가정 검�
 </ul>
 <div class="cell" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig15-4" class="quarto-float quarto-figure quarto-figure-left anchored" alt="요인 1부터 25까지의 고유값을 나타내는 스크리 플롯. 파란색 점은 실제 데이터, 주황색 점은 시뮬레이션을 나타냄. 고유값이 요인 1에서 5까지 급격히 감소한 후, 요인 6부터 완만해지는 경향을 보임." data-fig-align="left" data-fig-pos="H">
+<div id="fig-fig15-4" class="quarto-float quarto-figure quarto-figure-left anchored" alt="요인 1부터 25까지의 고유값을 나타내는 스크리 플롯. 파란색 점은 실제 데이터, 주황색 점은 시뮬레이션을 나타냄. 고유값이 요인 1에서 5까지 급격히 감소한 후, 요인 6부터 완만해지는 경향을 보임." data-fig-pos="H" data-fig-align="left">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig15-4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig15-4.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:90.0%" data-fig-pos="H" alt="요인 1부터 25까지의 고유값을 나타내는 스크리 플롯. 파란색 점은 실제 데이터, 주황색 점은 시뮬레이션을 나타냄. 고유값이 요인 1에서 5까지 급격히 감소한 후, 요인 6부터 완만해지는 경향을 보임.">
@@ -648,7 +648,7 @@ Figure&nbsp;15.5. jamovi EFA에서 다섯 개 요인 해의 요약 통계 및 �
 </div>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig15-6" class="quarto-float quarto-figure quarto-figure-left anchored" alt="탐색적 요인분석 결과를 보여주는 jamovi의 표. 표에는 A1~A6, C1~C6, E1~E5, N1~N6, O1~O5 항목이 다섯 개 요인과 함께 나열되어 있으며, 각각의 적재량과 고유성 값이 표시됨. 하단 주석에는 &quot;최소 잔차&quot; 추출 방법과 &quot;oblimin&quot; 회전을 사용했음이 기재됨." data-fig-align="left" data-fig-pos="H">
+<div id="fig-fig15-6" class="quarto-float quarto-figure quarto-figure-left anchored" alt="탐색적 요인분석 결과를 보여주는 jamovi의 표. 표에는 A1~A6, C1~C6, E1~E5, N1~N6, O1~O5 항목이 다섯 개 요인과 함께 나열되어 있으며, 각각의 적재량과 고유성 값이 표시됨. 하단 주석에는 &quot;최소 잔차&quot; 추출 방법과 &quot;oblimin&quot; 회전을 사용했음이 기재됨." data-fig-pos="H" data-fig-align="left">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig15-6-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig15-6.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:90.0%" data-fig-pos="H" alt="탐색적 요인분석 결과를 보여주는 jamovi의 표. 표에는 A1~A6, C1~C6, E1~E5, N1~N6, O1~O5 항목이 다섯 개 요인과 함께 나열되어 있으며, 각각의 적재량과 고유성 값이 표시됨. 하단 주석에는 &quot;최소 잔차&quot; 추출 방법과 &quot;oblimin&quot; 회전을 사용했음이 기재됨.">
@@ -768,7 +768,7 @@ Figure&nbsp;15.11. 친화성 요인 기반 점수에서 남성과 여성 간 차
 <li>다음을 차례대로 수행하여 <code>A1</code>에서 <code>O5</code>를 사용하여 EFA를 수행해 봅니다.</li>
 </ol>
 <ul>
-<li>‘분석’-‘요인분석’-‘탐색적 요인분석’ 메뉴를 선택합니다.</li>
+<li>‘분석’-‘요인’-‘탐색적 요인분석’ 메뉴를 선택합니다.</li>
 <li>‘탐색적 요인분석’ 설정 창에서 다음을 수행합니다.
 <ul>
 <li><code>A1</code>부터 <code>O5</code>를 선택하여 ‘변수’ 상자로 이동합니다.</li>
@@ -857,7 +857,7 @@ Figure&nbsp;15.11. 친화성 요인 기반 점수에서 남성과 여성 간 차
 <p>이러한 방식에서 EFA는 “데이터 축소(data reduction)” 기법으로 사용됩니다. EFA 계열에 속하는 또 다른 데이터 축소 기법으로 <strong>주성분 분석(Principal Component Analysis, PCA)</strong> 이 있습니다. 그러나 PCA는 내재된 잠재 요인을 식별하지 않습니다. 대신, 측정된 변수들로 이루어진 더 큰 집합으로부터 선형 결합 변수를 생성합니다.</p>
 <p>PCA는 변수들이 어떻게 공변하는지에 대한 가정 없이(모형 없이) 단순히 원본 데이터를 수학적으로 변환하는 기법입니다. PCA의 목표는 원본 변수들로부터 소수의 선형 결합(주성분, components)을 계산하여, 정보를 크게 손실하지 않으면서도 관측된 데이터를 요약하는 것입니다. 그러나 분석의 목표가 내재된 구조를 식별하는 것이라면, EFA를 사용하는 것이 더 적절합니다. 그리고 앞서 살펴본 바와 같이, EFA는 주성분 점수와 마찬가지로 데이터 축소 목적으로 사용할 수 있는 요인 점수를 생성합니다 <span class="citation" data-cites="Fabrigar1999">(<a href="References.html#ref-Fabrigar1999" role="doc-biblioref">Fabrigar et al., 1999</a>)</span>.</p>
 <p>PCA는 여러 가지 이유로 심리학 분야에서 오랫동안 인기가 있었습니다. 따라서 이에 대해 언급할 가치가 있습니다. 그러나 오늘날에는 데스크톱 컴퓨터의 성능이 향상됨에 따라 EFA를 수행하는 것이 PCA만큼이나 쉬워졌으며, 특히 적은 수의 요인과 변수를 다룰 때 PCA보다 편향에 덜 취약할 수 있습니다. PCA와 EFA는 개념적으로 차이가 있지만, 절차적으로는 대부분 유사하며, 표본 크기가 크고 충분한 수의 요인과 변수가 존재할 경우 PCA와 EFA의 결과는 상당히 유사할 것입니다.</p>
-<p>jamovi에서 PCA를 수행하려면, jamovi의 기본 버튼 바에서 ‘요인분석’-’주성분 분석’을 선택하여 PCA 분석 창을 열면 됩니다. 그런 다음, 위의 [jamovi에서의 EFA 수행하기] 절차를 동일하게 따라 수행하면 됩니다.</p>
+<p>jamovi에서 PCA를 수행하려면, jamovi의 기본 버튼 바에서 ‘요인’-’주성분 분석’을 선택하여 PCA 분석 창을 열면 됩니다. 그런 다음, 위의 [jamovi에서의 EFA 수행하기] 절차를 동일하게 따라 수행하면 됩니다.</p>
 </section>
 <section id="확인적-요인분석" class="level2" data-number="15.3">
 <h2 data-number="15.3" class="anchored" data-anchor-id="확인적-요인분석"><span class="header-section-number">15.3</span> 확인적 요인분석</h2>
@@ -866,7 +866,7 @@ Figure&nbsp;15.11. 친화성 요인 기반 점수에서 남성과 여성 간 차
 <p>성격 문항에 대한 기본적인 확인적 요인분석(CFA)은 <a href="#fig-fig15-12" class="quarto-xref">Figure&nbsp;<span>15.12</span></a> 에 나타난 것처럼 다섯 개의 잠재 요인을 설정하고, 각각을 다섯 개의 관찰된 변수로 측정하는 방식으로 이루어집니다. 각 변수는 특정한 잠재 요인을 측정하는 도구입니다. 예를 들어, A1은 잠재 요인인 친화성(Agreeableness)에 의해 예측됩니다. 그러나 A1이 친화성을 완벽하게 측정하는 것은 아니므로, 이에 대한 오차 항 <span class="math inline">\(e\)</span>가 존재합니다. 다시 말해, <span class="math inline">\(e\)</span>는 A1의 분산 중 친화성 요인으로 설명되지 않는 부분을 나타내며, 이를 <strong>측정 오차(measurement error)</strong>라고 합니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig15-12" class="quarto-float quarto-figure quarto-figure-left anchored" alt="성격과 관련된 특성을 보여주는 다이어그램. 친화성(Agreeableness), 성실성(Conscientiousness), 외향성(Extraversion), 신경증(Neuroticism), 개방성(Openness)이라는 다섯 개의 원과, A1~A5, C1~C5, E1~E5, N1~N5, O1~O5라는 다양한 타원형 레이블이 연결되어 있음. 화살표는 이들 간의 관계를 나타냄." data-fig-align="left" data-fig-pos="h!">
+<div id="fig-fig15-12" class="quarto-float quarto-figure quarto-figure-left anchored" alt="성격과 관련된 특성을 보여주는 다이어그램. 친화성(Agreeableness), 성실성(Conscientiousness), 외향성(Extraversion), 신경증(Neuroticism), 개방성(Openness)이라는 다섯 개의 원과, A1~A5, C1~C5, E1~E5, N1~N5, O1~O5라는 다양한 타원형 레이블이 연결되어 있음. 화살표는 이들 간의 관계를 나타냄." data-fig-pos="h!" data-fig-align="left">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig15-12-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/fig15-12.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:85.0%" data-fig-pos="h!" alt="성격과 관련된 특성을 보여주는 다이어그램. 친화성(Agreeableness), 성실성(Conscientiousness), 외향성(Extraversion), 신경증(Neuroticism), 개방성(Openness)이라는 다섯 개의 원과, A1~A5, C1~C5, E1~E5, N1~N5, O1~O5라는 다양한 타원형 레이블이 연결되어 있음. 화살표는 이들 간의 관계를 나타냄.">
@@ -913,7 +913,7 @@ Figure&nbsp;15.13. jamovi의 CFA 분석 창
 </div>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig15-14" class="quarto-float quarto-figure quarto-figure-left anchored" alt="모형 적합도 및 Test for Exact Fit이라는 제목을 가진 통계 테이블이 표시됨. 카이제곱 값 739.73, 자유도(df) 265, $p$-값 0.00001 미만이 나와 있음. 적합도 지표로는 CFI=0.76, TLI=0.73, RMSEA=0.08, RMSEA 90% 신뢰 구간:- 하한=0.08, 상한=0.09이 포함됨." data-fig-align="left" data-fig-pos="H">
+<div id="fig-fig15-14" class="quarto-float quarto-figure quarto-figure-left anchored" alt="모형 적합도 및 Test for Exact Fit이라는 제목을 가진 통계 테이블이 표시됨. 카이제곱 값 739.73, 자유도(df) 265, $p$-값 0.00001 미만이 나와 있음. 적합도 지표로는 CFI=0.76, TLI=0.73, RMSEA=0.08, RMSEA 90% 신뢰 구간:- 하한=0.08, 상한=0.09이 포함됨." data-fig-pos="H" data-fig-align="left">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig15-14-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig15-14.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" data-fig-pos="H" alt="모형 적합도 및 Test for Exact Fit이라는 제목을 가진 통계 테이블이 표시됨. 카이제곱 값 739.73, 자유도(df) 265, $p$-값 0.00001 미만이 나와 있음. 적합도 지표로는 CFI=0.76, TLI=0.73, RMSEA=0.08, RMSEA 90% 신뢰 구간:- 하한=0.08, 상한=0.09이 포함됨.">
@@ -948,7 +948,7 @@ Figure&nbsp;15.15. jamovi의 CFA 요인 적재량 표
 <p>만약 MI 값을 사용하여 모형에 새로운 매개변수를 추가하는 경우, 각 추가 후 MI 표를 다시 확인해야 합니다. MI 값은 매번 새롭게 갱신되기 때문입니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig15-16" class="quarto-float quarto-figure quarto-figure-left anchored" alt="요인 추정치라는 제목의 jamovi 표로, 다섯 가지 성격 특성(우호성, 성실성, 외향성, 신경증, 개방성) 간 요인 공분산을 표시함. 열에는 추정치, 표준 오차, Z, p, 표준화 추정치가 포함됨. 일부 추정치는 고정되어 있으며, 위첨자 'a'로 표시됨." data-fig-align="left" data-fig-pos="H">
+<div id="fig-fig15-16" class="quarto-float quarto-figure quarto-figure-left anchored" alt="요인 추정치라는 제목의 jamovi 표로, 다섯 가지 성격 특성(우호성, 성실성, 외향성, 신경증, 개방성) 간 요인 공분산을 표시함. 열에는 추정치, 표준 오차, Z, p, 표준화 추정치가 포함됨. 일부 추정치는 고정되어 있으며, 위첨자 'a'로 표시됨." data-fig-pos="H" data-fig-align="left">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig15-16-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig15-16.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:90.0%" data-fig-pos="H" alt="요인 추정치라는 제목의 jamovi 표로, 다섯 가지 성격 특성(우호성, 성실성, 외향성, 신경증, 개방성) 간 요인 공분산을 표시함. 열에는 추정치, 표준 오차, Z, p, 표준화 추정치가 포함됨. 일부 추정치는 고정되어 있으며, 위첨자 'a'로 표시됨.">
@@ -1014,7 +1014,7 @@ Figure&nbsp;15.18. jamovi에서 생성된 잔차 공분산 수정 지수
 <li><code>gender</code>: 명명변수, 문자</li>
 </ul>
 <ol start="4" type="1">
-<li>‘분석’-‘요인분석’-‘확인적 요인분석’ 메뉴를 선택하면, 왼쪽에 ‘확인적 요인분석’ 설정 창이 나타납니다.</li>
+<li>‘분석’-‘요인’-‘확인적 요인분석’ 메뉴를 선택하면, 왼쪽에 ‘확인적 요인분석’ 설정 창이 나타납니다.</li>
 </ol>
 <p>5.’확인적 요인분석’ 설정 창에서 앞에서 설명한 것처럼 친화성, 성실성, 외향성, 신경증, 개방성 요인을 설정합니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
@@ -1085,7 +1085,7 @@ Figure&nbsp;15.18. jamovi에서 생성된 잔차 공분산 수정 지수
 <p>이 설문지는 여섯 가지 가상의 시나리오를 포함하며, 각 시나리오에 대해 응답자는 (a) 내재성, (b) 지속성, (c) 전반성을 평가하는 질문에 답하게 됩니다. 따라서 총 문항 수는 <span class="math inline">\(6 \times 3 = 18\)</span>개입니다. 자세한 내용은 <a href="#fig-fig15-19" class="quarto-xref">Figure&nbsp;<span>15.19</span></a> 를 참고하십시오.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig15-19" class="quarto-float quarto-figure quarto-figure-left anchored" alt="7점 척도로 응답하는 세 개의 섹션(a, b, c)으로 구성된 설문지의 스크린샷. 섹션 아래에는 응답자가 고려해야 할 여섯 가지 가상의 시나리오가 나열되어 있음." data-fig-align="left" data-fig-pos="H">
+<div id="fig-fig15-19" class="quarto-float quarto-figure quarto-figure-left anchored" alt="7점 척도로 응답하는 세 개의 섹션(a, b, c)으로 구성된 설문지의 스크린샷. 섹션 아래에는 응답자가 고려해야 할 여섯 가지 가상의 시나리오가 나열되어 있음." data-fig-pos="H" data-fig-align="left">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig15-19-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/fig15-19.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:90.0%" data-fig-pos="H" alt="7점 척도로 응답하는 세 개의 섹션(a, b, c)으로 구성된 설문지의 스크린샷. 섹션 아래에는 응답자가 고려해야 할 여섯 가지 가상의 시나리오가 나열되어 있음.">
@@ -1142,7 +1142,7 @@ Table&nbsp;15.2. 내재성, 지속성, 전반성 차원별 ASQ 문항 6개
 <p>다음 단계는 우리 모형에서 잠재 요인들이 서로 상관을 가질 수 있도록 허용해야 하는지를 고려하는 것입니다. 앞서 언급했듯이, 심리학 및 행동과학에서는 구성개념들이 서로 연관되는 경우가 많으며, 내재성, 지속성, 전반성 또한 서로 상관되어 있을 수 있습니다. 따라서 모형에서 이러한 잠재 요인들이 공분산을 가질 수 있도록 설정해야 합니다. 이는 <a href="#fig-fig15-21" class="quarto-xref">Figure&nbsp;<span>15.21</span></a> 에 나타나 있습니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig15-20" class="quarto-float quarto-figure quarto-figure-left anchored" alt="세 가지 범주(내재성, 안정성, 전반성)를 나타내는 다이어그램. 각 범주에는 해당 요인으로 향하는 화살표가 있는 여러 요소가 포함됨. 내재성은 INT1~INT6, 안정성은 STAB1~STAB6, 전반성은 GLOB1~GLOB6으로 구성됨." data-fig-align="left" data-fig-pos="H">
+<div id="fig-fig15-20" class="quarto-float quarto-figure quarto-figure-left anchored" alt="세 가지 범주(내재성, 안정성, 전반성)를 나타내는 다이어그램. 각 범주에는 해당 요인으로 향하는 화살표가 있는 여러 요소가 포함됨. 내재성은 INT1~INT6, 안정성은 STAB1~STAB6, 전반성은 GLOB1~GLOB6으로 구성됨." data-fig-pos="H" data-fig-align="left">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig15-20-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/fig15-20.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" data-fig-pos="H" alt="세 가지 범주(내재성, 안정성, 전반성)를 나타내는 다이어그램. 각 범주에는 해당 요인으로 향하는 화살표가 있는 여러 요소가 포함됨. 내재성은 INT1~INT6, 안정성은 STAB1~STAB6, 전반성은 GLOB1~GLOB6으로 구성됨.">
@@ -1156,7 +1156,7 @@ Figure&nbsp;15.20. ASQ에 대한 초기 잠재 요인 구조 사전 지정
 </div>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig15-21" class="quarto-float quarto-figure quarto-figure-left anchored" alt="세 개의 잠재 변수를 포함하는 구조 방정식 모형 다이어그램:- 내재성, 안정성, 전반성. 각 잠재 변수는 이에 해당하는 관찰 변수를 가짐. 내재성은 INT1~INT6, 안정성은 STAB1~STAB6, 전반성은 GLOB1~GLOB6으로 구성됨. 화살표는 변수 간 관계를 나타냄. 여러 오류 항 상관이 곡선 화살표로 표시됨." data-fig-align="left" data-fig-pos="H">
+<div id="fig-fig15-21" class="quarto-float quarto-figure quarto-figure-left anchored" alt="세 개의 잠재 변수를 포함하는 구조 방정식 모형 다이어그램:- 내재성, 안정성, 전반성. 각 잠재 변수는 이에 해당하는 관찰 변수를 가짐. 내재성은 INT1~INT6, 안정성은 STAB1~STAB6, 전반성은 GLOB1~GLOB6으로 구성됨. 화살표는 변수 간 관계를 나타냄. 여러 오류 항 상관이 곡선 화살표로 표시됨." data-fig-pos="H" data-fig-align="left">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig15-21-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/fig15-21.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" data-fig-pos="H" alt="세 개의 잠재 변수를 포함하는 구조 방정식 모형 다이어그램:- 내재성, 안정성, 전반성. 각 잠재 변수는 이에 해당하는 관찰 변수를 가짐. 내재성은 INT1~INT6, 안정성은 STAB1~STAB6, 전반성은 GLOB1~GLOB6으로 구성됨. 화살표는 변수 간 관계를 나타냄. 여러 오류 항 상관이 곡선 화살표로 표시됨.">
@@ -1176,7 +1176,7 @@ Figure&nbsp;15.21. ASQ에 대한 최종 잠재 요인 구조 사전 지정, 잠�
 <p><em>ASQ.csv</em> 파일을 열고 18개의 변수(여섯 개의 “내재성”, 여섯 개의 “안정성”, 여섯 개의 “전반성” 변수)가 연속형 변수로 지정되어 있는지 확인하십시오.</p>
 <p>jamovi에서 MTMM CFA를 수행하려면 다음 단계를 따르십시오.</p>
 <ul>
-<li><p>jamovi의 기본 버튼 바에서 ‘요인분석’-‘확인적 요인분석’를 선택하여 ’확인적 요인분석’ 창을 엽니다(<a href="#fig-fig15-22" class="quarto-xref">Figure&nbsp;<span>15.22</span></a>).</p></li>
+<li><p>jamovi의 기본 버튼 바에서 ‘요인’-‘확인적 요인분석’를 선택하여 ’확인적 요인분석’ 창을 엽니다(<a href="#fig-fig15-22" class="quarto-xref">Figure&nbsp;<span>15.22</span></a>).</p></li>
 <li><p>6개의 INT 변수를 선택하여 ‘요인’ 상자로 이동시키고 “내재성”이라는 라벨을 지정하십시오.</p></li>
 <li><p>‘요인’ 상자에서 ‘새 요인 추가’를 하여 요인을 생성하고 “지속성”이라는 라벨을 지정하십시오. 그런 다음 6개의 STAB 변수를 선택하여 ’요인’ 상자의 “지속성” 아래에 추가하십시오.</p></li>
 <li><p>다시 한 번 ‘요인’ 상자에서 새 요인을 생성하고 “전반성”이라는 라벨을 지정하십시오. 그런 다음 6개의 GLOB 변수를 선택하여 ‘요인’ 상자의 “전반성” 아래에 추가하십시오.</p></li>
@@ -1252,7 +1252,7 @@ MTMM CFA
 <li><code>INT1</code>에서 <code>GLOB6</code>: 연속변수, 정수</li>
 </ul>
 <ol start="4" type="1">
-<li>‘분석’-‘요인분석’-‘확인적 요인분석’ 메뉴를 선택하면, 왼쪽에 ‘확인적 요인분석’ 설정 창이 나타납니다.</li>
+<li>‘분석’-‘요인’-‘확인적 요인분석’ 메뉴를 선택하면, 왼쪽에 ‘확인적 요인분석’ 설정 창이 나타납니다.</li>
 </ol>
 <p>5.’확인적 요인분석’ 설정 창에서 앞에서 설명한 것처럼 내재성, 지속성, 전반성 요인을 설정합니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
@@ -1308,7 +1308,7 @@ MTMM CFA
 <h3 data-number="15.5.1" class="anchored" data-anchor-id="jamovi에서-신뢰도-분석"><span class="header-section-number">15.5.1</span> jamovi에서 신뢰도 분석</h3>
 <p>신뢰도 분석을 수행하기 위해 사용할 성격 데이터의 세 번째 표본이 있습니다: <em>bfi_sample3.csv</em> 파일입니다. 다시 한 번, 25개의 성격 항목 변수가 연속형으로 코딩되어 있는지 확인하십시오. jamovi에서 신뢰도 분석을 수행하려면 다음을 따르십시오.</p>
 <ul>
-<li><p>jamovi의 메누에서 ‘요인분석’-’신뢰도 분석’을 선택하여 신뢰도 분석 창을 엽니다(<a href="#fig-fig15-25" class="quarto-xref">Figure&nbsp;<span>15.25</span></a>).</p></li>
+<li><p>jamovi의 메누에서 ‘요인’-’신뢰도 분석’을 선택하여 신뢰도 분석 창을 엽니다(<a href="#fig-fig15-25" class="quarto-xref">Figure&nbsp;<span>15.25</span></a>).</p></li>
 <li><p>5개의 A 변수를 선택하고 이를 ‘문항’ 상자로 이동합니다.</p></li>
 <li><p>“역코딩 문항” 옵션에서, “Normal Scaled Items” 상자에 있는 변수 A1을 선택한 후 “역코딩 문항” 상자로 이동합니다.</p></li>
 <li><p><a href="#fig-fig15-25" class="quarto-xref">Figure&nbsp;<span>15.25</span></a> 같이 다른 적절한 옵션을 확인하십시오.</p></li>
@@ -1366,7 +1366,7 @@ Figure&nbsp;15.26. 친화성 요인에 대한 jamovi 신뢰도 분석 결과
 <li><code>gender</code>: 명명변수, 문자</li>
 </ul>
 <ol start="4" type="1">
-<li><p>‘분석’-‘요인분석’-‘신뢰도 분석’ 메뉴를 선택합니다.</p></li>
+<li><p>‘분석’-‘요인’-‘신뢰도 분석’ 메뉴를 선택합니다.</p></li>
 <li><p>‘신뢰도 분석’ 창에서 다음을 수행합니다.</p></li>
 </ol>
 <ul>

@@ -488,7 +488,7 @@ Figure&nbsp;8.1. 유한 모집단에서의 비복원 단순 무작위 표본추�
 </div>
 <div class="cell" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig8-2" class="quarto-float quarto-figure quarto-figure-left anchored" alt="a에서 j까지 표시된 10개의 항목으로 구성된 모집단에서 비복원 표본추출이 이루어지는 과정을 그림으로 나타냈다. 각 샘플 세트는 네 개의 항목으로 이루어지며, 예시로 {a, b, g, h}, {g, b, h, a}, {a, h, b, g}가 포함된다. 검은색 원은 선택된 항목을, 흰색 원은 선택되지 않은 항목을 나타낸다." data-fig-pos="H" data-fig-align="left">
+<div id="fig-fig8-2" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-pos="H" data-fig-align="left" alt="a에서 j까지 표시된 10개의 항목으로 구성된 모집단에서 비복원 표본추출이 이루어지는 과정을 그림으로 나타냈다. 각 샘플 세트는 네 개의 항목으로 이루어지며, 예시로 {a, b, g, h}, {g, b, h, a}, {a, h, b, g}가 포함된다. 검은색 원은 선택된 항목을, 흰색 원은 선택되지 않은 항목을 나타낸다.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig8-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/fig8-2.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:90.0%" data-fig-pos="H" alt="a에서 j까지 표시된 10개의 항목으로 구성된 모집단에서 비복원 표본추출이 이루어지는 과정을 그림으로 나타냈다. 각 샘플 세트는 네 개의 항목으로 이루어지며, 예시로 {a, b, g, h}, {g, b, h, a}, {a, h, b, g}가 포함된다. 검은색 원은 선택된 항목을, 흰색 원은 선택되지 않은 항목을 나타낸다.">
@@ -502,7 +502,7 @@ Figure&nbsp;8.2. 유한 모집단에서의 편향된 비복원 표본추출
 </div>
 <div class="cell" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig8-3" class="quarto-float quarto-figure quarto-figure-left anchored" alt="모집단(10개의 검은색 및 흰색 원으로 이루어진 a부터 j까지의 항목)이 왼쪽에 나타나 있다. 세 개의 표본(각각 4개의 원으로 구성됨)이 오른쪽에 나타나 있으며, 모집단에서 화살표가 이들 표본으로 연결되어 있다." data-fig-pos="H" data-fig-align="left">
+<div id="fig-fig8-3" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-pos="H" data-fig-align="left" alt="모집단(10개의 검은색 및 흰색 원으로 이루어진 a부터 j까지의 항목)이 왼쪽에 나타나 있다. 세 개의 표본(각각 4개의 원으로 구성됨)이 오른쪽에 나타나 있으며, 모집단에서 화살표가 이들 표본으로 연결되어 있다.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig8-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/fig8-3.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:90.0%" data-fig-pos="H" alt="모집단(10개의 검은색 및 흰색 원으로 이루어진 a부터 j까지의 항목)이 왼쪽에 나타나 있다. 세 개의 표본(각각 4개의 원으로 구성됨)이 오른쪽에 나타나 있으며, 모집단에서 화살표가 이들 표본으로 연결되어 있다.">
@@ -624,7 +624,7 @@ Figure&nbsp;8.4. IQ 점수의 모집단 분포(패널 (a))와 무작위로 추�
 <p>이전 절에서 표본 크기가 <span class="math inline">\(N = 100\)</span>인 가상의 IQ 실험 결과를 보여주었습니다. 실제 모집단 평균이 100이고 표본 평균이 98.5인 것을 보면, 이는 비교적 정확한 추정치임을 알 수 있습니다. 많은 과학 연구에서 이 정도의 정밀도는 충분히 받아들일 수 있지만, 어떤 경우에는 훨씬 더 정밀한 결과가 필요합니다. 그렇다면 표본 통계량을 모집단 모수에 더 가깝게 만들려면 어떻게 해야 할까요? 가장 명백한 해결책은 더 많은 데이터를 수집하는 것입니다. 이제 10,000명의 IQ를 측정하는 훨씬 더 큰 실험을 수행했다고 가정해 봅시다. 우리는 jamovi를 사용하여 이 실험의 결과를 시뮬레이션할 수 있습니다. <code>IQsim.omv</code> 파일은 jamovi 데이터 파일로, 평균이 100이고 표준 편차가 15인 모집단에서 정규 분포를 따르는 10,000개의 난수를 생성한 것입니다. 이 작업은 jamovi의 ‘= NORM(100,15)’ 함수를 사용하여 새로운 변수를 계산함으로써 수행되었습니다. <a href="#fig-fig8-5" class="quarto-xref">Figure&nbsp;<span>8.5</span></a> 의 히스토그램과 밀도 그래프를 보면, 더 큰 표본이 모집단의 실제 분포를 더 잘 반영한다는 것을 확인할 수 있습니다. 이는 표본 통계량에도 반영됩니다. 더 큰 표본에서 얻은 평균 IQ는 99.68, 표준 편차는 14.90으로, 이제 모집단의 실제 값과 매우 가까워졌습니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig8-5" class="quarto-float quarto-figure quarto-figure-left anchored" alt="jamovi 스크린샷이 표시됩니다. 변수 조작 및 데이터 분석을 위한 메뉴가 포함되어 있습니다. IQsim이라는 계산된 변수가 공식과 함께 나타나며, 숫자로 구성된 IQsim 값 목록과 기술 통계를 포함한 히스토그램이 오른쪽에 표시됩니다." data-fig-pos="h!" data-fig-align="left">
+<div id="fig-fig8-5" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-pos="h!" data-fig-align="left" alt="jamovi 스크린샷이 표시됩니다. 변수 조작 및 데이터 분석을 위한 메뉴가 포함되어 있습니다. IQsim이라는 계산된 변수가 공식과 함께 나타나며, 숫자로 구성된 IQsim 값 목록과 기술 통계를 포함한 히스토그램이 오른쪽에 표시됩니다.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig8-5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig8-5.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" data-fig-pos="h!" alt="jamovi 스크린샷이 표시됩니다. 변수 조작 및 데이터 분석을 위한 메뉴가 포함되어 있습니다. IQsim이라는 계산된 변수가 공식과 함께 나타나며, 숫자로 구성된 IQsim 값 목록과 기술 통계를 포함한 히스토그램이 오른쪽에 표시됩니다.">
@@ -707,7 +707,7 @@ Table&nbsp;8.1. 각 표본 크기가 <span class="math inline">\(( N = 5 )\)</sp
 <p>표본 분포는 통계학에서 또 하나의 중요한 이론적 개념이며, 작은 표본의 특성을 이해하는 데 필수적입니다. 예를 들어, 처음 수행한 “5명의 IQ 점수” 실험에서는 표본 평균이 95였습니다. 그러나 <a href="#fig-fig8-6" class="quarto-xref">Figure&nbsp;<span>8.6</span></a> 의 표본 분포는 이 실험이 별로 정확하지 않다는 사실을 알려줍니다. 만약 실험을 반복한다면, 표본 평균이 80에서 120 사이에서 변동할 가능성이 높습니다.</p>
 <div class="cell" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig8-6" class="quarto-float quarto-figure quarto-figure-left anchored" alt="IQ 점수의 히스토그램과 그 위에 겹쳐진 정규 분포 곡선. x축은 60에서 140까지의 범위를 가지며, 100 부근에서 정점을 이룹니다. y축은 빈도를 나타냅니다. 히스토그램 막대는 파란색이며, 정규 분포 곡선은 검은색입니다." data-fig-pos="h!" data-fig-align="left">
+<div id="fig-fig8-6" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-pos="h!" data-fig-align="left" alt="IQ 점수의 히스토그램과 그 위에 겹쳐진 정규 분포 곡선. x축은 60에서 140까지의 범위를 가지며, 100 부근에서 정점을 이룹니다. y축은 빈도를 나타냅니다. 히스토그램 막대는 파란색이며, 정규 분포 곡선은 검은색입니다.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig8-6-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="08-Estimating-unknown-quantities-from-a-sample_files/figure-html/fig-fig8-6-1.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" data-fig-pos="h!" alt="IQ 점수의 히스토그램과 그 위에 겹쳐진 정규 분포 곡선. x축은 60에서 140까지의 범위를 가지며, 100 부근에서 정점을 이룹니다. y축은 빈도를 나타냅니다. 히스토그램 막대는 파란색이며, 정규 분포 곡선은 검은색입니다.">
@@ -729,7 +729,7 @@ Figure&nbsp;8.6. 5명의 IQ 점수 실험에서 평균의 표본 분포. 무작�
 <p>이 과정을 계속 반복하면 전혀 다른 표본 분포가 생성됩니다. 즉, 이는 최대값의 표본 분포입니다. 5명의 IQ 점수 중 최대값의 표본 분포는 <a href="#fig-fig8-7" class="quarto-xref">Figure&nbsp;<span>8.7</span></a> 에서 확인할 수 있습니다. 예상할 수 있듯이, 무작위로 5명을 선정한 후 가장 높은 IQ 점수를 가진 사람을 찾으면, 그 사람은 평균 이상의 IQ를 가지고 있을 가능성이 큽니다. 대부분의 경우, IQ가 100에서 140 사이인 사람을 얻게 될 것입니다.</p>
 <div class="cell" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig8-7" class="quarto-float quarto-figure quarto-figure-left anchored" alt="IQ 점수의 히스토그램으로, 파란색 막대가 각 점수 범위의 빈도를 나타낸다. 검은색 종곡선이 정규 분포를 나타내며, x축은 60에서 140까지의 점수 범위를 가진다." data-fig-pos="H" data-fig-align="left">
+<div id="fig-fig8-7" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-pos="H" data-fig-align="left" alt="IQ 점수의 히스토그램으로, 파란색 막대가 각 점수 범위의 빈도를 나타낸다. 검은색 종곡선이 정규 분포를 나타내며, x축은 60에서 140까지의 점수 범위를 가진다.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig8-7-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="08-Estimating-unknown-quantities-from-a-sample_files/figure-html/fig-fig8-7-1.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" data-fig-pos="H" alt="IQ 점수의 히스토그램으로, 파란색 막대가 각 점수 범위의 빈도를 나타낸다. 검은색 종곡선이 정규 분포를 나타내며, x축은 60에서 140까지의 점수 범위를 가진다.">
@@ -773,7 +773,7 @@ Figure&nbsp;8.8. 표본 크기에 따른 평균의 표본 분포 변화. 각 패
 <p>이 결과는 여러 가지 측면에서 유용합니다. 이는 왜 큰 규모의 실험이 작은 실험보다 신뢰할 만한지를 설명해주며, 표준 오차에 대한 명확한 공식을 제공함으로써 큰 실험이 얼마나 더 신뢰할 만한지를 알려줍니다. 또한, 정규 분포가 왜 그렇게 “일반적(normal)”인지에 대한 이유도 설명해줍니다. 실제 실험에서 우리가 측정하고자 하는 많은 것들은 사실 여러 가지 다른 양들의 평균값입니다. (예를 들어, IQ로 측정되는 “일반적인” 지능은 많은 “특정한” 기술과 능력들의 평균이라고 볼 수 있습니다.) 이러한 경우, 평균이 된 값은 정규 분포를 따르게 됩니다. 이 수학적 법칙 덕분에, 정규 분포는 실제 데이터에서 반복적으로 나타납니다.</p>
 <div class="cell" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig8-9" class="quarto-float quarto-figure quarto-figure-left anchored" alt="네 개의 히스토그램이 서로 다른 표본 크기에 따른 표본 평균의 분포를 나타냅니다. (a) 표본 크기 1, (b) 표본 크기 2, (c) 표본 크기 4, (d) 표본 크기 8. 표본 크기가 증가할수록 오른쪽으로 치우친 분포가 정규 분포 형태로 변화합니다. 모든 x축은 &quot;표본 평균&quot;으로 표시되어 있습니다." data-fig-pos="H" data-fig-align="left">
+<div id="fig-fig8-9" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-pos="H" data-fig-align="left" alt="네 개의 히스토그램이 서로 다른 표본 크기에 따른 표본 평균의 분포를 나타냅니다. (a) 표본 크기 1, (b) 표본 크기 2, (c) 표본 크기 4, (d) 표본 크기 8. 표본 크기가 증가할수록 오른쪽으로 치우친 분포가 정규 분포 형태로 변화합니다. 모든 x축은 &quot;표본 평균&quot;으로 표시되어 있습니다.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig8-9-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="08-Estimating-unknown-quantities-from-a-sample_files/figure-html/fig-fig8-9-1.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" data-fig-pos="H" alt="네 개의 히스토그램이 서로 다른 표본 크기에 따른 표본 평균의 분포를 나타냅니다. (a) 표본 크기 1, (b) 표본 크기 2, (c) 표본 크기 4, (d) 표본 크기 8. 표본 크기가 증가할수록 오른쪽으로 치우친 분포가 정규 분포 형태로 변화합니다. 모든 x축은 &quot;표본 평균&quot;으로 표시되어 있습니다.">
@@ -850,7 +850,7 @@ Table&nbsp;8.2. 평균에 대한 표기법
 <p>이제 시뮬레이션을 확장해 보겠습니다. <span class="math inline">\(N=2\)</span>로 제한하지 않고, 표본 크기를 1부터 10까지로 늘려 실험을 반복합니다. 표본 평균과 표본 표준편차의 평균값을 표본 크기의 함수로 나타내면 <a href="#fig-fig8-11" class="quarto-xref">Figure&nbsp;<span>8.11</span></a> 같은 결과가 나옵니다. 이 그래프를 위해 관측값이 각각 1개인 데이터 세트를 10,000개, 관측값이 2개인 데이터 세트를 또 10,000개, 이렇게 표본 크기 10까지 시뮬레이션을 진행했습니다. 각 데이터 세트는 평균이 100, 표준편차가 15인 정규분포를 따르는 가상의 IQ 데이터로 구성했습니다. 결과적으로 표본 평균은 표본 크기에 상관없이 평균적으로 100이었으며(<a href="#fig-fig8-11" class="quarto-xref">Figure&nbsp;<span>8.11</span></a> (a)), 이는 모집단 평균과 같습니다. 즉, 불편추정량입니다. 이것이 바로 모집단 평균의 최선의 추정치로 표본 평균을 사용하는 이유입니다.<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> 오른쪽 그래프((<a href="#fig-fig8-11" class="quarto-xref">Figure&nbsp;<span>8.11</span></a> (b))는 매우 다릅니다. 평균적으로 표본 표준편차 <span class="math inline">\(s\)</span>는 모집단 표준편차 <span class="math inline">\(\sigma\)</span>보다 작으며, 특히 표본 크기가 작을수록 이 경향이 두드러집니다. 즉, 표본 표준편차는 편의추정치입니다. 다시 말해, 모집단 표준편차 <span class="math inline">\(\hat{\sigma}\)</span>에 대한 최선의 추정치를 구하고 싶다면 표본 표준편차 <span class="math inline">\(s\)</span>보다 약간 더 큰 값을 선택해야 합니다.</p>
 <div class="cell" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig8-10" class="quarto-float quarto-figure quarto-figure-left anchored" alt="오른쪽으로 치우친 분포를 가진 히스토그램으로, x축은 0에서 60까지의 표본 표준편차, y축은 빈도를 나타냅니다. 모집단 표준편차로 표시된 점선은 x축의 약 16 지점에 위치해 있습니다." data-fig-pos="H" data-fig-align="left">
+<div id="fig-fig8-10" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-pos="H" data-fig-align="left" alt="오른쪽으로 치우친 분포를 가진 히스토그램으로, x축은 0에서 60까지의 표본 표준편차, y축은 빈도를 나타냅니다. 모집단 표준편차로 표시된 점선은 x축의 약 16 지점에 위치해 있습니다.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig8-10-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="08-Estimating-unknown-quantities-from-a-sample_files/figure-html/fig-fig8-10-1.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" data-fig-pos="H" alt="오른쪽으로 치우친 분포를 가진 히스토그램으로, x축은 0에서 60까지의 표본 표준편차, y축은 빈도를 나타냅니다. 모집단 표준편차로 표시된 점선은 x축의 약 16 지점에 위치해 있습니다.">
@@ -864,7 +864,7 @@ Figure&nbsp;8.10. 두 개의 IQ 점수 실험에서의 표본 표준편차의 �
 </div>
 <div class="cell" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig8-11" class="quarto-float quarto-figure quarto-figure-left anchored" alt="두 개의 선 그래프. (a) 그래프는 표본 평균의 평균과 표본 크기 간의 관계를 보여주며, 값은 대략 102-104 사이입니다. (b) 그래프는 표본 표준편차의 평균과 표본 크기 간의 관계를 보여주며, 처음에는 가파르게 증가하다가 표본 크기 8 근처에서 15로 수렴합니다." data-fig-pos="H" data-fig-align="left">
+<div id="fig-fig8-11" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-pos="H" data-fig-align="left" alt="두 개의 선 그래프. (a) 그래프는 표본 평균의 평균과 표본 크기 간의 관계를 보여주며, 값은 대략 102-104 사이입니다. (b) 그래프는 표본 표준편차의 평균과 표본 크기 간의 관계를 보여주며, 처음에는 가파르게 증가하다가 표본 크기 8 근처에서 15로 수렴합니다.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig8-11-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="08-Estimating-unknown-quantities-from-a-sample_files/figure-html/fig-fig8-11-1.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" data-fig-pos="H" alt="두 개의 선 그래프. (a) 그래프는 표본 평균의 평균과 표본 크기 간의 관계를 보여주며, 값은 대략 102-104 사이입니다. (b) 그래프는 표본 표준편차의 평균과 표본 크기 간의 관계를 보여주며, 처음에는 가파르게 증가하다가 표본 크기 8 근처에서 15로 수렴합니다.">
@@ -960,7 +960,7 @@ Table&nbsp;8.4. 분산 표기법
 <p>이 점이 다소 까다롭게 느껴질 수 있지만, 중요한 부분입니다. 해석의 차이는 수학적 접근의 차이로 이어지기 때문입니다. 신뢰구간의 베이지안 대안으로는 <em>신용구간(credible interval)</em>이라는 개념이 있습니다. 대부분의 상황에서 신뢰구간과 신용구간은 매우 유사하지만, 경우에 따라 극적으로 다를 수 있습니다. 약속한 대로, 베이지안 관점에 대해서는 <a href="16-Bayesian-statistics.html" class="quarto-xref"><span>Chapter 16</span></a> 에서 더 자세히 설명하겠습니다.</p>
 <div class="cell" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig8-12" class="quarto-float quarto-figure quarto-figure-left anchored" alt="두 개의 막대 그래프가 수직으로 표시되어 있습니다. 상단 그래프 (a)는 표본 크기 = 10, 하단 그래프(b)는 표본 크기 = 25로 표시되어 있습니다. 두 그래프 모두 x축에는 반복 횟수, y축에는 오차 막대가 있는 IQ 평균 값이 나타나 있습니다. 파란색 데이터 포인트에는 별표가 표시되어 있습니다." data-fig-pos="H" data-fig-align="left">
+<div id="fig-fig8-12" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-pos="H" data-fig-align="left" alt="두 개의 막대 그래프가 수직으로 표시되어 있습니다. 상단 그래프 (a)는 표본 크기 = 10, 하단 그래프(b)는 표본 크기 = 25로 표시되어 있습니다. 두 그래프 모두 x축에는 반복 횟수, y축에는 오차 막대가 있는 IQ 평균 값이 나타나 있습니다. 파란색 데이터 포인트에는 별표가 표시되어 있습니다.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig8-12-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="08-Estimating-unknown-quantities-from-a-sample_files/figure-html/fig-fig8-12-1.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" data-fig-pos="H" alt="두 개의 막대 그래프가 수직으로 표시되어 있습니다. 상단 그래프 (a)는 표본 크기 = 10, 하단 그래프(b)는 표본 크기 = 25로 표시되어 있습니다. 두 그래프 모두 x축에는 반복 횟수, y축에는 오차 막대가 있는 IQ 평균 값이 나타나 있습니다. 파란색 데이터 포인트에는 별표가 표시되어 있습니다.">
@@ -992,7 +992,7 @@ Figure&nbsp;8.12. 95% 신뢰구간. 상단 그래프 (a)는 10명의 IQ를 측�
 <ol type="1">
 <li><p>‘파일’-‘열기’-’데이터 라이브러리’를 메뉴에서 선택합니다. 그러면 ’learning statistics with jamovi’라는 폴더가 보일 것입니다. 이 폴더를 선택합니다. 이미 이전 실습에서 이 폴더를 선택했으면 바로 이 폴더가 열릴 수도 있습니다.</p></li>
 <li><p>데이터 라이브러리 목록에서 ’IQ sim’을 선택합니다.</p></li>
-<li><p>‘기술통계’-’기술통계’를 선택합니다.</p></li>
+<li><p>‘탐구’-’기술통계’를 선택합니다.</p></li>
 <li><p>왼편의 ‘기술통계’ 패널에서 <code>IQsim</code>를 ‘변수’ 상자에 넣습니다.</p></li>
 <li><p>‘통계’ 옵션의 ’평균 분산’에 있는 ’평균에 대한 표준오차’와 ’평균에 대한 신뢰구간’을 체크 합니다. 그러면 결과 창의 기술통계 부분에 표준 오차와 신뢰구간의 하한과 상한 값이 나타납니다.</p></li>
 <li><p>‘평균에 대한 신뢰구간’ 오른편에 있는 95%라는 수치를 90% 또는 99%로 바꾸어 신뢰구간의 상한과 하한이 어떻게 변화하는지 살펴봅니다.</p></li>

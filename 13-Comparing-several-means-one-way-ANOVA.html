@@ -500,7 +500,7 @@ Tip&nbsp;13.1. 실습: Clinical Trial 데이터
 <li>다음 단계를 거쳐 <code>drug</code> 별로 나누어 <code>mood.gain</code>의 기본 통계와 분포를 확인합니다. 그러면 <a href="#fig-fig13-1" class="quarto-xref">Figure&nbsp;<span>13.1</span></a> 같은 결과과 나타납니다.</li>
 </ol>
 <ul>
-<li>‘분석’-‘기술통계’-‘기술통계’ 메뉴를 선택합니다.</li>
+<li>‘분석’-‘탐구’-‘기술통계’ 메뉴를 선택합니다.</li>
 <li><code>mood.gain</code>을 ‘변수’ 상자로 이동합니다.</li>
 <li><code>drug</code>을 ‘Split by’ 상자로 이동합니다.</li>
 <li>‘기술통계’ 드롭다운에서 ’Variable across rows’로 하여 기술통계량이 행으로 배열되도록 합니다.</li>
@@ -842,7 +842,7 @@ Table&nbsp;13.8. The ANOVA results table
 <p>jamovi 결과 테이블은 제곱합(Sums of Squares), 자유도(Degrees of Freedom), 그리고 현재 우리가 크게 관심을 두지 않는 몇 가지 추가 정보를 보여줍니다. 하지만, jamovi에서는 ’집단 간(Between Group)’과 ’집단 내(Within Group)’라는 용어를 사용하지 않는다는 점을 주목하십시오. 대신, 더 의미 있는 명칭을 사용하려고 합니다. 현재 예제에서는 집단 간 분산이 <code>drug</code>이 결과변수에 미치는 효과에 해당하고, 집단 내 분산이 “남은” 변동성에 해당하므로 이를 잔차라고 부릅니다.</p>
 <div class="cell enlarge-image" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig13-3" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="jamovi에서 수행한 &quot;ANOVA - mood.gain&quot;이라는 제목의 테이블이 표시됩니다. 이 테이블에는 &quot;Sum of Squares,&quot; &quot;df,&quot; &quot;Mean Square,&quot; &quot;F,&quot; &quot;p,&quot; &quot;η²&quot;이라는 열이 있으며, &quot;drug&quot; 행에는 (3.45, 2, 1.73, 18.61, 0.00009, 0.71)의 값이, &quot;Residuals&quot; 행에는 (1.39, 15, 0.09)의 값이 포함되어 있습니다." data-fig-pos="H">
+<div id="fig-fig13-3" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" data-fig-pos="H" alt="jamovi에서 수행한 &quot;ANOVA - mood.gain&quot;이라는 제목의 테이블이 표시됩니다. 이 테이블에는 &quot;Sum of Squares,&quot; &quot;df,&quot; &quot;Mean Square,&quot; &quot;F,&quot; &quot;p,&quot; &quot;η²&quot;이라는 열이 있으며, &quot;drug&quot; 행에는 (3.45, 2, 1.73, 18.61, 0.00009, 0.71)의 값이, &quot;Residuals&quot; 행에는 (1.39, 15, 0.09)의 값이 포함되어 있습니다.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig13-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/fig13-3.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" data-fig-pos="H" alt="jamovi에서 수행한 &quot;ANOVA - mood.gain&quot;이라는 제목의 테이블이 표시됩니다. 이 테이블에는 &quot;Sum of Squares,&quot; &quot;df,&quot; &quot;Mean Square,&quot; &quot;F,&quot; &quot;p,&quot; &quot;η²&quot;이라는 열이 있으며, &quot;drug&quot; 행에는 (3.45, 2, 1.73, 18.61, 0.00009, 0.71)의 값이, &quot;Residuals&quot; 행에는 (1.39, 15, 0.09)의 값이 포함되어 있습니다.">
@@ -1179,7 +1179,7 @@ Tip&nbsp;13.5. 실습: Welch 일원분산분석
 <p>정규성 가정을 검정하는 것은 비교적 간단합니다. <a href="11-Comparing-two-means.html#sec-Checking-the-normality-of-a-sample" class="quarto-xref"><span>Section 11.9</span></a> 에서 이미 대부분의 내용을 다루었습니다. 우리가 해야 할 일은 QQ 플롯을 그리고, 가능하다면 Shapiro-Wilk 검정을 실행하는 것입니다. QQ 플롯은 <a href="#fig-fig13-7" class="quarto-xref">Figure&nbsp;<span>13.7</span></a> 에서 확인할 수 있으며, 보기에는 상당히 정규분포를 따르는 것처럼 보입니다.</p>
 <div class="cell" data-layout-align="left">
 <div class="cell-output-display">
-<div id="fig-fig13-7" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" alt="표준화 잔차와 이론적 분위수를 비교하는 Q-Q 플롯. 데이터 점들이 45도 기준선 근처에 위치하여 정규분포를 잘 따르고 있음을 보여줌. 축은 &quot;Standardized Residuals&quot;와 &quot;Theoretical Quantiles&quot;로 표시됨." data-fig-pos="H">
+<div id="fig-fig13-7" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left" data-fig-pos="H" alt="표준화 잔차와 이론적 분위수를 비교하는 Q-Q 플롯. 데이터 점들이 45도 기준선 근처에 위치하여 정규분포를 잘 따르고 있음을 보여줌. 축은 &quot;Standardized Residuals&quot;와 &quot;Theoretical Quantiles&quot;로 표시됨.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig13-7-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig13-7.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" data-fig-pos="H" alt="표준화 잔차와 이론적 분위수를 비교하는 Q-Q 플롯. 데이터 점들이 45도 기준선 근처에 위치하여 정규분포를 잘 따르고 있음을 보여줌. 축은 &quot;Standardized Residuals&quot;와 &quot;Theoretical Quantiles&quot;로 표시됨.">
@@ -1335,7 +1335,7 @@ Table&nbsp;13.12. 뇌졸중 환자의 단어 인식 과제 점수
 <p>jamovi에서 일원 반복측정 ANOVA를 수행하려면, ‘분산분석’-’반복측정 분산분석’을 선택하여 반복 측정 분산분석 창을 엽니다(<a href="#fig-fig13-9" class="quarto-xref">Figure&nbsp;<span>13.9</span></a>).</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<div id="fig-fig13-9" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center" alt="jamovi에서 반복측정 분산분석을 설정하는 스크린샷. 인터페이스에는 참가자, 음성 생성, 개념적, 통사적 변수를 입력하는 필드와 반복 측정 요인 및 셀을 정의하는 옵션, 집단 간 요인 및 공변량을 설정하는 옵션이 포함됨." data-fig-pos="H">
+<div id="fig-fig13-9" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center" data-fig-pos="H" alt="jamovi에서 반복측정 분산분석을 설정하는 스크린샷. 인터페이스에는 참가자, 음성 생성, 개념적, 통사적 변수를 입력하는 필드와 반복 측정 요인 및 셀을 정의하는 옵션, 집단 간 요인 및 공변량을 설정하는 옵션이 포함됨.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig13-9-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="images/kor/fig13-9.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%" data-fig-pos="H" alt="jamovi에서 반복측정 분산분석을 설정하는 스크린샷. 인터페이스에는 참가자, 음성 생성, 개념적, 통사적 변수를 입력하는 필드와 반복 측정 요인 및 셀을 정의하는 옵션, 집단 간 요인 및 공변량을 설정하는 옵션이 포함됨.">
@@ -1580,7 +1580,7 @@ Tip&nbsp;13.8. 실습: 프리드먼 비모수 반복측정 분산분석
 <li><code>therapy</code>의 값별로 데이터를 나누어 <code>mood.gain</code>의 기술통계량을 비교합니다.</li>
 </ol>
 <ul>
-<li>‘분석’-‘기술통계’-‘기술통계’ 메뉴를 선택합니다.</li>
+<li>‘분석’-‘탐구’-‘기술통계’ 메뉴를 선택합니다.</li>
 <li>왼편 ‘기술통계’ 설정 창에서 다음을 수행합니다.
 <ul>
 <li><code>mood.gain</code>을 ’변수’로 이동합니다.</li>

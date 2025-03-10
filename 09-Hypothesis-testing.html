@@ -588,7 +588,7 @@ Table&nbsp;9.3. 귀무가설 통계 검정 (NHST) - 추가 정보
 <p>예를 들어, ESP 연구에서 <span class="math inline">\(X = 62\)</span>라는 값을 관찰했습니다. 이제 어떤 결정을 내려야 할까요? 귀무가설을 믿어야 할까요, 아니면 대립가설을 지지해야 할까요?</p>
 <div class="cell" data-layout-align="left" width="80%">
 <div class="cell-output-display">
-<div id="fig-fig9-1" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-pos="H" alt="귀무가설이 참일 경우 X의 표본 분포라는 제목의 막대 그래프. 확률(y축)과 정답 수(X축)를 보여줍니다. 분포는 종 모양으로, 50 정답 근처에서 최고점을 가집니다." data-fig-align="left">
+<div id="fig-fig9-1" class="quarto-float quarto-figure quarto-figure-left anchored" alt="귀무가설이 참일 경우 X의 표본 분포라는 제목의 막대 그래프. 확률(y축)과 정답 수(X축)를 보여줍니다. 분포는 종 모양으로, 50 정답 근처에서 최고점을 가집니다." data-fig-align="left" data-fig-pos="H">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig9-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="09-Hypothesis-testing_files/figure-html/fig-fig9-1-1.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" data-fig-pos="H" alt="귀무가설이 참일 경우 X의 표본 분포라는 제목의 막대 그래프. 확률(y축)과 정답 수(X축)를 보여줍니다. 분포는 종 모양으로, 50 정답 근처에서 최고점을 가집니다.">
@@ -612,7 +612,7 @@ Figure&nbsp;9.1. 귀무가설이 참일 때 검정 통계량 <span class="math i
 <p>이러한 세 가지 조건이 문제를 명확히 해결해 줍니다. 우리의 기각역은 분포의 가장 극단적인 값들, 즉 <strong>꼬리(tails)</strong> 부분으로 구성됩니다. 이는 <a href="#fig-fig9-2" class="quarto-xref">Figure&nbsp;<span>9.2</span></a> 에서 시각적으로 설명됩니다. 유의수준 <span class="math inline">\(\alpha = 0.05\)</span>를 원할 경우, 기각역은 <span class="math inline">\(X \leq 40\)</span> 및 <span class="math inline">\(X \geq 60\)</span>에 해당합니다.<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> 즉, “참”을 응답한 사람 수가 41에서 59 사이에 있으면 귀무가설을 유지해야 합니다. 만약 이 수가 <span class="math inline">\(0\)</span>에서 <span class="math inline">\(40\)</span> 사이이거나 <span class="math inline">\(60\)</span>에서 <span class="math inline">\(100\)</span> 사이에 있다면 귀무가설을 기각해야 합니다. 이때 <span class="math inline">\(40\)</span>과 <span class="math inline">\(60\)</span>을 <strong>임계값(critical values)</strong>이라 하는데, 임계값은 기각역의 경계값입니다.</p>
 <div class="cell" data-layout-align="left" width="80%">
 <div class="cell-output-display">
-<div id="fig-fig9-2" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-pos="h!" alt="양측 검정의 기각역을 보여주는 그래프. x축은 0에서 100까지의 정답 수(X)를 나타내며, 분포의 2.5%를 차지하는 하위 및 상위 기각역이 파란색으로 강조 표시되어 있습니다." data-fig-align="left">
+<div id="fig-fig9-2" class="quarto-float quarto-figure quarto-figure-left anchored" alt="양측 검정의 기각역을 보여주는 그래프. x축은 0에서 100까지의 정답 수(X)를 나타내며, 분포의 2.5%를 차지하는 하위 및 상위 기각역이 파란색으로 강조 표시되어 있습니다." data-fig-align="left" data-fig-pos="h!">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig9-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="09-Hypothesis-testing_files/figure-html/fig-fig9-2-1.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" data-fig-pos="h!" alt="양측 검정의 기각역을 보여주는 그래프. x축은 0에서 100까지의 정답 수(X)를 나타내며, 분포의 2.5%를 차지하는 하위 및 상위 기각역이 파란색으로 강조 표시되어 있습니다.">
@@ -653,7 +653,7 @@ Figure&nbsp;9.2. 유의수준 <span class="math inline">\(\alpha = 0.05\)</span>
 이러한 경우를 <strong>단측 검정(one-sided test)</strong> 이라고 하며, 기각역은 표본 분포의 한쪽 꼬리만을 포함하게 됩니다. 이는 <a href="#fig-fig9-3" class="quarto-xref">Figure&nbsp;<span>9.3</span></a> 에 설명되어 있습니다.</p>
 <div class="cell" data-layout-align="left" width="80%">
 <div class="cell-output-display">
-<div id="fig-fig9-3" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-pos="h!" alt="정답 수(X)의 정규 분포를 보여주는 히스토그램으로, 분포의 오른쪽 5%를 강조한 기각역이 표시되어 있습니다. X축은 0에서 100까지 정답 수를 나타냅니다. 기각역(분포의 5%)이라는 텍스트가 있습니다." data-fig-align="left">
+<div id="fig-fig9-3" class="quarto-float quarto-figure quarto-figure-left anchored" alt="정답 수(X)의 정규 분포를 보여주는 히스토그램으로, 분포의 오른쪽 5%를 강조한 기각역이 표시되어 있습니다. X축은 0에서 100까지 정답 수를 나타냅니다. 기각역(분포의 5%)이라는 텍스트가 있습니다." data-fig-align="left" data-fig-pos="h!">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig9-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="09-Hypothesis-testing_files/figure-html/fig-fig9-3-1.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" data-fig-pos="h!" alt="정답 수(X)의 정규 분포를 보여주는 히스토그램으로, 분포의 오른쪽 5%를 강조한 기각역이 표시되어 있습니다. X축은 0에서 100까지 정답 수를 나타냅니다. 기각역(분포의 5%)이라는 텍스트가 있습니다.">
@@ -839,7 +839,7 @@ Figure&nbsp;9.6. 대립 가설 하에서 모집단 모수 값이 <span class="ma
 </div>
 <div class="cell" data-layout-align="left" width="80%">
 <div class="cell-output-display">
-<div id="fig-fig9-7" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-pos="H" alt="검정의 검정력 함수 (N=100)라는 제목의 그래프. y축은 귀무가설을 기각할 확률, x축은 실제 $\theta$ 값. 곡선은 $\theta=0.5$에서 최솟값을 가지며(검은 점으로 표시됨), 양쪽 끝으로 갈수록 대칭적으로 증가함" data-fig-align="left">
+<div id="fig-fig9-7" class="quarto-float quarto-figure quarto-figure-left anchored" alt="검정의 검정력 함수 (N=100)라는 제목의 그래프. y축은 귀무가설을 기각할 확률, x축은 실제 $\theta$ 값. 곡선은 $\theta=0.5$에서 최솟값을 가지며(검은 점으로 표시됨), 양쪽 끝으로 갈수록 대칭적으로 증가함" data-fig-align="left" data-fig-pos="H">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig9-7-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="09-Hypothesis-testing_files/figure-html/fig-fig9-7-1.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" data-fig-pos="H" alt="검정의 검정력 함수 (N=100)라는 제목의 그래프. y축은 귀무가설을 기각할 확률, x축은 실제 $\theta$ 값. 곡선은 $\theta=0.5$에서 최솟값을 가지며(검은 점으로 표시됨), 양쪽 끝으로 갈수록 대칭적으로 증가함">
@@ -892,7 +892,7 @@ Table&nbsp;9.6. 통계적 유의성과 효과 크기 간의 관계를 이해하�
 <p>안타깝게도, 최상의 실험 설계를 갖추었더라도 효과가 미미할 수 있습니다. 예를 들어, ESP가 실제로 존재하더라도 최적의 조건에서도 그 효과가 매우 미약할 수 있습니다. 이런 상황에서는 검정력을 높이는 가장 좋은 방법은 표본 크기(sample size)를 늘리는 것입니다. 일반적으로 관찰값이 많을수록 두 가설을 구별할 가능성이 높아집니다. 만약 내가 ESP 실험을 10명의 참가자와 진행했는데, 이 중 7명이 숨겨진 카드의 색을 맞췄다면 별로 인상 깊지 않을 것입니다. 하지만 10,000명의 참가자를 대상으로 진행했는데 7,000명이 정답을 맞췄다면, 내가 뭔가를 발견했다고 생각할 가능성이 훨씬 높아질 것입니다. 다시 말해, 표본 크기가 커질수록 검정력이 증가합니다. <a href="#fig-fig9-8" class="quarto-xref">Figure&nbsp;<span>9.8</span></a> 는 이러한 사실을 보여주고 있습니다. 이 그래프는 실제 모수 <span class="math inline">\(\theta = 0.7\)</span>일 때, 표본 크기 <span class="math inline">\(N\)</span>이 1에서 100까지 변화하는 동안의 검정력 변화를 나타냅니다. 여기서 귀무가설은 <span class="math inline">\(\theta_0 = 0.5\)</span>라고 가정합니다.</p>
 <div class="cell" data-layout-align="left" width="80%">
 <div class="cell-output-display">
-<div id="fig-fig9-8" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-pos="h!" alt="표본 크기(N)에 따른 귀무가설 기각 확률을 보여주는 선 그래프. x축은 0에서 100까지의 표본 크기를, y축은 0에서 1까지의 확률을 나타냅니다. 선은 점점 증가하며 위로 요동칩니다." data-fig-align="left">
+<div id="fig-fig9-8" class="quarto-float quarto-figure quarto-figure-left anchored" alt="표본 크기(N)에 따른 귀무가설 기각 확률을 보여주는 선 그래프. x축은 0에서 100까지의 표본 크기를, y축은 0에서 1까지의 확률을 나타냅니다. 선은 점점 증가하며 위로 요동칩니다." data-fig-align="left" data-fig-pos="h!">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fig9-8-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="09-Hypothesis-testing_files/figure-html/fig-fig9-8-1.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:80.0%" data-fig-pos="h!" alt="표본 크기(N)에 따른 귀무가설 기각 확률을 보여주는 선 그래프. x축은 0에서 100까지의 표본 크기를, y축은 0에서 1까지의 확률을 나타냅니다. 선은 점점 증가하며 위로 요동칩니다.">
